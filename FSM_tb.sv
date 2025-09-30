@@ -1,59 +1,126 @@
-// MEF TESTBENCH actualizado para puntaje_j1 y puntaje_j2
-module FSM_tb();
-    logic m;
-    logic rst;
-    logic clk;
-    logic [7:0] estado;
-    logic [2:0] puntaje_j1, puntaje_j2; // puntajes de 0 a 4
+`timescale 1ns/1ps
 
-    // Instancia de la MEF
-    MEF_T2 fsm(
-        .m(m),
-        .puntaje_j1(puntaje_j1),
-        .puntaje_j2(puntaje_j2),
-        .rst(rst),
+module tb_FSM;
+
+    // Señales de prueba
+    logic clk;
+    logic rst;
+    logic m;
+    logic [1:0] cartas_seleccionadas;
+    logic [7:0] estado;
+
+    // Señales internas para controlar parejas y puntajes
+    logic jugador_1_tiene_pareja;
+    logic jugador_2_tiene_pareja;
+
+    // Instancia de la FSM
+    FSM dut (
         .clk(clk),
+        .rst(rst),
+        .m(m),
+        .cartas_seleccionadas(cartas_seleccionadas),
         .estado(estado)
     );
 
-    // Generador de reloj, invierte el valor de clk cada 10 unidades de tiempo
-    always begin
-        #10 clk = ~clk;
-    end
-
-    // Monitor para ver cambios
+    // -------------------------
+    // Generación de reloj: 10ns de período
+    // -------------------------
     initial begin
-        $monitor("t=%0t | clk=%b rst=%b m=%b j1=%d j2=%d estado=%b", 
-                  $time, clk, rst, m, puntaje_j1, puntaje_j2, estado);
-    end
-
-    // TEST
-    initial begin
-        // Valores iniciales
         clk = 0;
-        m = 0;
+        forever #5 clk = ~clk;
+    end
+
+    // -------------------------
+    // Secuencia de prueba
+    // -------------------------
+    initial begin
+        // Inicializar todas las señales
         rst = 1;
-        puntaje_j1 = 0;
-        puntaje_j2 = 0;
-        #40
-        rst = 0;  // Quitar reset
-        #40
+        m = 0;
+        cartas_seleccionadas = 2'b00;
+        jugador_1_tiene_pareja = 0;
+        jugador_2_tiene_pareja = 0;
 
-        // Avanzar estados con diferentes combinaciones
-        m = 1; puntaje_j1 = 2; puntaje_j2 = 1; #40
-        m = 1; puntaje_j1 = 4; puntaje_j2 = 3; #40
+        // Reset inicial
+        #20;
+        rst = 0;
 
-        // Probar los 3 caminos en el estado 01101
-        m = 1; puntaje_j1 = 4; puntaje_j2 = 2; #40  // j1 > j2 → debería ir a 01110
-        m = 1; puntaje_j1 = 1; puntaje_j2 = 3; #40  // j1 < j2 → debería ir a 01111
-        m = 1; puntaje_j1 = 2; puntaje_j2 = 2; #40  // empate → debería ir a 10000
+        // -------------------------
+        // Avanzar estados iniciales 00000 -> 00100
+        // -------------------------
+        repeat (5) begin
+            m = 1;
+            #10;
+            m = 0;
+            #10;
+        end
 
-        // Reset final
-        rst = 1; #40
-        rst = 0; #40
+        // -------------------------
+        // Turno jugador 1: 0, 1 y 2 cartas seleccionadas
+        // -------------------------
+        cartas_seleccionadas = 2'b00;
+        #10;
 
-        // Tiempo adicional para observar cambios
-        #100;
+        cartas_seleccionadas = 2'b01;
+        #10;
+
+        cartas_seleccionadas = 2'b10;
+        #10;
+
+        // Simular jugador 1 tiene pareja
+        jugador_1_tiene_pareja = 1;
+        #10;
+        jugador_1_tiene_pareja = 0;
+        #10;
+
+        // -------------------------
+        // Turno jugador 2: 0, 1 y 2 cartas seleccionadas
+        // -------------------------
+        cartas_seleccionadas = 2'b00;
+        #10;
+
+        cartas_seleccionadas = 2'b01;
+        #10;
+
+        cartas_seleccionadas = 2'b10;
+        #10;
+
+        // Simular jugador 2 tiene pareja
+        jugador_2_tiene_pareja = 1;
+        #10;
+        jugador_2_tiene_pareja = 0;
+        #10;
+
+        // -------------------------
+        // Escenarios de fin de juego
+        // -------------------------
+        // Jugador 1 gana
+        dut.puntaje_j1 = 3'b101;  // 5 puntos
+        dut.puntaje_j2 = 3'b010;  // 2 puntos
+        dut.state = 5'b01101;
+        #10;
+
+        // Jugador 2 gana
+        dut.puntaje_j1 = 3'b001;
+        dut.puntaje_j2 = 3'b011;
+        dut.state = 5'b01101;
+        #10;
+
+        // Empate
+        dut.puntaje_j1 = 3'b100;
+        dut.puntaje_j2 = 3'b100;
+        dut.state = 5'b01101;
+        #10;
+
         $finish;
     end
+
+    // -------------------------
+    // Monitoreo de señales
+    // -------------------------
+    initial begin
+        $monitor("Tiempo=%0t | Estado=%b | cartas=%b | jugador1=%b | jugador2=%b | m=%b", 
+                 $time, estado, cartas_seleccionadas, jugador_1_tiene_pareja, jugador_2_tiene_pareja, m);
+    end
+
 endmodule
