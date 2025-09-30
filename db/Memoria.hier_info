@@ -1,0 +1,77 @@
+|FSM
+m => next_state.00001.DATAB
+m => next_state.00010.DATAB
+m => next_state.00011.DATAB
+m => next_state.00100.DATAB
+m => next_state.00101.DATAB
+m => next_state.00110.DATAB
+m => next_state.00111.DATAB
+m => next_state.01000.DATAB
+m => next_state.01001.DATAB
+m => next_state.01010.DATAB
+m => next_state.01011.DATAB
+m => next_state.01100.DATAB
+m => next_state.01101.DATAB
+m => Selector1.IN3
+m => Selector2.IN3
+m => Selector0.IN2
+m => Selector0.IN3
+m => Selector0.IN4
+m => Selector0.IN5
+m => Selector0.IN6
+m => Selector0.IN7
+m => Selector0.IN8
+m => Selector0.IN9
+m => Selector0.IN10
+m => Selector0.IN11
+m => Selector0.IN12
+m => Selector0.IN13
+m => Selector0.IN14
+m => Selector0.IN15
+m => Selector0.IN16
+rst => rst.IN1
+clk => clk.IN1
+puntaje_j1[0] => LessThan0.IN3
+puntaje_j1[0] => LessThan1.IN3
+puntaje_j1[1] => LessThan0.IN2
+puntaje_j1[1] => LessThan1.IN2
+puntaje_j1[2] => LessThan0.IN1
+puntaje_j1[2] => LessThan1.IN1
+puntaje_j2[0] => LessThan0.IN6
+puntaje_j2[0] => LessThan1.IN6
+puntaje_j2[1] => LessThan0.IN5
+puntaje_j2[1] => LessThan1.IN5
+puntaje_j2[2] => LessThan0.IN4
+puntaje_j2[2] => LessThan1.IN4
+estado[0] <= estado[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[1] <= estado[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[2] <= estado[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[3] <= estado[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[4] <= estado[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[5] <= estado[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[6] <= estado[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado[7] <= estado[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FSM|clkCounter:counter
+clk => t0~reg0.CLK
+clk => cycles[0].CLK
+clk => cycles[1].CLK
+clk => cycles[2].CLK
+clk => cycles[3].CLK
+clk => cycles[4].CLK
+clk => cycles[5].CLK
+clk => cycles[6].CLK
+clk => cycles[7].CLK
+rst => t0~reg0.ACLR
+rst => cycles[0].ACLR
+rst => cycles[1].ACLR
+rst => cycles[2].ACLR
+rst => cycles[3].ACLR
+rst => cycles[4].ACLR
+rst => cycles[5].ACLR
+rst => cycles[6].ACLR
+rst => cycles[7].ACLR
+t0 <= t0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
