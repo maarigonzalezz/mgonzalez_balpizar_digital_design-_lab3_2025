@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Memoria
-Mon Sep 29 23:08:22 2025
+Mon Sep 29 23:17:06 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Sep 29 23:08:22 2025       ;
+; Analysis & Elaboration Status ; Successful - Mon Sep 29 23:17:06 2025       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Memoria                                     ;
 ; Top-level Entity Name         ; FSM                                         ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 29 23:08:16 2025
+    Info: Processing started: Mon Sep 29 23:17:01 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -186,9 +186,9 @@ Warning (10230): Verilog HDL assignment warning at FSM.sv(36): truncated value w
 Info (12128): Elaborating entity "clkCounter" for hierarchy "clkCounter:counter" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 14
 Warning (10230): Verilog HDL assignment warning at clkCounter.sv(15): truncated value with size 32 to match size of target (8) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/clkCounter.sv Line: 15
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Mon Sep 29 23:08:22 2025
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Mon Sep 29 23:17:06 2025
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:12
 
 
