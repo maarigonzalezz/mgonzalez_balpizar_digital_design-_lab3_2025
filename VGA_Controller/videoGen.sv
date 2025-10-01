@@ -107,18 +107,90 @@ logic [9:0] rightC4 = 10'd480;
 		  .insymbol(simD2)
     );
 	 
+	 carta cartaE1(
+        .x(x), .y(y), 
+        .left(leftC1), .right(rightC1), 
+        .top(topF3), .bot(bottomF3), 
+        .symbol_sel(3'd4), .incard(cE1), 
+		  .insymbol(simE1)
+    );
+	 
+	 carta cartaE2(
+        .x(x), .y(y), 
+        .left(leftC2), .right(rightC2), 
+        .top(topF3), .bot(bottomF3), 
+        .symbol_sel(3'd4), .incard(cE2),
+		  .insymbol(simE2)
+    );
+	 
+	 carta cartaF1(
+        .x(x), .y(y), 
+        .left(leftC3), .right(rightC3), 
+        .top(topF3), .bot(bottomF3), 
+        .symbol_sel(3'd5), .incard(cF1), 
+		  .insymbol(simF1)
+    );
+	 
+	 carta cartaF2(
+        .x(x), .y(y), 
+        .left(leftC4), .right(rightC4), 
+        .top(topF3), .bot(bottomF3), 
+        .symbol_sel(3'd5), .incard(cF2),
+		  .insymbol(simF2)
+    );
+	 
+	 carta cartaG1(
+        .x(x), .y(y), 
+        .left(leftC1), .right(rightC1), 
+        .top(topF4), .bot(bottomF4), 
+        .symbol_sel(3'd6), .incard(cG1), 
+		  .insymbol(simG1)
+    );
+	 
+	 carta cartaG2(
+        .x(x), .y(y), 
+        .left(leftC2), .right(rightC2), 
+        .top(topF4), .bot(bottomF4), 
+        .symbol_sel(3'd6), .incard(cG2),
+		  .insymbol(simG2)
+    );
+	 
+	 carta cartaH1(
+        .x(x), .y(y), 
+        .left(leftC3), .right(rightC3), 
+        .top(topF4), .bot(bottomF4), 
+        .symbol_sel(3'd7), .incard(cH1), 
+		  .insymbol(simH1)
+    );
+	 
+	 carta cartaH2(
+        .x(x), .y(y), 
+        .left(leftC4), .right(rightC4), 
+        .top(topF4), .bot(bottomF4), 
+        .symbol_sel(3'd7), .incard(cH2),
+		  .insymbol(simH2)
+    );
+	 
+	 
+	 
 
 	// Detecta si el pixel está en alguna carta
-	wire in_any_card = cA1 | cA2 | cB1 | cB2 | cC1 | cC2 | cD1 | cD2;
+	wire in_any_card = cA1 | cA2 | cB1 | cB2 | 
+							 cC1 | cC2 | cD1 | cD2 | 
+							 cE1 | cE2 | cF1 | cF2 | 
+							 cG1 | cG2 | cH1 | cH2;
 
 	// Detecta si el pixel está en algún símbolo
-	wire in_any_symbol = simA1 | simA2 | simB1 | simB2 | simC1 | simC2 | simD1 | simD2;
+	wire in_any_symbol = simA1 | simA2 | simB1 | simB2 | simC1 | simC2 | 
+								simD1 | simD2 | simE1 | simE2 | simF1 | simF2 | 
+								simG1 | simG2 | simH1 | simH2;
+
 
 	always_comb begin
 		 // Fondo negro
-		 r = 8'h00;
+		 r = 8'h87;
 		 g = 8'h00;
-		 b = 8'h00;
+		 b = 8'h63;
 
 		 if (in_any_card) begin
 			  // todas las cartas del mismo color (blancas)
@@ -126,7 +198,7 @@ logic [9:0] rightC4 = 10'd480;
 
 			  if (in_any_symbol) begin
 					// todos los símbolos del mismo color (rojo)
-					r = 8'hFF; g = 8'h00; b = 8'h00;
+					r = 8'hFF; g = 8'h0F; b = 8'hE6;
 			  end
 		 end
 	end

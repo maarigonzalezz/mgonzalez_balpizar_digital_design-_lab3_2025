@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Memoria
-Wed Oct 01 00:10:01 2025
+Wed Oct 01 01:36:20 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,22 +13,35 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 10. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD2"
- 11. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD1"
- 12. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC2"
- 13. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC1"
- 14. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB2"
- 15. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB1"
- 16. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA2"
- 17. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"
- 18. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst"
- 19. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst"
- 20. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: vgaController:vgaCont
+ 11. Port Connectivity Checks: "videoGen:videoGen|carta:cartaH2"
+ 12. Port Connectivity Checks: "videoGen:videoGen|carta:cartaH1"
+ 13. Port Connectivity Checks: "videoGen:videoGen|carta:cartaG2"
+ 14. Port Connectivity Checks: "videoGen:videoGen|carta:cartaG1"
+ 15. Port Connectivity Checks: "videoGen:videoGen|carta:cartaF2"
+ 16. Port Connectivity Checks: "videoGen:videoGen|carta:cartaF1"
+ 17. Port Connectivity Checks: "videoGen:videoGen|carta:cartaE2"
+ 18. Port Connectivity Checks: "videoGen:videoGen|carta:cartaE1"
+ 19. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD2"
+ 20. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD1"
+ 21. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC2"
+ 22. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC1"
+ 23. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB2"
+ 24. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB1"
+ 25. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA2"
+ 26. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst"
+ 27. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst"
+ 28. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst"
+ 29. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst"
+ 30. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"
+ 31. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst"
+ 32. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst"
+ 33. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
 
 
 
@@ -55,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 01 00:10:01 2025       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 01 01:36:19 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; vga                                         ;
@@ -65,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 ; Total pins                      ; 31                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
+; Total DSP Blocks                ; 104                                         ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -175,7 +188,13 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processors 8-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -194,68 +213,105 @@ https://fpgasoftware.intel.com/eula.
 ; minus_symbol.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/minus_symbol.sv                 ;         ;
 ; cros_symbol.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cros_symbol.sv                  ;         ;
 ; square_symbol.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/square_symbol.sv                ;         ;
+; hash_symbol.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/hash_symbol.sv                  ;         ;
+; circle_symbol.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/circle_symbol.sv                ;         ;
+; triangle_symbol.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/triangle_symbol.sv              ;         ;
+; invtriangle_symbol.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/invtriangle_symbol.sv           ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 54                ;
-;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 88                ;
-;     -- 7 input functions                    ; 2                 ;
-;     -- 6 input functions                    ; 17                ;
-;     -- 5 input functions                    ; 21                ;
-;     -- 4 input functions                    ; 13                ;
-;     -- <=3 input functions                  ; 35                ;
-;                                             ;                   ;
-; Dedicated logic registers                   ; 21                ;
-;                                             ;                   ;
-; I/O pins                                    ; 31                ;
-;                                             ;                   ;
-; Total DSP Blocks                            ; 0                 ;
-;                                             ;                   ;
-; Maximum fan-out node                        ; pll:vgapll|toggle ;
-; Maximum fan-out                             ; 22                ;
-; Total fan-out                               ; 482               ;
-; Average fan-out                             ; 2.82              ;
-+---------------------------------------------+-------------------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1232                       ;
+;                                             ;                            ;
+; Combinational ALUT usage for logic          ; 2215                       ;
+;     -- 7 input functions                    ; 1                          ;
+;     -- 6 input functions                    ; 248                        ;
+;     -- 5 input functions                    ; 41                         ;
+;     -- 4 input functions                    ; 21                         ;
+;     -- <=3 input functions                  ; 1904                       ;
+;                                             ;                            ;
+; Dedicated logic registers                   ; 21                         ;
+;                                             ;                            ;
+; I/O pins                                    ; 31                         ;
+;                                             ;                            ;
+; Total DSP Blocks                            ; 104                        ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; vgaController:vgaCont|x[1] ;
+; Maximum fan-out                             ; 66                         ;
+; Total fan-out                               ; 8209                       ;
+; Average fan-out                             ; 3.42                       ;
++---------------------------------------------+----------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name   ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+---------------+--------------+
-; |vga                                 ; 88 (0)              ; 21 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |vga                                                           ; vga           ; work         ;
-;    |pll:vgapll|                      ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                                ; pll           ; work         ;
-;    |vgaController:vgaCont|           ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                     ; vgaController ; work         ;
-;    |videoGen:videoGen|               ; 57 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                         ; videoGen      ; work         ;
-;       |carta:cartaA1|                ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                           ; carta         ; work         ;
-;          |plus_symbol:plus_inst|     ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst     ; plus_symbol   ; work         ;
-;          |rectgen:rect_inst|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst         ; rectgen       ; work         ;
-;       |carta:cartaA2|                ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2                           ; carta         ; work         ;
-;          |plus_symbol:plus_inst|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst     ; plus_symbol   ; work         ;
-;          |rectgen:rect_inst|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst         ; rectgen       ; work         ;
-;       |carta:cartaB1|                ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                           ; carta         ; work         ;
-;          |minus_symbol:minus_inst|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst   ; minus_symbol  ; work         ;
-;          |rectgen:rect_inst|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst         ; rectgen       ; work         ;
-;       |carta:cartaB2|                ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2                           ; carta         ; work         ;
-;          |minus_symbol:minus_inst|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst   ; minus_symbol  ; work         ;
-;          |rectgen:rect_inst|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|rectgen:rect_inst         ; rectgen       ; work         ;
-;       |carta:cartaC1|                ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1                           ; carta         ; work         ;
-;          |cros_symbol:cros_inst|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst     ; cros_symbol   ; work         ;
-;          |rectgen:rect_inst|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst         ; rectgen       ; work         ;
-;       |carta:cartaC2|                ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2                           ; carta         ; work         ;
-;          |cros_symbol:cros_inst|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst     ; cros_symbol   ; work         ;
-;       |carta:cartaD1|                ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1                           ; carta         ; work         ;
-;          |square_symbol:square_inst| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst ; square_symbol ; work         ;
-;       |carta:cartaD2|                ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2                           ; carta         ; work         ;
-;          |square_symbol:square_inst| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst ; square_symbol ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+---------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name        ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
+; |vga                                      ; 2215 (0)            ; 21 (0)                    ; 0                 ; 104        ; 31   ; 0            ; |vga                                                                ; vga                ; work         ;
+;    |pll:vgapll|                           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                                     ; pll                ; work         ;
+;    |vgaController:vgaCont|                ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                          ; vgaController      ; work         ;
+;    |videoGen:videoGen|                    ; 2183 (22)           ; 0 (0)                     ; 0                 ; 104        ; 0    ; 0            ; |vga|videoGen:videoGen                                              ; videoGen           ; work         ;
+;       |carta:cartaA1|                     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                                ; carta              ; work         ;
+;          |plus_symbol:plus_inst|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst          ; plus_symbol        ; work         ;
+;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst              ; rectgen            ; work         ;
+;       |carta:cartaA2|                     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2                                ; carta              ; work         ;
+;          |plus_symbol:plus_inst|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst          ; plus_symbol        ; work         ;
+;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst              ; rectgen            ; work         ;
+;       |carta:cartaB1|                     ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                                ; carta              ; work         ;
+;          |minus_symbol:minus_inst|        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst        ; minus_symbol       ; work         ;
+;          |rectgen:rect_inst|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst              ; rectgen            ; work         ;
+;       |carta:cartaB2|                     ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2                                ; carta              ; work         ;
+;          |minus_symbol:minus_inst|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst        ; minus_symbol       ; work         ;
+;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|rectgen:rect_inst              ; rectgen            ; work         ;
+;       |carta:cartaC1|                     ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1                                ; carta              ; work         ;
+;          |cros_symbol:cros_inst|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst          ; cros_symbol        ; work         ;
+;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst              ; rectgen            ; work         ;
+;       |carta:cartaC2|                     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2                                ; carta              ; work         ;
+;          |cros_symbol:cros_inst|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst          ; cros_symbol        ; work         ;
+;       |carta:cartaD1|                     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1                                ; carta              ; work         ;
+;          |square_symbol:square_inst|      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst      ; square_symbol      ; work         ;
+;       |carta:cartaD2|                     ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2                                ; carta              ; work         ;
+;          |square_symbol:square_inst|      ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst      ; square_symbol      ; work         ;
+;       |carta:cartaE1|                     ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE1                                ; carta              ; work         ;
+;          |hash_symbol:hash_inst|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE1|hash_symbol:hash_inst          ; hash_symbol        ; work         ;
+;       |carta:cartaE2|                     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE2                                ; carta              ; work         ;
+;          |hash_symbol:hash_inst|          ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE2|hash_symbol:hash_inst          ; hash_symbol        ; work         ;
+;       |carta:cartaF1|                     ; 105 (0)             ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF1                                ; carta              ; work         ;
+;          |circle_symbol:circle_inst|      ; 105 (105)           ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF1|circle_symbol:circle_inst      ; circle_symbol      ; work         ;
+;       |carta:cartaF2|                     ; 94 (0)              ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF2                                ; carta              ; work         ;
+;          |circle_symbol:circle_inst|      ; 94 (94)             ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF2|circle_symbol:circle_inst      ; circle_symbol      ; work         ;
+;       |carta:cartaG1|                     ; 510 (0)             ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaG1                                ; carta              ; work         ;
+;          |rectgen:rect_inst|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaG1|rectgen:rect_inst              ; rectgen            ; work         ;
+;          |triangle_symbol:tri_inst|       ; 508 (508)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaG1|triangle_symbol:tri_inst       ; triangle_symbol    ; work         ;
+;       |carta:cartaG2|                     ; 464 (0)             ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaG2                                ; carta              ; work         ;
+;          |triangle_symbol:tri_inst|       ; 464 (464)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaG2|triangle_symbol:tri_inst       ; triangle_symbol    ; work         ;
+;       |carta:cartaH1|                     ; 462 (0)             ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaH1                                ; carta              ; work         ;
+;          |invtriangle_symbol:invtri_inst| ; 462 (462)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaH1|invtriangle_symbol:invtri_inst ; invtriangle_symbol ; work         ;
+;       |carta:cartaH2|                     ; 467 (0)             ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaH2                                ; carta              ; work         ;
+;          |invtriangle_symbol:invtri_inst| ; 467 (467)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaH2|invtriangle_symbol:invtri_inst ; invtriangle_symbol ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary    ;
++-----------------------------------+-------------+
+; Statistic                         ; Number Used ;
++-----------------------------------+-------------+
+; Two Independent 18x18             ; 52          ;
+; Sum of two 18x18                  ; 48          ;
+; Independent 27x27                 ; 4           ;
+; Total number of DSP blocks        ; 104         ;
+;                                   ;             ;
+; Fixed Point Signed Multiplier     ; 4           ;
+; Fixed Point Unsigned Multiplier   ; 52          ;
+; Fixed Point Mixed Sign Multiplier ; 96          ;
++-----------------------------------+-------------+
 
 
 +------------------------------------------------------+
@@ -290,6 +346,286 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VMAX           ; 1000001101 ; Unsigned Binary                      ;
 +----------------+------------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaH2" ;
++-------------+-------+----------+----------------------------+
+; Port        ; Type  ; Severity ; Details                    ;
++-------------+-------+----------+----------------------------+
+; left[8..7]  ; Input ; Info     ; Stuck at VCC               ;
+; left[3..1]  ; Input ; Info     ; Stuck at VCC               ;
+; left[9]     ; Input ; Info     ; Stuck at GND               ;
+; left[6]     ; Input ; Info     ; Stuck at GND               ;
+; left[5]     ; Input ; Info     ; Stuck at VCC               ;
+; left[4]     ; Input ; Info     ; Stuck at GND               ;
+; left[0]     ; Input ; Info     ; Stuck at GND               ;
+; right[8..5] ; Input ; Info     ; Stuck at VCC               ;
+; right[4..0] ; Input ; Info     ; Stuck at GND               ;
+; right[9]    ; Input ; Info     ; Stuck at GND               ;
+; top[1..0]   ; Input ; Info     ; Stuck at GND               ;
+; top[9]      ; Input ; Info     ; Stuck at GND               ;
+; top[8]      ; Input ; Info     ; Stuck at VCC               ;
+; top[7]      ; Input ; Info     ; Stuck at GND               ;
+; top[6]      ; Input ; Info     ; Stuck at VCC               ;
+; top[5]      ; Input ; Info     ; Stuck at GND               ;
+; top[4]      ; Input ; Info     ; Stuck at VCC               ;
+; top[3]      ; Input ; Info     ; Stuck at GND               ;
+; top[2]      ; Input ; Info     ; Stuck at VCC               ;
+; bot[8..7]   ; Input ; Info     ; Stuck at VCC               ;
+; bot[4..3]   ; Input ; Info     ; Stuck at VCC               ;
+; bot[6..5]   ; Input ; Info     ; Stuck at GND               ;
+; bot[9]      ; Input ; Info     ; Stuck at GND               ;
+; bot[2]      ; Input ; Info     ; Stuck at GND               ;
+; bot[1]      ; Input ; Info     ; Stuck at VCC               ;
+; bot[0]      ; Input ; Info     ; Stuck at GND               ;
+; symbol_sel  ; Input ; Info     ; Stuck at VCC               ;
++-------------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaH1" ;
++-------------+-------+----------+----------------------------+
+; Port        ; Type  ; Severity ; Details                    ;
++-------------+-------+----------+----------------------------+
+; left[1..0]  ; Input ; Info     ; Stuck at GND               ;
+; left[9]     ; Input ; Info     ; Stuck at GND               ;
+; left[8]     ; Input ; Info     ; Stuck at VCC               ;
+; left[7]     ; Input ; Info     ; Stuck at GND               ;
+; left[6]     ; Input ; Info     ; Stuck at VCC               ;
+; left[5]     ; Input ; Info     ; Stuck at GND               ;
+; left[4]     ; Input ; Info     ; Stuck at VCC               ;
+; left[3]     ; Input ; Info     ; Stuck at GND               ;
+; left[2]     ; Input ; Info     ; Stuck at VCC               ;
+; right[8..7] ; Input ; Info     ; Stuck at VCC               ;
+; right[2..1] ; Input ; Info     ; Stuck at VCC               ;
+; right[6..3] ; Input ; Info     ; Stuck at GND               ;
+; right[9]    ; Input ; Info     ; Stuck at GND               ;
+; right[0]    ; Input ; Info     ; Stuck at GND               ;
+; top[1..0]   ; Input ; Info     ; Stuck at GND               ;
+; top[9]      ; Input ; Info     ; Stuck at GND               ;
+; top[8]      ; Input ; Info     ; Stuck at VCC               ;
+; top[7]      ; Input ; Info     ; Stuck at GND               ;
+; top[6]      ; Input ; Info     ; Stuck at VCC               ;
+; top[5]      ; Input ; Info     ; Stuck at GND               ;
+; top[4]      ; Input ; Info     ; Stuck at VCC               ;
+; top[3]      ; Input ; Info     ; Stuck at GND               ;
+; top[2]      ; Input ; Info     ; Stuck at VCC               ;
+; bot[8..7]   ; Input ; Info     ; Stuck at VCC               ;
+; bot[4..3]   ; Input ; Info     ; Stuck at VCC               ;
+; bot[6..5]   ; Input ; Info     ; Stuck at GND               ;
+; bot[9]      ; Input ; Info     ; Stuck at GND               ;
+; bot[2]      ; Input ; Info     ; Stuck at GND               ;
+; bot[1]      ; Input ; Info     ; Stuck at VCC               ;
+; bot[0]      ; Input ; Info     ; Stuck at GND               ;
+; symbol_sel  ; Input ; Info     ; Stuck at VCC               ;
++-------------+-------+----------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaG2" ;
++------------------+-------+----------+-----------------------+
+; Port             ; Type  ; Severity ; Details               ;
++------------------+-------+----------+-----------------------+
+; left[7..3]       ; Input ; Info     ; Stuck at VCC          ;
+; left[9..8]       ; Input ; Info     ; Stuck at GND          ;
+; left[2]          ; Input ; Info     ; Stuck at GND          ;
+; left[1]          ; Input ; Info     ; Stuck at VCC          ;
+; left[0]          ; Input ; Info     ; Stuck at GND          ;
+; right[3..2]      ; Input ; Info     ; Stuck at VCC          ;
+; right[7..6]      ; Input ; Info     ; Stuck at GND          ;
+; right[1..0]      ; Input ; Info     ; Stuck at GND          ;
+; right[9]         ; Input ; Info     ; Stuck at GND          ;
+; right[8]         ; Input ; Info     ; Stuck at VCC          ;
+; right[5]         ; Input ; Info     ; Stuck at VCC          ;
+; right[4]         ; Input ; Info     ; Stuck at GND          ;
+; top[1..0]        ; Input ; Info     ; Stuck at GND          ;
+; top[9]           ; Input ; Info     ; Stuck at GND          ;
+; top[8]           ; Input ; Info     ; Stuck at VCC          ;
+; top[7]           ; Input ; Info     ; Stuck at GND          ;
+; top[6]           ; Input ; Info     ; Stuck at VCC          ;
+; top[5]           ; Input ; Info     ; Stuck at GND          ;
+; top[4]           ; Input ; Info     ; Stuck at VCC          ;
+; top[3]           ; Input ; Info     ; Stuck at GND          ;
+; top[2]           ; Input ; Info     ; Stuck at VCC          ;
+; bot[8..7]        ; Input ; Info     ; Stuck at VCC          ;
+; bot[4..3]        ; Input ; Info     ; Stuck at VCC          ;
+; bot[6..5]        ; Input ; Info     ; Stuck at GND          ;
+; bot[9]           ; Input ; Info     ; Stuck at GND          ;
+; bot[2]           ; Input ; Info     ; Stuck at GND          ;
+; bot[1]           ; Input ; Info     ; Stuck at VCC          ;
+; bot[0]           ; Input ; Info     ; Stuck at GND          ;
+; symbol_sel[2..1] ; Input ; Info     ; Stuck at VCC          ;
+; symbol_sel[0]    ; Input ; Info     ; Stuck at GND          ;
++------------------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaG1" ;
++------------------+-------+----------+-----------------------+
+; Port             ; Type  ; Severity ; Details               ;
++------------------+-------+----------+-----------------------+
+; left[9..8]       ; Input ; Info     ; Stuck at GND          ;
+; left[4..0]       ; Input ; Info     ; Stuck at GND          ;
+; left[7]          ; Input ; Info     ; Stuck at VCC          ;
+; left[6]          ; Input ; Info     ; Stuck at GND          ;
+; left[5]          ; Input ; Info     ; Stuck at VCC          ;
+; right[7..6]      ; Input ; Info     ; Stuck at VCC          ;
+; right[9..8]      ; Input ; Info     ; Stuck at GND          ;
+; right[3..2]      ; Input ; Info     ; Stuck at GND          ;
+; right[5]         ; Input ; Info     ; Stuck at GND          ;
+; right[4]         ; Input ; Info     ; Stuck at VCC          ;
+; right[1]         ; Input ; Info     ; Stuck at VCC          ;
+; right[0]         ; Input ; Info     ; Stuck at GND          ;
+; top[1..0]        ; Input ; Info     ; Stuck at GND          ;
+; top[9]           ; Input ; Info     ; Stuck at GND          ;
+; top[8]           ; Input ; Info     ; Stuck at VCC          ;
+; top[7]           ; Input ; Info     ; Stuck at GND          ;
+; top[6]           ; Input ; Info     ; Stuck at VCC          ;
+; top[5]           ; Input ; Info     ; Stuck at GND          ;
+; top[4]           ; Input ; Info     ; Stuck at VCC          ;
+; top[3]           ; Input ; Info     ; Stuck at GND          ;
+; top[2]           ; Input ; Info     ; Stuck at VCC          ;
+; bot[8..7]        ; Input ; Info     ; Stuck at VCC          ;
+; bot[4..3]        ; Input ; Info     ; Stuck at VCC          ;
+; bot[6..5]        ; Input ; Info     ; Stuck at GND          ;
+; bot[9]           ; Input ; Info     ; Stuck at GND          ;
+; bot[2]           ; Input ; Info     ; Stuck at GND          ;
+; bot[1]           ; Input ; Info     ; Stuck at VCC          ;
+; bot[0]           ; Input ; Info     ; Stuck at GND          ;
+; symbol_sel[2..1] ; Input ; Info     ; Stuck at VCC          ;
+; symbol_sel[0]    ; Input ; Info     ; Stuck at GND          ;
++------------------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaF2" ;
++---------------+-------+----------+--------------------------+
+; Port          ; Type  ; Severity ; Details                  ;
++---------------+-------+----------+--------------------------+
+; left[8..7]    ; Input ; Info     ; Stuck at VCC             ;
+; left[3..1]    ; Input ; Info     ; Stuck at VCC             ;
+; left[9]       ; Input ; Info     ; Stuck at GND             ;
+; left[6]       ; Input ; Info     ; Stuck at GND             ;
+; left[5]       ; Input ; Info     ; Stuck at VCC             ;
+; left[4]       ; Input ; Info     ; Stuck at GND             ;
+; left[0]       ; Input ; Info     ; Stuck at GND             ;
+; right[8..5]   ; Input ; Info     ; Stuck at VCC             ;
+; right[4..0]   ; Input ; Info     ; Stuck at GND             ;
+; right[9]      ; Input ; Info     ; Stuck at GND             ;
+; top[7..3]     ; Input ; Info     ; Stuck at VCC             ;
+; top[9..8]     ; Input ; Info     ; Stuck at GND             ;
+; top[2]        ; Input ; Info     ; Stuck at GND             ;
+; top[1]        ; Input ; Info     ; Stuck at VCC             ;
+; top[0]        ; Input ; Info     ; Stuck at GND             ;
+; bot[5..0]     ; Input ; Info     ; Stuck at GND             ;
+; bot[9]        ; Input ; Info     ; Stuck at GND             ;
+; bot[8]        ; Input ; Info     ; Stuck at VCC             ;
+; bot[7]        ; Input ; Info     ; Stuck at GND             ;
+; bot[6]        ; Input ; Info     ; Stuck at VCC             ;
+; symbol_sel[2] ; Input ; Info     ; Stuck at VCC             ;
+; symbol_sel[1] ; Input ; Info     ; Stuck at GND             ;
+; symbol_sel[0] ; Input ; Info     ; Stuck at VCC             ;
++---------------+-------+----------+--------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaF1" ;
++---------------+-------+----------+--------------------------+
+; Port          ; Type  ; Severity ; Details                  ;
++---------------+-------+----------+--------------------------+
+; left[1..0]    ; Input ; Info     ; Stuck at GND             ;
+; left[9]       ; Input ; Info     ; Stuck at GND             ;
+; left[8]       ; Input ; Info     ; Stuck at VCC             ;
+; left[7]       ; Input ; Info     ; Stuck at GND             ;
+; left[6]       ; Input ; Info     ; Stuck at VCC             ;
+; left[5]       ; Input ; Info     ; Stuck at GND             ;
+; left[4]       ; Input ; Info     ; Stuck at VCC             ;
+; left[3]       ; Input ; Info     ; Stuck at GND             ;
+; left[2]       ; Input ; Info     ; Stuck at VCC             ;
+; right[8..7]   ; Input ; Info     ; Stuck at VCC             ;
+; right[2..1]   ; Input ; Info     ; Stuck at VCC             ;
+; right[6..3]   ; Input ; Info     ; Stuck at GND             ;
+; right[9]      ; Input ; Info     ; Stuck at GND             ;
+; right[0]      ; Input ; Info     ; Stuck at GND             ;
+; top[7..3]     ; Input ; Info     ; Stuck at VCC             ;
+; top[9..8]     ; Input ; Info     ; Stuck at GND             ;
+; top[2]        ; Input ; Info     ; Stuck at GND             ;
+; top[1]        ; Input ; Info     ; Stuck at VCC             ;
+; top[0]        ; Input ; Info     ; Stuck at GND             ;
+; bot[5..0]     ; Input ; Info     ; Stuck at GND             ;
+; bot[9]        ; Input ; Info     ; Stuck at GND             ;
+; bot[8]        ; Input ; Info     ; Stuck at VCC             ;
+; bot[7]        ; Input ; Info     ; Stuck at GND             ;
+; bot[6]        ; Input ; Info     ; Stuck at VCC             ;
+; symbol_sel[2] ; Input ; Info     ; Stuck at VCC             ;
+; symbol_sel[1] ; Input ; Info     ; Stuck at GND             ;
+; symbol_sel[0] ; Input ; Info     ; Stuck at VCC             ;
++---------------+-------+----------+--------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaE2" ;
++------------------+-------+----------+-----------------------+
+; Port             ; Type  ; Severity ; Details               ;
++------------------+-------+----------+-----------------------+
+; left[7..3]       ; Input ; Info     ; Stuck at VCC          ;
+; left[9..8]       ; Input ; Info     ; Stuck at GND          ;
+; left[2]          ; Input ; Info     ; Stuck at GND          ;
+; left[1]          ; Input ; Info     ; Stuck at VCC          ;
+; left[0]          ; Input ; Info     ; Stuck at GND          ;
+; right[3..2]      ; Input ; Info     ; Stuck at VCC          ;
+; right[7..6]      ; Input ; Info     ; Stuck at GND          ;
+; right[1..0]      ; Input ; Info     ; Stuck at GND          ;
+; right[9]         ; Input ; Info     ; Stuck at GND          ;
+; right[8]         ; Input ; Info     ; Stuck at VCC          ;
+; right[5]         ; Input ; Info     ; Stuck at VCC          ;
+; right[4]         ; Input ; Info     ; Stuck at GND          ;
+; top[7..3]        ; Input ; Info     ; Stuck at VCC          ;
+; top[9..8]        ; Input ; Info     ; Stuck at GND          ;
+; top[2]           ; Input ; Info     ; Stuck at GND          ;
+; top[1]           ; Input ; Info     ; Stuck at VCC          ;
+; top[0]           ; Input ; Info     ; Stuck at GND          ;
+; bot[5..0]        ; Input ; Info     ; Stuck at GND          ;
+; bot[9]           ; Input ; Info     ; Stuck at GND          ;
+; bot[8]           ; Input ; Info     ; Stuck at VCC          ;
+; bot[7]           ; Input ; Info     ; Stuck at GND          ;
+; bot[6]           ; Input ; Info     ; Stuck at VCC          ;
+; symbol_sel[1..0] ; Input ; Info     ; Stuck at GND          ;
+; symbol_sel[2]    ; Input ; Info     ; Stuck at VCC          ;
++------------------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaE1" ;
++------------------+-------+----------+-----------------------+
+; Port             ; Type  ; Severity ; Details               ;
++------------------+-------+----------+-----------------------+
+; left[9..8]       ; Input ; Info     ; Stuck at GND          ;
+; left[4..0]       ; Input ; Info     ; Stuck at GND          ;
+; left[7]          ; Input ; Info     ; Stuck at VCC          ;
+; left[6]          ; Input ; Info     ; Stuck at GND          ;
+; left[5]          ; Input ; Info     ; Stuck at VCC          ;
+; right[7..6]      ; Input ; Info     ; Stuck at VCC          ;
+; right[9..8]      ; Input ; Info     ; Stuck at GND          ;
+; right[3..2]      ; Input ; Info     ; Stuck at GND          ;
+; right[5]         ; Input ; Info     ; Stuck at GND          ;
+; right[4]         ; Input ; Info     ; Stuck at VCC          ;
+; right[1]         ; Input ; Info     ; Stuck at VCC          ;
+; right[0]         ; Input ; Info     ; Stuck at GND          ;
+; top[7..3]        ; Input ; Info     ; Stuck at VCC          ;
+; top[9..8]        ; Input ; Info     ; Stuck at GND          ;
+; top[2]           ; Input ; Info     ; Stuck at GND          ;
+; top[1]           ; Input ; Info     ; Stuck at VCC          ;
+; top[0]           ; Input ; Info     ; Stuck at GND          ;
+; bot[5..0]        ; Input ; Info     ; Stuck at GND          ;
+; bot[9]           ; Input ; Info     ; Stuck at GND          ;
+; bot[8]           ; Input ; Info     ; Stuck at VCC          ;
+; bot[7]           ; Input ; Info     ; Stuck at GND          ;
+; bot[6]           ; Input ; Info     ; Stuck at VCC          ;
+; symbol_sel[1..0] ; Input ; Info     ; Stuck at GND          ;
+; symbol_sel[2]    ; Input ; Info     ; Stuck at VCC          ;
++------------------+-------+----------+-----------------------+
 
 
 +-------------------------------------------------------------+
@@ -518,6 +854,72 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst"                                                                                                                          ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; size       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; size[4..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; size[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; size[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t          ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; t[1]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[0]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst"                                                                                                                                ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; size       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; size[4..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; size[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; size[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t          ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; t[1]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[0]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst"                                                                                                                                 ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; radius       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; radius[3..2] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; radius[9..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; radius[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t            ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[1..0]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]         ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst"                                                                                                                                   ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; size       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; size[4..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; size[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; size[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t          ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[1..0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"                                                                                                                                   ;
 +------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
@@ -605,22 +1007,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 89                          ;
-;     arith             ; 20                          ;
-;         1 data inputs ; 20                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 67                          ;
+; arriav_lcell_comb     ; 2217                        ;
+;     arith             ; 324                         ;
+;         0 data inputs ; 49                          ;
+;         1 data inputs ; 225                         ;
+;         2 data inputs ; 50                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 380                         ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 13                          ;
-;         5 data inputs ; 21                          ;
-;         6 data inputs ; 17                          ;
+;         2 data inputs ; 52                          ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 21                          ;
+;         5 data inputs ; 41                          ;
+;         6 data inputs ; 248                         ;
+;     shared            ; 1512                        ;
+;         0 data inputs ; 408                         ;
+;         2 data inputs ; 360                         ;
+;         3 data inputs ; 744                         ;
+; arriav_mac            ; 104                         ;
 ; boundary_port         ; 31                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.02                        ;
+; Max LUT depth         ; 8.60                        ;
+; Average LUT depth     ; 7.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -629,7 +1039,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -639,7 +1049,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 01 00:09:53 2025
+    Info: Processing started: Wed Oct 01 01:36:08 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -665,6 +1075,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file cros_sy
     Info (12023): Found entity 1: cros_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cros_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file square_symbol.sv
     Info (12023): Found entity 1: square_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/square_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hash_symbol.sv
+    Info (12023): Found entity 1: hash_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/hash_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file circle_symbol.sv
+    Info (12023): Found entity 1: circle_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/circle_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file triangle_symbol.sv
+    Info (12023): Found entity 1: triangle_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/triangle_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file invtriangle_symbol.sv
+    Info (12023): Found entity 1: invtriangle_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/invtriangle_symbol.sv Line: 1
 Info (12127): Elaborating entity "vga" for the top level hierarchy
 Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 10
 Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 13
@@ -675,72 +1093,249 @@ Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(13): object "topS" a
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(14): object "botS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 14
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(15): object "leftS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 15
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(16): object "rightS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 16
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(26): object "topF3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 26
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(27): object "bottomF3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 27
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(29): object "topF4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 29
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(30): object "bottomF4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 30
 Info (12128): Elaborating entity "carta" for hierarchy "videoGen:videoGen|carta:cartaA1" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 52
 Info (12128): Elaborating entity "rectgen" for hierarchy "videoGen:videoGen|carta:cartaA1|rectgen:rect_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 22
 Info (12128): Elaborating entity "plus_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Info (12128): Elaborating entity "minus_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Info (12128): Elaborating entity "cros_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Info (12128): Elaborating entity "square_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|square_symbol:square_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 53
+Info (12128): Elaborating entity "hash_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Info (12128): Elaborating entity "circle_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Info (12128): Elaborating entity "triangle_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Info (12128): Elaborating entity "invtriangle_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
 Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
 Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "t" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
+Warning (12020): Port "radius" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "t" on the entity instantiation of "circle_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
+Warning (12020): Port "size" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "t" on the entity instantiation of "hash_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 61
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "r[0]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "r[1]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "r[2]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "r[7]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "b[1]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "b[5]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "b[6]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "nxt" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 1
-Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2350 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 88 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 4880 megabytes
-    Info: Processing ended: Wed Oct 01 00:10:01 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 2215 logic cells
+    Info (21062): Implemented 104 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 228 warnings
+    Info: Peak virtual memory: 4955 megabytes
+    Info: Processing ended: Wed Oct 01 01:36:20 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:21
 
 

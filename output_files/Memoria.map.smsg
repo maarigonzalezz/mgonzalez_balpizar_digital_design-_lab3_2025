@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at heart_symbol.sv(3): object "cx" differs only in case from object "Cx" in the same scope File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/heart_symbol.sv Line: 3
+Info (10281): Verilog HDL Declaration information at heart_symbol.sv(3): object "cy" differs only in case from object "Cy" in the same scope File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/heart_symbol.sv Line: 3

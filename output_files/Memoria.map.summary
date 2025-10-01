@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Wed Oct 01 00:10:01 2025
+Analysis & Synthesis Status : Successful - Wed Oct 01 01:36:19 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Memoria
 Top-level Entity Name : vga
@@ -8,7 +8,7 @@ Total registers : 21
 Total pins : 31
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 0
+Total DSP Blocks : 104
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
