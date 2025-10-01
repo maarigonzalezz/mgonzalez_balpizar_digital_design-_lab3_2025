@@ -12,29 +12,29 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:39:47 on Sep 30,2025
+# Start time: 23:53:53 on Sep 30,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv 
 # -- Compiling module FSM
 # 
 # Top level modules:
 # 	FSM
-# End time: 23:39:47 on Sep 30,2025, Elapsed time: 0:00:00
+# End time: 23:53:54 on Sep 30,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:39:47 on Sep 30,2025
+# Start time: 23:53:54 on Sep 30,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv 
 # -- Compiling module FSM_tb
 # 
 # Top level modules:
 # 	FSM_tb
-# End time: 23:39:47 on Sep 30,2025, Elapsed time: 0:00:00
+# End time: 23:53:54 on Sep 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FSM_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FSM_tb 
-# Start time: 23:39:47 on Sep 30,2025
+# Start time: 23:53:54 on Sep 30,2025
 # Loading sv_std.std
 # Loading work.FSM_tb
 # Loading work.FSM
@@ -48,5 +48,5 @@
 # ** Note: $stop    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv(118)
 #    Time: 305 ps  Iteration: 1  Instance: /FSM_tb
 # Break in Module FSM_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv line 118
-# End time: 23:39:55 on Sep 30,2025, Elapsed time: 0:00:08
+# End time: 23:54:47 on Sep 30,2025, Elapsed time: 0:00:53
 # Errors: 0, Warnings: 0

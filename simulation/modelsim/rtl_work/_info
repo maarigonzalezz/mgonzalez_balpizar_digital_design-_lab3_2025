@@ -11,30 +11,30 @@ cModel Technology
 Z0 dC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/simulation/modelsim
 vFSM
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1759297187
+Z2 !s110 1759298034
 !i10b 1
-!s100 5V6GIE26b?IkPa:mKN<ik1
+!s100 hSD:C=fK^PA<`d?W5EFQ;3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IDT12O<f5cDe@gGnVcZ6:n2
+IOH7[1FOo8P<MaSU7ohn``1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1759297172
+w1759298018
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv
 !i122 0
-L0 1 183
+L0 1 225
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1759297187.000000
+!s108 1759298033.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3
-Z9 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3
+Z8 tCvgOpt 0
 n@f@s@m
 vFSM_tb
 R1
@@ -55,11 +55,11 @@ R5
 r1
 !s85 0
 31
-R6
+!s108 1759298034.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@f@s@m_tb
