@@ -10,34 +10,45 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/clk_counter_seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:53 on Sep 30,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv 
-# -- Compiling module FSM
+# Start time: 00:33:23 on Oct 01,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/clk_counter_seg.sv 
+# -- Compiling module clk_counter_seg
 # 
 # Top level modules:
-# 	FSM
-# End time: 23:53:54 on Sep 30,2025, Elapsed time: 0:00:01
+# 	clk_counter_seg
+# End time: 00:33:23 on Oct 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_7seg_counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:53:54 on Sep 30,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv 
-# -- Compiling module FSM_tb
+# Start time: 00:33:23 on Oct 01,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_7seg_counter.sv 
+# -- Compiling module top_7seg_counter
 # 
 # Top level modules:
-# 	FSM_tb
-# End time: 23:53:54 on Sep 30,2025, Elapsed time: 0:00:00
+# 	top_7seg_counter
+# End time: 00:33:23 on Oct 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FSM_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FSM_tb 
-# Start time: 23:53:54 on Sep 30,2025
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_7seg_counter_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:33:23 on Oct 01,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_7seg_counter_tb.sv 
+# -- Compiling module top_7seg_counter_tb
+# 
+# Top level modules:
+# 	top_7seg_counter_tb
+# End time: 00:33:24 on Oct 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_7seg_counter_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_7seg_counter_tb 
+# Start time: 00:33:24 on Oct 01,2025
 # Loading sv_std.std
-# Loading work.FSM_tb
-# Loading work.FSM
+# Loading work.top_7seg_counter_tb
+# Loading work.top_7seg_counter
+# Loading work.clk_counter_seg
 # 
 # add wave *
 # view structure
@@ -45,8 +56,34 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv(118)
-#    Time: 305 ps  Iteration: 1  Instance: /FSM_tb
-# Break in Module FSM_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv line 118
-# End time: 23:54:47 on Sep 30,2025, Elapsed time: 0:00:53
+# Time=1200 | seg=1000000 | an=1110
+# Time=2200 | seg=1111001 | an=1110
+# Time=3200 | seg=0100100 | an=1110
+# Time=4200 | seg=0110000 | an=1110
+# Time=5200 | seg=0011001 | an=1110
+# Time=6200 | seg=0010010 | an=1110
+# Time=7200 | seg=0000010 | an=1110
+# Time=8200 | seg=1111000 | an=1110
+# Time=9200 | seg=0000000 | an=1110
+# Time=10200 | seg=0010000 | an=1110
+# Time=11200 | seg=0001000 | an=1110
+# Time=12200 | seg=0000011 | an=1110
+# Time=13200 | seg=1000110 | an=1110
+# Time=14200 | seg=0100001 | an=1110
+# Time=15200 | seg=0000110 | an=1110
+# Time=16200 | seg=0001110 | an=1110
+# Time=17200 | seg=1000000 | an=1110
+# Time=18200 | seg=1111001 | an=1110
+# Time=19200 | seg=0100100 | an=1110
+# Time=20200 | seg=0110000 | an=1110
+# ** Note: $stop    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_7seg_counter_tb.sv(56)
+#    Time: 20200 ps  Iteration: 0  Instance: /top_7seg_counter_tb
+# Break in Module top_7seg_counter_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_7seg_counter_tb.sv line 56
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 00:34:58 on Oct 01,2025, Elapsed time: 0:01:34
 # Errors: 0, Warnings: 0
