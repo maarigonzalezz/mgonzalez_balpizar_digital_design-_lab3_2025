@@ -1,6 +1,9 @@
+<<<<<<< Updated upstream
 // -------------------------
 // Módulo Top Level
 // -------------------------
+=======
+>>>>>>> Stashed changes
 module top_7seg_counter (
     input  logic clk,       // Reloj principal (ej: 50 MHz en FPGA real)
     input  logic rst,       // Reset asíncrono

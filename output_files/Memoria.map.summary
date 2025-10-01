@@ -1,8 +1,13 @@
+<<<<<<< Updated upstream
 Analysis & Elaboration Status : Successful - Wed Oct 01 00:33:14 2025
+=======
+Analysis & Synthesis Status : Successful - Wed Oct 01 02:08:09 2025
+>>>>>>> Stashed changes
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Memoria
 Top-level Entity Name : top_7seg_counter
 Family : Cyclone V
+<<<<<<< Updated upstream
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
 Total pins : N/A until Partition Merge
@@ -10,3 +15,17 @@ Total virtual pins : N/A until Partition Merge
 Total block memory bits : N/A until Partition Merge
 Total PLLs : N/A until Partition Merge
 Total DLLs : N/A until Partition Merge
+=======
+Logic utilization (in ALMs) : N/A
+Total registers : 52
+Total pins : 39
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 104
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
+>>>>>>> Stashed changes
