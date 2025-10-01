@@ -96,4 +96,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE carta.sv
 set_global_assignment -name SYSTEMVERILOG_FILE plus_symbol.sv
 set_global_assignment -name SYSTEMVERILOG_FILE minus_symbol.sv
 set_global_assignment -name SYSTEMVERILOG_FILE cros_symbol.sv
+set_global_assignment -name SYSTEMVERILOG_FILE square_symbol.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,5 +1,5 @@
 Fitter report for Memoria
-Tue Sep 30 23:38:36 2025
+Wed Oct 01 00:10:41 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -62,15 +62,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Sep 30 23:38:36 2025       ;
+; Fitter Status                   ; Successful - Wed Oct 01 00:10:41 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; vga                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 48 / 41,910 ( < 1 % )                       ;
-; Total registers                 ; 29                                          ;
+; Logic utilization (in ALMs)     ; 55 / 41,910 ( < 1 % )                       ;
+; Total registers                 ; 24                                          ;
 ; Total pins                      ; 31 / 499 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
@@ -170,14 +170,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
 ; Node                       ; Action     ; Operation                                         ; Reason                   ; Node Port ; Node Port Name ; Destination Node                     ; Destination Port ; Destination Port Name ;
 +----------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
-; vgaController:vgaCont|x[5] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|x[5]~DUPLICATE ;                  ;                       ;
-; vgaController:vgaCont|x[7] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|x[7]~DUPLICATE ;                  ;                       ;
-; vgaController:vgaCont|x[8] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|x[8]~DUPLICATE ;                  ;                       ;
-; vgaController:vgaCont|x[9] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|x[9]~DUPLICATE ;                  ;                       ;
-; vgaController:vgaCont|y[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|y[0]~DUPLICATE ;                  ;                       ;
-; vgaController:vgaCont|y[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|y[1]~DUPLICATE ;                  ;                       ;
+; vgaController:vgaCont|x[4] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|x[4]~DUPLICATE ;                  ;                       ;
 ; vgaController:vgaCont|y[3] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|y[3]~DUPLICATE ;                  ;                       ;
-; vgaController:vgaCont|y[9] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|y[9]~DUPLICATE ;                  ;                       ;
+; vgaController:vgaCont|y[8] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; vgaController:vgaCont|y[8]~DUPLICATE ;                  ;                       ;
 +----------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
 
 
@@ -187,8 +182,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 162 ) ; 0.00 % ( 0 / 162 )         ; 0.00 % ( 0 / 162 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 162 ) ; 0.00 % ( 0 / 162 )         ; 0.00 % ( 0 / 162 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 172 ) ; 0.00 % ( 0 / 172 )         ; 0.00 % ( 0 / 172 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 172 ) ; 0.00 % ( 0 / 172 )         ; 0.00 % ( 0 / 172 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -211,7 +206,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 162 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 172 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -227,14 +222,14 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 48 / 41,910        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 48                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 51 / 41,910        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 6                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 40                 ;       ;
-;         [c] ALMs used for registers                         ; 5                  ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 55 / 41,910        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 55                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 55 / 41,910        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 8                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 44                 ;       ;
+;         [c] ALMs used for registers                         ; 3                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 41,910         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41,910         ; 0 %   ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -247,21 +242,21 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 ;     -- Logic LABs                                           ; 7                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 79                 ;       ;
-;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 14                 ;       ;
-;     -- 5 input functions                                    ; 20                 ;       ;
-;     -- 4 input functions                                    ; 12                 ;       ;
-;     -- <=3 input functions                                  ; 33                 ;       ;
+; Combinational ALUT usage for logic                          ; 89                 ;       ;
+;     -- 7 input functions                                    ; 2                  ;       ;
+;     -- 6 input functions                                    ; 17                 ;       ;
+;     -- 5 input functions                                    ; 21                 ;       ;
+;     -- 4 input functions                                    ; 13                 ;       ;
+;     -- <=3 input functions                                  ; 36                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 29                 ;       ;
+; Dedicated logic registers                                   ; 24                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 21 / 83,820        ; < 1 % ;
-;         -- Secondary logic registers                        ; 8 / 83,820         ; < 1 % ;
+;         -- Secondary logic registers                        ; 3 / 83,820         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 21                 ;       ;
-;         -- Routing optimization registers                   ; 8                  ;       ;
+;         -- Routing optimization registers                   ; 3                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 31 / 499           ; 6 %   ;
@@ -323,11 +318,11 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.9% / 1.1% / 0.3% ;       ;
-; Maximum fan-out                                             ; 30                 ;       ;
-; Highest non-global fan-out                                  ; 30                 ;       ;
-; Total fan-out                                               ; 461                ;       ;
-; Average fan-out                                             ; 2.71               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 1.0% / 1.2% / 0.4% ;       ;
+; Maximum fan-out                                             ; 25                 ;       ;
+; Highest non-global fan-out                                  ; 25                 ;       ;
+; Total fan-out                                               ; 493                ;       ;
+; Average fan-out                                             ; 2.82               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -336,14 +331,14 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 48 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 48                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 51 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 6                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 40                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 5                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 55 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 55                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 55 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 8                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 44                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 3                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -356,12 +351,12 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 ;     -- Logic LABs                                           ; 7                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 79                   ; 0                              ;
-;     -- 7 input functions                                    ; 0                    ; 0                              ;
-;     -- 6 input functions                                    ; 14                   ; 0                              ;
-;     -- 5 input functions                                    ; 20                   ; 0                              ;
-;     -- 4 input functions                                    ; 12                   ; 0                              ;
-;     -- <=3 input functions                                  ; 33                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 89                   ; 0                              ;
+;     -- 7 input functions                                    ; 2                    ; 0                              ;
+;     -- 6 input functions                                    ; 17                   ; 0                              ;
+;     -- 5 input functions                                    ; 21                   ; 0                              ;
+;     -- 4 input functions                                    ; 13                   ; 0                              ;
+;     -- <=3 input functions                                  ; 36                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
@@ -370,10 +365,10 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 21 / 83820 ( < 1 % ) ; 0 / 83820 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 8 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 3 / 83820 ( < 1 % )  ; 0 / 83820 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 21                   ; 0                              ;
-;         -- Routing optimization registers                   ; 8                    ; 0                              ;
+;         -- Routing optimization registers                   ; 3                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -389,8 +384,8 @@ The pin-out file can be found in C:/Users/gonza/Desktop/lab3 taller/mgonzalez_ba
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 461                  ; 0                              ;
-;     -- Registered Connections                               ; 250                  ; 0                              ;
+;     -- Total Connections                                    ; 493                  ; 0                              ;
+;     -- Registered Connections                               ; 282                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -1431,31 +1426,37 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                     ;
-+------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node         ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name   ; Library Name ;
-+------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------+---------------+--------------+
-; |vga                               ; 47.5 (0.5)           ; 50.0 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 79 (1)              ; 29 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 31   ; 0            ; |vga                                                         ; vga           ; work         ;
-;    |pll:vgapll|                    ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                              ; pll           ; work         ;
-;    |vgaController:vgaCont|         ; 20.7 (20.7)          ; 23.4 (23.4)                      ; 2.7 (2.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 28 (28)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                   ; vgaController ; work         ;
-;    |videoGen:videoGen|             ; 25.6 (7.3)           ; 25.6 (7.3)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 47 (12)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                       ; videoGen      ; work         ;
-;       |carta:cartaA1|              ; 7.3 (0.0)            ; 7.8 (0.0)                        ; 0.6 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                         ; carta         ; work         ;
-;          |plus_symbol:plus_inst|   ; 5.8 (5.8)            ; 6.3 (6.3)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst   ; plus_symbol   ; work         ;
-;          |rectgen:rect_inst|       ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst       ; rectgen       ; work         ;
-;       |carta:cartaA2|              ; 3.0 (0.0)            ; 3.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2                         ; carta         ; work         ;
-;          |plus_symbol:plus_inst|   ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst   ; plus_symbol   ; work         ;
-;          |rectgen:rect_inst|       ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst       ; rectgen       ; work         ;
-;       |carta:cartaB1|              ; 0.7 (0.0)            ; 1.0 (0.0)                        ; 0.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                         ; carta         ; work         ;
-;          |minus_symbol:minus_inst| ; 0.7 (0.7)            ; 1.0 (1.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst ; minus_symbol  ; work         ;
-;       |carta:cartaB2|              ; 0.6 (0.0)            ; 1.0 (0.0)                        ; 0.4 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2                         ; carta         ; work         ;
-;          |minus_symbol:minus_inst| ; 0.6 (0.6)            ; 1.0 (1.0)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst ; minus_symbol  ; work         ;
-;       |carta:cartaC1|              ; 2.5 (0.0)            ; 3.0 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1                         ; carta         ; work         ;
-;          |cros_symbol:cros_inst|   ; 2.0 (2.0)            ; 2.7 (2.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst   ; cros_symbol   ; work         ;
-;          |rectgen:rect_inst|       ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst       ; rectgen       ; work         ;
-;       |carta:cartaC2|              ; 1.3 (0.0)            ; 2.5 (0.0)                        ; 1.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2                         ; carta         ; work         ;
-;          |cros_symbol:cros_inst|   ; 1.3 (1.3)            ; 2.5 (2.5)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst   ; cros_symbol   ; work         ;
-+------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------+---------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                         ;
++--------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node           ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name   ; Library Name ;
++--------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------+---------------+--------------+
+; |vga                                 ; 54.5 (0.5)           ; 54.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 89 (1)              ; 24 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 31   ; 0            ; |vga                                                           ; vga           ; work         ;
+;    |pll:vgapll|                      ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                                ; pll           ; work         ;
+;    |vgaController:vgaCont|           ; 20.4 (20.4)          ; 20.4 (20.4)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 23 (23)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                     ; vgaController ; work         ;
+;    |videoGen:videoGen|               ; 32.5 (7.8)           ; 32.7 (7.8)                       ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 57 (11)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                         ; videoGen      ; work         ;
+;       |carta:cartaA1|                ; 6.5 (0.0)            ; 6.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                           ; carta         ; work         ;
+;          |plus_symbol:plus_inst|     ; 6.0 (6.0)            ; 6.0 (6.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (13)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst     ; plus_symbol   ; work         ;
+;          |rectgen:rect_inst|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst         ; rectgen       ; work         ;
+;       |carta:cartaA2|                ; 3.6 (0.0)            ; 3.6 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2                           ; carta         ; work         ;
+;          |plus_symbol:plus_inst|     ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst     ; plus_symbol   ; work         ;
+;          |rectgen:rect_inst|         ; 1.0 (1.0)            ; 1.3 (1.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst         ; rectgen       ; work         ;
+;       |carta:cartaB1|                ; 2.4 (0.0)            ; 2.8 (0.0)                        ; 0.4 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                           ; carta         ; work         ;
+;          |minus_symbol:minus_inst|   ; 0.9 (0.9)            ; 1.3 (1.3)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst   ; minus_symbol  ; work         ;
+;          |rectgen:rect_inst|         ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst         ; rectgen       ; work         ;
+;       |carta:cartaB2|                ; 1.0 (0.0)            ; 1.8 (0.0)                        ; 0.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2                           ; carta         ; work         ;
+;          |minus_symbol:minus_inst|   ; 0.5 (0.5)            ; 0.8 (0.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst   ; minus_symbol  ; work         ;
+;          |rectgen:rect_inst|         ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|rectgen:rect_inst         ; rectgen       ; work         ;
+;       |carta:cartaC1|                ; 2.5 (0.0)            ; 2.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1                           ; carta         ; work         ;
+;          |cros_symbol:cros_inst|     ; 2.0 (2.0)            ; 2.2 (2.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst     ; cros_symbol   ; work         ;
+;          |rectgen:rect_inst|         ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst         ; rectgen       ; work         ;
+;       |carta:cartaC2|                ; 2.1 (0.0)            ; 2.1 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2                           ; carta         ; work         ;
+;          |cros_symbol:cros_inst|     ; 2.1 (2.1)            ; 2.1 (2.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst     ; cros_symbol   ; work         ;
+;       |carta:cartaD1|                ; 3.7 (0.0)            ; 3.7 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1                           ; carta         ; work         ;
+;          |square_symbol:square_inst| ; 3.7 (3.7)            ; 3.7 (3.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst ; square_symbol ; work         ;
+;       |carta:cartaD2|                ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2                           ; carta         ; work         ;
+;          |square_symbol:square_inst| ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst ; square_symbol ; work         ;
++--------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1515,9 +1516,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                              ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 ; clk                               ; PIN_AF14           ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; pll:vgapll|toggle                 ; FF_X60_Y2_N35      ; 30      ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; vgaController:vgaCont|LessThan0~0 ; LABCELL_X61_Y2_N42 ; 28      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; vgaController:vgaCont|LessThan1~1 ; LABCELL_X60_Y2_N6  ; 14      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; pll:vgapll|toggle                 ; FF_X64_Y1_N35      ; 25      ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; vgaController:vgaCont|LessThan0~0 ; LABCELL_X66_Y1_N54 ; 23      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; vgaController:vgaCont|LessThan1~1 ; LABCELL_X64_Y1_N6  ; 12      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1526,14 +1527,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 148 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 160 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 3 / 13,420 ( < 1 % )    ;
-; C2 interconnects                            ; 18 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 15 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 20 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 17 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 41 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 39 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 0 / 16 ( 0 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1589,12 +1590,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 46 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 40 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 12 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 12 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 59 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 36 / 266,960 ( < 1 % )  ;
+; R14 interconnects                           ; 15 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 17 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 62 / 130,992 ( < 1 % )  ;
+; R6 interconnects                            ; 52 / 266,960 ( < 1 % )  ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )         ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1741,8 +1742,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+----------------------+-------------------+
 ; Source Clock(s)   ; Destination Clock(s) ; Delay Added in ns ;
 +-------------------+----------------------+-------------------+
-; pll:vgapll|toggle ; pll:vgapll|toggle    ; 8.6               ;
-; clk               ; clk                  ; 5.2               ;
+; pll:vgapll|toggle ; pll:vgapll|toggle    ; 7.3               ;
+; clk               ; clk                  ; 4.7               ;
 +-------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1753,27 +1754,27 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------+----------------------------+-------------------+
 ; Source Register            ; Destination Register       ; Delay Added in ns ;
 +----------------------------+----------------------------+-------------------+
-; pll:vgapll|toggle          ; pll:vgapll|toggle          ; 5.172             ;
-; vgaController:vgaCont|y[6] ; vgaController:vgaCont|y[0] ; 0.810             ;
-; vgaController:vgaCont|y[7] ; vgaController:vgaCont|y[0] ; 0.807             ;
-; vgaController:vgaCont|y[4] ; vgaController:vgaCont|y[0] ; 0.749             ;
-; vgaController:vgaCont|x[9] ; vgaController:vgaCont|x[0] ; 0.697             ;
-; vgaController:vgaCont|y[5] ; vgaController:vgaCont|y[0] ; 0.672             ;
-; vgaController:vgaCont|x[6] ; vgaController:vgaCont|x[0] ; 0.671             ;
-; vgaController:vgaCont|x[5] ; vgaController:vgaCont|x[0] ; 0.667             ;
-; vgaController:vgaCont|x[8] ; vgaController:vgaCont|x[0] ; 0.664             ;
-; vgaController:vgaCont|x[7] ; vgaController:vgaCont|x[0] ; 0.646             ;
-; vgaController:vgaCont|y[9] ; vgaController:vgaCont|y[0] ; 0.566             ;
-; vgaController:vgaCont|y[3] ; vgaController:vgaCont|y[0] ; 0.487             ;
-; vgaController:vgaCont|y[1] ; vgaController:vgaCont|y[0] ; 0.466             ;
-; vgaController:vgaCont|y[2] ; vgaController:vgaCont|y[0] ; 0.465             ;
-; vgaController:vgaCont|y[8] ; vgaController:vgaCont|y[8] ; 0.321             ;
-; vgaController:vgaCont|y[0] ; vgaController:vgaCont|y[0] ; 0.317             ;
-; vgaController:vgaCont|x[3] ; vgaController:vgaCont|x[3] ; 0.302             ;
-; vgaController:vgaCont|x[2] ; vgaController:vgaCont|x[2] ; 0.295             ;
-; vgaController:vgaCont|x[4] ; vgaController:vgaCont|x[4] ; 0.290             ;
-; vgaController:vgaCont|x[1] ; vgaController:vgaCont|x[1] ; 0.282             ;
-; vgaController:vgaCont|x[0] ; vgaController:vgaCont|x[1] ; 0.269             ;
+; pll:vgapll|toggle          ; pll:vgapll|toggle          ; 4.748             ;
+; vgaController:vgaCont|y[7] ; vgaController:vgaCont|y[2] ; 0.758             ;
+; vgaController:vgaCont|y[6] ; vgaController:vgaCont|y[2] ; 0.756             ;
+; vgaController:vgaCont|y[9] ; vgaController:vgaCont|y[2] ; 0.718             ;
+; vgaController:vgaCont|y[4] ; vgaController:vgaCont|y[2] ; 0.700             ;
+; vgaController:vgaCont|x[9] ; vgaController:vgaCont|x[9] ; 0.681             ;
+; vgaController:vgaCont|x[6] ; vgaController:vgaCont|x[9] ; 0.660             ;
+; vgaController:vgaCont|x[5] ; vgaController:vgaCont|x[9] ; 0.660             ;
+; vgaController:vgaCont|x[8] ; vgaController:vgaCont|x[9] ; 0.650             ;
+; vgaController:vgaCont|x[7] ; vgaController:vgaCont|x[9] ; 0.632             ;
+; vgaController:vgaCont|y[5] ; vgaController:vgaCont|y[2] ; 0.627             ;
+; vgaController:vgaCont|y[3] ; vgaController:vgaCont|y[2] ; 0.436             ;
+; vgaController:vgaCont|y[2] ; vgaController:vgaCont|y[2] ; 0.419             ;
+; vgaController:vgaCont|y[1] ; vgaController:vgaCont|y[2] ; 0.414             ;
+; vgaController:vgaCont|y[8] ; vgaController:vgaCont|y[2] ; 0.406             ;
+; vgaController:vgaCont|y[0] ; vgaController:vgaCont|y[2] ; 0.389             ;
+; vgaController:vgaCont|x[3] ; vgaController:vgaCont|x[3] ; 0.296             ;
+; vgaController:vgaCont|x[1] ; vgaController:vgaCont|x[1] ; 0.295             ;
+; vgaController:vgaCont|x[2] ; vgaController:vgaCont|x[2] ; 0.281             ;
+; vgaController:vgaCont|x[4] ; vgaController:vgaCont|x[5] ; 0.264             ;
+; vgaController:vgaCont|x[0] ; vgaController:vgaCont|x[1] ; 0.249             ;
 +----------------------------+----------------------------+-------------------+
 Note: This table only shows the top 21 path(s) that have the largest delay added for hold.
 
@@ -1799,7 +1800,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:10
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:07
@@ -1811,8 +1812,8 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X56_Y0 to location X66_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.49 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1820,10 +1821,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/output_files/Memoria.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 7100 megabytes
-    Info: Processing ended: Tue Sep 30 23:38:37 2025
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:02:23
+    Info: Peak virtual memory: 7101 megabytes
+    Info: Processing ended: Wed Oct 01 00:10:42 2025
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:02:27
 
 
 +----------------------------+

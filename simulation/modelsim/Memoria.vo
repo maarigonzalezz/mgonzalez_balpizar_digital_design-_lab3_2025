@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "09/30/2025 23:38:51"
+// DATE "10/01/2025 00:10:57"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -102,45 +102,39 @@ wire \clk~input_o ;
 wire \vgapll|toggle~0_combout ;
 wire \vgapll|toggle~q ;
 wire \vgaCont|Add0~37_sumout ;
-wire \vgaCont|x[9]~DUPLICATE_q ;
+wire \vgaCont|Add0~22 ;
+wire \vgaCont|Add0~17_sumout ;
 wire \vgaCont|Add0~18 ;
 wire \vgaCont|Add0~1_sumout ;
 wire \vgaCont|LessThan0~0_combout ;
 wire \vgaCont|Add0~38 ;
-wire \vgaCont|Add0~29_sumout ;
-wire \vgaCont|Add0~30 ;
-wire \vgaCont|Add0~33_sumout ;
-wire \vgaCont|Add0~34 ;
 wire \vgaCont|Add0~25_sumout ;
 wire \vgaCont|Add0~26 ;
+wire \vgaCont|Add0~33_sumout ;
+wire \vgaCont|Add0~34 ;
+wire \vgaCont|Add0~29_sumout ;
+wire \vgaCont|Add0~30 ;
+wire \vgaCont|Add0~9_sumout ;
+wire \vgaCont|x[4]~DUPLICATE_q ;
+wire \vgaCont|Add0~10 ;
+wire \vgaCont|Add0~13_sumout ;
+wire \vgaCont|Add0~14 ;
 wire \vgaCont|Add0~5_sumout ;
 wire \vgaCont|Add0~6 ;
-wire \vgaCont|Add0~13_sumout ;
-wire \vgaCont|x[5]~DUPLICATE_q ;
-wire \vgaCont|Add0~14 ;
-wire \vgaCont|Add0~9_sumout ;
-wire \vgaCont|Add0~10 ;
 wire \vgaCont|Add0~21_sumout ;
-wire \vgaCont|x[7]~DUPLICATE_q ;
-wire \vgaCont|Add0~22 ;
-wire \vgaCont|Add0~17_sumout ;
-wire \vgaCont|x[8]~DUPLICATE_q ;
 wire \vgaCont|hsync~0_combout ;
 wire \vgaCont|Add1~37_sumout ;
-wire \vgaCont|Add1~30 ;
-wire \vgaCont|Add1~25_sumout ;
 wire \vgaCont|Add1~26 ;
 wire \vgaCont|Add1~17_sumout ;
 wire \vgaCont|Add1~18 ;
 wire \vgaCont|Add1~13_sumout ;
 wire \vgaCont|Add1~14 ;
 wire \vgaCont|Add1~9_sumout ;
-wire \vgaCont|y[9]~DUPLICATE_q ;
 wire \vgaCont|Add1~10 ;
 wire \vgaCont|Add1~5_sumout ;
+wire \vgaCont|y[8]~DUPLICATE_q ;
 wire \vgaCont|Add1~6 ;
 wire \vgaCont|Add1~21_sumout ;
-wire \vgaCont|y[0]~DUPLICATE_q ;
 wire \vgaCont|LessThan1~0_combout ;
 wire \vgaCont|LessThan1~1_combout ;
 wire \vgaCont|Add1~38 ;
@@ -150,59 +144,70 @@ wire \vgaCont|Add1~1_sumout ;
 wire \vgaCont|Add1~2 ;
 wire \vgaCont|Add1~29_sumout ;
 wire \vgaCont|y[3]~DUPLICATE_q ;
+wire \vgaCont|Add1~30 ;
+wire \vgaCont|Add1~25_sumout ;
 wire \vgaCont|vsync~0_combout ;
 wire \vgaCont|LessThan7~0_combout ;
 wire \vgaCont|vsync~1_combout ;
 wire \vgaCont|sync_b~combout ;
 wire \vgaCont|blank_b~0_combout ;
-wire \videoGen|cartaA1|rect_inst|LessThan1~1_combout ;
-wire \videoGen|comb~1_combout ;
-wire \videoGen|comb~2_combout ;
 wire \videoGen|cartaA2|rect_inst|LessThan1~0_combout ;
-wire \videoGen|cartaA1|rect_inst|LessThan1~0_combout ;
-wire \videoGen|cartaA1|plus_inst|LessThan5~0_combout ;
-wire \videoGen|comb~0_combout ;
-wire \vgaCont|y[1]~DUPLICATE_q ;
+wire \videoGen|cartaA2|rect_inst|LessThan0~0_combout ;
+wire \videoGen|comb~1_combout ;
 wire \videoGen|cartaC1|rect_inst|LessThan3~0_combout ;
-wire \videoGen|in_any_card~1_combout ;
-wire \videoGen|in_any_card~3_combout ;
-wire \vgaCont|LessThan5~0_combout ;
-wire \videoGen|in_any_card~2_combout ;
 wire \videoGen|in_any_card~0_combout ;
-wire \videoGen|cartaA2|plus_inst|LessThan5~1_combout ;
-wire \videoGen|cartaA2|plus_inst|LessThan5~0_combout ;
+wire \videoGen|cartaA1|rect_inst|LessThan1~0_combout ;
+wire \videoGen|comb~2_combout ;
+wire \vgaCont|LessThan5~0_combout ;
+wire \videoGen|comb~0_combout ;
 wire \videoGen|comb~3_combout ;
-wire \videoGen|in_any_card~4_combout ;
-wire \videoGen|cartaA1|plus_inst|LessThan2~1_combout ;
-wire \videoGen|cartaA1|plus_inst|LessThan2~0_combout ;
-wire \videoGen|cartaA1|plus_inst|in_hbar~1_combout ;
+wire \videoGen|cartaB1|rect_inst|LessThan1~0_combout ;
+wire \videoGen|cartaB2|rect_inst|LessThan0~0_combout ;
+wire \videoGen|cartaB1|rect_inst|LessThan0~0_combout ;
+wire \videoGen|in_any_card~2_combout ;
+wire \videoGen|in_any_card~1_combout ;
+wire \videoGen|cartaD1|square_inst|LessThan2~0_combout ;
+wire \videoGen|cartaD1|square_inst|LessThan2~1_combout ;
+wire \videoGen|cartaC1|cros_inst|LessThan3~0_combout ;
 wire \videoGen|cartaA2|plus_inst|in_hbar~0_combout ;
-wire \videoGen|cartaA2|plus_inst|in_hbar~1_combout ;
-wire \videoGen|cartaB1|minus_inst|inminus~0_combout ;
-wire \videoGen|cartaB1|minus_inst|inminus~1_combout ;
+wire \videoGen|comb~4_combout ;
+wire \videoGen|cartaD1|square_inst|LessThan3~0_combout ;
+wire \videoGen|cartaD1|square_inst|insquare~0_combout ;
+wire \videoGen|cartaA1|plus_inst|LessThan2~0_combout ;
+wire \videoGen|cartaA1|plus_inst|LessThan6~1_combout ;
+wire \videoGen|cartaA1|plus_inst|in_hbar~2_combout ;
+wire \videoGen|cartaA1|plus_inst|LessThan5~0_combout ;
 wire \videoGen|cartaB2|minus_inst|inminus~0_combout ;
 wire \videoGen|cartaB2|minus_inst|inminus~1_combout ;
+wire \videoGen|cartaB1|minus_inst|inminus~0_combout ;
+wire \videoGen|cartaB1|minus_inst|inminus~1_combout ;
+wire \videoGen|cartaA2|plus_inst|in_hbar~1_combout ;
+wire \videoGen|cartaA2|plus_inst|in_hbar~2_combout ;
 wire \videoGen|g[0]~1_combout ;
+wire \videoGen|cartaA2|plus_inst|LessThan4~0_combout ;
 wire \videoGen|cartaA1|plus_inst|in_hbar~0_combout ;
-wire \videoGen|cartaA1|plus_inst|in_hbar~2_combout ;
+wire \videoGen|cartaD1|square_inst|insquare~1_combout ;
+wire \videoGen|cartaC1|cros_inst|LessThan2~0_combout ;
+wire \videoGen|cartaC2|cros_inst|incros~2_combout ;
+wire \videoGen|cartaC1|cros_inst|LessThan3~1_combout ;
+wire \videoGen|cartaC2|cros_inst|incros~3_combout ;
+wire \videoGen|cartaA1|plus_inst|LessThan4~0_combout ;
+wire \videoGen|cartaA1|plus_inst|in_hbar~1_combout ;
+wire \videoGen|cartaC1|cros_inst|incros~0_combout ;
+wire \videoGen|cartaC2|cros_inst|incros~0_combout ;
+wire \videoGen|cartaA2|plus_inst|LessThan5~0_combout ;
+wire \videoGen|cartaA2|plus_inst|LessThan4~1_combout ;
+wire \videoGen|cartaC2|cros_inst|incros~1_combout ;
 wire \videoGen|cartaA1|plus_inst|LessThan7~0_combout ;
 wire \videoGen|cartaA1|plus_inst|LessThan6~0_combout ;
 wire \videoGen|cartaA1|plus_inst|in_vbar~0_combout ;
-wire \videoGen|cartaC1|cros_inst|LessThan2~0_combout ;
-wire \videoGen|cartaC1|cros_inst|LessThan2~1_combout ;
-wire \videoGen|cartaC1|cros_inst|LessThan3~0_combout ;
-wire \videoGen|cartaC2|cros_inst|incros~2_combout ;
-wire \videoGen|cartaC2|cros_inst|incros~3_combout ;
-wire \videoGen|cartaA2|plus_inst|LessThan5~2_combout ;
-wire \videoGen|cartaC2|cros_inst|incros~0_combout ;
-wire \videoGen|cartaA2|plus_inst|LessThan4~0_combout ;
-wire \videoGen|cartaA2|plus_inst|LessThan4~1_combout ;
-wire \videoGen|cartaC2|cros_inst|incros~1_combout ;
-wire \videoGen|cartaA1|plus_inst|LessThan4~1_combout ;
-wire \videoGen|cartaC1|cros_inst|incros~0_combout ;
-wire \videoGen|cartaA1|plus_inst|LessThan4~0_combout ;
-wire \videoGen|cartaC1|cros_inst|incros~1_combout ;
+wire \videoGen|cartaA1|plus_inst|in_hbar~3_combout ;
+wire \videoGen|cartaA1|plus_inst|in_hbar~4_combout ;
+wire \videoGen|cartaA1|plus_inst|in_hbar~5_combout ;
 wire \videoGen|g[0]~0_combout ;
+wire \videoGen|cartaD2|square_inst|insquare~0_combout ;
+wire \videoGen|cartaD2|square_inst|insquare~1_combout ;
+wire \videoGen|cartaD2|square_inst|insquare~2_combout ;
 wire \videoGen|g[0]~2_combout ;
 wire [9:0] \vgaCont|x ;
 wire [9:0] \vgaCont|y ;
@@ -290,7 +295,7 @@ defparam \blank_b~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X82_Y0_N93
 cyclonev_io_obuf \r[0]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -306,7 +311,7 @@ defparam \r[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X82_Y0_N76
 cyclonev_io_obuf \r[1]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -322,7 +327,7 @@ defparam \r[1]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N53
 cyclonev_io_obuf \r[2]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -338,7 +343,7 @@ defparam \r[2]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N36
 cyclonev_io_obuf \r[3]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -354,7 +359,7 @@ defparam \r[3]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X84_Y0_N53
 cyclonev_io_obuf \r[4]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -370,7 +375,7 @@ defparam \r[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X86_Y0_N53
 cyclonev_io_obuf \r[5]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -386,7 +391,7 @@ defparam \r[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X84_Y0_N36
 cyclonev_io_obuf \r[6]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -402,7 +407,7 @@ defparam \r[6]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X76_Y0_N36
 cyclonev_io_obuf \r[7]~output (
-	.i(\videoGen|in_any_card~4_combout ),
+	.i(\videoGen|in_any_card~1_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -683,7 +688,7 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X60_Y2_N57
+// Location: LABCELL_X67_Y1_N24
 cyclonev_lcell_comb \vgapll|toggle~0 (
 // Equation(s):
 // \vgapll|toggle~0_combout  = ( !\vgapll|toggle~q  )
@@ -707,7 +712,7 @@ defparam \vgapll|toggle~0 .lut_mask = 64'hFFFFFFFF00000000;
 defparam \vgapll|toggle~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N35
+// Location: FF_X64_Y1_N35
 dffeas \vgapll|toggle (
 	.clk(\clk~input_o ),
 	.d(gnd),
@@ -726,7 +731,7 @@ defparam \vgapll|toggle .is_wysiwyg = "true";
 defparam \vgapll|toggle .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N0
+// Location: LABCELL_X66_Y1_N0
 cyclonev_lcell_comb \vgaCont|Add0~37 (
 // Equation(s):
 // \vgaCont|Add0~37_sumout  = SUM(( \vgaCont|x [0] ) + ( VCC ) + ( !VCC ))
@@ -734,8 +739,8 @@ cyclonev_lcell_comb \vgaCont|Add0~37 (
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|x [0]),
+	.datac(!\vgaCont|x [0]),
+	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -747,77 +752,45 @@ cyclonev_lcell_comb \vgaCont|Add0~37 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add0~37 .extended_lut = "off";
-defparam \vgaCont|Add0~37 .lut_mask = 64'h00000000000000FF;
+defparam \vgaCont|Add0~37 .lut_mask = 64'h0000000000000F0F;
 defparam \vgaCont|Add0~37 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X61_Y2_N29
-dffeas \vgaCont|x[5] (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add0~13_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan0~0_combout ),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|x [5]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|x[5] .is_wysiwyg = "true";
-defparam \vgaCont|x[5] .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N17
-dffeas \vgaCont|x[7] (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add0~21_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan0~0_combout ),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|x [7]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|x[7] .is_wysiwyg = "true";
-defparam \vgaCont|x[7] .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N22
-dffeas \vgaCont|x[9]~DUPLICATE (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add0~1_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan0~0_combout ),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|x[9]~DUPLICATE_q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|x[9]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|x[9]~DUPLICATE .power_up = "low";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N24
-cyclonev_lcell_comb \vgaCont|Add0~17 (
+// Location: LABCELL_X66_Y1_N21
+cyclonev_lcell_comb \vgaCont|Add0~21 (
 // Equation(s):
-// \vgaCont|Add0~17_sumout  = SUM(( \vgaCont|x[8]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~22  ))
-// \vgaCont|Add0~18  = CARRY(( \vgaCont|x[8]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~22  ))
+// \vgaCont|Add0~21_sumout  = SUM(( \vgaCont|x [7] ) + ( GND ) + ( \vgaCont|Add0~6  ))
+// \vgaCont|Add0~22  = CARRY(( \vgaCont|x [7] ) + ( GND ) + ( \vgaCont|Add0~6  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\vgaCont|x[8]~DUPLICATE_q ),
+	.datad(!\vgaCont|x [7]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\vgaCont|Add0~6 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\vgaCont|Add0~21_sumout ),
+	.cout(\vgaCont|Add0~22 ),
+	.shareout());
+// synopsys translate_off
+defparam \vgaCont|Add0~21 .extended_lut = "off";
+defparam \vgaCont|Add0~21 .lut_mask = 64'h0000FFFF000000FF;
+defparam \vgaCont|Add0~21 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N24
+cyclonev_lcell_comb \vgaCont|Add0~17 (
+// Equation(s):
+// \vgaCont|Add0~17_sumout  = SUM(( \vgaCont|x [8] ) + ( GND ) + ( \vgaCont|Add0~22  ))
+// \vgaCont|Add0~18  = CARRY(( \vgaCont|x [8] ) + ( GND ) + ( \vgaCont|Add0~22  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\vgaCont|x [8]),
+	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -829,54 +802,11 @@ cyclonev_lcell_comb \vgaCont|Add0~17 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add0~17 .extended_lut = "off";
-defparam \vgaCont|Add0~17 .lut_mask = 64'h0000FFFF000000FF;
+defparam \vgaCont|Add0~17 .lut_mask = 64'h0000FFFF00000F0F;
 defparam \vgaCont|Add0~17 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N27
-cyclonev_lcell_comb \vgaCont|Add0~1 (
-// Equation(s):
-// \vgaCont|Add0~1_sumout  = SUM(( \vgaCont|x[9]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~18  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\vgaCont|Add0~18 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\vgaCont|Add0~1_sumout ),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \vgaCont|Add0~1 .extended_lut = "off";
-defparam \vgaCont|Add0~1 .lut_mask = 64'h0000FFFF000000FF;
-defparam \vgaCont|Add0~1 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N23
-dffeas \vgaCont|x[9] (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add0~1_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan0~0_combout ),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|x [9]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|x[9] .is_wysiwyg = "true";
-defparam \vgaCont|x[9] .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N59
+// Location: FF_X66_Y1_N50
 dffeas \vgaCont|x[8] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -895,17 +825,60 @@ defparam \vgaCont|x[8] .is_wysiwyg = "true";
 defparam \vgaCont|x[8] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N42
+// Location: LABCELL_X66_Y1_N27
+cyclonev_lcell_comb \vgaCont|Add0~1 (
+// Equation(s):
+// \vgaCont|Add0~1_sumout  = SUM(( \vgaCont|x [9] ) + ( GND ) + ( \vgaCont|Add0~18  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\vgaCont|x [9]),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\vgaCont|Add0~18 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\vgaCont|Add0~1_sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \vgaCont|Add0~1 .extended_lut = "off";
+defparam \vgaCont|Add0~1 .lut_mask = 64'h0000FFFF00000F0F;
+defparam \vgaCont|Add0~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X66_Y1_N44
+dffeas \vgaCont|x[9] (
+	.clk(\vgapll|toggle~q ),
+	.d(gnd),
+	.asdata(\vgaCont|Add0~1_sumout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\vgaCont|LessThan0~0_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\vgaCont|x [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \vgaCont|x[9] .is_wysiwyg = "true";
+defparam \vgaCont|x[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N54
 cyclonev_lcell_comb \vgaCont|LessThan0~0 (
 // Equation(s):
-// \vgaCont|LessThan0~0_combout  = ( \vgaCont|x [6] & ( (\vgaCont|x [9] & \vgaCont|x [8]) ) ) # ( !\vgaCont|x [6] & ( (\vgaCont|x [9] & (\vgaCont|x [8] & ((\vgaCont|x [7]) # (\vgaCont|x [5])))) ) )
+// \vgaCont|LessThan0~0_combout  = ( \vgaCont|x [5] & ( (\vgaCont|x [8] & \vgaCont|x [9]) ) ) # ( !\vgaCont|x [5] & ( (\vgaCont|x [8] & (\vgaCont|x [9] & ((\vgaCont|x [6]) # (\vgaCont|x [7])))) ) )
 
-	.dataa(!\vgaCont|x [5]),
-	.datab(!\vgaCont|x [7]),
-	.datac(!\vgaCont|x [9]),
-	.datad(!\vgaCont|x [8]),
+	.dataa(!\vgaCont|x [8]),
+	.datab(!\vgaCont|x [9]),
+	.datac(!\vgaCont|x [7]),
+	.datad(!\vgaCont|x [6]),
 	.datae(gnd),
-	.dataf(!\vgaCont|x [6]),
+	.dataf(!\vgaCont|x [5]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -915,11 +888,11 @@ cyclonev_lcell_comb \vgaCont|LessThan0~0 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|LessThan0~0 .extended_lut = "off";
-defparam \vgaCont|LessThan0~0 .lut_mask = 64'h00070007000F000F;
+defparam \vgaCont|LessThan0~0 .lut_mask = 64'h0111011111111111;
 defparam \vgaCont|LessThan0~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X62_Y2_N56
+// Location: FF_X66_Y1_N35
 dffeas \vgaCont|x[0] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -938,11 +911,11 @@ defparam \vgaCont|x[0] .is_wysiwyg = "true";
 defparam \vgaCont|x[0] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N3
-cyclonev_lcell_comb \vgaCont|Add0~29 (
+// Location: LABCELL_X66_Y1_N3
+cyclonev_lcell_comb \vgaCont|Add0~25 (
 // Equation(s):
-// \vgaCont|Add0~29_sumout  = SUM(( \vgaCont|x [1] ) + ( GND ) + ( \vgaCont|Add0~38  ))
-// \vgaCont|Add0~30  = CARRY(( \vgaCont|x [1] ) + ( GND ) + ( \vgaCont|Add0~38  ))
+// \vgaCont|Add0~25_sumout  = SUM(( \vgaCont|x [1] ) + ( GND ) + ( \vgaCont|Add0~38  ))
+// \vgaCont|Add0~26  = CARRY(( \vgaCont|x [1] ) + ( GND ) + ( \vgaCont|Add0~38  ))
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -954,20 +927,20 @@ cyclonev_lcell_comb \vgaCont|Add0~29 (
 	.cin(\vgaCont|Add0~38 ),
 	.sharein(gnd),
 	.combout(),
-	.sumout(\vgaCont|Add0~29_sumout ),
-	.cout(\vgaCont|Add0~30 ),
+	.sumout(\vgaCont|Add0~25_sumout ),
+	.cout(\vgaCont|Add0~26 ),
 	.shareout());
 // synopsys translate_off
-defparam \vgaCont|Add0~29 .extended_lut = "off";
-defparam \vgaCont|Add0~29 .lut_mask = 64'h0000FFFF000000FF;
-defparam \vgaCont|Add0~29 .shared_arith = "off";
+defparam \vgaCont|Add0~25 .extended_lut = "off";
+defparam \vgaCont|Add0~25 .lut_mask = 64'h0000FFFF000000FF;
+defparam \vgaCont|Add0~25 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X62_Y2_N38
+// Location: FF_X66_Y1_N52
 dffeas \vgaCont|x[1] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
-	.asdata(\vgaCont|Add0~29_sumout ),
+	.asdata(\vgaCont|Add0~25_sumout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(\vgaCont|LessThan0~0_combout ),
@@ -982,20 +955,20 @@ defparam \vgaCont|x[1] .is_wysiwyg = "true";
 defparam \vgaCont|x[1] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N6
+// Location: LABCELL_X66_Y1_N6
 cyclonev_lcell_comb \vgaCont|Add0~33 (
 // Equation(s):
-// \vgaCont|Add0~33_sumout  = SUM(( \vgaCont|x [2] ) + ( GND ) + ( \vgaCont|Add0~30  ))
-// \vgaCont|Add0~34  = CARRY(( \vgaCont|x [2] ) + ( GND ) + ( \vgaCont|Add0~30  ))
+// \vgaCont|Add0~33_sumout  = SUM(( \vgaCont|x [2] ) + ( GND ) + ( \vgaCont|Add0~26  ))
+// \vgaCont|Add0~34  = CARRY(( \vgaCont|x [2] ) + ( GND ) + ( \vgaCont|Add0~26  ))
 
-	.dataa(gnd),
+	.dataa(!\vgaCont|x [2]),
 	.datab(gnd),
-	.datac(!\vgaCont|x [2]),
+	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
-	.cin(\vgaCont|Add0~30 ),
+	.cin(\vgaCont|Add0~26 ),
 	.sharein(gnd),
 	.combout(),
 	.sumout(\vgaCont|Add0~33_sumout ),
@@ -1003,11 +976,11 @@ cyclonev_lcell_comb \vgaCont|Add0~33 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add0~33 .extended_lut = "off";
-defparam \vgaCont|Add0~33 .lut_mask = 64'h0000FFFF00000F0F;
+defparam \vgaCont|Add0~33 .lut_mask = 64'h0000FFFF00005555;
 defparam \vgaCont|Add0~33 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X62_Y2_N35
+// Location: FF_X66_Y1_N38
 dffeas \vgaCont|x[2] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1026,14 +999,14 @@ defparam \vgaCont|x[2] .is_wysiwyg = "true";
 defparam \vgaCont|x[2] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N9
-cyclonev_lcell_comb \vgaCont|Add0~25 (
+// Location: LABCELL_X66_Y1_N9
+cyclonev_lcell_comb \vgaCont|Add0~29 (
 // Equation(s):
-// \vgaCont|Add0~25_sumout  = SUM(( \vgaCont|x [3] ) + ( GND ) + ( \vgaCont|Add0~34  ))
-// \vgaCont|Add0~26  = CARRY(( \vgaCont|x [3] ) + ( GND ) + ( \vgaCont|Add0~34  ))
+// \vgaCont|Add0~29_sumout  = SUM(( \vgaCont|x [3] ) + ( GND ) + ( \vgaCont|Add0~34  ))
+// \vgaCont|Add0~30  = CARRY(( \vgaCont|x [3] ) + ( GND ) + ( \vgaCont|Add0~34  ))
 
-	.dataa(!\vgaCont|x [3]),
-	.datab(gnd),
+	.dataa(gnd),
+	.datab(!\vgaCont|x [3]),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
@@ -1042,20 +1015,20 @@ cyclonev_lcell_comb \vgaCont|Add0~25 (
 	.cin(\vgaCont|Add0~34 ),
 	.sharein(gnd),
 	.combout(),
-	.sumout(\vgaCont|Add0~25_sumout ),
-	.cout(\vgaCont|Add0~26 ),
+	.sumout(\vgaCont|Add0~29_sumout ),
+	.cout(\vgaCont|Add0~30 ),
 	.shareout());
 // synopsys translate_off
-defparam \vgaCont|Add0~25 .extended_lut = "off";
-defparam \vgaCont|Add0~25 .lut_mask = 64'h0000FFFF00005555;
-defparam \vgaCont|Add0~25 .shared_arith = "off";
+defparam \vgaCont|Add0~29 .extended_lut = "off";
+defparam \vgaCont|Add0~29 .lut_mask = 64'h0000FFFF00003333;
+defparam \vgaCont|Add0~29 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X62_Y2_N53
+// Location: FF_X66_Y1_N59
 dffeas \vgaCont|x[3] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
-	.asdata(\vgaCont|Add0~25_sumout ),
+	.asdata(\vgaCont|Add0~29_sumout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(\vgaCont|LessThan0~0_combout ),
@@ -1070,20 +1043,108 @@ defparam \vgaCont|x[3] .is_wysiwyg = "true";
 defparam \vgaCont|x[3] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N12
-cyclonev_lcell_comb \vgaCont|Add0~5 (
+// Location: LABCELL_X66_Y1_N12
+cyclonev_lcell_comb \vgaCont|Add0~9 (
 // Equation(s):
-// \vgaCont|Add0~5_sumout  = SUM(( \vgaCont|x [4] ) + ( GND ) + ( \vgaCont|Add0~26  ))
-// \vgaCont|Add0~6  = CARRY(( \vgaCont|x [4] ) + ( GND ) + ( \vgaCont|Add0~26  ))
+// \vgaCont|Add0~9_sumout  = SUM(( \vgaCont|x[4]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~30  ))
+// \vgaCont|Add0~10  = CARRY(( \vgaCont|x[4]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~30  ))
 
 	.dataa(gnd),
-	.datab(!\vgaCont|x [4]),
+	.datab(gnd),
+	.datac(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\vgaCont|Add0~30 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\vgaCont|Add0~9_sumout ),
+	.cout(\vgaCont|Add0~10 ),
+	.shareout());
+// synopsys translate_off
+defparam \vgaCont|Add0~9 .extended_lut = "off";
+defparam \vgaCont|Add0~9 .lut_mask = 64'h0000FFFF00000F0F;
+defparam \vgaCont|Add0~9 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X65_Y1_N28
+dffeas \vgaCont|x[4]~DUPLICATE (
+	.clk(\vgapll|toggle~q ),
+	.d(gnd),
+	.asdata(\vgaCont|Add0~9_sumout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\vgaCont|LessThan0~0_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\vgaCont|x[4]~DUPLICATE_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \vgaCont|x[4]~DUPLICATE .is_wysiwyg = "true";
+defparam \vgaCont|x[4]~DUPLICATE .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N15
+cyclonev_lcell_comb \vgaCont|Add0~13 (
+// Equation(s):
+// \vgaCont|Add0~13_sumout  = SUM(( \vgaCont|x [5] ) + ( GND ) + ( \vgaCont|Add0~10  ))
+// \vgaCont|Add0~14  = CARRY(( \vgaCont|x [5] ) + ( GND ) + ( \vgaCont|Add0~10  ))
+
+	.dataa(!\vgaCont|x [5]),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
-	.cin(\vgaCont|Add0~26 ),
+	.cin(\vgaCont|Add0~10 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\vgaCont|Add0~13_sumout ),
+	.cout(\vgaCont|Add0~14 ),
+	.shareout());
+// synopsys translate_off
+defparam \vgaCont|Add0~13 .extended_lut = "off";
+defparam \vgaCont|Add0~13 .lut_mask = 64'h0000FFFF00005555;
+defparam \vgaCont|Add0~13 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X66_Y1_N31
+dffeas \vgaCont|x[5] (
+	.clk(\vgapll|toggle~q ),
+	.d(gnd),
+	.asdata(\vgaCont|Add0~13_sumout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\vgaCont|LessThan0~0_combout ),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\vgaCont|x [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \vgaCont|x[5] .is_wysiwyg = "true";
+defparam \vgaCont|x[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N18
+cyclonev_lcell_comb \vgaCont|Add0~5 (
+// Equation(s):
+// \vgaCont|Add0~5_sumout  = SUM(( \vgaCont|x [6] ) + ( GND ) + ( \vgaCont|Add0~14  ))
+// \vgaCont|Add0~6  = CARRY(( \vgaCont|x [6] ) + ( GND ) + ( \vgaCont|Add0~14  ))
+
+	.dataa(gnd),
+	.datab(!\vgaCont|x [6]),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\vgaCont|Add0~14 ),
 	.sharein(gnd),
 	.combout(),
 	.sumout(\vgaCont|Add0~5_sumout ),
@@ -1095,99 +1156,11 @@ defparam \vgaCont|Add0~5 .lut_mask = 64'h0000FFFF00003333;
 defparam \vgaCont|Add0~5 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X62_Y2_N44
-dffeas \vgaCont|x[4] (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add0~5_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan0~0_combout ),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|x [4]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|x[4] .is_wysiwyg = "true";
-defparam \vgaCont|x[4] .power_up = "low";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N15
-cyclonev_lcell_comb \vgaCont|Add0~13 (
-// Equation(s):
-// \vgaCont|Add0~13_sumout  = SUM(( \vgaCont|x[5]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~6  ))
-// \vgaCont|Add0~14  = CARRY(( \vgaCont|x[5]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~6  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\vgaCont|Add0~6 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\vgaCont|Add0~13_sumout ),
-	.cout(\vgaCont|Add0~14 ),
-	.shareout());
-// synopsys translate_off
-defparam \vgaCont|Add0~13 .extended_lut = "off";
-defparam \vgaCont|Add0~13 .lut_mask = 64'h0000FFFF000000FF;
-defparam \vgaCont|Add0~13 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N28
-dffeas \vgaCont|x[5]~DUPLICATE (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add0~13_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan0~0_combout ),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|x[5]~DUPLICATE_q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|x[5]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|x[5]~DUPLICATE .power_up = "low";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N18
-cyclonev_lcell_comb \vgaCont|Add0~9 (
-// Equation(s):
-// \vgaCont|Add0~9_sumout  = SUM(( \vgaCont|x [6] ) + ( GND ) + ( \vgaCont|Add0~14  ))
-// \vgaCont|Add0~10  = CARRY(( \vgaCont|x [6] ) + ( GND ) + ( \vgaCont|Add0~14  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|x [6]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\vgaCont|Add0~14 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\vgaCont|Add0~9_sumout ),
-	.cout(\vgaCont|Add0~10 ),
-	.shareout());
-// synopsys translate_off
-defparam \vgaCont|Add0~9 .extended_lut = "off";
-defparam \vgaCont|Add0~9 .lut_mask = 64'h0000FFFF000000FF;
-defparam \vgaCont|Add0~9 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N34
+// Location: FF_X66_Y1_N41
 dffeas \vgaCont|x[6] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
-	.asdata(\vgaCont|Add0~9_sumout ),
+	.asdata(\vgaCont|Add0~5_sumout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(\vgaCont|LessThan0~0_combout ),
@@ -1202,33 +1175,8 @@ defparam \vgaCont|x[6] .is_wysiwyg = "true";
 defparam \vgaCont|x[6] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N21
-cyclonev_lcell_comb \vgaCont|Add0~21 (
-// Equation(s):
-// \vgaCont|Add0~21_sumout  = SUM(( \vgaCont|x[7]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~10  ))
-// \vgaCont|Add0~22  = CARRY(( \vgaCont|x[7]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add0~10  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|x[7]~DUPLICATE_q ),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\vgaCont|Add0~10 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\vgaCont|Add0~21_sumout ),
-	.cout(\vgaCont|Add0~22 ),
-	.shareout());
-// synopsys translate_off
-defparam \vgaCont|Add0~21 .extended_lut = "off";
-defparam \vgaCont|Add0~21 .lut_mask = 64'h0000FFFF000000FF;
-defparam \vgaCont|Add0~21 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: FF_X61_Y2_N16
-dffeas \vgaCont|x[7]~DUPLICATE (
+// Location: FF_X66_Y1_N47
+dffeas \vgaCont|x[7] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
 	.asdata(\vgaCont|Add0~21_sumout ),
@@ -1239,18 +1187,18 @@ dffeas \vgaCont|x[7]~DUPLICATE (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\vgaCont|x[7]~DUPLICATE_q ),
+	.q(\vgaCont|x [7]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \vgaCont|x[7]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|x[7]~DUPLICATE .power_up = "low";
+defparam \vgaCont|x[7] .is_wysiwyg = "true";
+defparam \vgaCont|x[7] .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X61_Y2_N58
-dffeas \vgaCont|x[8]~DUPLICATE (
+// Location: FF_X65_Y1_N29
+dffeas \vgaCont|x[4] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
-	.asdata(\vgaCont|Add0~17_sumout ),
+	.asdata(\vgaCont|Add0~9_sumout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(\vgaCont|LessThan0~0_combout ),
@@ -1258,26 +1206,25 @@ dffeas \vgaCont|x[8]~DUPLICATE (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\vgaCont|x[8]~DUPLICATE_q ),
+	.q(\vgaCont|x [4]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \vgaCont|x[8]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|x[8]~DUPLICATE .power_up = "low";
+defparam \vgaCont|x[4] .is_wysiwyg = "true";
+defparam \vgaCont|x[4] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N30
+// Location: MLABCELL_X65_Y1_N24
 cyclonev_lcell_comb \vgaCont|hsync~0 (
 // Equation(s):
-// \vgaCont|hsync~0_combout  = ( \vgaCont|x [4] & ( \vgaCont|x [6] & ( (((!\vgaCont|x [9]) # (!\vgaCont|x [7])) # (\vgaCont|x[5]~DUPLICATE_q )) # (\vgaCont|x[8]~DUPLICATE_q ) ) ) ) # ( !\vgaCont|x [4] & ( \vgaCont|x [6] & ( ((!\vgaCont|x [9]) # (!\vgaCont|x 
-// [7])) # (\vgaCont|x[8]~DUPLICATE_q ) ) ) ) # ( \vgaCont|x [4] & ( !\vgaCont|x [6] & ( ((!\vgaCont|x [9]) # (!\vgaCont|x [7])) # (\vgaCont|x[8]~DUPLICATE_q ) ) ) ) # ( !\vgaCont|x [4] & ( !\vgaCont|x [6] & ( ((!\vgaCont|x[5]~DUPLICATE_q ) # ((!\vgaCont|x 
-// [9]) # (!\vgaCont|x [7]))) # (\vgaCont|x[8]~DUPLICATE_q ) ) ) )
+// \vgaCont|hsync~0_combout  = ( \vgaCont|x [8] & ( \vgaCont|x [9] ) ) # ( !\vgaCont|x [8] & ( \vgaCont|x [9] & ( (!\vgaCont|x [7]) # ((!\vgaCont|x [6] & (!\vgaCont|x [4] & !\vgaCont|x [5])) # (\vgaCont|x [6] & (\vgaCont|x [4] & \vgaCont|x [5]))) ) ) ) # ( 
+// \vgaCont|x [8] & ( !\vgaCont|x [9] ) ) # ( !\vgaCont|x [8] & ( !\vgaCont|x [9] ) )
 
-	.dataa(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\vgaCont|x [9]),
-	.datad(!\vgaCont|x [7]),
-	.datae(!\vgaCont|x [4]),
-	.dataf(!\vgaCont|x [6]),
+	.dataa(!\vgaCont|x [7]),
+	.datab(!\vgaCont|x [6]),
+	.datac(!\vgaCont|x [4]),
+	.datad(!\vgaCont|x [5]),
+	.datae(!\vgaCont|x [8]),
+	.dataf(!\vgaCont|x [9]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1287,20 +1234,20 @@ cyclonev_lcell_comb \vgaCont|hsync~0 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|hsync~0 .extended_lut = "off";
-defparam \vgaCont|hsync~0 .lut_mask = 64'hFFFDFFF5FFF5FFF7;
+defparam \vgaCont|hsync~0 .lut_mask = 64'hFFFFFFFFEAABFFFF;
 defparam \vgaCont|hsync~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N30
+// Location: LABCELL_X63_Y1_N30
 cyclonev_lcell_comb \vgaCont|Add1~37 (
 // Equation(s):
 // \vgaCont|Add1~37_sumout  = SUM(( \vgaCont|y [0] ) + ( VCC ) + ( !VCC ))
 // \vgaCont|Add1~38  = CARRY(( \vgaCont|y [0] ) + ( VCC ) + ( !VCC ))
 
 	.dataa(gnd),
-	.datab(gnd),
+	.datab(!\vgaCont|y [0]),
 	.datac(gnd),
-	.datad(!\vgaCont|y [0]),
+	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1312,36 +1259,11 @@ cyclonev_lcell_comb \vgaCont|Add1~37 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add1~37 .extended_lut = "off";
-defparam \vgaCont|Add1~37 .lut_mask = 64'h00000000000000FF;
+defparam \vgaCont|Add1~37 .lut_mask = 64'h0000000000003333;
 defparam \vgaCont|Add1~37 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N39
-cyclonev_lcell_comb \vgaCont|Add1~29 (
-// Equation(s):
-// \vgaCont|Add1~29_sumout  = SUM(( \vgaCont|y[3]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~2  ))
-// \vgaCont|Add1~30  = CARRY(( \vgaCont|y[3]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~2  ))
-
-	.dataa(!\vgaCont|y[3]~DUPLICATE_q ),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(gnd),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\vgaCont|Add1~2 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\vgaCont|Add1~29_sumout ),
-	.cout(\vgaCont|Add1~30 ),
-	.shareout());
-// synopsys translate_off
-defparam \vgaCont|Add1~29 .extended_lut = "off";
-defparam \vgaCont|Add1~29 .lut_mask = 64'h0000FFFF00005555;
-defparam \vgaCont|Add1~29 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N42
+// Location: LABCELL_X63_Y1_N42
 cyclonev_lcell_comb \vgaCont|Add1~25 (
 // Equation(s):
 // \vgaCont|Add1~25_sumout  = SUM(( \vgaCont|y [4] ) + ( GND ) + ( \vgaCont|Add1~30  ))
@@ -1366,33 +1288,14 @@ defparam \vgaCont|Add1~25 .lut_mask = 64'h0000FFFF00000F0F;
 defparam \vgaCont|Add1~25 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N23
-dffeas \vgaCont|y[4] (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add1~25_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan1~1_combout ),
-	.sload(vcc),
-	.ena(\vgaCont|LessThan0~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|y [4]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|y[4] .is_wysiwyg = "true";
-defparam \vgaCont|y[4] .power_up = "low";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N45
+// Location: LABCELL_X63_Y1_N45
 cyclonev_lcell_comb \vgaCont|Add1~17 (
 // Equation(s):
 // \vgaCont|Add1~17_sumout  = SUM(( \vgaCont|y [5] ) + ( GND ) + ( \vgaCont|Add1~26  ))
 // \vgaCont|Add1~18  = CARRY(( \vgaCont|y [5] ) + ( GND ) + ( \vgaCont|Add1~26  ))
 
-	.dataa(gnd),
-	.datab(!\vgaCont|y [5]),
+	.dataa(!\vgaCont|y [5]),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
@@ -1406,11 +1309,11 @@ cyclonev_lcell_comb \vgaCont|Add1~17 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add1~17 .extended_lut = "off";
-defparam \vgaCont|Add1~17 .lut_mask = 64'h0000FFFF00003333;
+defparam \vgaCont|Add1~17 .lut_mask = 64'h0000FFFF00005555;
 defparam \vgaCont|Add1~17 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N50
+// Location: FF_X64_Y1_N2
 dffeas \vgaCont|y[5] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1429,16 +1332,16 @@ defparam \vgaCont|y[5] .is_wysiwyg = "true";
 defparam \vgaCont|y[5] .power_up = "low";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N48
+// Location: LABCELL_X63_Y1_N48
 cyclonev_lcell_comb \vgaCont|Add1~13 (
 // Equation(s):
 // \vgaCont|Add1~13_sumout  = SUM(( \vgaCont|y [6] ) + ( GND ) + ( \vgaCont|Add1~18  ))
 // \vgaCont|Add1~14  = CARRY(( \vgaCont|y [6] ) + ( GND ) + ( \vgaCont|Add1~18  ))
 
 	.dataa(gnd),
-	.datab(!\vgaCont|y [6]),
+	.datab(gnd),
 	.datac(gnd),
-	.datad(gnd),
+	.datad(!\vgaCont|y [6]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1450,11 +1353,11 @@ cyclonev_lcell_comb \vgaCont|Add1~13 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add1~13 .extended_lut = "off";
-defparam \vgaCont|Add1~13 .lut_mask = 64'h0000FFFF00003333;
+defparam \vgaCont|Add1~13 .lut_mask = 64'h0000FFFF000000FF;
 defparam \vgaCont|Add1~13 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N59
+// Location: FF_X64_Y1_N41
 dffeas \vgaCont|y[6] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1473,7 +1376,7 @@ defparam \vgaCont|y[6] .is_wysiwyg = "true";
 defparam \vgaCont|y[6] .power_up = "low";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N51
+// Location: LABCELL_X63_Y1_N51
 cyclonev_lcell_comb \vgaCont|Add1~9 (
 // Equation(s):
 // \vgaCont|Add1~9_sumout  = SUM(( \vgaCont|y [7] ) + ( GND ) + ( \vgaCont|Add1~14  ))
@@ -1498,7 +1401,7 @@ defparam \vgaCont|Add1~9 .lut_mask = 64'h0000FFFF00005555;
 defparam \vgaCont|Add1~9 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N41
+// Location: FF_X64_Y1_N29
 dffeas \vgaCont|y[7] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1517,35 +1420,16 @@ defparam \vgaCont|y[7] .is_wysiwyg = "true";
 defparam \vgaCont|y[7] .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X59_Y2_N14
-dffeas \vgaCont|y[9]~DUPLICATE (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add1~21_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan1~1_combout ),
-	.sload(vcc),
-	.ena(\vgaCont|LessThan0~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|y[9]~DUPLICATE_q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|y[9]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|y[9]~DUPLICATE .power_up = "low";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N54
+// Location: LABCELL_X63_Y1_N54
 cyclonev_lcell_comb \vgaCont|Add1~5 (
 // Equation(s):
-// \vgaCont|Add1~5_sumout  = SUM(( \vgaCont|y [8] ) + ( GND ) + ( \vgaCont|Add1~10  ))
-// \vgaCont|Add1~6  = CARRY(( \vgaCont|y [8] ) + ( GND ) + ( \vgaCont|Add1~10  ))
+// \vgaCont|Add1~5_sumout  = SUM(( \vgaCont|y[8]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~10  ))
+// \vgaCont|Add1~6  = CARRY(( \vgaCont|y[8]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~10  ))
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|y [8]),
+	.datac(!\vgaCont|y[8]~DUPLICATE_q ),
+	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1557,12 +1441,12 @@ cyclonev_lcell_comb \vgaCont|Add1~5 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add1~5 .extended_lut = "off";
-defparam \vgaCont|Add1~5 .lut_mask = 64'h0000FFFF000000FF;
+defparam \vgaCont|Add1~5 .lut_mask = 64'h0000FFFF00000F0F;
 defparam \vgaCont|Add1~5 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X59_Y2_N29
-dffeas \vgaCont|y[8] (
+// Location: FF_X64_Y1_N17
+dffeas \vgaCont|y[8]~DUPLICATE (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
 	.asdata(\vgaCont|Add1~5_sumout ),
@@ -1573,21 +1457,21 @@ dffeas \vgaCont|y[8] (
 	.ena(\vgaCont|LessThan0~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\vgaCont|y [8]),
+	.q(\vgaCont|y[8]~DUPLICATE_q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \vgaCont|y[8] .is_wysiwyg = "true";
-defparam \vgaCont|y[8] .power_up = "low";
+defparam \vgaCont|y[8]~DUPLICATE .is_wysiwyg = "true";
+defparam \vgaCont|y[8]~DUPLICATE .power_up = "low";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N57
+// Location: LABCELL_X63_Y1_N57
 cyclonev_lcell_comb \vgaCont|Add1~21 (
 // Equation(s):
-// \vgaCont|Add1~21_sumout  = SUM(( \vgaCont|y[9]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~6  ))
+// \vgaCont|Add1~21_sumout  = SUM(( \vgaCont|y [9] ) + ( GND ) + ( \vgaCont|Add1~6  ))
 
-	.dataa(gnd),
+	.dataa(!\vgaCont|y [9]),
 	.datab(gnd),
-	.datac(!\vgaCont|y[9]~DUPLICATE_q ),
+	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -1600,11 +1484,11 @@ cyclonev_lcell_comb \vgaCont|Add1~21 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add1~21 .extended_lut = "off";
-defparam \vgaCont|Add1~21 .lut_mask = 64'h0000FFFF00000F0F;
+defparam \vgaCont|Add1~21 .lut_mask = 64'h0000FFFF00005555;
 defparam \vgaCont|Add1~21 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X59_Y2_N13
+// Location: FF_X64_Y1_N53
 dffeas \vgaCont|y[9] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1623,11 +1507,11 @@ defparam \vgaCont|y[9] .is_wysiwyg = "true";
 defparam \vgaCont|y[9] .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X59_Y2_N1
-dffeas \vgaCont|y[0]~DUPLICATE (
+// Location: FF_X64_Y1_N10
+dffeas \vgaCont|y[3] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
-	.asdata(\vgaCont|Add1~37_sumout ),
+	.asdata(\vgaCont|Add1~29_sumout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(\vgaCont|LessThan1~1_combout ),
@@ -1635,24 +1519,43 @@ dffeas \vgaCont|y[0]~DUPLICATE (
 	.ena(\vgaCont|LessThan0~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\vgaCont|y[0]~DUPLICATE_q ),
+	.q(\vgaCont|y [3]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \vgaCont|y[0]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|y[0]~DUPLICATE .power_up = "low";
+defparam \vgaCont|y[3] .is_wysiwyg = "true";
+defparam \vgaCont|y[3] .power_up = "low";
 // synopsys translate_on
 
-// Location: LABCELL_X60_Y2_N45
+// Location: FF_X64_Y1_N16
+dffeas \vgaCont|y[8] (
+	.clk(\vgapll|toggle~q ),
+	.d(gnd),
+	.asdata(\vgaCont|Add1~5_sumout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\vgaCont|LessThan1~1_combout ),
+	.sload(vcc),
+	.ena(\vgaCont|LessThan0~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\vgaCont|y [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \vgaCont|y[8] .is_wysiwyg = "true";
+defparam \vgaCont|y[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N48
 cyclonev_lcell_comb \vgaCont|LessThan1~0 (
 // Equation(s):
-// \vgaCont|LessThan1~0_combout  = ( !\vgaCont|y [8] & ( (!\vgaCont|y[3]~DUPLICATE_q ) # ((!\vgaCont|y [2]) # ((!\vgaCont|y [1] & !\vgaCont|y[0]~DUPLICATE_q ))) ) )
+// \vgaCont|LessThan1~0_combout  = ( \vgaCont|y [1] & ( (!\vgaCont|y [8] & ((!\vgaCont|y [3]) # (!\vgaCont|y [2]))) ) ) # ( !\vgaCont|y [1] & ( (!\vgaCont|y [8] & ((!\vgaCont|y [3]) # ((!\vgaCont|y [0]) # (!\vgaCont|y [2])))) ) )
 
-	.dataa(!\vgaCont|y [1]),
-	.datab(!\vgaCont|y[0]~DUPLICATE_q ),
-	.datac(!\vgaCont|y[3]~DUPLICATE_q ),
+	.dataa(!\vgaCont|y [3]),
+	.datab(!\vgaCont|y [0]),
+	.datac(!\vgaCont|y [8]),
 	.datad(!\vgaCont|y [2]),
 	.datae(gnd),
-	.dataf(!\vgaCont|y [8]),
+	.dataf(!\vgaCont|y [1]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1662,22 +1565,22 @@ cyclonev_lcell_comb \vgaCont|LessThan1~0 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|LessThan1~0 .extended_lut = "off";
-defparam \vgaCont|LessThan1~0 .lut_mask = 64'hFFF8FFF800000000;
+defparam \vgaCont|LessThan1~0 .lut_mask = 64'hF0E0F0E0F0A0F0A0;
 defparam \vgaCont|LessThan1~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X60_Y2_N6
+// Location: LABCELL_X64_Y1_N6
 cyclonev_lcell_comb \vgaCont|LessThan1~1 (
 // Equation(s):
-// \vgaCont|LessThan1~1_combout  = ( \vgaCont|LessThan1~0_combout  & ( \vgaCont|y [4] & ( \vgaCont|y [9] ) ) ) # ( !\vgaCont|LessThan1~0_combout  & ( \vgaCont|y [4] & ( \vgaCont|y [9] ) ) ) # ( \vgaCont|LessThan1~0_combout  & ( !\vgaCont|y [4] & ( 
-// (\vgaCont|y [9] & (((\vgaCont|y [6]) # (\vgaCont|y [7])) # (\vgaCont|y [5]))) ) ) ) # ( !\vgaCont|LessThan1~0_combout  & ( !\vgaCont|y [4] & ( \vgaCont|y [9] ) ) )
+// \vgaCont|LessThan1~1_combout  = ( \vgaCont|y [4] & ( \vgaCont|LessThan1~0_combout  & ( \vgaCont|y [9] ) ) ) # ( !\vgaCont|y [4] & ( \vgaCont|LessThan1~0_combout  & ( (\vgaCont|y [9] & (((\vgaCont|y [5]) # (\vgaCont|y [7])) # (\vgaCont|y [6]))) ) ) ) # ( 
+// \vgaCont|y [4] & ( !\vgaCont|LessThan1~0_combout  & ( \vgaCont|y [9] ) ) ) # ( !\vgaCont|y [4] & ( !\vgaCont|LessThan1~0_combout  & ( \vgaCont|y [9] ) ) )
 
-	.dataa(!\vgaCont|y [5]),
-	.datab(!\vgaCont|y [7]),
-	.datac(!\vgaCont|y [9]),
-	.datad(!\vgaCont|y [6]),
-	.datae(!\vgaCont|LessThan1~0_combout ),
-	.dataf(!\vgaCont|y [4]),
+	.dataa(!\vgaCont|y [9]),
+	.datab(!\vgaCont|y [6]),
+	.datac(!\vgaCont|y [7]),
+	.datad(!\vgaCont|y [5]),
+	.datae(!\vgaCont|y [4]),
+	.dataf(!\vgaCont|LessThan1~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1687,11 +1590,11 @@ cyclonev_lcell_comb \vgaCont|LessThan1~1 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|LessThan1~1 .extended_lut = "off";
-defparam \vgaCont|LessThan1~1 .lut_mask = 64'h0F0F070F0F0F0F0F;
+defparam \vgaCont|LessThan1~1 .lut_mask = 64'h5555555515555555;
 defparam \vgaCont|LessThan1~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X59_Y2_N2
+// Location: FF_X64_Y1_N44
 dffeas \vgaCont|y[0] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1710,7 +1613,7 @@ defparam \vgaCont|y[0] .is_wysiwyg = "true";
 defparam \vgaCont|y[0] .power_up = "low";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N33
+// Location: LABCELL_X63_Y1_N33
 cyclonev_lcell_comb \vgaCont|Add1~33 (
 // Equation(s):
 // \vgaCont|Add1~33_sumout  = SUM(( \vgaCont|y [1] ) + ( GND ) + ( \vgaCont|Add1~38  ))
@@ -1718,8 +1621,8 @@ cyclonev_lcell_comb \vgaCont|Add1~33 (
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(gnd),
-	.datad(!\vgaCont|y [1]),
+	.datac(!\vgaCont|y [1]),
+	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1731,11 +1634,11 @@ cyclonev_lcell_comb \vgaCont|Add1~33 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|Add1~33 .extended_lut = "off";
-defparam \vgaCont|Add1~33 .lut_mask = 64'h0000FFFF000000FF;
+defparam \vgaCont|Add1~33 .lut_mask = 64'h0000FFFF00000F0F;
 defparam \vgaCont|Add1~33 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N29
+// Location: FF_X64_Y1_N14
 dffeas \vgaCont|y[1] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1754,7 +1657,7 @@ defparam \vgaCont|y[1] .is_wysiwyg = "true";
 defparam \vgaCont|y[1] .power_up = "low";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N36
+// Location: LABCELL_X63_Y1_N36
 cyclonev_lcell_comb \vgaCont|Add1~1 (
 // Equation(s):
 // \vgaCont|Add1~1_sumout  = SUM(( \vgaCont|y [2] ) + ( GND ) + ( \vgaCont|Add1~34  ))
@@ -1779,7 +1682,7 @@ defparam \vgaCont|Add1~1 .lut_mask = 64'h0000FFFF000000FF;
 defparam \vgaCont|Add1~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N2
+// Location: FF_X64_Y1_N56
 dffeas \vgaCont|y[2] (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1798,7 +1701,32 @@ defparam \vgaCont|y[2] .is_wysiwyg = "true";
 defparam \vgaCont|y[2] .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X60_Y2_N17
+// Location: LABCELL_X63_Y1_N39
+cyclonev_lcell_comb \vgaCont|Add1~29 (
+// Equation(s):
+// \vgaCont|Add1~29_sumout  = SUM(( \vgaCont|y[3]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~2  ))
+// \vgaCont|Add1~30  = CARRY(( \vgaCont|y[3]~DUPLICATE_q  ) + ( GND ) + ( \vgaCont|Add1~2  ))
+
+	.dataa(!\vgaCont|y[3]~DUPLICATE_q ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\vgaCont|Add1~2 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\vgaCont|Add1~29_sumout ),
+	.cout(\vgaCont|Add1~30 ),
+	.shareout());
+// synopsys translate_off
+defparam \vgaCont|Add1~29 .extended_lut = "off";
+defparam \vgaCont|Add1~29 .lut_mask = 64'h0000FFFF00005555;
+defparam \vgaCont|Add1~29 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X64_Y1_N11
 dffeas \vgaCont|y[3]~DUPLICATE (
 	.clk(\vgapll|toggle~q ),
 	.d(gnd),
@@ -1817,17 +1745,36 @@ defparam \vgaCont|y[3]~DUPLICATE .is_wysiwyg = "true";
 defparam \vgaCont|y[3]~DUPLICATE .power_up = "low";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N6
+// Location: FF_X64_Y1_N23
+dffeas \vgaCont|y[4] (
+	.clk(\vgapll|toggle~q ),
+	.d(gnd),
+	.asdata(\vgaCont|Add1~25_sumout ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(\vgaCont|LessThan1~1_combout ),
+	.sload(vcc),
+	.ena(\vgaCont|LessThan0~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\vgaCont|y [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \vgaCont|y[4] .is_wysiwyg = "true";
+defparam \vgaCont|y[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N33
 cyclonev_lcell_comb \vgaCont|vsync~0 (
 // Equation(s):
-// \vgaCont|vsync~0_combout  = ( !\vgaCont|y[9]~DUPLICATE_q  & ( (\vgaCont|y[3]~DUPLICATE_q  & (!\vgaCont|y [4] & \vgaCont|y [1])) ) )
+// \vgaCont|vsync~0_combout  = ( !\vgaCont|y [9] & ( (!\vgaCont|y [4] & (\vgaCont|y [1] & \vgaCont|y[3]~DUPLICATE_q )) ) )
 
-	.dataa(!\vgaCont|y[3]~DUPLICATE_q ),
-	.datab(gnd),
-	.datac(!\vgaCont|y [4]),
-	.datad(!\vgaCont|y [1]),
+	.dataa(!\vgaCont|y [4]),
+	.datab(!\vgaCont|y [1]),
+	.datac(!\vgaCont|y[3]~DUPLICATE_q ),
+	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\vgaCont|y[9]~DUPLICATE_q ),
+	.dataf(!\vgaCont|y [9]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1837,21 +1784,21 @@ cyclonev_lcell_comb \vgaCont|vsync~0 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|vsync~0 .extended_lut = "off";
-defparam \vgaCont|vsync~0 .lut_mask = 64'h0050005000000000;
+defparam \vgaCont|vsync~0 .lut_mask = 64'h0202020200000000;
 defparam \vgaCont|vsync~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N15
+// Location: LABCELL_X63_Y1_N6
 cyclonev_lcell_comb \vgaCont|LessThan7~0 (
 // Equation(s):
-// \vgaCont|LessThan7~0_combout  = ( \vgaCont|y [5] & ( \vgaCont|y [7] & ( (\vgaCont|y [8] & \vgaCont|y [6]) ) ) )
+// \vgaCont|LessThan7~0_combout  = (\vgaCont|y[8]~DUPLICATE_q  & (\vgaCont|y [6] & (\vgaCont|y [7] & \vgaCont|y [5])))
 
-	.dataa(!\vgaCont|y [8]),
-	.datab(gnd),
-	.datac(!\vgaCont|y [6]),
-	.datad(gnd),
-	.datae(!\vgaCont|y [5]),
-	.dataf(!\vgaCont|y [7]),
+	.dataa(!\vgaCont|y[8]~DUPLICATE_q ),
+	.datab(!\vgaCont|y [6]),
+	.datac(!\vgaCont|y [7]),
+	.datad(!\vgaCont|y [5]),
+	.datae(gnd),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1861,21 +1808,21 @@ cyclonev_lcell_comb \vgaCont|LessThan7~0 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|LessThan7~0 .extended_lut = "off";
-defparam \vgaCont|LessThan7~0 .lut_mask = 64'h0000000000000505;
+defparam \vgaCont|LessThan7~0 .lut_mask = 64'h0001000100010001;
 defparam \vgaCont|LessThan7~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: MLABCELL_X59_Y2_N9
+// Location: LABCELL_X64_Y1_N54
 cyclonev_lcell_comb \vgaCont|vsync~1 (
 // Equation(s):
-// \vgaCont|vsync~1_combout  = ( \vgaCont|LessThan7~0_combout  & ( (!\vgaCont|vsync~0_combout ) # (\vgaCont|y [2]) ) ) # ( !\vgaCont|LessThan7~0_combout  )
+// \vgaCont|vsync~1_combout  = (!\vgaCont|vsync~0_combout ) # ((!\vgaCont|LessThan7~0_combout ) # (\vgaCont|y [2]))
 
 	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|vsync~0_combout ),
+	.datab(!\vgaCont|vsync~0_combout ),
+	.datac(!\vgaCont|LessThan7~0_combout ),
 	.datad(!\vgaCont|y [2]),
 	.datae(gnd),
-	.dataf(!\vgaCont|LessThan7~0_combout ),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1885,21 +1832,21 @@ cyclonev_lcell_comb \vgaCont|vsync~1 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|vsync~1 .extended_lut = "off";
-defparam \vgaCont|vsync~1 .lut_mask = 64'hFFFFFFFFF0FFF0FF;
+defparam \vgaCont|vsync~1 .lut_mask = 64'hFCFFFCFFFCFFFCFF;
 defparam \vgaCont|vsync~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X60_Y2_N48
+// Location: MLABCELL_X65_Y1_N57
 cyclonev_lcell_comb \vgaCont|sync_b (
 // Equation(s):
-// \vgaCont|sync_b~combout  = ( \vgaCont|LessThan7~0_combout  & ( (!\vgaCont|hsync~0_combout ) # ((!\vgaCont|y [2] & \vgaCont|vsync~0_combout )) ) ) # ( !\vgaCont|LessThan7~0_combout  & ( !\vgaCont|hsync~0_combout  ) )
+// \vgaCont|sync_b~combout  = ( \vgaCont|hsync~0_combout  & ( (!\vgaCont|y [2] & (\vgaCont|vsync~0_combout  & \vgaCont|LessThan7~0_combout )) ) ) # ( !\vgaCont|hsync~0_combout  )
 
 	.dataa(!\vgaCont|y [2]),
 	.datab(gnd),
 	.datac(!\vgaCont|vsync~0_combout ),
-	.datad(!\vgaCont|hsync~0_combout ),
+	.datad(!\vgaCont|LessThan7~0_combout ),
 	.datae(gnd),
-	.dataf(!\vgaCont|LessThan7~0_combout ),
+	.dataf(!\vgaCont|hsync~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1909,21 +1856,21 @@ cyclonev_lcell_comb \vgaCont|sync_b (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|sync_b .extended_lut = "off";
-defparam \vgaCont|sync_b .lut_mask = 64'hFF00FF00FF0AFF0A;
+defparam \vgaCont|sync_b .lut_mask = 64'hFFFFFFFF000A000A;
 defparam \vgaCont|sync_b .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N27
+// Location: MLABCELL_X65_Y1_N51
 cyclonev_lcell_comb \vgaCont|blank_b~0 (
 // Equation(s):
-// \vgaCont|blank_b~0_combout  = ( !\vgaCont|y [9] & ( (!\vgaCont|LessThan7~0_combout  & ((!\vgaCont|x[9]~DUPLICATE_q ) # ((!\vgaCont|x[8]~DUPLICATE_q  & !\vgaCont|x[7]~DUPLICATE_q )))) ) )
+// \vgaCont|blank_b~0_combout  = ( \vgaCont|x [9] & ( (!\vgaCont|x [7] & (!\vgaCont|x [8] & (!\vgaCont|y [9] & !\vgaCont|LessThan7~0_combout ))) ) ) # ( !\vgaCont|x [9] & ( (!\vgaCont|y [9] & !\vgaCont|LessThan7~0_combout ) ) )
 
-	.dataa(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datab(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datac(!\vgaCont|LessThan7~0_combout ),
-	.datad(!\vgaCont|x[7]~DUPLICATE_q ),
+	.dataa(!\vgaCont|x [7]),
+	.datab(!\vgaCont|x [8]),
+	.datac(!\vgaCont|y [9]),
+	.datad(!\vgaCont|LessThan7~0_combout ),
 	.datae(gnd),
-	.dataf(!\vgaCont|y [9]),
+	.dataf(!\vgaCont|x [9]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1933,98 +1880,21 @@ cyclonev_lcell_comb \vgaCont|blank_b~0 (
 	.shareout());
 // synopsys translate_off
 defparam \vgaCont|blank_b~0 .extended_lut = "off";
-defparam \vgaCont|blank_b~0 .lut_mask = 64'hE0A0E0A000000000;
+defparam \vgaCont|blank_b~0 .lut_mask = 64'hF000F00080008000;
 defparam \vgaCont|blank_b~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N54
-cyclonev_lcell_comb \videoGen|cartaA1|rect_inst|LessThan1~1 (
-// Equation(s):
-// \videoGen|cartaA1|rect_inst|LessThan1~1_combout  = ( \vgaCont|x [6] & ( \vgaCont|x [4] & ( (((\vgaCont|x [3]) # (\vgaCont|x [2])) # (\vgaCont|x[5]~DUPLICATE_q )) # (\vgaCont|x [1]) ) ) ) # ( \vgaCont|x [6] & ( !\vgaCont|x [4] & ( \vgaCont|x[5]~DUPLICATE_q 
-//  ) ) )
-
-	.dataa(!\vgaCont|x [1]),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\vgaCont|x [2]),
-	.datad(!\vgaCont|x [3]),
-	.datae(!\vgaCont|x [6]),
-	.dataf(!\vgaCont|x [4]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|rect_inst|LessThan1~1_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|rect_inst|LessThan1~1 .extended_lut = "off";
-defparam \videoGen|cartaA1|rect_inst|LessThan1~1 .lut_mask = 64'h0000333300007FFF;
-defparam \videoGen|cartaA1|rect_inst|LessThan1~1 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X63_Y2_N39
-cyclonev_lcell_comb \videoGen|comb~1 (
-// Equation(s):
-// \videoGen|comb~1_combout  = ( \vgaCont|x [2] & ( \vgaCont|x [4] ) ) # ( !\vgaCont|x [2] & ( (\vgaCont|x [3] & \vgaCont|x [4]) ) )
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|x [3]),
-	.datad(!\vgaCont|x [4]),
-	.datae(gnd),
-	.dataf(!\vgaCont|x [2]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|comb~1_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|comb~1 .extended_lut = "off";
-defparam \videoGen|comb~1 .lut_mask = 64'h000F000F00FF00FF;
-defparam \videoGen|comb~1 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X63_Y2_N18
-cyclonev_lcell_comb \videoGen|comb~2 (
-// Equation(s):
-// \videoGen|comb~2_combout  = ( \videoGen|cartaA1|rect_inst|LessThan1~1_combout  & ( \videoGen|comb~1_combout  & ( (\vgaCont|x[8]~DUPLICATE_q  & (\vgaCont|x [6] & ((!\vgaCont|x[7]~DUPLICATE_q ) # (!\vgaCont|x[5]~DUPLICATE_q )))) ) ) ) # ( 
-// !\videoGen|cartaA1|rect_inst|LessThan1~1_combout  & ( \videoGen|comb~1_combout  & ( (!\vgaCont|x[7]~DUPLICATE_q  & (\vgaCont|x[8]~DUPLICATE_q  & (\vgaCont|x [6]))) # (\vgaCont|x[7]~DUPLICATE_q  & ((!\vgaCont|x[5]~DUPLICATE_q  & ((\vgaCont|x [6]))) # 
-// (\vgaCont|x[5]~DUPLICATE_q  & (!\vgaCont|x[8]~DUPLICATE_q )))) ) ) ) # ( \videoGen|cartaA1|rect_inst|LessThan1~1_combout  & ( !\videoGen|comb~1_combout  & ( (\vgaCont|x[8]~DUPLICATE_q  & (\vgaCont|x [6] & (!\vgaCont|x[7]~DUPLICATE_q  $ 
-// (!\vgaCont|x[5]~DUPLICATE_q )))) ) ) ) # ( !\videoGen|cartaA1|rect_inst|LessThan1~1_combout  & ( !\videoGen|comb~1_combout  & ( (!\vgaCont|x[8]~DUPLICATE_q  & (\vgaCont|x[7]~DUPLICATE_q  & ((\vgaCont|x[5]~DUPLICATE_q ) # (\vgaCont|x [6])))) # 
-// (\vgaCont|x[8]~DUPLICATE_q  & (\vgaCont|x [6] & (!\vgaCont|x[7]~DUPLICATE_q  $ (!\vgaCont|x[5]~DUPLICATE_q )))) ) ) )
-
-	.dataa(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datab(!\vgaCont|x [6]),
-	.datac(!\vgaCont|x[7]~DUPLICATE_q ),
-	.datad(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datae(!\videoGen|cartaA1|rect_inst|LessThan1~1_combout ),
-	.dataf(!\videoGen|comb~1_combout ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|comb~2_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|comb~2 .extended_lut = "off";
-defparam \videoGen|comb~2 .lut_mask = 64'h031A0110131A1110;
-defparam \videoGen|comb~2 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N51
+// Location: LABCELL_X66_Y1_N36
 cyclonev_lcell_comb \videoGen|cartaA2|rect_inst|LessThan1~0 (
 // Equation(s):
-// \videoGen|cartaA2|rect_inst|LessThan1~0_combout  = ( \vgaCont|x [2] & ( (\vgaCont|x[5]~DUPLICATE_q  & ((\vgaCont|x [3]) # (\vgaCont|x [4]))) ) ) # ( !\vgaCont|x [2] & ( (\vgaCont|x [4] & \vgaCont|x[5]~DUPLICATE_q ) ) )
+// \videoGen|cartaA2|rect_inst|LessThan1~0_combout  = (\vgaCont|x [5] & (((\vgaCont|x [3] & \vgaCont|x [2])) # (\vgaCont|x[4]~DUPLICATE_q )))
 
-	.dataa(gnd),
-	.datab(!\vgaCont|x [4]),
-	.datac(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datad(!\vgaCont|x [3]),
+	.dataa(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datab(!\vgaCont|x [3]),
+	.datac(!\vgaCont|x [5]),
+	.datad(!\vgaCont|x [2]),
 	.datae(gnd),
-	.dataf(!\vgaCont|x [2]),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2034,133 +1904,70 @@ cyclonev_lcell_comb \videoGen|cartaA2|rect_inst|LessThan1~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaA2|rect_inst|LessThan1~0 .extended_lut = "off";
-defparam \videoGen|cartaA2|rect_inst|LessThan1~0 .lut_mask = 64'h03030303030F030F;
+defparam \videoGen|cartaA2|rect_inst|LessThan1~0 .lut_mask = 64'h0507050705070507;
 defparam \videoGen|cartaA2|rect_inst|LessThan1~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N9
-cyclonev_lcell_comb \videoGen|cartaA1|rect_inst|LessThan1~0 (
+// Location: MLABCELL_X65_Y1_N33
+cyclonev_lcell_comb \videoGen|cartaA2|rect_inst|LessThan0~0 (
 // Equation(s):
-// \videoGen|cartaA1|rect_inst|LessThan1~0_combout  = ( !\vgaCont|x [2] & ( !\vgaCont|x [1] ) )
+// \videoGen|cartaA2|rect_inst|LessThan0~0_combout  = ( \vgaCont|x [2] & ( (\vgaCont|x [5] & (\vgaCont|x [3] & \vgaCont|x [4])) ) ) # ( !\vgaCont|x [2] & ( (\vgaCont|x [1] & (\vgaCont|x [5] & (\vgaCont|x [3] & \vgaCont|x [4]))) ) )
 
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|x [1]),
-	.datad(gnd),
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [5]),
+	.datac(!\vgaCont|x [3]),
+	.datad(!\vgaCont|x [4]),
 	.datae(gnd),
 	.dataf(!\vgaCont|x [2]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA1|rect_inst|LessThan1~0_combout ),
+	.combout(\videoGen|cartaA2|rect_inst|LessThan0~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA1|rect_inst|LessThan1~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|rect_inst|LessThan1~0 .lut_mask = 64'hF0F0F0F000000000;
-defparam \videoGen|cartaA1|rect_inst|LessThan1~0 .shared_arith = "off";
+defparam \videoGen|cartaA2|rect_inst|LessThan0~0 .extended_lut = "off";
+defparam \videoGen|cartaA2|rect_inst|LessThan0~0 .lut_mask = 64'h0001000100030003;
+defparam \videoGen|cartaA2|rect_inst|LessThan0~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N36
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan5~0 (
+// Location: MLABCELL_X65_Y1_N48
+cyclonev_lcell_comb \videoGen|comb~1 (
 // Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan5~0_combout  = ( \vgaCont|x[5]~DUPLICATE_q  & ( (\vgaCont|x [3] & \vgaCont|x [4]) ) )
+// \videoGen|comb~1_combout  = ( \videoGen|cartaA2|rect_inst|LessThan0~0_combout  & ( (!\vgaCont|x [7] & (\vgaCont|x [8] & (!\videoGen|cartaA2|rect_inst|LessThan1~0_combout  & !\vgaCont|x [6]))) # (\vgaCont|x [7] & (!\vgaCont|x [8] & ((\vgaCont|x [6])))) ) ) 
+// # ( !\videoGen|cartaA2|rect_inst|LessThan0~0_combout  & ( (!\vgaCont|x [7] & (\vgaCont|x [8] & (!\videoGen|cartaA2|rect_inst|LessThan1~0_combout  & !\vgaCont|x [6]))) ) )
 
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|x [3]),
-	.datad(!\vgaCont|x [4]),
+	.dataa(!\vgaCont|x [7]),
+	.datab(!\vgaCont|x [8]),
+	.datac(!\videoGen|cartaA2|rect_inst|LessThan1~0_combout ),
+	.datad(!\vgaCont|x [6]),
 	.datae(gnd),
-	.dataf(!\vgaCont|x[5]~DUPLICATE_q ),
+	.dataf(!\videoGen|cartaA2|rect_inst|LessThan0~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
+	.combout(\videoGen|comb~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan5~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan5~0 .lut_mask = 64'h00000000000F000F;
-defparam \videoGen|cartaA1|plus_inst|LessThan5~0 .shared_arith = "off";
+defparam \videoGen|comb~1 .extended_lut = "off";
+defparam \videoGen|comb~1 .lut_mask = 64'h2000200020442044;
+defparam \videoGen|comb~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N33
-cyclonev_lcell_comb \videoGen|comb~0 (
-// Equation(s):
-// \videoGen|comb~0_combout  = ( !\vgaCont|x [6] & ( \vgaCont|x[8]~DUPLICATE_q  & ( (!\vgaCont|x[7]~DUPLICATE_q  & !\videoGen|cartaA2|rect_inst|LessThan1~0_combout ) ) ) ) # ( \vgaCont|x [6] & ( !\vgaCont|x[8]~DUPLICATE_q  & ( (\vgaCont|x[7]~DUPLICATE_q  & 
-// (!\videoGen|cartaA1|rect_inst|LessThan1~0_combout  & \videoGen|cartaA1|plus_inst|LessThan5~0_combout )) ) ) )
-
-	.dataa(!\vgaCont|x[7]~DUPLICATE_q ),
-	.datab(!\videoGen|cartaA2|rect_inst|LessThan1~0_combout ),
-	.datac(!\videoGen|cartaA1|rect_inst|LessThan1~0_combout ),
-	.datad(!\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
-	.datae(!\vgaCont|x [6]),
-	.dataf(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|comb~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|comb~0 .extended_lut = "off";
-defparam \videoGen|comb~0 .lut_mask = 64'h0000005088880000;
-defparam \videoGen|comb~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: FF_X60_Y2_N16
-dffeas \vgaCont|y[3] (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add1~29_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan1~1_combout ),
-	.sload(vcc),
-	.ena(\vgaCont|LessThan0~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|y [3]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|y[3] .is_wysiwyg = "true";
-defparam \vgaCont|y[3] .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X60_Y2_N28
-dffeas \vgaCont|y[1]~DUPLICATE (
-	.clk(\vgapll|toggle~q ),
-	.d(gnd),
-	.asdata(\vgaCont|Add1~33_sumout ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(\vgaCont|LessThan1~1_combout ),
-	.sload(vcc),
-	.ena(\vgaCont|LessThan0~0_combout ),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\vgaCont|y[1]~DUPLICATE_q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \vgaCont|y[1]~DUPLICATE .is_wysiwyg = "true";
-defparam \vgaCont|y[1]~DUPLICATE .power_up = "low";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N24
+// Location: LABCELL_X64_Y1_N42
 cyclonev_lcell_comb \videoGen|cartaC1|rect_inst|LessThan3~0 (
 // Equation(s):
-// \videoGen|cartaC1|rect_inst|LessThan3~0_combout  = ( !\vgaCont|y [2] & ( \vgaCont|y[1]~DUPLICATE_q  & ( (!\vgaCont|y [3] & !\vgaCont|y [4]) ) ) ) # ( \vgaCont|y [2] & ( !\vgaCont|y[1]~DUPLICATE_q  & ( (!\vgaCont|y [3] & !\vgaCont|y [4]) ) ) ) # ( 
-// !\vgaCont|y [2] & ( !\vgaCont|y[1]~DUPLICATE_q  & ( (!\vgaCont|y [3] & !\vgaCont|y [4]) ) ) )
+// \videoGen|cartaC1|rect_inst|LessThan3~0_combout  = ( !\vgaCont|y[3]~DUPLICATE_q  & ( (!\vgaCont|y [4] & ((!\vgaCont|y [1]) # (!\vgaCont|y [2]))) ) )
 
 	.dataa(gnd),
-	.datab(!\vgaCont|y [3]),
+	.datab(!\vgaCont|y [1]),
 	.datac(!\vgaCont|y [4]),
-	.datad(gnd),
-	.datae(!\vgaCont|y [2]),
-	.dataf(!\vgaCont|y[1]~DUPLICATE_q ),
+	.datad(!\vgaCont|y [2]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y[3]~DUPLICATE_q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2170,120 +1977,21 @@ cyclonev_lcell_comb \videoGen|cartaC1|rect_inst|LessThan3~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaC1|rect_inst|LessThan3~0 .extended_lut = "off";
-defparam \videoGen|cartaC1|rect_inst|LessThan3~0 .lut_mask = 64'hC0C0C0C0C0C00000;
+defparam \videoGen|cartaC1|rect_inst|LessThan3~0 .lut_mask = 64'hF0C0F0C000000000;
 defparam \videoGen|cartaC1|rect_inst|LessThan3~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X57_Y2_N27
-cyclonev_lcell_comb \videoGen|in_any_card~1 (
-// Equation(s):
-// \videoGen|in_any_card~1_combout  = ( !\vgaCont|y [9] & ( !\vgaCont|x[9]~DUPLICATE_q  & ( !\vgaCont|y [8] ) ) )
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|y [8]),
-	.datad(gnd),
-	.datae(!\vgaCont|y [9]),
-	.dataf(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|in_any_card~1_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|in_any_card~1 .extended_lut = "off";
-defparam \videoGen|in_any_card~1 .lut_mask = 64'hF0F0000000000000;
-defparam \videoGen|in_any_card~1 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N39
-cyclonev_lcell_comb \videoGen|in_any_card~3 (
-// Equation(s):
-// \videoGen|in_any_card~3_combout  = ( \videoGen|in_any_card~1_combout  & ( (\vgaCont|y [7] & ((!\vgaCont|y [5] & (\vgaCont|y [6])) # (\vgaCont|y [5] & ((!\vgaCont|y [6]) # (\videoGen|cartaC1|rect_inst|LessThan3~0_combout ))))) ) )
-
-	.dataa(!\vgaCont|y [5]),
-	.datab(!\vgaCont|y [6]),
-	.datac(!\videoGen|cartaC1|rect_inst|LessThan3~0_combout ),
-	.datad(!\vgaCont|y [7]),
-	.datae(gnd),
-	.dataf(!\videoGen|in_any_card~1_combout ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|in_any_card~3_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|in_any_card~3 .extended_lut = "off";
-defparam \videoGen|in_any_card~3 .lut_mask = 64'h0000000000670067;
-defparam \videoGen|in_any_card~3 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N51
-cyclonev_lcell_comb \vgaCont|LessThan5~0 (
-// Equation(s):
-// \vgaCont|LessThan5~0_combout  = (!\vgaCont|y [4] & ((!\vgaCont|y [2]) # (!\vgaCont|y [3])))
-
-	.dataa(!\vgaCont|y [2]),
-	.datab(gnd),
-	.datac(!\vgaCont|y [3]),
-	.datad(!\vgaCont|y [4]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\vgaCont|LessThan5~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \vgaCont|LessThan5~0 .extended_lut = "off";
-defparam \vgaCont|LessThan5~0 .lut_mask = 64'hFA00FA00FA00FA00;
-defparam \vgaCont|LessThan5~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N12
-cyclonev_lcell_comb \videoGen|in_any_card~2 (
-// Equation(s):
-// \videoGen|in_any_card~2_combout  = ( \videoGen|cartaC1|rect_inst|LessThan3~0_combout  & ( \vgaCont|y [7] & ( (\vgaCont|LessThan5~0_combout  & (!\vgaCont|y [6] & (!\vgaCont|y [5] & \videoGen|in_any_card~1_combout ))) ) ) ) # ( 
-// !\videoGen|cartaC1|rect_inst|LessThan3~0_combout  & ( \vgaCont|y [7] & ( (\vgaCont|LessThan5~0_combout  & (!\vgaCont|y [6] & (!\vgaCont|y [5] & \videoGen|in_any_card~1_combout ))) ) ) ) # ( \videoGen|cartaC1|rect_inst|LessThan3~0_combout  & ( !\vgaCont|y 
-// [7] & ( (\vgaCont|y [6] & (\vgaCont|y [5] & \videoGen|in_any_card~1_combout )) ) ) ) # ( !\videoGen|cartaC1|rect_inst|LessThan3~0_combout  & ( !\vgaCont|y [7] & ( (\vgaCont|y [6] & \videoGen|in_any_card~1_combout ) ) ) )
-
-	.dataa(!\vgaCont|LessThan5~0_combout ),
-	.datab(!\vgaCont|y [6]),
-	.datac(!\vgaCont|y [5]),
-	.datad(!\videoGen|in_any_card~1_combout ),
-	.datae(!\videoGen|cartaC1|rect_inst|LessThan3~0_combout ),
-	.dataf(!\vgaCont|y [7]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|in_any_card~2_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|in_any_card~2 .extended_lut = "off";
-defparam \videoGen|in_any_card~2 .lut_mask = 64'h0033000300400040;
-defparam \videoGen|in_any_card~2 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X63_Y2_N36
+// Location: LABCELL_X64_Y1_N18
 cyclonev_lcell_comb \videoGen|in_any_card~0 (
 // Equation(s):
-// \videoGen|in_any_card~0_combout  = ( \vgaCont|x [6] & ( (\vgaCont|x[7]~DUPLICATE_q  & (!\videoGen|cartaA1|rect_inst|LessThan1~1_combout  & !\vgaCont|x[8]~DUPLICATE_q )) ) ) # ( !\vgaCont|x [6] & ( (\vgaCont|x[7]~DUPLICATE_q  & (\vgaCont|x[5]~DUPLICATE_q  
-// & (!\videoGen|cartaA1|rect_inst|LessThan1~1_combout  & !\vgaCont|x[8]~DUPLICATE_q ))) ) )
+// \videoGen|in_any_card~0_combout  = ( \vgaCont|y [6] & ( (\vgaCont|y [7] & ((!\vgaCont|y [5]) # (\videoGen|cartaC1|rect_inst|LessThan3~0_combout ))) ) ) # ( !\vgaCont|y [6] & ( (\vgaCont|y [7] & \vgaCont|y [5]) ) )
 
-	.dataa(!\vgaCont|x[7]~DUPLICATE_q ),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\videoGen|cartaA1|rect_inst|LessThan1~1_combout ),
-	.datad(!\vgaCont|x[8]~DUPLICATE_q ),
+	.dataa(gnd),
+	.datab(!\videoGen|cartaC1|rect_inst|LessThan3~0_combout ),
+	.datac(!\vgaCont|y [7]),
+	.datad(!\vgaCont|y [5]),
 	.datae(gnd),
-	.dataf(!\vgaCont|x [6]),
+	.dataf(!\vgaCont|y [6]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2293,71 +2001,118 @@ cyclonev_lcell_comb \videoGen|in_any_card~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|in_any_card~0 .extended_lut = "off";
-defparam \videoGen|in_any_card~0 .lut_mask = 64'h1000100050005000;
+defparam \videoGen|in_any_card~0 .lut_mask = 64'h000F000F0F030F03;
 defparam \videoGen|in_any_card~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N12
-cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan5~1 (
+// Location: LABCELL_X67_Y1_N36
+cyclonev_lcell_comb \videoGen|cartaA1|rect_inst|LessThan1~0 (
 // Equation(s):
-// \videoGen|cartaA2|plus_inst|LessThan5~1_combout  = ( \vgaCont|x [1] & ( \vgaCont|x [2] ) )
+// \videoGen|cartaA1|rect_inst|LessThan1~0_combout  = ( !\vgaCont|x [3] & ( (!\vgaCont|x [1] & (!\vgaCont|x [2] & !\vgaCont|x [5])) ) )
 
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|x [2]),
-	.datad(gnd),
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [2]),
+	.datac(gnd),
+	.datad(!\vgaCont|x [5]),
 	.datae(gnd),
-	.dataf(!\vgaCont|x [1]),
+	.dataf(!\vgaCont|x [3]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA2|plus_inst|LessThan5~1_combout ),
+	.combout(\videoGen|cartaA1|rect_inst|LessThan1~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA2|plus_inst|LessThan5~1 .extended_lut = "off";
-defparam \videoGen|cartaA2|plus_inst|LessThan5~1 .lut_mask = 64'h000000000F0F0F0F;
-defparam \videoGen|cartaA2|plus_inst|LessThan5~1 .shared_arith = "off";
+defparam \videoGen|cartaA1|rect_inst|LessThan1~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|rect_inst|LessThan1~0 .lut_mask = 64'h8800880000000000;
+defparam \videoGen|cartaA1|rect_inst|LessThan1~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N15
-cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan5~0 (
+// Location: LABCELL_X66_Y1_N33
+cyclonev_lcell_comb \videoGen|comb~2 (
 // Equation(s):
-// \videoGen|cartaA2|plus_inst|LessThan5~0_combout  = (\vgaCont|x[8]~DUPLICATE_q  & \vgaCont|x[7]~DUPLICATE_q )
+// \videoGen|comb~2_combout  = ( \vgaCont|x[4]~DUPLICATE_q  & ( !\vgaCont|x [8] & ( (\vgaCont|x [7] & ((!\vgaCont|x [6] & ((\vgaCont|x [5]))) # (\vgaCont|x [6] & (\videoGen|cartaA1|rect_inst|LessThan1~0_combout )))) ) ) ) # ( !\vgaCont|x[4]~DUPLICATE_q  & ( 
+// !\vgaCont|x [8] & ( (\vgaCont|x [7] & ((!\vgaCont|x [6] & ((\vgaCont|x [5]))) # (\vgaCont|x [6] & ((!\vgaCont|x [5]) # (\videoGen|cartaA1|rect_inst|LessThan1~0_combout ))))) ) ) )
 
-	.dataa(!\vgaCont|x[8]~DUPLICATE_q ),
+	.dataa(!\vgaCont|x [7]),
+	.datab(!\videoGen|cartaA1|rect_inst|LessThan1~0_combout ),
+	.datac(!\vgaCont|x [6]),
+	.datad(!\vgaCont|x [5]),
+	.datae(!\vgaCont|x[4]~DUPLICATE_q ),
+	.dataf(!\vgaCont|x [8]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|comb~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|comb~2 .extended_lut = "off";
+defparam \videoGen|comb~2 .lut_mask = 64'h0551015100000000;
+defparam \videoGen|comb~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N21
+cyclonev_lcell_comb \vgaCont|LessThan5~0 (
+// Equation(s):
+// \vgaCont|LessThan5~0_combout  = ( \vgaCont|y[3]~DUPLICATE_q  & ( (!\vgaCont|y [2] & !\vgaCont|y [4]) ) ) # ( !\vgaCont|y[3]~DUPLICATE_q  & ( !\vgaCont|y [4] ) )
+
+	.dataa(!\vgaCont|y [2]),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\vgaCont|x[7]~DUPLICATE_q ),
+	.datad(!\vgaCont|y [4]),
 	.datae(gnd),
-	.dataf(gnd),
+	.dataf(!\vgaCont|y[3]~DUPLICATE_q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA2|plus_inst|LessThan5~0_combout ),
+	.combout(\vgaCont|LessThan5~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA2|plus_inst|LessThan5~0 .extended_lut = "off";
-defparam \videoGen|cartaA2|plus_inst|LessThan5~0 .lut_mask = 64'h0055005500550055;
-defparam \videoGen|cartaA2|plus_inst|LessThan5~0 .shared_arith = "off";
+defparam \vgaCont|LessThan5~0 .extended_lut = "off";
+defparam \vgaCont|LessThan5~0 .lut_mask = 64'hFF00FF00AA00AA00;
+defparam \vgaCont|LessThan5~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N6
+// Location: LABCELL_X64_Y1_N24
+cyclonev_lcell_comb \videoGen|comb~0 (
+// Equation(s):
+// \videoGen|comb~0_combout  = ( \vgaCont|y [6] & ( (!\vgaCont|y [7] & ((!\videoGen|cartaC1|rect_inst|LessThan3~0_combout ) # (\vgaCont|y [5]))) ) ) # ( !\vgaCont|y [6] & ( (\vgaCont|y [7] & (\vgaCont|LessThan5~0_combout  & !\vgaCont|y [5])) ) )
+
+	.dataa(!\vgaCont|y [7]),
+	.datab(!\vgaCont|LessThan5~0_combout ),
+	.datac(!\vgaCont|y [5]),
+	.datad(!\videoGen|cartaC1|rect_inst|LessThan3~0_combout ),
+	.datae(gnd),
+	.dataf(!\vgaCont|y [6]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|comb~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|comb~0 .extended_lut = "off";
+defparam \videoGen|comb~0 .lut_mask = 64'h10101010AA0AAA0A;
+defparam \videoGen|comb~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N57
 cyclonev_lcell_comb \videoGen|comb~3 (
 // Equation(s):
-// \videoGen|comb~3_combout  = ( !\vgaCont|x [6] & ( \vgaCont|x [3] & ( (\vgaCont|x[5]~DUPLICATE_q  & (\videoGen|cartaA2|plus_inst|LessThan5~0_combout  & ((\videoGen|cartaA2|plus_inst|LessThan5~1_combout ) # (\vgaCont|x [4])))) ) ) ) # ( \vgaCont|x [6] & ( 
-// !\vgaCont|x [3] & ( (!\vgaCont|x [4] & (!\vgaCont|x[5]~DUPLICATE_q  & (!\videoGen|cartaA2|plus_inst|LessThan5~1_combout  & \videoGen|cartaA2|plus_inst|LessThan5~0_combout ))) ) ) ) # ( !\vgaCont|x [6] & ( !\vgaCont|x [3] & ( 
-// (\videoGen|cartaA2|plus_inst|LessThan5~0_combout  & ((!\vgaCont|x [4] & (!\vgaCont|x[5]~DUPLICATE_q  & !\videoGen|cartaA2|plus_inst|LessThan5~1_combout )) # (\vgaCont|x [4] & (\vgaCont|x[5]~DUPLICATE_q )))) ) ) )
+// \videoGen|comb~3_combout  = (!\vgaCont|y [9] & (!\vgaCont|y[8]~DUPLICATE_q  & !\vgaCont|x [9]))
 
-	.dataa(!\vgaCont|x [4]),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\videoGen|cartaA2|plus_inst|LessThan5~1_combout ),
-	.datad(!\videoGen|cartaA2|plus_inst|LessThan5~0_combout ),
-	.datae(!\vgaCont|x [6]),
-	.dataf(!\vgaCont|x [3]),
+	.dataa(!\vgaCont|y [9]),
+	.datab(gnd),
+	.datac(!\vgaCont|y[8]~DUPLICATE_q ),
+	.datad(!\vgaCont|x [9]),
+	.datae(gnd),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2367,120 +2122,215 @@ cyclonev_lcell_comb \videoGen|comb~3 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|comb~3 .extended_lut = "off";
-defparam \videoGen|comb~3 .lut_mask = 64'h0091008000130000;
+defparam \videoGen|comb~3 .lut_mask = 64'hA000A000A000A000;
 defparam \videoGen|comb~3 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N0
-cyclonev_lcell_comb \videoGen|in_any_card~4 (
+// Location: LABCELL_X67_Y1_N54
+cyclonev_lcell_comb \videoGen|cartaB1|rect_inst|LessThan1~0 (
 // Equation(s):
-// \videoGen|in_any_card~4_combout  = ( \videoGen|in_any_card~0_combout  & ( \videoGen|comb~3_combout  & ( (\videoGen|in_any_card~2_combout ) # (\videoGen|in_any_card~3_combout ) ) ) ) # ( !\videoGen|in_any_card~0_combout  & ( \videoGen|comb~3_combout  & ( 
-// ((\videoGen|comb~0_combout  & \videoGen|in_any_card~3_combout )) # (\videoGen|in_any_card~2_combout ) ) ) ) # ( \videoGen|in_any_card~0_combout  & ( !\videoGen|comb~3_combout  & ( ((\videoGen|in_any_card~2_combout  & ((\videoGen|comb~0_combout ) # 
-// (\videoGen|comb~2_combout )))) # (\videoGen|in_any_card~3_combout ) ) ) ) # ( !\videoGen|in_any_card~0_combout  & ( !\videoGen|comb~3_combout  & ( (!\videoGen|comb~0_combout  & (\videoGen|comb~2_combout  & ((\videoGen|in_any_card~2_combout )))) # 
-// (\videoGen|comb~0_combout  & (((\videoGen|in_any_card~2_combout ) # (\videoGen|in_any_card~3_combout )))) ) ) )
+// \videoGen|cartaB1|rect_inst|LessThan1~0_combout  = ( !\vgaCont|x[4]~DUPLICATE_q  & ( !\vgaCont|x [6] & ( (!\vgaCont|x [3] & (!\vgaCont|x [5] & ((!\vgaCont|x [1]) # (!\vgaCont|x [2])))) ) ) )
 
-	.dataa(!\videoGen|comb~2_combout ),
-	.datab(!\videoGen|comb~0_combout ),
-	.datac(!\videoGen|in_any_card~3_combout ),
-	.datad(!\videoGen|in_any_card~2_combout ),
-	.datae(!\videoGen|in_any_card~0_combout ),
-	.dataf(!\videoGen|comb~3_combout ),
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x [3]),
+	.datad(!\vgaCont|x [5]),
+	.datae(!\vgaCont|x[4]~DUPLICATE_q ),
+	.dataf(!\vgaCont|x [6]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|in_any_card~4_combout ),
+	.combout(\videoGen|cartaB1|rect_inst|LessThan1~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|in_any_card~4 .extended_lut = "off";
-defparam \videoGen|in_any_card~4 .lut_mask = 64'h03770F7F03FF0FFF;
-defparam \videoGen|in_any_card~4 .shared_arith = "off";
+defparam \videoGen|cartaB1|rect_inst|LessThan1~0 .extended_lut = "off";
+defparam \videoGen|cartaB1|rect_inst|LessThan1~0 .lut_mask = 64'hE000000000000000;
+defparam \videoGen|cartaB1|rect_inst|LessThan1~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X60_Y2_N54
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan2~1 (
+// Location: LABCELL_X67_Y1_N9
+cyclonev_lcell_comb \videoGen|cartaB2|rect_inst|LessThan0~0 (
 // Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan2~1_combout  = ( \vgaCont|y[0]~DUPLICATE_q  & ( (!\vgaCont|y [3] & (!\vgaCont|y [4] & ((!\vgaCont|y [1]) # (!\vgaCont|y [2])))) ) ) # ( !\vgaCont|y[0]~DUPLICATE_q  & ( (!\vgaCont|y [3] & !\vgaCont|y [4]) ) )
+// \videoGen|cartaB2|rect_inst|LessThan0~0_combout  = ( \vgaCont|x [3] & ( (!\vgaCont|x [6] & (!\vgaCont|x[4]~DUPLICATE_q  & ((!\vgaCont|x [1]) # (!\vgaCont|x [2])))) ) ) # ( !\vgaCont|x [3] & ( (!\vgaCont|x [6] & !\vgaCont|x[4]~DUPLICATE_q ) ) )
 
-	.dataa(!\vgaCont|y [1]),
-	.datab(!\vgaCont|y [3]),
-	.datac(!\vgaCont|y [4]),
+	.dataa(!\vgaCont|x [6]),
+	.datab(!\vgaCont|x [1]),
+	.datac(!\vgaCont|x [2]),
+	.datad(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [3]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaB2|rect_inst|LessThan0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaB2|rect_inst|LessThan0~0 .extended_lut = "off";
+defparam \videoGen|cartaB2|rect_inst|LessThan0~0 .lut_mask = 64'hAA00AA00A800A800;
+defparam \videoGen|cartaB2|rect_inst|LessThan0~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N0
+cyclonev_lcell_comb \videoGen|cartaB1|rect_inst|LessThan0~0 (
+// Equation(s):
+// \videoGen|cartaB1|rect_inst|LessThan0~0_combout  = ( \vgaCont|x [6] & ( (!\vgaCont|x [5] & ((!\vgaCont|x[4]~DUPLICATE_q ) # ((!\vgaCont|x [3] & !\vgaCont|x [2])))) ) ) # ( !\vgaCont|x [6] )
+
+	.dataa(!\vgaCont|x [3]),
+	.datab(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datad(!\vgaCont|x [5]),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [6]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaB1|rect_inst|LessThan0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaB1|rect_inst|LessThan0~0 .extended_lut = "off";
+defparam \videoGen|cartaB1|rect_inst|LessThan0~0 .lut_mask = 64'hFFFFFFFFF800F800;
+defparam \videoGen|cartaB1|rect_inst|LessThan0~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N48
+cyclonev_lcell_comb \videoGen|in_any_card~2 (
+// Equation(s):
+// \videoGen|in_any_card~2_combout  = ( !\vgaCont|x [7] & ( (\vgaCont|x [8] & (((!\videoGen|cartaB1|rect_inst|LessThan0~0_combout )))) ) ) # ( \vgaCont|x [7] & ( (\vgaCont|x [8] & (((!\videoGen|cartaB2|rect_inst|LessThan0~0_combout  & (!\vgaCont|x [5] $ 
+// (!\vgaCont|x [6])))) # (\videoGen|cartaB1|rect_inst|LessThan1~0_combout ))) ) )
+
+	.dataa(!\vgaCont|x [8]),
+	.datab(!\vgaCont|x [5]),
+	.datac(!\videoGen|cartaB1|rect_inst|LessThan1~0_combout ),
+	.datad(!\videoGen|cartaB2|rect_inst|LessThan0~0_combout ),
+	.datae(!\vgaCont|x [7]),
+	.dataf(!\vgaCont|x [6]),
+	.datag(!\videoGen|cartaB1|rect_inst|LessThan0~0_combout ),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|in_any_card~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|in_any_card~2 .extended_lut = "on";
+defparam \videoGen|in_any_card~2 .lut_mask = 64'h5050150550504505;
+defparam \videoGen|in_any_card~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X65_Y1_N12
+cyclonev_lcell_comb \videoGen|in_any_card~1 (
+// Equation(s):
+// \videoGen|in_any_card~1_combout  = ( \videoGen|comb~3_combout  & ( \videoGen|in_any_card~2_combout  & ( (\videoGen|comb~0_combout ) # (\videoGen|in_any_card~0_combout ) ) ) ) # ( \videoGen|comb~3_combout  & ( !\videoGen|in_any_card~2_combout  & ( 
+// (!\videoGen|comb~1_combout  & (\videoGen|comb~2_combout  & ((\videoGen|comb~0_combout ) # (\videoGen|in_any_card~0_combout )))) # (\videoGen|comb~1_combout  & (((\videoGen|comb~0_combout )) # (\videoGen|in_any_card~0_combout ))) ) ) )
+
+	.dataa(!\videoGen|comb~1_combout ),
+	.datab(!\videoGen|in_any_card~0_combout ),
+	.datac(!\videoGen|comb~2_combout ),
+	.datad(!\videoGen|comb~0_combout ),
+	.datae(!\videoGen|comb~3_combout ),
+	.dataf(!\videoGen|in_any_card~2_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|in_any_card~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|in_any_card~1 .extended_lut = "off";
+defparam \videoGen|in_any_card~1 .lut_mask = 64'h0000135F000033FF;
+defparam \videoGen|in_any_card~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X63_Y1_N0
+cyclonev_lcell_comb \videoGen|cartaD1|square_inst|LessThan2~0 (
+// Equation(s):
+// \videoGen|cartaD1|square_inst|LessThan2~0_combout  = ( \vgaCont|y [1] & ( (!\vgaCont|y [6] & (!\vgaCont|y[3]~DUPLICATE_q  & ((!\vgaCont|y [0]) # (!\vgaCont|y [2])))) ) ) # ( !\vgaCont|y [1] & ( (!\vgaCont|y [6] & !\vgaCont|y[3]~DUPLICATE_q ) ) )
+
+	.dataa(!\vgaCont|y [0]),
+	.datab(!\vgaCont|y [6]),
+	.datac(!\vgaCont|y[3]~DUPLICATE_q ),
 	.datad(!\vgaCont|y [2]),
 	.datae(gnd),
-	.dataf(!\vgaCont|y[0]~DUPLICATE_q ),
+	.dataf(!\vgaCont|y [1]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan2~1_combout ),
+	.combout(\videoGen|cartaD1|square_inst|LessThan2~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan2~1 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan2~1 .lut_mask = 64'hC0C0C0C0C080C080;
-defparam \videoGen|cartaA1|plus_inst|LessThan2~1 .shared_arith = "off";
+defparam \videoGen|cartaD1|square_inst|LessThan2~0 .extended_lut = "off";
+defparam \videoGen|cartaD1|square_inst|LessThan2~0 .lut_mask = 64'hC0C0C0C0C080C080;
+defparam \videoGen|cartaD1|square_inst|LessThan2~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X60_Y2_N42
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan2~0 (
+// Location: LABCELL_X63_Y1_N18
+cyclonev_lcell_comb \videoGen|cartaD1|square_inst|LessThan2~1 (
 // Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan2~0_combout  = ( !\vgaCont|y [7] & ( (!\vgaCont|y [9] & !\vgaCont|y [8]) ) )
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\vgaCont|y [9]),
-	.datad(!\vgaCont|y [8]),
-	.datae(gnd),
-	.dataf(!\vgaCont|y [7]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan2~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan2~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan2~0 .lut_mask = 64'hF000F00000000000;
-defparam \videoGen|cartaA1|plus_inst|LessThan2~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N36
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~1 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|in_hbar~1_combout  = ( \videoGen|cartaA1|plus_inst|LessThan2~0_combout  & ( (\vgaCont|y [5] & (\vgaCont|y [6] & (\vgaCont|LessThan5~0_combout  & !\videoGen|cartaA1|plus_inst|LessThan2~1_combout ))) ) )
+// \videoGen|cartaD1|square_inst|LessThan2~1_combout  = (\vgaCont|y [7] & (((\vgaCont|y [5] & \vgaCont|y [4])) # (\vgaCont|y [6])))
 
 	.dataa(!\vgaCont|y [5]),
 	.datab(!\vgaCont|y [6]),
-	.datac(!\vgaCont|LessThan5~0_combout ),
-	.datad(!\videoGen|cartaA1|plus_inst|LessThan2~1_combout ),
+	.datac(!\vgaCont|y [4]),
+	.datad(!\vgaCont|y [7]),
 	.datae(gnd),
-	.dataf(!\videoGen|cartaA1|plus_inst|LessThan2~0_combout ),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|in_hbar~1_combout ),
+	.combout(\videoGen|cartaD1|square_inst|LessThan2~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|in_hbar~1 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|in_hbar~1 .lut_mask = 64'h0000000001000100;
-defparam \videoGen|cartaA1|plus_inst|in_hbar~1 .shared_arith = "off";
+defparam \videoGen|cartaD1|square_inst|LessThan2~1 .extended_lut = "off";
+defparam \videoGen|cartaD1|square_inst|LessThan2~1 .lut_mask = 64'h0037003700370037;
+defparam \videoGen|cartaD1|square_inst|LessThan2~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N45
+// Location: LABCELL_X63_Y1_N3
+cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|LessThan3~0 (
+// Equation(s):
+// \videoGen|cartaC1|cros_inst|LessThan3~0_combout  = (\vgaCont|y [6] & \vgaCont|y [7])
+
+	.dataa(gnd),
+	.datab(!\vgaCont|y [6]),
+	.datac(gnd),
+	.datad(!\vgaCont|y [7]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC1|cros_inst|LessThan3~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC1|cros_inst|LessThan3~0 .extended_lut = "off";
+defparam \videoGen|cartaC1|cros_inst|LessThan3~0 .lut_mask = 64'h0033003300330033;
+defparam \videoGen|cartaC1|cros_inst|LessThan3~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N51
 cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|in_hbar~0 (
 // Equation(s):
-// \videoGen|cartaA2|plus_inst|in_hbar~0_combout  = ( !\vgaCont|x [3] & ( (!\vgaCont|x [4] & !\vgaCont|x [2]) ) )
+// \videoGen|cartaA2|plus_inst|in_hbar~0_combout  = ( !\vgaCont|x [9] & ( \vgaCont|x [8] ) )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(!\vgaCont|x [4]),
-	.datad(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x [8]),
+	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\vgaCont|x [3]),
+	.dataf(!\vgaCont|x [9]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2490,45 +2340,239 @@ cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|in_hbar~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaA2|plus_inst|in_hbar~0 .extended_lut = "off";
-defparam \videoGen|cartaA2|plus_inst|in_hbar~0 .lut_mask = 64'hF000F00000000000;
+defparam \videoGen|cartaA2|plus_inst|in_hbar~0 .lut_mask = 64'h0F0F0F0F00000000;
 defparam \videoGen|cartaA2|plus_inst|in_hbar~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N18
-cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|in_hbar~1 (
+// Location: LABCELL_X63_Y1_N9
+cyclonev_lcell_comb \videoGen|comb~4 (
 // Equation(s):
-// \videoGen|cartaA2|plus_inst|in_hbar~1_combout  = ( \vgaCont|x [0] & ( \vgaCont|x[5]~DUPLICATE_q  & ( (!\vgaCont|x [1] & (\videoGen|cartaA2|plus_inst|in_hbar~0_combout  & (!\vgaCont|x [6] & !\vgaCont|x [7]))) ) ) ) # ( !\vgaCont|x [0] & ( 
-// \vgaCont|x[5]~DUPLICATE_q  & ( (\videoGen|cartaA2|plus_inst|in_hbar~0_combout  & (!\vgaCont|x [6] & !\vgaCont|x [7])) ) ) ) # ( \vgaCont|x [0] & ( !\vgaCont|x[5]~DUPLICATE_q  & ( (!\videoGen|cartaA2|plus_inst|in_hbar~0_combout  & (!\vgaCont|x [6] & 
-// !\vgaCont|x [7])) ) ) ) # ( !\vgaCont|x [0] & ( !\vgaCont|x[5]~DUPLICATE_q  & ( (!\videoGen|cartaA2|plus_inst|in_hbar~0_combout  & (!\vgaCont|x [6] & !\vgaCont|x [7])) ) ) )
+// \videoGen|comb~4_combout  = ( !\vgaCont|y [9] & ( !\vgaCont|y[8]~DUPLICATE_q  ) )
 
-	.dataa(!\vgaCont|x [1]),
-	.datab(!\videoGen|cartaA2|plus_inst|in_hbar~0_combout ),
-	.datac(!\vgaCont|x [6]),
-	.datad(!\vgaCont|x [7]),
-	.datae(!\vgaCont|x [0]),
-	.dataf(!\vgaCont|x[5]~DUPLICATE_q ),
+	.dataa(!\vgaCont|y[8]~DUPLICATE_q ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\vgaCont|y [9]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA2|plus_inst|in_hbar~1_combout ),
+	.combout(\videoGen|comb~4_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA2|plus_inst|in_hbar~1 .extended_lut = "off";
-defparam \videoGen|cartaA2|plus_inst|in_hbar~1 .lut_mask = 64'hC000C00030002000;
-defparam \videoGen|cartaA2|plus_inst|in_hbar~1 .shared_arith = "off";
+defparam \videoGen|comb~4 .extended_lut = "off";
+defparam \videoGen|comb~4 .lut_mask = 64'hAAAAAAAA00000000;
+defparam \videoGen|comb~4 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N0
-cyclonev_lcell_comb \videoGen|cartaB1|minus_inst|inminus~0 (
+// Location: LABCELL_X64_Y1_N0
+cyclonev_lcell_comb \videoGen|cartaD1|square_inst|LessThan3~0 (
 // Equation(s):
-// \videoGen|cartaB1|minus_inst|inminus~0_combout  = ( \vgaCont|x [2] & ( (\vgaCont|x [3] & \vgaCont|x [4]) ) )
+// \videoGen|cartaD1|square_inst|LessThan3~0_combout  = ( !\vgaCont|y [5] & ( \vgaCont|y [0] & ( (!\vgaCont|y [4] & ((!\vgaCont|y [2]) # ((!\vgaCont|y[3]~DUPLICATE_q ) # (!\vgaCont|y [1])))) ) ) ) # ( !\vgaCont|y [5] & ( !\vgaCont|y [0] & ( !\vgaCont|y [4] ) 
+// ) )
+
+	.dataa(!\vgaCont|y [2]),
+	.datab(!\vgaCont|y[3]~DUPLICATE_q ),
+	.datac(!\vgaCont|y [4]),
+	.datad(!\vgaCont|y [1]),
+	.datae(!\vgaCont|y [5]),
+	.dataf(!\vgaCont|y [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaD1|square_inst|LessThan3~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaD1|square_inst|LessThan3~0 .extended_lut = "off";
+defparam \videoGen|cartaD1|square_inst|LessThan3~0 .lut_mask = 64'hF0F00000F0E00000;
+defparam \videoGen|cartaD1|square_inst|LessThan3~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X62_Y1_N24
+cyclonev_lcell_comb \videoGen|cartaD1|square_inst|insquare~0 (
+// Equation(s):
+// \videoGen|cartaD1|square_inst|insquare~0_combout  = ( \videoGen|comb~4_combout  & ( \videoGen|cartaD1|square_inst|LessThan3~0_combout  & ( (!\videoGen|cartaD1|square_inst|LessThan2~0_combout  & (\videoGen|cartaD1|square_inst|LessThan2~1_combout  & 
+// \videoGen|cartaA2|plus_inst|in_hbar~0_combout )) ) ) ) # ( \videoGen|comb~4_combout  & ( !\videoGen|cartaD1|square_inst|LessThan3~0_combout  & ( (!\videoGen|cartaD1|square_inst|LessThan2~0_combout  & (\videoGen|cartaD1|square_inst|LessThan2~1_combout  & 
+// (!\videoGen|cartaC1|cros_inst|LessThan3~0_combout  & \videoGen|cartaA2|plus_inst|in_hbar~0_combout ))) ) ) )
+
+	.dataa(!\videoGen|cartaD1|square_inst|LessThan2~0_combout ),
+	.datab(!\videoGen|cartaD1|square_inst|LessThan2~1_combout ),
+	.datac(!\videoGen|cartaC1|cros_inst|LessThan3~0_combout ),
+	.datad(!\videoGen|cartaA2|plus_inst|in_hbar~0_combout ),
+	.datae(!\videoGen|comb~4_combout ),
+	.dataf(!\videoGen|cartaD1|square_inst|LessThan3~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaD1|square_inst|insquare~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaD1|square_inst|insquare~0 .extended_lut = "off";
+defparam \videoGen|cartaD1|square_inst|insquare~0 .lut_mask = 64'h0000002000000022;
+defparam \videoGen|cartaD1|square_inst|insquare~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X63_Y1_N15
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan2~0 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|LessThan2~0_combout  = ( !\vgaCont|y [3] & ( (!\vgaCont|y [4] & ((!\vgaCont|y [0]) # ((!\vgaCont|y [1]) # (!\vgaCont|y [2])))) ) )
+
+	.dataa(!\vgaCont|y [0]),
+	.datab(!\vgaCont|y [1]),
+	.datac(!\vgaCont|y [2]),
+	.datad(!\vgaCont|y [4]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y [3]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|LessThan2~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|LessThan2~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|LessThan2~0 .lut_mask = 64'hFE00FE0000000000;
+defparam \videoGen|cartaA1|plus_inst|LessThan2~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N27
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan6~1 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|LessThan6~1_combout  = ( !\vgaCont|y [9] & ( (!\vgaCont|y[8]~DUPLICATE_q  & !\vgaCont|y [7]) ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\vgaCont|y[8]~DUPLICATE_q ),
+	.datad(!\vgaCont|y [7]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y [9]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|LessThan6~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|LessThan6~1 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|LessThan6~1 .lut_mask = 64'hF000F00000000000;
+defparam \videoGen|cartaA1|plus_inst|LessThan6~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X63_Y1_N21
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~2 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|in_hbar~2_combout  = ( \videoGen|cartaA1|plus_inst|LessThan6~1_combout  & ( (\vgaCont|y [5] & (\vgaCont|y [6] & (!\videoGen|cartaA1|plus_inst|LessThan2~0_combout  & \vgaCont|LessThan5~0_combout ))) ) )
+
+	.dataa(!\vgaCont|y [5]),
+	.datab(!\vgaCont|y [6]),
+	.datac(!\videoGen|cartaA1|plus_inst|LessThan2~0_combout ),
+	.datad(!\vgaCont|LessThan5~0_combout ),
+	.datae(gnd),
+	.dataf(!\videoGen|cartaA1|plus_inst|LessThan6~1_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|in_hbar~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|in_hbar~2 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~2 .lut_mask = 64'h0000000000100010;
+defparam \videoGen|cartaA1|plus_inst|in_hbar~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N15
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan5~0 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|LessThan5~0_combout  = ( \vgaCont|x[4]~DUPLICATE_q  & ( (\vgaCont|x [3] & \vgaCont|x [5]) ) )
 
 	.dataa(!\vgaCont|x [3]),
-	.datab(!\vgaCont|x [4]),
-	.datac(gnd),
+	.datab(gnd),
+	.datac(!\vgaCont|x [5]),
 	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|LessThan5~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|LessThan5~0 .lut_mask = 64'h0000000005050505;
+defparam \videoGen|cartaA1|plus_inst|LessThan5~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N33
+cyclonev_lcell_comb \videoGen|cartaB2|minus_inst|inminus~0 (
+// Equation(s):
+// \videoGen|cartaB2|minus_inst|inminus~0_combout  = ( \vgaCont|x [0] & ( (\vgaCont|x[4]~DUPLICATE_q  & (((\vgaCont|x [1] & \vgaCont|x [2])) # (\vgaCont|x [3]))) ) ) # ( !\vgaCont|x [0] & ( (\vgaCont|x[4]~DUPLICATE_q  & \vgaCont|x [3]) ) )
+
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datad(!\vgaCont|x [3]),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaB2|minus_inst|inminus~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaB2|minus_inst|inminus~0 .extended_lut = "off";
+defparam \videoGen|cartaB2|minus_inst|inminus~0 .lut_mask = 64'h000F000F010F010F;
+defparam \videoGen|cartaB2|minus_inst|inminus~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N45
+cyclonev_lcell_comb \videoGen|cartaB2|minus_inst|inminus~1 (
+// Equation(s):
+// \videoGen|cartaB2|minus_inst|inminus~1_combout  = ( \videoGen|cartaB2|minus_inst|inminus~0_combout  & ( (!\vgaCont|x [6] & (\videoGen|cartaA1|plus_inst|LessThan5~0_combout  & \vgaCont|x [7])) ) ) # ( !\videoGen|cartaB2|minus_inst|inminus~0_combout  & ( 
+// (\vgaCont|x [7] & ((!\vgaCont|x [6] & ((\videoGen|cartaA1|plus_inst|LessThan5~0_combout ))) # (\vgaCont|x [6] & (!\vgaCont|x [5])))) ) )
+
+	.dataa(!\vgaCont|x [5]),
+	.datab(!\vgaCont|x [6]),
+	.datac(!\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
+	.datad(!\vgaCont|x [7]),
+	.datae(gnd),
+	.dataf(!\videoGen|cartaB2|minus_inst|inminus~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaB2|minus_inst|inminus~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaB2|minus_inst|inminus~1 .extended_lut = "off";
+defparam \videoGen|cartaB2|minus_inst|inminus~1 .lut_mask = 64'h002E002E000C000C;
+defparam \videoGen|cartaB2|minus_inst|inminus~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N57
+cyclonev_lcell_comb \videoGen|cartaB1|minus_inst|inminus~0 (
+// Equation(s):
+// \videoGen|cartaB1|minus_inst|inminus~0_combout  = ( \vgaCont|x [2] & ( (\vgaCont|x [4] & \vgaCont|x [3]) ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\vgaCont|x [4]),
+	.datad(!\vgaCont|x [3]),
 	.datae(gnd),
 	.dataf(!\vgaCont|x [2]),
 	.datag(gnd),
@@ -2540,23 +2584,22 @@ cyclonev_lcell_comb \videoGen|cartaB1|minus_inst|inminus~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaB1|minus_inst|inminus~0 .extended_lut = "off";
-defparam \videoGen|cartaB1|minus_inst|inminus~0 .lut_mask = 64'h0000000011111111;
+defparam \videoGen|cartaB1|minus_inst|inminus~0 .lut_mask = 64'h00000000000F000F;
 defparam \videoGen|cartaB1|minus_inst|inminus~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N12
+// Location: MLABCELL_X65_Y1_N18
 cyclonev_lcell_comb \videoGen|cartaB1|minus_inst|inminus~1 (
 // Equation(s):
-// \videoGen|cartaB1|minus_inst|inminus~1_combout  = ( \videoGen|cartaB1|minus_inst|inminus~0_combout  & ( \vgaCont|x[5]~DUPLICATE_q  & ( (\vgaCont|x [6] & (!\vgaCont|x [7] & (!\vgaCont|x [1] & !\vgaCont|x [0]))) ) ) ) # ( 
-// !\videoGen|cartaB1|minus_inst|inminus~0_combout  & ( \vgaCont|x[5]~DUPLICATE_q  & ( (\vgaCont|x [6] & !\vgaCont|x [7]) ) ) ) # ( \videoGen|cartaB1|minus_inst|inminus~0_combout  & ( !\vgaCont|x[5]~DUPLICATE_q  & ( (\vgaCont|x [6] & (!\vgaCont|x [7] & 
-// \vgaCont|x [1])) ) ) )
+// \videoGen|cartaB1|minus_inst|inminus~1_combout  = ( \vgaCont|x [6] & ( \videoGen|cartaB1|minus_inst|inminus~0_combout  & ( (!\vgaCont|x [7] & ((!\vgaCont|x [1] & (\vgaCont|x [5] & !\vgaCont|x [0])) # (\vgaCont|x [1] & (!\vgaCont|x [5])))) ) ) ) # ( 
+// \vgaCont|x [6] & ( !\videoGen|cartaB1|minus_inst|inminus~0_combout  & ( (\vgaCont|x [5] & !\vgaCont|x [7]) ) ) )
 
-	.dataa(!\vgaCont|x [6]),
-	.datab(!\vgaCont|x [7]),
-	.datac(!\vgaCont|x [1]),
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [5]),
+	.datac(!\vgaCont|x [7]),
 	.datad(!\vgaCont|x [0]),
-	.datae(!\videoGen|cartaB1|minus_inst|inminus~0_combout ),
-	.dataf(!\vgaCont|x[5]~DUPLICATE_q ),
+	.datae(!\vgaCont|x [6]),
+	.dataf(!\videoGen|cartaB1|minus_inst|inminus~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2566,71 +2609,72 @@ cyclonev_lcell_comb \videoGen|cartaB1|minus_inst|inminus~1 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaB1|minus_inst|inminus~1 .extended_lut = "off";
-defparam \videoGen|cartaB1|minus_inst|inminus~1 .lut_mask = 64'h0000040444444000;
+defparam \videoGen|cartaB1|minus_inst|inminus~1 .lut_mask = 64'h0000303000006040;
 defparam \videoGen|cartaB1|minus_inst|inminus~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N3
-cyclonev_lcell_comb \videoGen|cartaB2|minus_inst|inminus~0 (
+// Location: LABCELL_X67_Y1_N45
+cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|in_hbar~1 (
 // Equation(s):
-// \videoGen|cartaB2|minus_inst|inminus~0_combout  = ( \vgaCont|x [1] & ( (\vgaCont|x [4] & (((\vgaCont|x [0] & \vgaCont|x [2])) # (\vgaCont|x [3]))) ) ) # ( !\vgaCont|x [1] & ( (\vgaCont|x [3] & \vgaCont|x [4]) ) )
+// \videoGen|cartaA2|plus_inst|in_hbar~1_combout  = ( \vgaCont|x[4]~DUPLICATE_q  & ( \vgaCont|x [0] & ( !\vgaCont|x [5] ) ) ) # ( !\vgaCont|x[4]~DUPLICATE_q  & ( \vgaCont|x [0] & ( (!\vgaCont|x [3] & ((!\vgaCont|x [2] & (\vgaCont|x [5] & !\vgaCont|x [1])) # 
+// (\vgaCont|x [2] & (!\vgaCont|x [5])))) # (\vgaCont|x [3] & (((!\vgaCont|x [5])))) ) ) ) # ( \vgaCont|x[4]~DUPLICATE_q  & ( !\vgaCont|x [0] & ( !\vgaCont|x [5] ) ) ) # ( !\vgaCont|x[4]~DUPLICATE_q  & ( !\vgaCont|x [0] & ( !\vgaCont|x [5] $ (((!\vgaCont|x 
+// [3] & !\vgaCont|x [2]))) ) ) )
 
 	.dataa(!\vgaCont|x [3]),
-	.datab(!\vgaCont|x [4]),
-	.datac(!\vgaCont|x [0]),
-	.datad(!\vgaCont|x [2]),
-	.datae(gnd),
-	.dataf(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x [5]),
+	.datad(!\vgaCont|x [1]),
+	.datae(!\vgaCont|x[4]~DUPLICATE_q ),
+	.dataf(!\vgaCont|x [0]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaB2|minus_inst|inminus~0_combout ),
+	.combout(\videoGen|cartaA2|plus_inst|in_hbar~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaB2|minus_inst|inminus~0 .extended_lut = "off";
-defparam \videoGen|cartaB2|minus_inst|inminus~0 .lut_mask = 64'h1111111111131113;
-defparam \videoGen|cartaB2|minus_inst|inminus~0 .shared_arith = "off";
+defparam \videoGen|cartaA2|plus_inst|in_hbar~1 .extended_lut = "off";
+defparam \videoGen|cartaA2|plus_inst|in_hbar~1 .lut_mask = 64'h7878F0F07870F0F0;
+defparam \videoGen|cartaA2|plus_inst|in_hbar~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N54
-cyclonev_lcell_comb \videoGen|cartaB2|minus_inst|inminus~1 (
+// Location: LABCELL_X67_Y1_N6
+cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|in_hbar~2 (
 // Equation(s):
-// \videoGen|cartaB2|minus_inst|inminus~1_combout  = ( \videoGen|cartaA1|plus_inst|LessThan5~0_combout  & ( (\vgaCont|x [7] & ((!\vgaCont|x [6]) # ((!\videoGen|cartaB2|minus_inst|inminus~0_combout  & !\vgaCont|x[5]~DUPLICATE_q )))) ) ) # ( 
-// !\videoGen|cartaA1|plus_inst|LessThan5~0_combout  & ( (!\videoGen|cartaB2|minus_inst|inminus~0_combout  & (!\vgaCont|x[5]~DUPLICATE_q  & (\vgaCont|x [6] & \vgaCont|x [7]))) ) )
+// \videoGen|cartaA2|plus_inst|in_hbar~2_combout  = ( !\vgaCont|x [7] & ( (!\vgaCont|x [6] & \videoGen|cartaA2|plus_inst|in_hbar~1_combout ) ) )
 
-	.dataa(!\videoGen|cartaB2|minus_inst|inminus~0_combout ),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\vgaCont|x [6]),
-	.datad(!\vgaCont|x [7]),
-	.datae(!\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
-	.dataf(gnd),
+	.dataa(!\vgaCont|x [6]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\videoGen|cartaA2|plus_inst|in_hbar~1_combout ),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [7]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaB2|minus_inst|inminus~1_combout ),
+	.combout(\videoGen|cartaA2|plus_inst|in_hbar~2_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaB2|minus_inst|inminus~1 .extended_lut = "off";
-defparam \videoGen|cartaB2|minus_inst|inminus~1 .lut_mask = 64'h000800F8000800F8;
-defparam \videoGen|cartaB2|minus_inst|inminus~1 .shared_arith = "off";
+defparam \videoGen|cartaA2|plus_inst|in_hbar~2 .extended_lut = "off";
+defparam \videoGen|cartaA2|plus_inst|in_hbar~2 .lut_mask = 64'h00AA00AA00000000;
+defparam \videoGen|cartaA2|plus_inst|in_hbar~2 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N24
+// Location: LABCELL_X62_Y1_N12
 cyclonev_lcell_comb \videoGen|g[0]~1 (
 // Equation(s):
-// \videoGen|g[0]~1_combout  = ( \videoGen|cartaB2|minus_inst|inminus~1_combout  & ( \vgaCont|x[8]~DUPLICATE_q  & ( (!\vgaCont|x[9]~DUPLICATE_q  & \videoGen|cartaA1|plus_inst|in_hbar~1_combout ) ) ) ) # ( !\videoGen|cartaB2|minus_inst|inminus~1_combout  & ( 
-// \vgaCont|x[8]~DUPLICATE_q  & ( (!\vgaCont|x[9]~DUPLICATE_q  & (\videoGen|cartaA1|plus_inst|in_hbar~1_combout  & ((\videoGen|cartaB1|minus_inst|inminus~1_combout ) # (\videoGen|cartaA2|plus_inst|in_hbar~1_combout )))) ) ) )
+// \videoGen|g[0]~1_combout  = ( \videoGen|cartaA2|plus_inst|in_hbar~0_combout  & ( \videoGen|cartaA2|plus_inst|in_hbar~2_combout  & ( \videoGen|cartaA1|plus_inst|in_hbar~2_combout  ) ) ) # ( \videoGen|cartaA2|plus_inst|in_hbar~0_combout  & ( 
+// !\videoGen|cartaA2|plus_inst|in_hbar~2_combout  & ( (\videoGen|cartaA1|plus_inst|in_hbar~2_combout  & ((\videoGen|cartaB1|minus_inst|inminus~1_combout ) # (\videoGen|cartaB2|minus_inst|inminus~1_combout ))) ) ) )
 
-	.dataa(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datab(!\videoGen|cartaA1|plus_inst|in_hbar~1_combout ),
-	.datac(!\videoGen|cartaA2|plus_inst|in_hbar~1_combout ),
+	.dataa(!\videoGen|cartaA1|plus_inst|in_hbar~2_combout ),
+	.datab(gnd),
+	.datac(!\videoGen|cartaB2|minus_inst|inminus~1_combout ),
 	.datad(!\videoGen|cartaB1|minus_inst|inminus~1_combout ),
-	.datae(!\videoGen|cartaB2|minus_inst|inminus~1_combout ),
-	.dataf(!\vgaCont|x[8]~DUPLICATE_q ),
+	.datae(!\videoGen|cartaA2|plus_inst|in_hbar~0_combout ),
+	.dataf(!\videoGen|cartaA2|plus_inst|in_hbar~2_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2640,314 +2684,18 @@ cyclonev_lcell_comb \videoGen|g[0]~1 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|g[0]~1 .extended_lut = "off";
-defparam \videoGen|g[0]~1 .lut_mask = 64'h0000000002222222;
+defparam \videoGen|g[0]~1 .lut_mask = 64'h0000055500005555;
 defparam \videoGen|g[0]~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N48
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~0 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|in_hbar~0_combout  = ( \vgaCont|x [0] & ( \videoGen|cartaA1|rect_inst|LessThan1~0_combout  & ( (!\vgaCont|x [6] & (\vgaCont|x [4] & ((\vgaCont|x[5]~DUPLICATE_q )))) # (\vgaCont|x [6] & (!\vgaCont|x [4] & (!\vgaCont|x [3] & 
-// !\vgaCont|x[5]~DUPLICATE_q ))) ) ) ) # ( !\vgaCont|x [0] & ( \videoGen|cartaA1|rect_inst|LessThan1~0_combout  & ( (!\vgaCont|x [6] & (\vgaCont|x [4] & \vgaCont|x[5]~DUPLICATE_q )) # (\vgaCont|x [6] & (!\vgaCont|x [4] & !\vgaCont|x[5]~DUPLICATE_q )) ) ) ) 
-// # ( \vgaCont|x [0] & ( !\videoGen|cartaA1|rect_inst|LessThan1~0_combout  & ( (!\vgaCont|x [6] & (\vgaCont|x[5]~DUPLICATE_q  & ((\vgaCont|x [3]) # (\vgaCont|x [4])))) # (\vgaCont|x [6] & (!\vgaCont|x [4] & (!\vgaCont|x [3] & !\vgaCont|x[5]~DUPLICATE_q ))) 
-// ) ) ) # ( !\vgaCont|x [0] & ( !\videoGen|cartaA1|rect_inst|LessThan1~0_combout  & ( (!\vgaCont|x [6] & (\vgaCont|x[5]~DUPLICATE_q  & ((\vgaCont|x [3]) # (\vgaCont|x [4])))) # (\vgaCont|x [6] & (!\vgaCont|x [4] & (!\vgaCont|x [3] & 
-// !\vgaCont|x[5]~DUPLICATE_q ))) ) ) )
-
-	.dataa(!\vgaCont|x [6]),
-	.datab(!\vgaCont|x [4]),
-	.datac(!\vgaCont|x [3]),
-	.datad(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datae(!\vgaCont|x [0]),
-	.dataf(!\videoGen|cartaA1|rect_inst|LessThan1~0_combout ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|in_hbar~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|in_hbar~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|in_hbar~0 .lut_mask = 64'h402A402A44224022;
-defparam \videoGen|cartaA1|plus_inst|in_hbar~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X61_Y2_N6
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~2 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|in_hbar~2_combout  = ( !\vgaCont|x[9]~DUPLICATE_q  & ( (!\vgaCont|x[8]~DUPLICATE_q  & (\vgaCont|x [7] & (\videoGen|cartaA1|plus_inst|in_hbar~0_combout  & \videoGen|cartaA1|plus_inst|in_hbar~1_combout ))) ) )
-
-	.dataa(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datab(!\vgaCont|x [7]),
-	.datac(!\videoGen|cartaA1|plus_inst|in_hbar~0_combout ),
-	.datad(!\videoGen|cartaA1|plus_inst|in_hbar~1_combout ),
-	.datae(gnd),
-	.dataf(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|in_hbar~2_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|in_hbar~2 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|in_hbar~2 .lut_mask = 64'h0002000200000000;
-defparam \videoGen|cartaA1|plus_inst|in_hbar~2 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N21
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan7~0 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan7~0_combout  = ( \vgaCont|y[0]~DUPLICATE_q  & ( (\vgaCont|y [5] & \vgaCont|y [6]) ) ) # ( !\vgaCont|y[0]~DUPLICATE_q  & ( (\vgaCont|y [5] & (\vgaCont|y [6] & ((\vgaCont|y [1]) # (\vgaCont|y [2])))) ) )
-
-	.dataa(!\vgaCont|y [2]),
-	.datab(!\vgaCont|y [5]),
-	.datac(!\vgaCont|y [6]),
-	.datad(!\vgaCont|y [1]),
-	.datae(gnd),
-	.dataf(!\vgaCont|y[0]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan7~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan7~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan7~0 .lut_mask = 64'h0103010303030303;
-defparam \videoGen|cartaA1|plus_inst|LessThan7~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N18
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan6~0 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan6~0_combout  = ( \vgaCont|y[1]~DUPLICATE_q  & ( (!\vgaCont|y [5] & ((!\vgaCont|y [4]) # (!\vgaCont|y[3]~DUPLICATE_q ))) ) ) # ( !\vgaCont|y[1]~DUPLICATE_q  & ( (!\vgaCont|y [5] & ((!\vgaCont|y [2]) # ((!\vgaCont|y [4]) 
-// # (!\vgaCont|y[3]~DUPLICATE_q )))) ) )
-
-	.dataa(!\vgaCont|y [2]),
-	.datab(!\vgaCont|y [5]),
-	.datac(!\vgaCont|y [4]),
-	.datad(!\vgaCont|y[3]~DUPLICATE_q ),
-	.datae(gnd),
-	.dataf(!\vgaCont|y[1]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan6~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan6~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan6~0 .lut_mask = 64'hCCC8CCC8CCC0CCC0;
-defparam \videoGen|cartaA1|plus_inst|LessThan6~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N21
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_vbar~0 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|in_vbar~0_combout  = ( \vgaCont|y [4] & ( \videoGen|cartaA1|plus_inst|LessThan2~0_combout  & ( (\vgaCont|y [6] & (!\videoGen|cartaA1|plus_inst|LessThan6~0_combout  & ((!\videoGen|cartaA1|plus_inst|LessThan7~0_combout ) # 
-// (!\vgaCont|y [3])))) ) ) ) # ( !\vgaCont|y [4] & ( \videoGen|cartaA1|plus_inst|LessThan2~0_combout  & ( (\vgaCont|y [6] & !\videoGen|cartaA1|plus_inst|LessThan6~0_combout ) ) ) )
-
-	.dataa(!\videoGen|cartaA1|plus_inst|LessThan7~0_combout ),
-	.datab(!\vgaCont|y [6]),
-	.datac(!\vgaCont|y [3]),
-	.datad(!\videoGen|cartaA1|plus_inst|LessThan6~0_combout ),
-	.datae(!\vgaCont|y [4]),
-	.dataf(!\videoGen|cartaA1|plus_inst|LessThan2~0_combout ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|in_vbar~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|in_vbar~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|in_vbar~0 .lut_mask = 64'h0000000033003200;
-defparam \videoGen|cartaA1|plus_inst|in_vbar~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N3
-cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|LessThan2~0 (
-// Equation(s):
-// \videoGen|cartaC1|cros_inst|LessThan2~0_combout  = (\vgaCont|y [5] & (\vgaCont|y [4] & ((\vgaCont|y [3]) # (\vgaCont|y [2]))))
-
-	.dataa(!\vgaCont|y [2]),
-	.datab(!\vgaCont|y [3]),
-	.datac(!\vgaCont|y [5]),
-	.datad(!\vgaCont|y [4]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC1|cros_inst|LessThan2~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC1|cros_inst|LessThan2~0 .extended_lut = "off";
-defparam \videoGen|cartaC1|cros_inst|LessThan2~0 .lut_mask = 64'h0007000700070007;
-defparam \videoGen|cartaC1|cros_inst|LessThan2~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N30
-cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|LessThan2~1 (
-// Equation(s):
-// \videoGen|cartaC1|cros_inst|LessThan2~1_combout  = ( !\vgaCont|y [6] & ( (!\videoGen|cartaC1|cros_inst|LessThan2~0_combout  & (!\vgaCont|y [8] & !\vgaCont|y [9])) ) )
-
-	.dataa(!\videoGen|cartaC1|cros_inst|LessThan2~0_combout ),
-	.datab(!\vgaCont|y [8]),
-	.datac(!\vgaCont|y [9]),
-	.datad(gnd),
-	.datae(!\vgaCont|y [6]),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC1|cros_inst|LessThan2~1_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC1|cros_inst|LessThan2~1 .extended_lut = "off";
-defparam \videoGen|cartaC1|cros_inst|LessThan2~1 .lut_mask = 64'h8080000080800000;
-defparam \videoGen|cartaC1|cros_inst|LessThan2~1 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X60_Y2_N0
-cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|LessThan3~0 (
-// Equation(s):
-// \videoGen|cartaC1|cros_inst|LessThan3~0_combout  = ( \vgaCont|y[0]~DUPLICATE_q  & ( (!\vgaCont|y [3] & (!\vgaCont|y [1] & !\vgaCont|y [2])) ) ) # ( !\vgaCont|y[0]~DUPLICATE_q  & ( (!\vgaCont|y [3] & !\vgaCont|y [2]) ) )
-
-	.dataa(gnd),
-	.datab(!\vgaCont|y [3]),
-	.datac(!\vgaCont|y [1]),
-	.datad(!\vgaCont|y [2]),
-	.datae(gnd),
-	.dataf(!\vgaCont|y[0]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC1|cros_inst|LessThan3~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC1|cros_inst|LessThan3~0 .extended_lut = "off";
-defparam \videoGen|cartaC1|cros_inst|LessThan3~0 .lut_mask = 64'hCC00CC00C000C000;
-defparam \videoGen|cartaC1|cros_inst|LessThan3~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N3
-cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~2 (
-// Equation(s):
-// \videoGen|cartaC2|cros_inst|incros~2_combout  = ( \vgaCont|y [5] & ( (\vgaCont|y [7] & (!\vgaCont|y[9]~DUPLICATE_q  & (!\vgaCont|y [6] & !\vgaCont|y [8]))) ) ) # ( !\vgaCont|y [5] & ( (\vgaCont|y [7] & (!\vgaCont|y[9]~DUPLICATE_q  & !\vgaCont|y [8])) ) )
-
-	.dataa(!\vgaCont|y [7]),
-	.datab(!\vgaCont|y[9]~DUPLICATE_q ),
-	.datac(!\vgaCont|y [6]),
-	.datad(!\vgaCont|y [8]),
-	.datae(!\vgaCont|y [5]),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC2|cros_inst|incros~2_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC2|cros_inst|incros~2 .extended_lut = "off";
-defparam \videoGen|cartaC2|cros_inst|incros~2 .lut_mask = 64'h4400400044004000;
-defparam \videoGen|cartaC2|cros_inst|incros~2 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: MLABCELL_X59_Y2_N27
-cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~3 (
-// Equation(s):
-// \videoGen|cartaC2|cros_inst|incros~3_combout  = ( \vgaCont|y [7] & ( (\videoGen|cartaC2|cros_inst|incros~2_combout  & ((!\vgaCont|y [4]) # ((!\vgaCont|y [6]) # (\videoGen|cartaC1|cros_inst|LessThan3~0_combout )))) ) ) # ( !\vgaCont|y [7] & ( 
-// \videoGen|cartaC2|cros_inst|incros~2_combout  ) )
-
-	.dataa(!\vgaCont|y [4]),
-	.datab(!\vgaCont|y [6]),
-	.datac(!\videoGen|cartaC1|cros_inst|LessThan3~0_combout ),
-	.datad(!\videoGen|cartaC2|cros_inst|incros~2_combout ),
-	.datae(gnd),
-	.dataf(!\vgaCont|y [7]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC2|cros_inst|incros~3_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC2|cros_inst|incros~3 .extended_lut = "off";
-defparam \videoGen|cartaC2|cros_inst|incros~3 .lut_mask = 64'h00FF00FF00EF00EF;
-defparam \videoGen|cartaC2|cros_inst|incros~3 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N57
-cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan5~2 (
-// Equation(s):
-// \videoGen|cartaA2|plus_inst|LessThan5~2_combout  = ( \vgaCont|x [2] & ( (\vgaCont|x [4] & (\vgaCont|x[8]~DUPLICATE_q  & ((\vgaCont|x [1]) # (\vgaCont|x [3])))) ) ) # ( !\vgaCont|x [2] & ( (\vgaCont|x [3] & (\vgaCont|x [4] & \vgaCont|x[8]~DUPLICATE_q )) ) 
-// )
-
-	.dataa(!\vgaCont|x [3]),
-	.datab(!\vgaCont|x [1]),
-	.datac(!\vgaCont|x [4]),
-	.datad(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datae(gnd),
-	.dataf(!\vgaCont|x [2]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA2|plus_inst|LessThan5~2_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA2|plus_inst|LessThan5~2 .extended_lut = "off";
-defparam \videoGen|cartaA2|plus_inst|LessThan5~2 .lut_mask = 64'h0005000500070007;
-defparam \videoGen|cartaA2|plus_inst|LessThan5~2 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X63_Y2_N45
-cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~0 (
-// Equation(s):
-// \videoGen|cartaC2|cros_inst|incros~0_combout  = ( \vgaCont|x[8]~DUPLICATE_q  & ( !\vgaCont|x[9]~DUPLICATE_q  & ( (!\vgaCont|x[7]~DUPLICATE_q  & (!\vgaCont|x[5]~DUPLICATE_q  & !\vgaCont|x [6])) ) ) )
-
-	.dataa(!\vgaCont|x[7]~DUPLICATE_q ),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\vgaCont|x [6]),
-	.datad(gnd),
-	.datae(!\vgaCont|x[8]~DUPLICATE_q ),
-	.dataf(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC2|cros_inst|incros~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC2|cros_inst|incros~0 .extended_lut = "off";
-defparam \videoGen|cartaC2|cros_inst|incros~0 .lut_mask = 64'h0000808000000000;
-defparam \videoGen|cartaC2|cros_inst|incros~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N54
+// Location: MLABCELL_X65_Y1_N54
 cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan4~0 (
 // Equation(s):
 // \videoGen|cartaA2|plus_inst|LessThan4~0_combout  = ( !\vgaCont|x [2] & ( (!\vgaCont|x [3] & (!\vgaCont|x [1] & !\vgaCont|x [0])) ) )
 
-	.dataa(!\vgaCont|x [3]),
-	.datab(!\vgaCont|x [1]),
-	.datac(gnd),
+	.dataa(gnd),
+	.datab(!\vgaCont|x [3]),
+	.datac(!\vgaCont|x [1]),
 	.datad(!\vgaCont|x [0]),
 	.datae(gnd),
 	.dataf(!\vgaCont|x [2]),
@@ -2960,21 +2708,289 @@ cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan4~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaA2|plus_inst|LessThan4~0 .extended_lut = "off";
-defparam \videoGen|cartaA2|plus_inst|LessThan4~0 .lut_mask = 64'h8800880000000000;
+defparam \videoGen|cartaA2|plus_inst|LessThan4~0 .lut_mask = 64'hC000C00000000000;
 defparam \videoGen|cartaA2|plus_inst|LessThan4~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N39
-cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan4~1 (
+// Location: LABCELL_X67_Y1_N27
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~0 (
 // Equation(s):
-// \videoGen|cartaA2|plus_inst|LessThan4~1_combout  = ( !\vgaCont|x[9]~DUPLICATE_q  & ( (!\vgaCont|x [6] & (!\vgaCont|x[5]~DUPLICATE_q  & !\vgaCont|x[7]~DUPLICATE_q )) ) )
+// \videoGen|cartaA1|plus_inst|in_hbar~0_combout  = ( \vgaCont|x [0] & ( \vgaCont|x [3] ) ) # ( !\vgaCont|x [0] & ( (\vgaCont|x [3] & ((\vgaCont|x [2]) # (\vgaCont|x [1]))) ) )
+
+	.dataa(!\vgaCont|x [1]),
+	.datab(gnd),
+	.datac(!\vgaCont|x [2]),
+	.datad(!\vgaCont|x [3]),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|in_hbar~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|in_hbar~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~0 .lut_mask = 64'h005F005F00FF00FF;
+defparam \videoGen|cartaA1|plus_inst|in_hbar~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X65_Y1_N42
+cyclonev_lcell_comb \videoGen|cartaD1|square_inst|insquare~1 (
+// Equation(s):
+// \videoGen|cartaD1|square_inst|insquare~1_combout  = ( !\videoGen|cartaA2|plus_inst|LessThan4~0_combout  & ( \videoGen|cartaA1|plus_inst|in_hbar~0_combout  & ( (!\vgaCont|x [4] & (\vgaCont|x [6] & (!\vgaCont|x [7] & \vgaCont|x [5]))) ) ) ) # ( 
+// \videoGen|cartaA2|plus_inst|LessThan4~0_combout  & ( !\videoGen|cartaA1|plus_inst|in_hbar~0_combout  & ( (\vgaCont|x [4] & (\vgaCont|x [6] & (!\vgaCont|x [7] & \vgaCont|x [5]))) ) ) ) # ( !\videoGen|cartaA2|plus_inst|LessThan4~0_combout  & ( 
+// !\videoGen|cartaA1|plus_inst|in_hbar~0_combout  & ( (\vgaCont|x [6] & (!\vgaCont|x [7] & \vgaCont|x [5])) ) ) )
+
+	.dataa(!\vgaCont|x [4]),
+	.datab(!\vgaCont|x [6]),
+	.datac(!\vgaCont|x [7]),
+	.datad(!\vgaCont|x [5]),
+	.datae(!\videoGen|cartaA2|plus_inst|LessThan4~0_combout ),
+	.dataf(!\videoGen|cartaA1|plus_inst|in_hbar~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaD1|square_inst|insquare~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaD1|square_inst|insquare~1 .extended_lut = "off";
+defparam \videoGen|cartaD1|square_inst|insquare~1 .lut_mask = 64'h0030001000200000;
+defparam \videoGen|cartaD1|square_inst|insquare~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N36
+cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|LessThan2~0 (
+// Equation(s):
+// \videoGen|cartaC1|cros_inst|LessThan2~0_combout  = ( \vgaCont|y[3]~DUPLICATE_q  & ( (!\vgaCont|y [5]) # (!\vgaCont|y [4]) ) ) # ( !\vgaCont|y[3]~DUPLICATE_q  & ( (!\vgaCont|y [5]) # ((!\vgaCont|y [4]) # (!\vgaCont|y [2])) ) )
+
+	.dataa(!\vgaCont|y [5]),
+	.datab(gnd),
+	.datac(!\vgaCont|y [4]),
+	.datad(!\vgaCont|y [2]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y[3]~DUPLICATE_q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC1|cros_inst|LessThan2~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC1|cros_inst|LessThan2~0 .extended_lut = "off";
+defparam \videoGen|cartaC1|cros_inst|LessThan2~0 .lut_mask = 64'hFFFAFFFAFAFAFAFA;
+defparam \videoGen|cartaC1|cros_inst|LessThan2~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N39
+cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~2 (
+// Equation(s):
+// \videoGen|cartaC2|cros_inst|incros~2_combout  = ( !\vgaCont|y [9] & ( (\vgaCont|y [7] & (!\vgaCont|y[8]~DUPLICATE_q  & ((!\vgaCont|y [5]) # (!\vgaCont|y [6])))) ) )
+
+	.dataa(!\vgaCont|y [5]),
+	.datab(!\vgaCont|y [7]),
+	.datac(!\vgaCont|y[8]~DUPLICATE_q ),
+	.datad(!\vgaCont|y [6]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y [9]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC2|cros_inst|incros~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC2|cros_inst|incros~2 .extended_lut = "off";
+defparam \videoGen|cartaC2|cros_inst|incros~2 .lut_mask = 64'h3020302000000000;
+defparam \videoGen|cartaC2|cros_inst|incros~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N45
+cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|LessThan3~1 (
+// Equation(s):
+// \videoGen|cartaC1|cros_inst|LessThan3~1_combout  = (((\vgaCont|y [1] & \vgaCont|y [0])) # (\vgaCont|y [3])) # (\vgaCont|y [2])
+
+	.dataa(!\vgaCont|y [2]),
+	.datab(!\vgaCont|y [1]),
+	.datac(!\vgaCont|y [0]),
+	.datad(!\vgaCont|y [3]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC1|cros_inst|LessThan3~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC1|cros_inst|LessThan3~1 .extended_lut = "off";
+defparam \videoGen|cartaC1|cros_inst|LessThan3~1 .lut_mask = 64'h57FF57FF57FF57FF;
+defparam \videoGen|cartaC1|cros_inst|LessThan3~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X63_Y1_N24
+cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~3 (
+// Equation(s):
+// \videoGen|cartaC2|cros_inst|incros~3_combout  = ( !\vgaCont|y [6] & ( ((\videoGen|cartaC2|cros_inst|incros~2_combout  & ((!\videoGen|cartaC1|cros_inst|LessThan2~0_combout ) # ((!\videoGen|comb~4_combout ))))) ) ) # ( \vgaCont|y [6] & ( 
+// ((\videoGen|cartaC2|cros_inst|incros~2_combout  & ((!\vgaCont|y [4]) # ((!\vgaCont|y [7]) # (!\videoGen|cartaC1|cros_inst|LessThan3~1_combout ))))) ) )
+
+	.dataa(!\vgaCont|y [4]),
+	.datab(!\videoGen|cartaC1|cros_inst|LessThan2~0_combout ),
+	.datac(!\vgaCont|y [7]),
+	.datad(!\videoGen|cartaC2|cros_inst|incros~2_combout ),
+	.datae(!\vgaCont|y [6]),
+	.dataf(!\videoGen|cartaC1|cros_inst|LessThan3~1_combout ),
+	.datag(!\videoGen|comb~4_combout ),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC2|cros_inst|incros~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC2|cros_inst|incros~3 .extended_lut = "on";
+defparam \videoGen|cartaC2|cros_inst|incros~3 .lut_mask = 64'h00FC00FF00FC00FA;
+defparam \videoGen|cartaC2|cros_inst|incros~3 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X65_Y1_N0
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan4~0 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|LessThan4~0_combout  = ( \vgaCont|x [4] & ( \vgaCont|x [2] & ( (\vgaCont|x [5] & (((\vgaCont|x [1] & \vgaCont|x [0])) # (\vgaCont|x [3]))) ) ) ) # ( \vgaCont|x [4] & ( !\vgaCont|x [2] & ( (\vgaCont|x [5] & \vgaCont|x [3]) ) ) )
+
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [5]),
+	.datac(!\vgaCont|x [0]),
+	.datad(!\vgaCont|x [3]),
+	.datae(!\vgaCont|x [4]),
+	.dataf(!\vgaCont|x [2]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|LessThan4~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|LessThan4~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|LessThan4~0 .lut_mask = 64'h0000003300000133;
+defparam \videoGen|cartaA1|plus_inst|LessThan4~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X65_Y1_N9
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~1 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|in_hbar~1_combout  = ( !\vgaCont|x [9] & ( !\vgaCont|x [8] ) )
 
 	.dataa(gnd),
-	.datab(!\vgaCont|x [6]),
-	.datac(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datad(!\vgaCont|x[7]~DUPLICATE_q ),
+	.datab(gnd),
+	.datac(!\vgaCont|x [8]),
+	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\vgaCont|x[9]~DUPLICATE_q ),
+	.dataf(!\vgaCont|x [9]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|in_hbar~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|in_hbar~1 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~1 .lut_mask = 64'hF0F0F0F000000000;
+defparam \videoGen|cartaA1|plus_inst|in_hbar~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X65_Y1_N36
+cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|incros~0 (
+// Equation(s):
+// \videoGen|cartaC1|cros_inst|incros~0_combout  = ( !\vgaCont|x [6] & ( \vgaCont|x [7] & ( (\videoGen|cartaA1|plus_inst|LessThan4~0_combout  & (\videoGen|cartaA1|plus_inst|in_hbar~1_combout  & ((!\vgaCont|x [2]) # 
+// (!\videoGen|cartaA1|plus_inst|LessThan5~0_combout )))) ) ) )
+
+	.dataa(!\vgaCont|x [2]),
+	.datab(!\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
+	.datac(!\videoGen|cartaA1|plus_inst|LessThan4~0_combout ),
+	.datad(!\videoGen|cartaA1|plus_inst|in_hbar~1_combout ),
+	.datae(!\vgaCont|x [6]),
+	.dataf(!\vgaCont|x [7]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC1|cros_inst|incros~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC1|cros_inst|incros~0 .extended_lut = "off";
+defparam \videoGen|cartaC1|cros_inst|incros~0 .lut_mask = 64'h00000000000E0000;
+defparam \videoGen|cartaC1|cros_inst|incros~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X66_Y1_N42
+cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~0 (
+// Equation(s):
+// \videoGen|cartaC2|cros_inst|incros~0_combout  = ( !\vgaCont|x [7] & ( (!\vgaCont|x [5] & (!\vgaCont|x [6] & (\vgaCont|x [8] & !\vgaCont|x [9]))) ) )
+
+	.dataa(!\vgaCont|x [5]),
+	.datab(!\vgaCont|x [6]),
+	.datac(!\vgaCont|x [8]),
+	.datad(!\vgaCont|x [9]),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [7]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaC2|cros_inst|incros~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaC2|cros_inst|incros~0 .extended_lut = "off";
+defparam \videoGen|cartaC2|cros_inst|incros~0 .lut_mask = 64'h0800080000000000;
+defparam \videoGen|cartaC2|cros_inst|incros~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N3
+cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan5~0 (
+// Equation(s):
+// \videoGen|cartaA2|plus_inst|LessThan5~0_combout  = ( \vgaCont|x [8] & ( (\vgaCont|x[4]~DUPLICATE_q  & (((\vgaCont|x [2] & \vgaCont|x [1])) # (\vgaCont|x [3]))) ) )
+
+	.dataa(!\vgaCont|x [3]),
+	.datab(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x [1]),
+	.datad(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [8]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA2|plus_inst|LessThan5~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA2|plus_inst|LessThan5~0 .extended_lut = "off";
+defparam \videoGen|cartaA2|plus_inst|LessThan5~0 .lut_mask = 64'h0000000000570057;
+defparam \videoGen|cartaA2|plus_inst|LessThan5~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X65_Y1_N30
+cyclonev_lcell_comb \videoGen|cartaA2|plus_inst|LessThan4~1 (
+// Equation(s):
+// \videoGen|cartaA2|plus_inst|LessThan4~1_combout  = ( !\vgaCont|x [9] & ( (!\vgaCont|x [5] & (!\vgaCont|x [7] & !\vgaCont|x [6])) ) )
+
+	.dataa(gnd),
+	.datab(!\vgaCont|x [5]),
+	.datac(!\vgaCont|x [7]),
+	.datad(!\vgaCont|x [6]),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [9]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2988,16 +3004,16 @@ defparam \videoGen|cartaA2|plus_inst|LessThan4~1 .lut_mask = 64'hC000C0000000000
 defparam \videoGen|cartaA2|plus_inst|LessThan4~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N48
+// Location: MLABCELL_X65_Y1_N6
 cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~1 (
 // Equation(s):
-// \videoGen|cartaC2|cros_inst|incros~1_combout  = ( \videoGen|cartaA2|plus_inst|LessThan4~1_combout  & ( (!\videoGen|cartaA2|plus_inst|LessThan5~2_combout  & (\vgaCont|x [4] & (\videoGen|cartaC2|cros_inst|incros~0_combout  & 
-// !\videoGen|cartaA2|plus_inst|LessThan4~0_combout ))) ) ) # ( !\videoGen|cartaA2|plus_inst|LessThan4~1_combout  & ( (!\videoGen|cartaA2|plus_inst|LessThan5~2_combout  & \videoGen|cartaC2|cros_inst|incros~0_combout ) ) )
+// \videoGen|cartaC2|cros_inst|incros~1_combout  = ( \videoGen|cartaA2|plus_inst|LessThan4~1_combout  & ( (!\videoGen|cartaA2|plus_inst|LessThan4~0_combout  & (\videoGen|cartaC2|cros_inst|incros~0_combout  & (\vgaCont|x [4] & 
+// !\videoGen|cartaA2|plus_inst|LessThan5~0_combout ))) ) ) # ( !\videoGen|cartaA2|plus_inst|LessThan4~1_combout  & ( (\videoGen|cartaC2|cros_inst|incros~0_combout  & !\videoGen|cartaA2|plus_inst|LessThan5~0_combout ) ) )
 
-	.dataa(!\videoGen|cartaA2|plus_inst|LessThan5~2_combout ),
-	.datab(!\vgaCont|x [4]),
-	.datac(!\videoGen|cartaC2|cros_inst|incros~0_combout ),
-	.datad(!\videoGen|cartaA2|plus_inst|LessThan4~0_combout ),
+	.dataa(!\videoGen|cartaA2|plus_inst|LessThan4~0_combout ),
+	.datab(!\videoGen|cartaC2|cros_inst|incros~0_combout ),
+	.datac(!\vgaCont|x [4]),
+	.datad(!\videoGen|cartaA2|plus_inst|LessThan5~0_combout ),
 	.datae(gnd),
 	.dataf(!\videoGen|cartaA2|plus_inst|LessThan4~1_combout ),
 	.datag(gnd),
@@ -3009,121 +3025,171 @@ cyclonev_lcell_comb \videoGen|cartaC2|cros_inst|incros~1 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|cartaC2|cros_inst|incros~1 .extended_lut = "off";
-defparam \videoGen|cartaC2|cros_inst|incros~1 .lut_mask = 64'h0A0A0A0A02000200;
+defparam \videoGen|cartaC2|cros_inst|incros~1 .lut_mask = 64'h3300330002000200;
 defparam \videoGen|cartaC2|cros_inst|incros~1 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N33
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan4~1 (
+// Location: LABCELL_X63_Y1_N12
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan7~0 (
 // Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan4~1_combout  = ( \vgaCont|x[7]~DUPLICATE_q  & ( \vgaCont|x [4] & ( (\vgaCont|x [6]) # (\vgaCont|x[5]~DUPLICATE_q ) ) ) ) # ( \vgaCont|x[7]~DUPLICATE_q  & ( !\vgaCont|x [4] & ( \vgaCont|x [6] ) ) )
+// \videoGen|cartaA1|plus_inst|LessThan7~0_combout  = ( \vgaCont|y [6] & ( (\vgaCont|y [5] & (((\vgaCont|y [2]) # (\vgaCont|y [1])) # (\vgaCont|y [0]))) ) )
 
-	.dataa(gnd),
-	.datab(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datac(!\vgaCont|x [6]),
+	.dataa(!\vgaCont|y [0]),
+	.datab(!\vgaCont|y [1]),
+	.datac(!\vgaCont|y [5]),
+	.datad(!\vgaCont|y [2]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y [6]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|LessThan7~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|LessThan7~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|LessThan7~0 .lut_mask = 64'h00000000070F070F;
+defparam \videoGen|cartaA1|plus_inst|LessThan7~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N30
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan6~0 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|LessThan6~0_combout  = ( \vgaCont|y[3]~DUPLICATE_q  & ( (!\vgaCont|y [5] & ((!\vgaCont|y [4]) # ((!\vgaCont|y [1] & !\vgaCont|y [2])))) ) ) # ( !\vgaCont|y[3]~DUPLICATE_q  & ( !\vgaCont|y [5] ) )
+
+	.dataa(!\vgaCont|y [4]),
+	.datab(!\vgaCont|y [1]),
+	.datac(!\vgaCont|y [5]),
+	.datad(!\vgaCont|y [2]),
+	.datae(gnd),
+	.dataf(!\vgaCont|y[3]~DUPLICATE_q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|LessThan6~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|LessThan6~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|LessThan6~0 .lut_mask = 64'hF0F0F0F0E0A0E0A0;
+defparam \videoGen|cartaA1|plus_inst|LessThan6~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y1_N12
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_vbar~0 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|in_vbar~0_combout  = ( \videoGen|cartaA1|plus_inst|LessThan7~0_combout  & ( !\videoGen|cartaA1|plus_inst|LessThan6~0_combout  & ( (\vgaCont|y [6] & (\videoGen|cartaA1|plus_inst|LessThan6~1_combout  & ((!\vgaCont|y [3]) # 
+// (!\vgaCont|y [4])))) ) ) ) # ( !\videoGen|cartaA1|plus_inst|LessThan7~0_combout  & ( !\videoGen|cartaA1|plus_inst|LessThan6~0_combout  & ( (\vgaCont|y [6] & \videoGen|cartaA1|plus_inst|LessThan6~1_combout ) ) ) )
+
+	.dataa(!\vgaCont|y [3]),
+	.datab(!\vgaCont|y [6]),
+	.datac(!\vgaCont|y [4]),
+	.datad(!\videoGen|cartaA1|plus_inst|LessThan6~1_combout ),
+	.datae(!\videoGen|cartaA1|plus_inst|LessThan7~0_combout ),
+	.dataf(!\videoGen|cartaA1|plus_inst|LessThan6~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|in_vbar~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|in_vbar~0 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_vbar~0 .lut_mask = 64'h0033003200000000;
+defparam \videoGen|cartaA1|plus_inst|in_vbar~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N39
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~3 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|in_hbar~3_combout  = ( \vgaCont|x [3] & ( (\vgaCont|x [2]) # (\vgaCont|x [1]) ) )
+
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [2]),
+	.datac(gnd),
 	.datad(gnd),
-	.datae(!\vgaCont|x[7]~DUPLICATE_q ),
-	.dataf(!\vgaCont|x [4]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan4~1_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan4~1 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan4~1 .lut_mask = 64'h00000F0F00003F3F;
-defparam \videoGen|cartaA1|plus_inst|LessThan4~1 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X63_Y2_N48
-cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|incros~0 (
-// Equation(s):
-// \videoGen|cartaC1|cros_inst|incros~0_combout  = ( \vgaCont|x [4] & ( \vgaCont|x [2] & ( (\vgaCont|x[7]~DUPLICATE_q  & (((\vgaCont|x [3] & \vgaCont|x[5]~DUPLICATE_q )) # (\vgaCont|x [6]))) ) ) ) # ( !\vgaCont|x [4] & ( \vgaCont|x [2] & ( (\vgaCont|x [6] & 
-// \vgaCont|x[7]~DUPLICATE_q ) ) ) ) # ( \vgaCont|x [4] & ( !\vgaCont|x [2] & ( (\vgaCont|x [6] & \vgaCont|x[7]~DUPLICATE_q ) ) ) ) # ( !\vgaCont|x [4] & ( !\vgaCont|x [2] & ( (\vgaCont|x [6] & \vgaCont|x[7]~DUPLICATE_q ) ) ) )
-
-	.dataa(!\vgaCont|x [6]),
-	.datab(!\vgaCont|x [3]),
-	.datac(!\vgaCont|x[7]~DUPLICATE_q ),
-	.datad(!\vgaCont|x[5]~DUPLICATE_q ),
-	.datae(!\vgaCont|x [4]),
-	.dataf(!\vgaCont|x [2]),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\videoGen|cartaC1|cros_inst|incros~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \videoGen|cartaC1|cros_inst|incros~0 .extended_lut = "off";
-defparam \videoGen|cartaC1|cros_inst|incros~0 .lut_mask = 64'h0505050505050507;
-defparam \videoGen|cartaC1|cros_inst|incros~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X62_Y2_N36
-cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|LessThan4~0 (
-// Equation(s):
-// \videoGen|cartaA1|plus_inst|LessThan4~0_combout  = ( !\vgaCont|x [3] & ( (!\vgaCont|x [6] & ((!\vgaCont|x [0]) # ((!\vgaCont|x [2]) # (!\vgaCont|x [1])))) ) )
-
-	.dataa(!\vgaCont|x [0]),
-	.datab(!\vgaCont|x [6]),
-	.datac(!\vgaCont|x [2]),
-	.datad(!\vgaCont|x [1]),
 	.datae(gnd),
 	.dataf(!\vgaCont|x [3]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaA1|plus_inst|LessThan4~0_combout ),
+	.combout(\videoGen|cartaA1|plus_inst|in_hbar~3_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaA1|plus_inst|LessThan4~0 .extended_lut = "off";
-defparam \videoGen|cartaA1|plus_inst|LessThan4~0 .lut_mask = 64'hCCC8CCC800000000;
-defparam \videoGen|cartaA1|plus_inst|LessThan4~0 .shared_arith = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~3 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~3 .lut_mask = 64'h0000000077777777;
+defparam \videoGen|cartaA1|plus_inst|in_hbar~3 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X63_Y2_N24
-cyclonev_lcell_comb \videoGen|cartaC1|cros_inst|incros~1 (
+// Location: LABCELL_X66_Y1_N39
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~4 (
 // Equation(s):
-// \videoGen|cartaC1|cros_inst|incros~1_combout  = ( !\videoGen|cartaA1|plus_inst|LessThan4~0_combout  & ( (!\vgaCont|x[9]~DUPLICATE_q  & (!\vgaCont|x[8]~DUPLICATE_q  & (\videoGen|cartaA1|plus_inst|LessThan4~1_combout  & 
-// !\videoGen|cartaC1|cros_inst|incros~0_combout ))) ) )
+// \videoGen|cartaA1|plus_inst|in_hbar~4_combout  = ( !\vgaCont|x [8] & ( (!\vgaCont|x [9] & \vgaCont|x [7]) ) )
 
-	.dataa(!\vgaCont|x[9]~DUPLICATE_q ),
-	.datab(!\vgaCont|x[8]~DUPLICATE_q ),
-	.datac(!\videoGen|cartaA1|plus_inst|LessThan4~1_combout ),
-	.datad(!\videoGen|cartaC1|cros_inst|incros~0_combout ),
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\vgaCont|x [9]),
+	.datad(!\vgaCont|x [7]),
 	.datae(gnd),
-	.dataf(!\videoGen|cartaA1|plus_inst|LessThan4~0_combout ),
+	.dataf(!\vgaCont|x [8]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\videoGen|cartaC1|cros_inst|incros~1_combout ),
+	.combout(\videoGen|cartaA1|plus_inst|in_hbar~4_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \videoGen|cartaC1|cros_inst|incros~1 .extended_lut = "off";
-defparam \videoGen|cartaC1|cros_inst|incros~1 .lut_mask = 64'h0800080000000000;
-defparam \videoGen|cartaC1|cros_inst|incros~1 .shared_arith = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~4 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~4 .lut_mask = 64'h00F000F000000000;
+defparam \videoGen|cartaA1|plus_inst|in_hbar~4 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X61_Y2_N39
+// Location: LABCELL_X66_Y1_N48
+cyclonev_lcell_comb \videoGen|cartaA1|plus_inst|in_hbar~5 (
+// Equation(s):
+// \videoGen|cartaA1|plus_inst|in_hbar~5_combout  = ( \videoGen|cartaA1|plus_inst|in_hbar~4_combout  & ( \vgaCont|x [5] & ( (!\vgaCont|x [6] & ((\vgaCont|x[4]~DUPLICATE_q ) # (\videoGen|cartaA1|plus_inst|in_hbar~3_combout ))) ) ) ) # ( 
+// \videoGen|cartaA1|plus_inst|in_hbar~4_combout  & ( !\vgaCont|x [5] & ( (\vgaCont|x [6] & (!\vgaCont|x[4]~DUPLICATE_q  & !\videoGen|cartaA1|plus_inst|in_hbar~0_combout )) ) ) )
+
+	.dataa(!\videoGen|cartaA1|plus_inst|in_hbar~3_combout ),
+	.datab(!\vgaCont|x [6]),
+	.datac(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datad(!\videoGen|cartaA1|plus_inst|in_hbar~0_combout ),
+	.datae(!\videoGen|cartaA1|plus_inst|in_hbar~4_combout ),
+	.dataf(!\vgaCont|x [5]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaA1|plus_inst|in_hbar~5_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaA1|plus_inst|in_hbar~5 .extended_lut = "off";
+defparam \videoGen|cartaA1|plus_inst|in_hbar~5 .lut_mask = 64'h0000300000004C4C;
+defparam \videoGen|cartaA1|plus_inst|in_hbar~5 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X62_Y1_N9
 cyclonev_lcell_comb \videoGen|g[0]~0 (
 // Equation(s):
-// \videoGen|g[0]~0_combout  = ( \videoGen|cartaC1|cros_inst|incros~1_combout  & ( ((!\videoGen|cartaC1|cros_inst|LessThan2~1_combout  & \videoGen|cartaC2|cros_inst|incros~3_combout )) # (\videoGen|cartaA1|plus_inst|in_vbar~0_combout ) ) ) # ( 
-// !\videoGen|cartaC1|cros_inst|incros~1_combout  & ( (\videoGen|cartaC2|cros_inst|incros~1_combout  & (((!\videoGen|cartaC1|cros_inst|LessThan2~1_combout  & \videoGen|cartaC2|cros_inst|incros~3_combout )) # (\videoGen|cartaA1|plus_inst|in_vbar~0_combout ))) 
-// ) )
+// \videoGen|g[0]~0_combout  = ( \videoGen|cartaA1|plus_inst|in_vbar~0_combout  & ( \videoGen|cartaA1|plus_inst|in_hbar~5_combout  & ( (!\videoGen|cartaC1|cros_inst|incros~0_combout  & (!\videoGen|cartaC2|cros_inst|incros~1_combout  & 
+// !\videoGen|cartaA1|plus_inst|in_hbar~2_combout )) ) ) ) # ( !\videoGen|cartaA1|plus_inst|in_vbar~0_combout  & ( \videoGen|cartaA1|plus_inst|in_hbar~5_combout  & ( (!\videoGen|cartaA1|plus_inst|in_hbar~2_combout  & 
+// ((!\videoGen|cartaC2|cros_inst|incros~3_combout ) # ((!\videoGen|cartaC1|cros_inst|incros~0_combout  & !\videoGen|cartaC2|cros_inst|incros~1_combout )))) ) ) ) # ( \videoGen|cartaA1|plus_inst|in_vbar~0_combout  & ( 
+// !\videoGen|cartaA1|plus_inst|in_hbar~5_combout  & ( (!\videoGen|cartaC1|cros_inst|incros~0_combout  & !\videoGen|cartaC2|cros_inst|incros~1_combout ) ) ) ) # ( !\videoGen|cartaA1|plus_inst|in_vbar~0_combout  & ( 
+// !\videoGen|cartaA1|plus_inst|in_hbar~5_combout  & ( (!\videoGen|cartaC2|cros_inst|incros~3_combout ) # ((!\videoGen|cartaC1|cros_inst|incros~0_combout  & !\videoGen|cartaC2|cros_inst|incros~1_combout )) ) ) )
 
-	.dataa(!\videoGen|cartaA1|plus_inst|in_vbar~0_combout ),
-	.datab(!\videoGen|cartaC1|cros_inst|LessThan2~1_combout ),
-	.datac(!\videoGen|cartaC2|cros_inst|incros~3_combout ),
-	.datad(!\videoGen|cartaC2|cros_inst|incros~1_combout ),
-	.datae(gnd),
-	.dataf(!\videoGen|cartaC1|cros_inst|incros~1_combout ),
+	.dataa(!\videoGen|cartaC2|cros_inst|incros~3_combout ),
+	.datab(!\videoGen|cartaC1|cros_inst|incros~0_combout ),
+	.datac(!\videoGen|cartaC2|cros_inst|incros~1_combout ),
+	.datad(!\videoGen|cartaA1|plus_inst|in_hbar~2_combout ),
+	.datae(!\videoGen|cartaA1|plus_inst|in_vbar~0_combout ),
+	.dataf(!\videoGen|cartaA1|plus_inst|in_hbar~5_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -3133,21 +3199,97 @@ cyclonev_lcell_comb \videoGen|g[0]~0 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|g[0]~0 .extended_lut = "off";
-defparam \videoGen|g[0]~0 .lut_mask = 64'h005D005D5D5D5D5D;
+defparam \videoGen|g[0]~0 .lut_mask = 64'hEAEAC0C0EA00C000;
 defparam \videoGen|g[0]~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X62_Y2_N42
+// Location: LABCELL_X67_Y1_N12
+cyclonev_lcell_comb \videoGen|cartaD2|square_inst|insquare~0 (
+// Equation(s):
+// \videoGen|cartaD2|square_inst|insquare~0_combout  = ( !\vgaCont|x [2] & ( (!\vgaCont|x [1]) # (!\vgaCont|x [0]) ) )
+
+	.dataa(gnd),
+	.datab(!\vgaCont|x [1]),
+	.datac(!\vgaCont|x [0]),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [2]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaD2|square_inst|insquare~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaD2|square_inst|insquare~0 .extended_lut = "off";
+defparam \videoGen|cartaD2|square_inst|insquare~0 .lut_mask = 64'hFCFCFCFC00000000;
+defparam \videoGen|cartaD2|square_inst|insquare~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N30
+cyclonev_lcell_comb \videoGen|cartaD2|square_inst|insquare~1 (
+// Equation(s):
+// \videoGen|cartaD2|square_inst|insquare~1_combout  = ( \vgaCont|x [3] & ( \vgaCont|x[4]~DUPLICATE_q  ) ) # ( !\vgaCont|x [3] & ( (\vgaCont|x[4]~DUPLICATE_q  & (((\vgaCont|x [1] & \vgaCont|x [0])) # (\vgaCont|x [2]))) ) )
+
+	.dataa(!\vgaCont|x [1]),
+	.datab(!\vgaCont|x [2]),
+	.datac(!\vgaCont|x [0]),
+	.datad(!\vgaCont|x[4]~DUPLICATE_q ),
+	.datae(gnd),
+	.dataf(!\vgaCont|x [3]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaD2|square_inst|insquare~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaD2|square_inst|insquare~1 .extended_lut = "off";
+defparam \videoGen|cartaD2|square_inst|insquare~1 .lut_mask = 64'h0037003700FF00FF;
+defparam \videoGen|cartaD2|square_inst|insquare~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y1_N18
+cyclonev_lcell_comb \videoGen|cartaD2|square_inst|insquare~2 (
+// Equation(s):
+// \videoGen|cartaD2|square_inst|insquare~2_combout  = ( !\videoGen|cartaD2|square_inst|insquare~0_combout  & ( \videoGen|cartaD2|square_inst|insquare~1_combout  & ( (\vgaCont|x [7] & (\videoGen|cartaA1|plus_inst|LessThan5~0_combout  & !\vgaCont|x [6])) ) ) 
+// ) # ( \videoGen|cartaD2|square_inst|insquare~0_combout  & ( !\videoGen|cartaD2|square_inst|insquare~1_combout  & ( (\vgaCont|x [7] & (\vgaCont|x [6] & !\vgaCont|x [5])) ) ) ) # ( !\videoGen|cartaD2|square_inst|insquare~0_combout  & ( 
+// !\videoGen|cartaD2|square_inst|insquare~1_combout  & ( (\vgaCont|x [7] & ((!\vgaCont|x [6] & (\videoGen|cartaA1|plus_inst|LessThan5~0_combout )) # (\vgaCont|x [6] & ((!\vgaCont|x [5]))))) ) ) )
+
+	.dataa(!\vgaCont|x [7]),
+	.datab(!\videoGen|cartaA1|plus_inst|LessThan5~0_combout ),
+	.datac(!\vgaCont|x [6]),
+	.datad(!\vgaCont|x [5]),
+	.datae(!\videoGen|cartaD2|square_inst|insquare~0_combout ),
+	.dataf(!\videoGen|cartaD2|square_inst|insquare~1_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\videoGen|cartaD2|square_inst|insquare~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \videoGen|cartaD2|square_inst|insquare~2 .extended_lut = "off";
+defparam \videoGen|cartaD2|square_inst|insquare~2 .lut_mask = 64'h1510050010100000;
+defparam \videoGen|cartaD2|square_inst|insquare~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X62_Y1_N30
 cyclonev_lcell_comb \videoGen|g[0]~2 (
 // Equation(s):
-// \videoGen|g[0]~2_combout  = ( !\videoGen|cartaA1|plus_inst|in_hbar~2_combout  & ( !\videoGen|g[0]~0_combout  & ( (\videoGen|in_any_card~4_combout  & !\videoGen|g[0]~1_combout ) ) ) )
+// \videoGen|g[0]~2_combout  = ( \videoGen|in_any_card~1_combout  & ( \videoGen|cartaD2|square_inst|insquare~2_combout  & ( (!\videoGen|cartaD1|square_inst|insquare~0_combout  & (!\videoGen|g[0]~1_combout  & \videoGen|g[0]~0_combout )) ) ) ) # ( 
+// \videoGen|in_any_card~1_combout  & ( !\videoGen|cartaD2|square_inst|insquare~2_combout  & ( (!\videoGen|g[0]~1_combout  & (\videoGen|g[0]~0_combout  & ((!\videoGen|cartaD1|square_inst|insquare~0_combout ) # 
+// (!\videoGen|cartaD1|square_inst|insquare~1_combout )))) ) ) )
 
-	.dataa(!\videoGen|in_any_card~4_combout ),
+	.dataa(!\videoGen|cartaD1|square_inst|insquare~0_combout ),
 	.datab(!\videoGen|g[0]~1_combout ),
-	.datac(gnd),
-	.datad(gnd),
-	.datae(!\videoGen|cartaA1|plus_inst|in_hbar~2_combout ),
-	.dataf(!\videoGen|g[0]~0_combout ),
+	.datac(!\videoGen|cartaD1|square_inst|insquare~1_combout ),
+	.datad(!\videoGen|g[0]~0_combout ),
+	.datae(!\videoGen|in_any_card~1_combout ),
+	.dataf(!\videoGen|cartaD2|square_inst|insquare~2_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -3157,7 +3299,7 @@ cyclonev_lcell_comb \videoGen|g[0]~2 (
 	.shareout());
 // synopsys translate_off
 defparam \videoGen|g[0]~2 .extended_lut = "off";
-defparam \videoGen|g[0]~2 .lut_mask = 64'h4444000000000000;
+defparam \videoGen|g[0]~2 .lut_mask = 64'h000000C800000088;
 defparam \videoGen|g[0]~2 .shared_arith = "off";
 // synopsys translate_on
 
@@ -3172,7 +3314,7 @@ defparam \nxt~input .bus_hold = "false";
 defparam \nxt~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X4_Y45_N3
+// Location: LABCELL_X62_Y2_N3
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

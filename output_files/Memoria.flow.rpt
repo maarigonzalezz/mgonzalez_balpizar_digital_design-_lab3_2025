@@ -1,5 +1,5 @@
 Flow report for Memoria
-Tue Sep 30 23:38:51 2025
+Wed Oct 01 00:10:57 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Sep 30 23:38:51 2025       ;
+; Flow Status                     ; Successful - Wed Oct 01 00:10:57 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; vga                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 48 / 41,910 ( < 1 % )                       ;
-; Total registers                 ; 29                                          ;
+; Logic utilization (in ALMs)     ; 55 / 41,910 ( < 1 % )                       ;
+; Total registers                 ; 24                                          ;
 ; Total pins                      ; 31 / 499 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/30/2025 23:37:50 ;
+; Start date & time ; 10/01/2025 00:09:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Memoria             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 237785193706138.175929707039816        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 237785193706138.175929899312248        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -100,12 +100,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4879 MB             ; 00:00:19                           ;
-; Fitter               ; 00:00:38     ; 1.0                     ; 7100 MB             ; 00:02:23                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4846 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5211 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
-; Total                ; 00:00:57     ; --                      ; --                  ; 00:02:54                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4880 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:39     ; 1.0                     ; 7101 MB             ; 00:02:27                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4845 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5212 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4729 MB             ; 00:00:01                           ;
+; Total                ; 00:00:59     ; --                      ; --                  ; 00:02:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

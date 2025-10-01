@@ -91,12 +91,28 @@ logic [9:0] rightC4 = 10'd480;
 		  .insymbol(simC2)
     );
 	 
+	 carta cartaD1(
+        .x(x), .y(y), 
+        .left(leftC3), .right(rightC3), 
+        .top(topF2), .bot(bottomF2), 
+        .symbol_sel(3'd3), .incard(cD1), 
+		  .insymbol(simD1)
+    );
+	 
+	 carta cartaD2(
+        .x(x), .y(y), 
+        .left(leftC4), .right(rightC4), 
+        .top(topF2), .bot(bottomF2), 
+        .symbol_sel(3'd3), .incard(cD2),
+		  .insymbol(simD2)
+    );
+	 
 
 	// Detecta si el pixel está en alguna carta
-	wire in_any_card = cA1 | cA2 | cB1 | cB2 | cC1 | cC2;
+	wire in_any_card = cA1 | cA2 | cB1 | cB2 | cC1 | cC2 | cD1 | cD2;
 
 	// Detecta si el pixel está en algún símbolo
-	wire in_any_symbol = simA1 | simA2 | simB1 | simB2 | simC1 | simC2;
+	wire in_any_symbol = simA1 | simA2 | simB1 | simB2 | simC1 | simC2 | simD1 | simD2;
 
 	always_comb begin
 		 // Fondo negro

@@ -45,6 +45,13 @@ logic [9:0] centerx, centery;
 		 .t(4),              // grosor de las líneas
 		 .incros(cros)
 	);
+	
+	square_symbol square_inst (
+		 .x(x), .y(y),
+		 .cx(centerx), .cy(centery), // centro de la carta
+		 .insquare(square)
+	);
+	
 	 
 	 // Decoder 2→8 con un mux
     always_comb begin
@@ -52,9 +59,9 @@ logic [9:0] centerx, centery;
             3'd0: insymbol = plus;
             3'd1: insymbol = minus;
             3'd2: insymbol = cros;
-            //3'd3: insymbol = circle;
+            3'd3: insymbol = square;
             //3'd4: insymbol = hash;
-            //3'd5: insymbol = square;
+            //3'd5: insymbol = circle;
             //3'd6: insymbol = trin;
             //3'd7: insymbol = invtri;
             default: insymbol = 1'b0;
