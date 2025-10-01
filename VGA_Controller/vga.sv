@@ -1,4 +1,6 @@
 module vga(input logic clk, nxt,
+			  input  logic rst,       // Reset asíncrono
+			  output logic [6:0] seg, // Segmentos del display (a-g)
 			  output logic vgaclk, // 25.175 MHz VGA clock
 			  output logic hsync, vsync,
 			  output logic sync_b, blank_b, // To monitor 
@@ -14,4 +16,8 @@ module vga(input logic clk, nxt,
 	
 	// Modulo para pintar la pantalla
 	videoGen videoGen(x, y, r, g, b);
+	
+	//contador
+	top_7seg_counter(.clk(clk), .rst(rst), .seg(seg));
+	
 endmodule

@@ -1,6 +1,14 @@
 |vga
-clk => clk.IN1
+clk => clk.IN2
 nxt => ~NO_FANOUT~
+rst => rst.IN1
+seg[0] << top_7seg_counter:comb_3.seg
+seg[1] << top_7seg_counter:comb_3.seg
+seg[2] << top_7seg_counter:comb_3.seg
+seg[3] << top_7seg_counter:comb_3.seg
+seg[4] << top_7seg_counter:comb_3.seg
+seg[5] << top_7seg_counter:comb_3.seg
+seg[6] << top_7seg_counter:comb_3.seg
 vgaclk << vgaclk.DB_MAX_OUTPUT_PORT_TYPE
 hsync << vgaController:vgaCont.port1
 vsync << vgaController:vgaCont.port2
@@ -27949,5 +27957,79 @@ t[9] => Add20.IN6
 t[9] => Add21.IN9
 t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vga|top_7seg_counter:comb_3
+clk => clk.IN1
+rst => rst.IN1
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+an[0] <= <GND>
+an[1] <= <VCC>
+an[2] <= <VCC>
+an[3] <= <VCC>
+
+
+|vga|top_7seg_counter:comb_3|clk_counter_seg:u_clk_counter
+clk => pulse_1s~reg0.CLK
+clk => cycle_counter[0].CLK
+clk => cycle_counter[1].CLK
+clk => cycle_counter[2].CLK
+clk => cycle_counter[3].CLK
+clk => cycle_counter[4].CLK
+clk => cycle_counter[5].CLK
+clk => cycle_counter[6].CLK
+clk => cycle_counter[7].CLK
+clk => cycle_counter[8].CLK
+clk => cycle_counter[9].CLK
+clk => cycle_counter[10].CLK
+clk => cycle_counter[11].CLK
+clk => cycle_counter[12].CLK
+clk => cycle_counter[13].CLK
+clk => cycle_counter[14].CLK
+clk => cycle_counter[15].CLK
+clk => cycle_counter[16].CLK
+clk => cycle_counter[17].CLK
+clk => cycle_counter[18].CLK
+clk => cycle_counter[19].CLK
+clk => cycle_counter[20].CLK
+clk => cycle_counter[21].CLK
+clk => cycle_counter[22].CLK
+clk => cycle_counter[23].CLK
+clk => cycle_counter[24].CLK
+clk => cycle_counter[25].CLK
+rst => pulse_1s~reg0.ACLR
+rst => cycle_counter[0].ACLR
+rst => cycle_counter[1].ACLR
+rst => cycle_counter[2].ACLR
+rst => cycle_counter[3].ACLR
+rst => cycle_counter[4].ACLR
+rst => cycle_counter[5].ACLR
+rst => cycle_counter[6].ACLR
+rst => cycle_counter[7].ACLR
+rst => cycle_counter[8].ACLR
+rst => cycle_counter[9].ACLR
+rst => cycle_counter[10].ACLR
+rst => cycle_counter[11].ACLR
+rst => cycle_counter[12].ACLR
+rst => cycle_counter[13].ACLR
+rst => cycle_counter[14].ACLR
+rst => cycle_counter[15].ACLR
+rst => cycle_counter[16].ACLR
+rst => cycle_counter[17].ACLR
+rst => cycle_counter[18].ACLR
+rst => cycle_counter[19].ACLR
+rst => cycle_counter[20].ACLR
+rst => cycle_counter[21].ACLR
+rst => cycle_counter[22].ACLR
+rst => cycle_counter[23].ACLR
+rst => cycle_counter[24].ACLR
+rst => cycle_counter[25].ACLR
+pulse_1s <= pulse_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

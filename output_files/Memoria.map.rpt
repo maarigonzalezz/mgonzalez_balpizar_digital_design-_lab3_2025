@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Memoria
-Wed Oct 01 01:36:20 2025
+Wed Oct 01 02:31:23 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,32 +16,34 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Analysis & Synthesis DSP Block Usage Summary
   9. General Register Statistics
  10. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 11. Port Connectivity Checks: "videoGen:videoGen|carta:cartaH2"
- 12. Port Connectivity Checks: "videoGen:videoGen|carta:cartaH1"
- 13. Port Connectivity Checks: "videoGen:videoGen|carta:cartaG2"
- 14. Port Connectivity Checks: "videoGen:videoGen|carta:cartaG1"
- 15. Port Connectivity Checks: "videoGen:videoGen|carta:cartaF2"
- 16. Port Connectivity Checks: "videoGen:videoGen|carta:cartaF1"
- 17. Port Connectivity Checks: "videoGen:videoGen|carta:cartaE2"
- 18. Port Connectivity Checks: "videoGen:videoGen|carta:cartaE1"
- 19. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD2"
- 20. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD1"
- 21. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC2"
- 22. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC1"
- 23. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB2"
- 24. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB1"
- 25. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA2"
- 26. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst"
- 27. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst"
- 28. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst"
- 29. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst"
- 30. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"
- 31. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst"
- 32. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst"
- 33. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1"
- 34. Post-Synthesis Netlist Statistics for Top Partition
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: top_7seg_counter:comb_3|clk_counter_seg:u_clk_counter
+ 12. Port Connectivity Checks: "top_7seg_counter:comb_3"
+ 13. Port Connectivity Checks: "videoGen:videoGen|carta:cartaH2"
+ 14. Port Connectivity Checks: "videoGen:videoGen|carta:cartaH1"
+ 15. Port Connectivity Checks: "videoGen:videoGen|carta:cartaG2"
+ 16. Port Connectivity Checks: "videoGen:videoGen|carta:cartaG1"
+ 17. Port Connectivity Checks: "videoGen:videoGen|carta:cartaF2"
+ 18. Port Connectivity Checks: "videoGen:videoGen|carta:cartaF1"
+ 19. Port Connectivity Checks: "videoGen:videoGen|carta:cartaE2"
+ 20. Port Connectivity Checks: "videoGen:videoGen|carta:cartaE1"
+ 21. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD2"
+ 22. Port Connectivity Checks: "videoGen:videoGen|carta:cartaD1"
+ 23. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC2"
+ 24. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC1"
+ 25. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB2"
+ 26. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB1"
+ 27. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA2"
+ 28. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst"
+ 29. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst"
+ 30. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst"
+ 31. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst"
+ 32. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"
+ 33. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst"
+ 34. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst"
+ 35. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1"
+ 36. Post-Synthesis Netlist Statistics for Top Partition
+ 37. Elapsed Time Per Partition
+ 38. Analysis & Synthesis Messages
 
 
 
@@ -68,14 +70,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 01 01:36:19 2025       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 01 02:31:23 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; vga                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 21                                          ;
-; Total pins                      ; 31                                          ;
+; Total registers                 ; 52                                          ;
+; Total pins                      ; 39                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 104                                         ;
@@ -217,6 +219,8 @@ https://fpgasoftware.intel.com/eula.
 ; circle_symbol.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/circle_symbol.sv                ;         ;
 ; triangle_symbol.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/triangle_symbol.sv              ;         ;
 ; invtriangle_symbol.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/invtriangle_symbol.sv           ;         ;
+; top_7seg_counter.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/top_7seg_counter.sv             ;         ;
+; clk_counter_seg.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/clk_counter_seg.sv              ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -225,25 +229,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1232                       ;
+; Estimate of Logic utilization (ALMs needed) ; 1255                       ;
 ;                                             ;                            ;
-; Combinational ALUT usage for logic          ; 2215                       ;
-;     -- 7 input functions                    ; 1                          ;
-;     -- 6 input functions                    ; 248                        ;
-;     -- 5 input functions                    ; 41                         ;
-;     -- 4 input functions                    ; 21                         ;
-;     -- <=3 input functions                  ; 1904                       ;
+; Combinational ALUT usage for logic          ; 2260                       ;
+;     -- 7 input functions                    ; 2                          ;
+;     -- 6 input functions                    ; 247                        ;
+;     -- 5 input functions                    ; 47                         ;
+;     -- 4 input functions                    ; 30                         ;
+;     -- <=3 input functions                  ; 1934                       ;
 ;                                             ;                            ;
-; Dedicated logic registers                   ; 21                         ;
+; Dedicated logic registers                   ; 52                         ;
 ;                                             ;                            ;
-; I/O pins                                    ; 31                         ;
+; I/O pins                                    ; 39                         ;
 ;                                             ;                            ;
 ; Total DSP Blocks                            ; 104                        ;
 ;                                             ;                            ;
 ; Maximum fan-out node                        ; vgaController:vgaCont|x[1] ;
 ; Maximum fan-out                             ; 66                         ;
-; Total fan-out                               ; 8209                       ;
-; Average fan-out                             ; 3.42                       ;
+; Total fan-out                               ; 8467                       ;
+; Average fan-out                             ; 3.39                       ;
 +---------------------------------------------+----------------------------+
 
 
@@ -252,18 +256,20 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name        ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+--------------------+--------------+
-; |vga                                      ; 2215 (0)            ; 21 (0)                    ; 0                 ; 104        ; 31   ; 0            ; |vga                                                                ; vga                ; work         ;
+; |vga                                      ; 2260 (0)            ; 52 (0)                    ; 0                 ; 104        ; 39   ; 0            ; |vga                                                                ; vga                ; work         ;
 ;    |pll:vgapll|                           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                                     ; pll                ; work         ;
-;    |vgaController:vgaCont|                ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                          ; vgaController      ; work         ;
-;    |videoGen:videoGen|                    ; 2183 (22)           ; 0 (0)                     ; 0                 ; 104        ; 0    ; 0            ; |vga|videoGen:videoGen                                              ; videoGen           ; work         ;
-;       |carta:cartaA1|                     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                                ; carta              ; work         ;
-;          |plus_symbol:plus_inst|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst          ; plus_symbol        ; work         ;
+;    |top_7seg_counter:comb_3|              ; 42 (11)             ; 31 (4)                    ; 0                 ; 0          ; 0    ; 0            ; |vga|top_7seg_counter:comb_3                                        ; top_7seg_counter   ; work         ;
+;       |clk_counter_seg:u_clk_counter|     ; 31 (31)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|top_7seg_counter:comb_3|clk_counter_seg:u_clk_counter          ; clk_counter_seg    ; work         ;
+;    |vgaController:vgaCont|                ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                          ; vgaController      ; work         ;
+;    |videoGen:videoGen|                    ; 2187 (24)           ; 0 (0)                     ; 0                 ; 104        ; 0    ; 0            ; |vga|videoGen:videoGen                                              ; videoGen           ; work         ;
+;       |carta:cartaA1|                     ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                                ; carta              ; work         ;
+;          |plus_symbol:plus_inst|          ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst          ; plus_symbol        ; work         ;
 ;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst              ; rectgen            ; work         ;
 ;       |carta:cartaA2|                     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2                                ; carta              ; work         ;
 ;          |plus_symbol:plus_inst|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst          ; plus_symbol        ; work         ;
 ;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst              ; rectgen            ; work         ;
-;       |carta:cartaB1|                     ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                                ; carta              ; work         ;
-;          |minus_symbol:minus_inst|        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst        ; minus_symbol       ; work         ;
+;       |carta:cartaB1|                     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                                ; carta              ; work         ;
+;          |minus_symbol:minus_inst|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst        ; minus_symbol       ; work         ;
 ;          |rectgen:rect_inst|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst              ; rectgen            ; work         ;
 ;       |carta:cartaB2|                     ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2                                ; carta              ; work         ;
 ;          |minus_symbol:minus_inst|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst        ; minus_symbol       ; work         ;
@@ -273,14 +279,14 @@ https://fpgasoftware.intel.com/eula.
 ;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst              ; rectgen            ; work         ;
 ;       |carta:cartaC2|                     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2                                ; carta              ; work         ;
 ;          |cros_symbol:cros_inst|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst          ; cros_symbol        ; work         ;
-;       |carta:cartaD1|                     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1                                ; carta              ; work         ;
-;          |square_symbol:square_inst|      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst      ; square_symbol      ; work         ;
-;       |carta:cartaD2|                     ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2                                ; carta              ; work         ;
-;          |square_symbol:square_inst|      ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst      ; square_symbol      ; work         ;
-;       |carta:cartaE1|                     ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE1                                ; carta              ; work         ;
-;          |hash_symbol:hash_inst|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE1|hash_symbol:hash_inst          ; hash_symbol        ; work         ;
-;       |carta:cartaE2|                     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE2                                ; carta              ; work         ;
-;          |hash_symbol:hash_inst|          ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE2|hash_symbol:hash_inst          ; hash_symbol        ; work         ;
+;       |carta:cartaD1|                     ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1                                ; carta              ; work         ;
+;          |square_symbol:square_inst|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst      ; square_symbol      ; work         ;
+;       |carta:cartaD2|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2                                ; carta              ; work         ;
+;          |square_symbol:square_inst|      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst      ; square_symbol      ; work         ;
+;       |carta:cartaE1|                     ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE1                                ; carta              ; work         ;
+;          |hash_symbol:hash_inst|          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE1|hash_symbol:hash_inst          ; hash_symbol        ; work         ;
+;       |carta:cartaE2|                     ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE2                                ; carta              ; work         ;
+;          |hash_symbol:hash_inst|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaE2|hash_symbol:hash_inst          ; hash_symbol        ; work         ;
 ;       |carta:cartaF1|                     ; 105 (0)             ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF1                                ; carta              ; work         ;
 ;          |circle_symbol:circle_inst|      ; 105 (105)           ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF1|circle_symbol:circle_inst      ; circle_symbol      ; work         ;
 ;       |carta:cartaF2|                     ; 94 (0)              ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaF2                                ; carta              ; work         ;
@@ -319,10 +325,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 21    ;
-; Number of registers using Synchronous Clear  ; 20    ;
+; Total registers                              ; 52    ;
+; Number of registers using Synchronous Clear  ; 46    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 31    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
@@ -346,6 +352,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VMAX           ; 1000001101 ; Unsigned Binary                      ;
 +----------------+------------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_7seg_counter:comb_3|clk_counter_seg:u_clk_counter ;
++----------------+----------+------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                   ;
++----------------+----------+------------------------------------------------------------------------+
+; CLOCK_FREQ_HZ  ; 50000000 ; Signed Integer                                                         ;
++----------------+----------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_7seg_counter:comb_3"                                                                                 ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; an   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -1003,34 +1028,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 21                          ;
+; arriav_ff             ; 52                          ;
+;     CLR               ; 5                           ;
+;     CLR SCLR          ; 26                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 2217                        ;
-;     arith             ; 324                         ;
+; arriav_lcell_comb     ; 2263                        ;
+;     arith             ; 350                         ;
 ;         0 data inputs ; 49                          ;
-;         1 data inputs ; 225                         ;
+;         1 data inputs ; 251                         ;
 ;         2 data inputs ; 50                          ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 380                         ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 399                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 52                          ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 21                          ;
-;         5 data inputs ; 41                          ;
-;         6 data inputs ; 248                         ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 30                          ;
+;         5 data inputs ; 47                          ;
+;         6 data inputs ; 247                         ;
 ;     shared            ; 1512                        ;
 ;         0 data inputs ; 408                         ;
 ;         2 data inputs ; 360                         ;
 ;         3 data inputs ; 744                         ;
 ; arriav_mac            ; 104                         ;
-; boundary_port         ; 31                          ;
+; boundary_port         ; 39                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.60                        ;
-; Average LUT depth     ; 7.03                        ;
+; Average LUT depth     ; 6.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1049,7 +1076,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 01 01:36:08 2025
+    Info: Processing started: Wed Oct 01 02:31:12 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -1083,12 +1110,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file triangl
     Info (12023): Found entity 1: triangle_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/triangle_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file invtriangle_symbol.sv
     Info (12023): Found entity 1: invtriangle_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/invtriangle_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_7seg_counter.sv
+    Info (12023): Found entity 1: top_7seg_counter File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/top_7seg_counter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clk_counter_seg.sv
+    Info (12023): Found entity 1: clk_counter_seg File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/clk_counter_seg.sv Line: 3
+Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): instance has no name File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 21
 Info (12127): Elaborating entity "vga" for the top level hierarchy
-Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 10
-Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 13
+Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 12
+Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 15
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(25): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 29
-Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGen" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 16
+Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGen" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 18
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(13): object "topS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 13
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(14): object "botS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 14
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(15): object "leftS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 15
@@ -1103,6 +1135,10 @@ Info (12128): Elaborating entity "hash_symbol" for hierarchy "videoGen:videoGen|
 Info (12128): Elaborating entity "circle_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 69
 Info (12128): Elaborating entity "triangle_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
 Info (12128): Elaborating entity "invtriangle_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
+Info (12128): Elaborating entity "top_7seg_counter" for hierarchy "top_7seg_counter:comb_3" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at top_7seg_counter.sv(35): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/top_7seg_counter.sv Line: 35
+Info (12128): Elaborating entity "clk_counter_seg" for hierarchy "top_7seg_counter:comb_3|clk_counter_seg:u_clk_counter" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/top_7seg_counter.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at clk_counter_seg.sv(26): truncated value with size 32 to match size of target (26) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/clk_counter_seg.sv Line: 26
 Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
 Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
 Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 77
@@ -1313,29 +1349,29 @@ Warning (12020): Port "size" on the entity instantiation of "minus_inst" is conn
 Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
 Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
 Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
-Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "r[0]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "r[1]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "r[2]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "r[7]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "b[1]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "b[5]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "b[6]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+    Warning (13410): Pin "r[0]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
+    Warning (13410): Pin "r[1]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
+    Warning (13410): Pin "r[2]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
+    Warning (13410): Pin "r[7]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
+    Warning (13410): Pin "b[1]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
+    Warning (13410): Pin "b[5]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
+    Warning (13410): Pin "b[6]" is stuck at VCC File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "nxt" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 1
-Info (21057): Implemented 2350 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 2215 logic cells
+Info (21057): Implemented 2404 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 2261 logic cells
     Info (21062): Implemented 104 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 228 warnings
-    Info: Peak virtual memory: 4955 megabytes
-    Info: Processing ended: Wed Oct 01 01:36:20 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 231 warnings
+    Info: Peak virtual memory: 4932 megabytes
+    Info: Processing ended: Wed Oct 01 02:31:23 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 
