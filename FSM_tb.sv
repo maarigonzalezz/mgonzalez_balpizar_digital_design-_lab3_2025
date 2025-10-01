@@ -1,5 +1,8 @@
-module tb_FSM();
+module FSM_tb();
 
+    // -------------------------
+    // Señales de prueba
+    // -------------------------
     logic clk;
     logic rst;
     logic m;
@@ -15,70 +18,104 @@ module tb_FSM();
         .estado(estado)
     );
 
+    // -------------------------
     // Generador de reloj
+    // -------------------------
     initial clk = 0;
-    always #5 clk = ~clk; // 100 MHz ciclo de prueba rápido
+    always #5 clk = ~clk; // Ciclo de reloj de 10 unidades de tiempo
 
+    // -------------------------
+    // Secuencia de prueba
+    // -------------------------
     initial begin
         // Inicialización
         rst = 1;
         m = 0;
         cartas_seleccionadas = 2'b00;
-        #10 rst = 0;
+        @(posedge clk); 
+        rst = 0;
+        @(posedge clk);
 
-        // --------------------------
+        // -------------------------
         // Estados iniciales 00000 -> 00101
-        // --------------------------
-        m = 1; #10; m = 0; // 00000 -> 00001
-        m = 1; #10; m = 0; // 00001 -> 00010
-        m = 1; #10; m = 0; // 00010 -> 00011
-        m = 1; #10; m = 0; // 00011 -> 00100
-        m = 1; #10; m = 0; // 00100 -> 00101
+        // -------------------------
+        m = 1; @(posedge clk); m = 0; @(posedge clk); // 00000 -> 00001
+        m = 1; @(posedge clk); m = 0; @(posedge clk); // 00001 -> 00010
+        m = 1; @(posedge clk); m = 0; @(posedge clk); // 00010 -> 00011
+        m = 1; @(posedge clk); m = 0; @(posedge clk); // 00011 -> 00100
+        m = 1; @(posedge clk); m = 0; @(posedge clk); // 00100 -> 00101
 
-        // --------------------------
+        // -------------------------
         // Turno jugador 1
-        // --------------------------
-        cartas_seleccionadas = 2'b00; #10; // No selecciona -> debe ir a 01000
-        #1 uut.contador_tiempo = 16;        // Forzar tiempo agotado
-        #10 cartas_seleccionadas = 2'b01;  // Selecciona 1 carta -> 00110
-        #10 cartas_seleccionadas = 2'b10;  // Selecciona 2da carta -> 00111
-        #1 uut.jugador_1_tiene_pareja = 1; // Simula que encontró pareja
-        #10 cartas_seleccionadas = 2'b00;  // Siguiente turno jugador 1 o paso a jugador 2
-        #1 uut.jugador_1_tiene_pareja = 0; // Reset indicador
+        // -------------------------
+        // Forzar tiempo agotado para mostrar carta (00101 -> 01000)
+        @(posedge clk);
+        uut.contador_tiempo = 16;   // fuerza la transición
+        cartas_seleccionadas = 2'b00;
+        @(posedge clk);
+        uut.contador_tiempo = 0;    // reinicia
 
-        // --------------------------
+        // Selección de cartas
+        cartas_seleccionadas = 2'b01; @(posedge clk); // 01000 -> 00110
+        cartas_seleccionadas = 2'b10; @(posedge clk); // 00110 -> 00111
+
+        // Evaluar pareja
+        uut.jugador_1_tiene_pareja = 1;
+        @(posedge clk); 
+        cartas_seleccionadas = 2'b00;
+        @(posedge clk); 
+        uut.jugador_1_tiene_pareja = 0;
+        @(posedge clk);
+
+        // -------------------------
         // Turno jugador 2
-        // --------------------------
-        cartas_seleccionadas = 2'b00; #10; // No selecciona -> debe ir a 01100
-        #1 uut.contador_tiempo = 16;        // Forzar tiempo agotado
-        #10 cartas_seleccionadas = 2'b01;  // Selecciona 1 carta -> 01010
-        #10 cartas_seleccionadas = 2'b10;  // Selecciona 2da carta -> 01011
-        #1 uut.jugador_2_tiene_pareja = 1; // Simula que encontró pareja
-        #10 cartas_seleccionadas = 2'b00;  // Siguiente turno jugador 1
-        #1 uut.jugador_2_tiene_pareja = 0; // Reset indicador
+        // -------------------------
+        // Forzar tiempo agotado para mostrar carta (01001 -> 01100)
+        @(posedge clk);
+        uut.contador_tiempo = 16;   // fuerza la transición
+        cartas_seleccionadas = 2'b00;
+        @(posedge clk);
+        uut.contador_tiempo = 0;    // reinicia
 
-        // --------------------------
+        // Selección de cartas
+        cartas_seleccionadas = 2'b01; @(posedge clk); // 01100 -> 01010
+        cartas_seleccionadas = 2'b10; @(posedge clk); // 01010 -> 01011
+
+        // Evaluar pareja
+        uut.jugador_2_tiene_pareja = 1;
+        @(posedge clk); 
+        cartas_seleccionadas = 2'b00;
+        @(posedge clk); 
+        uut.jugador_2_tiene_pareja = 0;
+        @(posedge clk);
+
+        // -------------------------
         // Estados de resultado
-        // --------------------------
-        #10;
-        #1 uut.j1_num_parejas = 4;  // Total de parejas jugador 1
-        #1 uut.j2_num_parejas = 4;  // Total de parejas jugador 2
-        #1 uut.puntaje_j1 = 5;       // Puntaje jugador 1
-        #1 uut.puntaje_j2 = 3;       // Puntaje jugador 2
-        #10; // Se activa 01101 -> debe ir a 01110 (gana J1)
+        // -------------------------
+        uut.j1_num_parejas = 4;
+        uut.j2_num_parejas = 4;
+        @(posedge clk);
 
-        #1 uut.puntaje_j1 = 3;       // Puntaje jugador 1
-        #1 uut.puntaje_j2 = 5;       // Puntaje jugador 2
-        #10; // Se activa 01101 -> debe ir a 01111 (gana J2)
+        // Puntaje jugador 1 gana
+        uut.puntaje_j1 = 5;
+        uut.puntaje_j2 = 3;
+        @(posedge clk);
 
-        #1 uut.puntaje_j1 = 4;       // Empate
-        #1 uut.puntaje_j2 = 4;       
-        #10; // Se activa 01101 -> debe ir a 10000 (empate)
+        // Puntaje jugador 2 gana
+        uut.puntaje_j1 = 3;
+        uut.puntaje_j2 = 5;
+        @(posedge clk);
 
-        // --------------------------
+        // Empate
+        uut.puntaje_j1 = 4;
+        uut.puntaje_j2 = 4;
+        @(posedge clk);
+
+        // -------------------------
         // Terminar simulación
-        // --------------------------
-        #50 $stop;
+        // -------------------------
+        @(posedge clk);
+        $stop;
     end
 
 endmodule
