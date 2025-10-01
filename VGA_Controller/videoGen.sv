@@ -6,6 +6,10 @@ module videoGen(input logic [9:0] x, y,
 logic pixel, cA1, cA2, cB1, cB2;
 logic cC1, cC2, cD1, cD2, cE1, cE2;
 logic cF1, cF2, cG1, cG2, cH1, cH2;
+logic simA1, simA2, simB1, simB2;
+logic simC1, simC2, simD1, simD2;
+logic simE1, simE2, simF1, simF2;
+logic simG1, simG2, simH1, simH2;
 logic [10:0] topS = 10'd360;
 logic [10:0] botS = 10'd411;
 logic [10:0] leftS = 10'd76;
@@ -43,33 +47,72 @@ logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC1), .right(rightC1), 
         .top(topF1), .bot(bottomF1), 
-        .incard(cA1)
+        .symbol_sel(3'd0), .incard(cA1), 
+		  .insymbol(simA1)
     );
 	 
 	 carta cartaA2(
         .x(x), .y(y), 
         .left(leftC2), .right(rightC2), 
         .top(topF1), .bot(bottomF1), 
-        .incard(cA2)
+        .symbol_sel(3'd0), .incard(cA2),
+		  .insymbol(simA2)
+    );
+	 
+	 carta cartaB1(
+        .x(x), .y(y), 
+        .left(leftC3), .right(rightC3), 
+        .top(topF1), .bot(bottomF1), 
+        .symbol_sel(3'd1), .incard(cB1), 
+		  .insymbol(simB1)
+    );
+	 
+	 carta cartaB2(
+        .x(x), .y(y), 
+        .left(leftC4), .right(rightC4), 
+        .top(topF1), .bot(bottomF1), 
+        .symbol_sel(3'd1), .incard(cB2),
+		  .insymbol(simB2)
+    );
+	 
+	 carta cartaC1(
+        .x(x), .y(y), 
+        .left(leftC1), .right(rightC1), 
+        .top(topF2), .bot(bottomF2), 
+        .symbol_sel(3'd2), .incard(cC1), 
+		  .insymbol(simC1)
+    );
+	 
+	 carta cartaC2(
+        .x(x), .y(y), 
+        .left(leftC2), .right(rightC2), 
+        .top(topF2), .bot(bottomF2), 
+        .symbol_sel(3'd2), .incard(cC2),
+		  .insymbol(simC2)
     );
 	 
 
+	// Detecta si el pixel está en alguna carta
+	wire in_any_card = cA1 | cA2 | cB1 | cB2 | cC1 | cC2;
 
-// Unión de ambos
-assign cartas_total = cA1 | cA2;
+	// Detecta si el pixel está en algún símbolo
+	wire in_any_symbol = simA1 | simA2 | simB1 | simB2 | simC1 | simC2;
 
-always_comb begin
-    // Fondo negro
-    r = 8'h00;
-    g = 8'h00;
-    b = 8'h00;
+	always_comb begin
+		 // Fondo negro
+		 r = 8'h00;
+		 g = 8'h00;
+		 b = 8'h00;
 
-    // Si está en cualquiera de los dos rectángulos
-    if (cartas_total) begin
-        r = 8'hFF;   // Rojo
-        g = 8'h00;
-        b = 8'hFF;
-    end
-end
+		 if (in_any_card) begin
+			  // todas las cartas del mismo color (blancas)
+			  r = 8'hFF; g = 8'hFF; b = 8'hFF;
+
+			  if (in_any_symbol) begin
+					// todos los símbolos del mismo color (rojo)
+					r = 8'hFF; g = 8'h00; b = 8'h00;
+			  end
+		 end
+	end
 	
 endmodule

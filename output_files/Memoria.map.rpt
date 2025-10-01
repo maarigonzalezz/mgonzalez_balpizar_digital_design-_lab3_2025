@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Memoria
-Tue Sep 30 21:35:14 2025
+Tue Sep 30 23:37:57 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -15,11 +15,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 10. Port Connectivity Checks: "videoGen:videoGen|cartaA:cartaA2"
- 11. Port Connectivity Checks: "videoGen:videoGen|cartaA:cartaA1"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC2"
+ 11. Port Connectivity Checks: "videoGen:videoGen|carta:cartaC1"
+ 12. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB2"
+ 13. Port Connectivity Checks: "videoGen:videoGen|carta:cartaB1"
+ 14. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA2"
+ 15. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"
+ 16. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst"
+ 17. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst"
+ 18. Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -46,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep 30 21:35:13 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Sep 30 23:37:57 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; vga                                         ;
@@ -180,7 +187,10 @@ https://fpgasoftware.intel.com/eula.
 ; VGA_Controller/vga.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv           ;         ;
 ; VGA_Controller/rectgen.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv       ;         ;
 ; VGA_Controller/pll.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv           ;         ;
-; cartaA.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cartaA.sv                       ;         ;
+; carta.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv                        ;         ;
+; plus_symbol.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/plus_symbol.sv                  ;         ;
+; minus_symbol.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/minus_symbol.sv                 ;         ;
+; cros_symbol.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cros_symbol.sv                  ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -189,14 +199,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 22                ;
+; Estimate of Logic utilization (ALMs needed) ; 46                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 38                ;
+; Combinational ALUT usage for logic          ; 78                ;
 ;     -- 7 input functions                    ; 0                 ;
-;     -- 6 input functions                    ; 5                 ;
-;     -- 5 input functions                    ; 4                 ;
-;     -- 4 input functions                    ; 5                 ;
-;     -- <=3 input functions                  ; 24                ;
+;     -- 6 input functions                    ; 14                ;
+;     -- 5 input functions                    ; 20                ;
+;     -- 4 input functions                    ; 12                ;
+;     -- <=3 input functions                  ; 32                ;
 ;                                             ;                   ;
 ; Dedicated logic registers                   ; 21                ;
 ;                                             ;                   ;
@@ -206,21 +216,36 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; pll:vgapll|toggle ;
 ; Maximum fan-out                             ; 22                ;
-; Total fan-out                               ; 241               ;
-; Average fan-out                             ; 1.99              ;
+; Total fan-out                               ; 433               ;
+; Average fan-out                             ; 2.69              ;
 +---------------------------------------------+-------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+---------------+--------------+
-; |vga                       ; 38 (0)              ; 21 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |vga                       ; vga           ; work         ;
-;    |pll:vgapll|            ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll            ; pll           ; work         ;
-;    |vgaController:vgaCont| ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont ; vgaController ; work         ;
-;    |videoGen:videoGen|     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen     ; videoGen      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+---------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name   ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+---------------+--------------+
+; |vga                               ; 78 (0)              ; 21 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |vga                                                         ; vga           ; work         ;
+;    |pll:vgapll|                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                              ; pll           ; work         ;
+;    |vgaController:vgaCont|         ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                   ; vgaController ; work         ;
+;    |videoGen:videoGen|             ; 47 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen                                       ; videoGen      ; work         ;
+;       |carta:cartaA1|              ; 13 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1                         ; carta         ; work         ;
+;          |plus_symbol:plus_inst|   ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst   ; plus_symbol   ; work         ;
+;          |rectgen:rect_inst|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst       ; rectgen       ; work         ;
+;       |carta:cartaA2|              ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2                         ; carta         ; work         ;
+;          |plus_symbol:plus_inst|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst   ; plus_symbol   ; work         ;
+;          |rectgen:rect_inst|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst       ; rectgen       ; work         ;
+;       |carta:cartaB1|              ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1                         ; carta         ; work         ;
+;          |minus_symbol:minus_inst| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst ; minus_symbol  ; work         ;
+;       |carta:cartaB2|              ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2                         ; carta         ; work         ;
+;          |minus_symbol:minus_inst| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst ; minus_symbol  ; work         ;
+;       |carta:cartaC1|              ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1                         ; carta         ; work         ;
+;          |cros_symbol:cros_inst|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst   ; cros_symbol   ; work         ;
+;          |rectgen:rect_inst|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst       ; rectgen       ; work         ;
+;       |carta:cartaC2|              ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2                         ; carta         ; work         ;
+;          |cros_symbol:cros_inst|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst   ; cros_symbol   ; work         ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -258,64 +283,244 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "videoGen:videoGen|cartaA:cartaA2" ;
-+-------------+-------+----------+-----------------------------+
-; Port        ; Type  ; Severity ; Details                     ;
-+-------------+-------+----------+-----------------------------+
-; left[7..3]  ; Input ; Info     ; Stuck at VCC                ;
-; left[9..8]  ; Input ; Info     ; Stuck at GND                ;
-; left[2]     ; Input ; Info     ; Stuck at GND                ;
-; left[1]     ; Input ; Info     ; Stuck at VCC                ;
-; left[0]     ; Input ; Info     ; Stuck at GND                ;
-; right[3..2] ; Input ; Info     ; Stuck at VCC                ;
-; right[7..6] ; Input ; Info     ; Stuck at GND                ;
-; right[1..0] ; Input ; Info     ; Stuck at GND                ;
-; right[9]    ; Input ; Info     ; Stuck at GND                ;
-; right[8]    ; Input ; Info     ; Stuck at VCC                ;
-; right[5]    ; Input ; Info     ; Stuck at VCC                ;
-; right[4]    ; Input ; Info     ; Stuck at GND                ;
-; top[2..1]   ; Input ; Info     ; Stuck at VCC                ;
-; top[9..7]   ; Input ; Info     ; Stuck at GND                ;
-; top[5..3]   ; Input ; Info     ; Stuck at GND                ;
-; top[6]      ; Input ; Info     ; Stuck at VCC                ;
-; top[0]      ; Input ; Info     ; Stuck at GND                ;
-; bot[3..2]   ; Input ; Info     ; Stuck at VCC                ;
-; bot[9..8]   ; Input ; Info     ; Stuck at GND                ;
-; bot[6..4]   ; Input ; Info     ; Stuck at GND                ;
-; bot[1..0]   ; Input ; Info     ; Stuck at GND                ;
-; bot[7]      ; Input ; Info     ; Stuck at VCC                ;
-+-------------+-------+----------+-----------------------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaC2" ;
++---------------+-------+----------+--------------------------+
+; Port          ; Type  ; Severity ; Details                  ;
++---------------+-------+----------+--------------------------+
+; left[7..3]    ; Input ; Info     ; Stuck at VCC             ;
+; left[9..8]    ; Input ; Info     ; Stuck at GND             ;
+; left[2]       ; Input ; Info     ; Stuck at GND             ;
+; left[1]       ; Input ; Info     ; Stuck at VCC             ;
+; left[0]       ; Input ; Info     ; Stuck at GND             ;
+; right[3..2]   ; Input ; Info     ; Stuck at VCC             ;
+; right[7..6]   ; Input ; Info     ; Stuck at GND             ;
+; right[1..0]   ; Input ; Info     ; Stuck at GND             ;
+; right[9]      ; Input ; Info     ; Stuck at GND             ;
+; right[8]      ; Input ; Info     ; Stuck at VCC             ;
+; right[5]      ; Input ; Info     ; Stuck at VCC             ;
+; right[4]      ; Input ; Info     ; Stuck at GND             ;
+; top[9..8]     ; Input ; Info     ; Stuck at GND             ;
+; top[4..0]     ; Input ; Info     ; Stuck at GND             ;
+; top[7]        ; Input ; Info     ; Stuck at VCC             ;
+; top[6]        ; Input ; Info     ; Stuck at GND             ;
+; top[5]        ; Input ; Info     ; Stuck at VCC             ;
+; bot[7..5]     ; Input ; Info     ; Stuck at VCC             ;
+; bot[2..1]     ; Input ; Info     ; Stuck at VCC             ;
+; bot[9..8]     ; Input ; Info     ; Stuck at GND             ;
+; bot[4..3]     ; Input ; Info     ; Stuck at GND             ;
+; bot[0]        ; Input ; Info     ; Stuck at GND             ;
+; symbol_sel[2] ; Input ; Info     ; Stuck at GND             ;
+; symbol_sel[1] ; Input ; Info     ; Stuck at VCC             ;
+; symbol_sel[0] ; Input ; Info     ; Stuck at GND             ;
++---------------+-------+----------+--------------------------+
 
 
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "videoGen:videoGen|cartaA:cartaA1" ;
-+-------------+-------+----------+-----------------------------+
-; Port        ; Type  ; Severity ; Details                     ;
-+-------------+-------+----------+-----------------------------+
-; left[9..8]  ; Input ; Info     ; Stuck at GND                ;
-; left[4..0]  ; Input ; Info     ; Stuck at GND                ;
-; left[7]     ; Input ; Info     ; Stuck at VCC                ;
-; left[6]     ; Input ; Info     ; Stuck at GND                ;
-; left[5]     ; Input ; Info     ; Stuck at VCC                ;
-; right[7..6] ; Input ; Info     ; Stuck at VCC                ;
-; right[9..8] ; Input ; Info     ; Stuck at GND                ;
-; right[3..2] ; Input ; Info     ; Stuck at GND                ;
-; right[5]    ; Input ; Info     ; Stuck at GND                ;
-; right[4]    ; Input ; Info     ; Stuck at VCC                ;
-; right[1]    ; Input ; Info     ; Stuck at VCC                ;
-; right[0]    ; Input ; Info     ; Stuck at GND                ;
-; top[2..1]   ; Input ; Info     ; Stuck at VCC                ;
-; top[9..7]   ; Input ; Info     ; Stuck at GND                ;
-; top[5..3]   ; Input ; Info     ; Stuck at GND                ;
-; top[6]      ; Input ; Info     ; Stuck at VCC                ;
-; top[0]      ; Input ; Info     ; Stuck at GND                ;
-; bot[3..2]   ; Input ; Info     ; Stuck at VCC                ;
-; bot[9..8]   ; Input ; Info     ; Stuck at GND                ;
-; bot[6..4]   ; Input ; Info     ; Stuck at GND                ;
-; bot[1..0]   ; Input ; Info     ; Stuck at GND                ;
-; bot[7]      ; Input ; Info     ; Stuck at VCC                ;
-+-------------+-------+----------+-----------------------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaC1" ;
++---------------+-------+----------+--------------------------+
+; Port          ; Type  ; Severity ; Details                  ;
++---------------+-------+----------+--------------------------+
+; left[9..8]    ; Input ; Info     ; Stuck at GND             ;
+; left[4..0]    ; Input ; Info     ; Stuck at GND             ;
+; left[7]       ; Input ; Info     ; Stuck at VCC             ;
+; left[6]       ; Input ; Info     ; Stuck at GND             ;
+; left[5]       ; Input ; Info     ; Stuck at VCC             ;
+; right[7..6]   ; Input ; Info     ; Stuck at VCC             ;
+; right[9..8]   ; Input ; Info     ; Stuck at GND             ;
+; right[3..2]   ; Input ; Info     ; Stuck at GND             ;
+; right[5]      ; Input ; Info     ; Stuck at GND             ;
+; right[4]      ; Input ; Info     ; Stuck at VCC             ;
+; right[1]      ; Input ; Info     ; Stuck at VCC             ;
+; right[0]      ; Input ; Info     ; Stuck at GND             ;
+; top[9..8]     ; Input ; Info     ; Stuck at GND             ;
+; top[4..0]     ; Input ; Info     ; Stuck at GND             ;
+; top[7]        ; Input ; Info     ; Stuck at VCC             ;
+; top[6]        ; Input ; Info     ; Stuck at GND             ;
+; top[5]        ; Input ; Info     ; Stuck at VCC             ;
+; bot[7..5]     ; Input ; Info     ; Stuck at VCC             ;
+; bot[2..1]     ; Input ; Info     ; Stuck at VCC             ;
+; bot[9..8]     ; Input ; Info     ; Stuck at GND             ;
+; bot[4..3]     ; Input ; Info     ; Stuck at GND             ;
+; bot[0]        ; Input ; Info     ; Stuck at GND             ;
+; symbol_sel[2] ; Input ; Info     ; Stuck at GND             ;
+; symbol_sel[1] ; Input ; Info     ; Stuck at VCC             ;
+; symbol_sel[0] ; Input ; Info     ; Stuck at GND             ;
++---------------+-------+----------+--------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaB2" ;
++------------------+-------+----------+-----------------------+
+; Port             ; Type  ; Severity ; Details               ;
++------------------+-------+----------+-----------------------+
+; left[8..7]       ; Input ; Info     ; Stuck at VCC          ;
+; left[3..1]       ; Input ; Info     ; Stuck at VCC          ;
+; left[9]          ; Input ; Info     ; Stuck at GND          ;
+; left[6]          ; Input ; Info     ; Stuck at GND          ;
+; left[5]          ; Input ; Info     ; Stuck at VCC          ;
+; left[4]          ; Input ; Info     ; Stuck at GND          ;
+; left[0]          ; Input ; Info     ; Stuck at GND          ;
+; right[8..5]      ; Input ; Info     ; Stuck at VCC          ;
+; right[4..0]      ; Input ; Info     ; Stuck at GND          ;
+; right[9]         ; Input ; Info     ; Stuck at GND          ;
+; top[2..1]        ; Input ; Info     ; Stuck at VCC          ;
+; top[9..7]        ; Input ; Info     ; Stuck at GND          ;
+; top[5..3]        ; Input ; Info     ; Stuck at GND          ;
+; top[6]           ; Input ; Info     ; Stuck at VCC          ;
+; top[0]           ; Input ; Info     ; Stuck at GND          ;
+; bot[3..2]        ; Input ; Info     ; Stuck at VCC          ;
+; bot[9..8]        ; Input ; Info     ; Stuck at GND          ;
+; bot[6..4]        ; Input ; Info     ; Stuck at GND          ;
+; bot[1..0]        ; Input ; Info     ; Stuck at GND          ;
+; bot[7]           ; Input ; Info     ; Stuck at VCC          ;
+; symbol_sel[2..1] ; Input ; Info     ; Stuck at GND          ;
+; symbol_sel[0]    ; Input ; Info     ; Stuck at VCC          ;
++------------------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaB1" ;
++------------------+-------+----------+-----------------------+
+; Port             ; Type  ; Severity ; Details               ;
++------------------+-------+----------+-----------------------+
+; left[1..0]       ; Input ; Info     ; Stuck at GND          ;
+; left[9]          ; Input ; Info     ; Stuck at GND          ;
+; left[8]          ; Input ; Info     ; Stuck at VCC          ;
+; left[7]          ; Input ; Info     ; Stuck at GND          ;
+; left[6]          ; Input ; Info     ; Stuck at VCC          ;
+; left[5]          ; Input ; Info     ; Stuck at GND          ;
+; left[4]          ; Input ; Info     ; Stuck at VCC          ;
+; left[3]          ; Input ; Info     ; Stuck at GND          ;
+; left[2]          ; Input ; Info     ; Stuck at VCC          ;
+; right[8..7]      ; Input ; Info     ; Stuck at VCC          ;
+; right[2..1]      ; Input ; Info     ; Stuck at VCC          ;
+; right[6..3]      ; Input ; Info     ; Stuck at GND          ;
+; right[9]         ; Input ; Info     ; Stuck at GND          ;
+; right[0]         ; Input ; Info     ; Stuck at GND          ;
+; top[2..1]        ; Input ; Info     ; Stuck at VCC          ;
+; top[9..7]        ; Input ; Info     ; Stuck at GND          ;
+; top[5..3]        ; Input ; Info     ; Stuck at GND          ;
+; top[6]           ; Input ; Info     ; Stuck at VCC          ;
+; top[0]           ; Input ; Info     ; Stuck at GND          ;
+; bot[3..2]        ; Input ; Info     ; Stuck at VCC          ;
+; bot[9..8]        ; Input ; Info     ; Stuck at GND          ;
+; bot[6..4]        ; Input ; Info     ; Stuck at GND          ;
+; bot[1..0]        ; Input ; Info     ; Stuck at GND          ;
+; bot[7]           ; Input ; Info     ; Stuck at VCC          ;
+; symbol_sel[2..1] ; Input ; Info     ; Stuck at GND          ;
+; symbol_sel[0]    ; Input ; Info     ; Stuck at VCC          ;
++------------------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA2" ;
++-------------+-------+----------+----------------------------+
+; Port        ; Type  ; Severity ; Details                    ;
++-------------+-------+----------+----------------------------+
+; left[7..3]  ; Input ; Info     ; Stuck at VCC               ;
+; left[9..8]  ; Input ; Info     ; Stuck at GND               ;
+; left[2]     ; Input ; Info     ; Stuck at GND               ;
+; left[1]     ; Input ; Info     ; Stuck at VCC               ;
+; left[0]     ; Input ; Info     ; Stuck at GND               ;
+; right[3..2] ; Input ; Info     ; Stuck at VCC               ;
+; right[7..6] ; Input ; Info     ; Stuck at GND               ;
+; right[1..0] ; Input ; Info     ; Stuck at GND               ;
+; right[9]    ; Input ; Info     ; Stuck at GND               ;
+; right[8]    ; Input ; Info     ; Stuck at VCC               ;
+; right[5]    ; Input ; Info     ; Stuck at VCC               ;
+; right[4]    ; Input ; Info     ; Stuck at GND               ;
+; top[2..1]   ; Input ; Info     ; Stuck at VCC               ;
+; top[9..7]   ; Input ; Info     ; Stuck at GND               ;
+; top[5..3]   ; Input ; Info     ; Stuck at GND               ;
+; top[6]      ; Input ; Info     ; Stuck at VCC               ;
+; top[0]      ; Input ; Info     ; Stuck at GND               ;
+; bot[3..2]   ; Input ; Info     ; Stuck at VCC               ;
+; bot[9..8]   ; Input ; Info     ; Stuck at GND               ;
+; bot[6..4]   ; Input ; Info     ; Stuck at GND               ;
+; bot[1..0]   ; Input ; Info     ; Stuck at GND               ;
+; bot[7]      ; Input ; Info     ; Stuck at VCC               ;
+; symbol_sel  ; Input ; Info     ; Stuck at GND               ;
++-------------+-------+----------+----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst"                                                                                                                                   ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; size       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; size[4..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; size[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; size[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t          ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[1..0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst"                                                                                                                                 ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; size       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; size[4..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; size[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; size[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t          ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[1..0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst"                                                                                                                                   ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; size       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; size[4..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; size[9..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; size[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t          ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[9..3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[1..0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; t[2]       ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "videoGen:videoGen|carta:cartaA1" ;
++-------------+-------+----------+----------------------------+
+; Port        ; Type  ; Severity ; Details                    ;
++-------------+-------+----------+----------------------------+
+; left[9..8]  ; Input ; Info     ; Stuck at GND               ;
+; left[4..0]  ; Input ; Info     ; Stuck at GND               ;
+; left[7]     ; Input ; Info     ; Stuck at VCC               ;
+; left[6]     ; Input ; Info     ; Stuck at GND               ;
+; left[5]     ; Input ; Info     ; Stuck at VCC               ;
+; right[7..6] ; Input ; Info     ; Stuck at VCC               ;
+; right[9..8] ; Input ; Info     ; Stuck at GND               ;
+; right[3..2] ; Input ; Info     ; Stuck at GND               ;
+; right[5]    ; Input ; Info     ; Stuck at GND               ;
+; right[4]    ; Input ; Info     ; Stuck at VCC               ;
+; right[1]    ; Input ; Info     ; Stuck at VCC               ;
+; right[0]    ; Input ; Info     ; Stuck at GND               ;
+; top[2..1]   ; Input ; Info     ; Stuck at VCC               ;
+; top[9..7]   ; Input ; Info     ; Stuck at GND               ;
+; top[5..3]   ; Input ; Info     ; Stuck at GND               ;
+; top[6]      ; Input ; Info     ; Stuck at VCC               ;
+; top[0]      ; Input ; Info     ; Stuck at GND               ;
+; bot[3..2]   ; Input ; Info     ; Stuck at VCC               ;
+; bot[9..8]   ; Input ; Info     ; Stuck at GND               ;
+; bot[6..4]   ; Input ; Info     ; Stuck at GND               ;
+; bot[1..0]   ; Input ; Info     ; Stuck at GND               ;
+; bot[7]      ; Input ; Info     ; Stuck at VCC               ;
+; symbol_sel  ; Input ; Info     ; Stuck at GND               ;
++-------------+-------+----------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -327,21 +532,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 40                          ;
+; arriav_lcell_comb     ; 79                          ;
 ;     arith             ; 20                          ;
 ;         1 data inputs ; 20                          ;
-;     normal            ; 20                          ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 59                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 4                           ;
-;         6 data inputs ; 5                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 12                          ;
+;         5 data inputs ; 20                          ;
+;         6 data inputs ; 14                          ;
 ; boundary_port         ; 31                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.13                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -360,7 +564,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Sep 30 21:34:31 2025
+    Info: Processing started: Tue Sep 30 23:37:49 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -376,51 +580,77 @@ Info (12021): Found 1 design units, including 1 entities, in source file vga_con
     Info (12023): Found entity 1: pll File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cartaa.sv
     Info (12023): Found entity 1: cartaA File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cartaA.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at videoGen.sv(59): created implicit net for "cartas_total" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 59
+Info (12021): Found 1 design units, including 1 entities, in source file carta.sv
+    Info (12023): Found entity 1: carta File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file plus_symbol.sv
+    Info (12023): Found entity 1: plus_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/plus_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file minus_symbol.sv
+    Info (12023): Found entity 1: minus_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/minus_symbol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cros_symbol.sv
+    Info (12023): Found entity 1: cros_symbol File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cros_symbol.sv Line: 1
 Info (12127): Elaborating entity "vga" for the top level hierarchy
 Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 10
 Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 13
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(25): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 29
 Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGen" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 16
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(9): object "topS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 9
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(10): object "botS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 10
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(11): object "leftS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 11
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(12): object "rightS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 12
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(19): object "topF2" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 19
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(20): object "bottomF2" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 20
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(22): object "topF3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 22
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(23): object "bottomF3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 23
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(25): object "topF4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 25
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(26): object "bottomF4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 26
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(34): object "leftC3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 34
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(35): object "rightC3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 35
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(37): object "leftC4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 37
-Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(38): object "rightC4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 38
-Info (12128): Elaborating entity "cartaA" for hierarchy "videoGen:videoGen|cartaA:cartaA1" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 47
-Info (12128): Elaborating entity "rectgen" for hierarchy "videoGen:videoGen|cartaA:cartaA1|rectgen:rect_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/cartaA.sv Line: 15
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "g[0]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[1]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[2]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[3]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[4]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[5]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[6]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
-    Warning (13410): Pin "g[7]" is stuck at GND File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 5
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(13): object "topS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 13
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(14): object "botS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 14
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(15): object "leftS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 15
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(16): object "rightS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 16
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(26): object "topF3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 26
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(27): object "bottomF3" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 27
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(29): object "topF4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 29
+Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(30): object "bottomF4" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 30
+Info (12128): Elaborating entity "carta" for hierarchy "videoGen:videoGen|carta:cartaA1" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 52
+Info (12128): Elaborating entity "rectgen" for hierarchy "videoGen:videoGen|carta:cartaA1|rectgen:rect_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 22
+Info (12128): Elaborating entity "plus_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Info (12128): Elaborating entity "minus_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Info (12128): Elaborating entity "cros_symbol" for hierarchy "videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "size" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "t" on the entity instantiation of "cros_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 47
+Warning (12020): Port "size" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "t" on the entity instantiation of "minus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 39
+Warning (12020): Port "size" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12020): Port "t" on the entity instantiation of "plus_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 31
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "nxt" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 1
-Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 38 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4891 megabytes
-    Info: Processing ended: Tue Sep 30 21:35:14 2025
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 78 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Tue Sep 30 23:37:57 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 
