@@ -1,194 +1,166 @@
 module FSM(
-    input logic m, rst, clk,                 // Entradas principales
-    input logic [1:0] cartas_seleccionadas,  // Cartas seleccionadas
-    output logic [7:0] estado                // Salida del estado
+    input  logic        m, rst, clk,                // Entradas principales
+    input  logic [1:0]  cartas_seleccionadas,      // Cartas seleccionadas
+    input  logic        tiempo_terminado,           // Señal de fin de turno o tiempo
+    input  logic        inicio,                     // Señal para iniciar el juego
+    input  logic        se_eligio_carta,            // Indica si se eligió una carta
+    input  logic        cartas_mostradas,           // Señal: cartas mostradas
+    input  logic        cartas_ocultas,             // Señal: cartas ocultas
+    input  logic        cartas_revueltas,           // Señal: cartas revueltas
+    output logic [1:0]  ganador                     // 00=ninguno, 01=jug1, 10=jug2, 11=empate
 );
 
+    // -------------------------
     // Registros internos de la FSM
-    logic [4:0] state, next_state;          // Estado actual y siguiente estado
-    logic t0;                               // Señal de sincronización del clkCounter
-    logic [7:0] mCounter;                   // Contador del estado inicial
-    logic [3:0] contador_tiempo;           // Contador de 0 a 15
-    logic pulse_segundo;                    // Pulso de 1 segundo
-    logic [2:0] j1_num_parejas;            // Parejas jugador 1
-    logic [2:0] j2_num_parejas;            // Parejas jugador 2
-    logic [2:0] puntaje_j1;                // Puntaje jugador 1
-    logic [2:0] puntaje_j2;                // Puntaje jugador 2
-    logic jugador_1_tiene_pareja;          // Indica si jugador 1 tiene pareja
-    logic jugador_2_tiene_pareja;          // Indica si jugador 2 tiene pareja
-    logic [1:0] cartas_seleccionadas_reg;  // Registro interno de cartas seleccionadas
-
-    // Instancia de contador de segundos
-    clk_counter_seg #(
-        .CLOCK_FREQ_HZ(50_000_000)         // Ajusta a la frecuencia del reloj
-    ) contador_segundos (
-        .clk(clk),
-        .rst(rst),
-        .pulse_1s(pulse_segundo)
-    );
-
-    // Instancia del clkCounter para señal t0
-    clkCounter counter(clk, rst, t0);
+    // -------------------------
+    logic [3:0] state, next_state;                  // Estado actual y siguiente estado
+    logic [3:0] puntaje_j1;                        // Puntaje jugador 1
+    logic [3:0] puntaje_j2;                        // Puntaje jugador 2
+    logic jugador_tiene_pareja;                     // Indica si jugador actual encontró pareja
+    logic [1:0] cartas_seleccionadas_reg;           // Registro interno de cartas seleccionadas
+    logic jugador_en_turno;                         // 0=jugador1, 1=jugador2
+	 logic [4:0] carta_1;
+	 logic [4:0] carta_2;
+	 
 
     // -------------------------
-    // Logica secuencial (estado actual)
+    // Lógica secuencial (actualización de registros)
     // -------------------------
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             // Reset: inicializa todos los registros
-            state <= 5'b00000;
-            mCounter <= 8'h00;
-            j1_num_parejas <= 0;
-            j2_num_parejas <= 0;
+            state <= 4'b0000;
             puntaje_j1 <= 0;
             puntaje_j2 <= 0;
-            jugador_1_tiene_pareja <= 0;
-            jugador_2_tiene_pareja <= 0;
-            contador_tiempo <= 0;
+            jugador_tiene_pareja <= 0;
             cartas_seleccionadas_reg <= 0;
-        end
+            jugador_en_turno <= 0;
+            ganador <= 2'b00;
+        end 
         else begin
-            // Incrementar contador de tiempo cada segundo
-            if (pulse_segundo && contador_tiempo < 15)
-                contador_tiempo <= contador_tiempo + 1;
-
-            // Acciones según el siguiente estado
-            case(next_state)
-                5'b00101: begin
-                    jugador_1_tiene_pareja <= 0;
-                    j1_num_parejas <= j1_num_parejas + 1;
-                    puntaje_j1 <= puntaje_j1 + 1;
-                end
-                5'b00110, 5'b00111: begin
-                    cartas_seleccionadas_reg <= cartas_seleccionadas_reg + 1;
-                end
-                5'b01001: begin
-                    jugador_2_tiene_pareja <= 0;
-                    j2_num_parejas <= j2_num_parejas + 1;
-                    puntaje_j2 <= puntaje_j2 + 1;
-                end
-                5'b01010, 5'b01011: begin
-                    cartas_seleccionadas_reg <= cartas_seleccionadas_reg + 1;
-                end
-            endcase
-
-            // Salida del estado (ejemplo de visualización)
-            estado <= t0 ? 8'hFF : mCounter;
-
             // Actualizar estado actual
             state <= next_state;
+				
+            // Acciones de cada estado
+            case (state)
+                4'b0000: begin
+                    // Estado inicial
+                    ganador <= 2'b00;
+                end
+					 
+                4'b0101: begin
+                    // Turno jugador: iniciar selección de cartas
+                    cartas_seleccionadas_reg <= 2'b00;
+                end
 
-            // Incrementar contador del estado inicial
-            if (next_state == 5'b00001)
-                mCounter <= mCounter + 1;
+                4'b0110: begin
+                    // Jugador tiene una carta seleccionada
+                    cartas_seleccionadas_reg <= 2'b01;
+                end
+
+                4'b0111: begin
+                    // Jugador tiene 2 cartas seleccionadas
+                    cartas_seleccionadas_reg <= 2'b10;
+							if (carta_1 == carta_2) begin
+								jugador_tiene_pareja <= 1;
+							
+							end
+                    // Sumar puntaje si hay pareja
+                    if (jugador_tiene_pareja) begin
+                        if (jugador_en_turno == 0)
+                            puntaje_j1 <= puntaje_j1 + 1;
+                        else
+                            puntaje_j2 <= puntaje_j2 + 1;
+                    end
+                    else begin
+                        // Cambiar turno si no hay pareja
+                        jugador_en_turno <= ~jugador_en_turno;
+                    end
+                end
+                4'b1010: begin
+                    // Determinar ganador al final del juego
+                    if (puntaje_j1 > puntaje_j2)
+                        ganador <= 2'b01;
+                    else if (puntaje_j1 < puntaje_j2)
+                        ganador <= 2'b10;
+                    else
+                        ganador <= 2'b11; // Empate
+                end
+
+                default: ; // Ninguna acción por defecto
+            endcase
         end
     end
 
     // -------------------------
-    // Logica combinacional (siguiente estado)
+    // Lógica combinacional (cálculo de next_state)
     // -------------------------
     always_comb begin
-        // Por defecto, siguiente estado igual al actual
+        // Por defecto, el siguiente estado se mantiene
         next_state = state;
 
-        case(state)
+        case (state)
             // Estado inicial
-            5'b00000: next_state = (m) ? 5'b00001 : 5'b00000;
+            4'b0000: next_state = (inicio) ? 4'b0001 : 4'b0000;
 
             // Mostrar cartas
-            5'b00001: next_state = (m) ? 5'b00010 : 5'b00000;
+            4'b0001: next_state = (cartas_mostradas) ? 4'b0010 : 4'b0001;
 
             // Ocultar cartas
-            5'b00010: next_state = (m) ? 5'b00011 : 5'b00000;
+            4'b0010: next_state = (cartas_ocultas) ? 4'b0011 : 4'b0010;
 
             // Revolver cartas
-            5'b00011: next_state = (m) ? 5'b00100 : 5'b00000;
+            4'b0011: next_state = (cartas_revueltas) ? 4'b0100 : 4'b0011;
 
             // Iniciar juego
-            5'b00100: next_state = (m) ? 5'b00101 : 5'b00000;
+            4'b0100: next_state = 4'b0101;
 
-            // Turno jugador 1
-            5'b00101: begin
-                if (contador_tiempo < 16)
-                    next_state = 5'b00101;
-                else if (cartas_seleccionadas == 2'b01)
-                    next_state = 5'b00110;
+            // Turno jugador
+            4'b0101: begin
+                if (se_eligio_carta)
+                    next_state = 4'b0110;
+                else if (tiempo_terminado)
+                    next_state = 4'b1000;
                 else
-                    next_state = 5'b01000;
+                    next_state = 4'b0101;
             end
 
-            // Jugador 1 tiene una carta
-            5'b00110: begin
-                if (contador_tiempo < 16)
-                    next_state = 5'b00110;
-                else if (cartas_seleccionadas == 2'b10)
-                    next_state = 5'b00111;
+            // Jugador x tiene una carta
+            4'b0110: begin
+                if (se_eligio_carta)
+                    next_state = 4'b0111;
+                else if (tiempo_terminado)
+                    next_state = 4'b1000;
                 else
-                    next_state = 5'b01000;
+                    next_state = 4'b0110;
             end
 
-            // Jugador 1 tiene 2 cartas
-            5'b00111: next_state = (jugador_1_tiene_pareja) ? 5'b00101 : 5'b01001;
-
-            // Mostrar carta aleatoria jugador 1
-            5'b01000: begin
-                if (cartas_seleccionadas == 2'b00)
-                    next_state = 5'b00110;
-                else if (cartas_seleccionadas == 2'b01)
-                    next_state = 5'b00111;
-            end
-
-            // Turno jugador 2
-            5'b01001: begin
-                if (contador_tiempo < 16)
-                    next_state = 5'b01001;
-                else if (cartas_seleccionadas == 2'b01)
-                    next_state = 5'b01010;
+            // Jugador x tiene 2 cartas
+            4'b0111: begin
+                if (jugador_tiene_pareja && (puntaje_j1 + puntaje_j2 == 8))
+                    next_state = 4'b1001;
                 else
-                    next_state = 5'b01100;
+                    next_state = 4'b0101;
             end
 
-            // Jugador 2 tiene una carta
-            5'b01010: begin
-                if (contador_tiempo < 16)
-                    next_state = 5'b01010;
-                else if (cartas_seleccionadas == 2'b10)
-                    next_state = 5'b01011;
-                else
-                    next_state = 5'b01100;
+            // Mostrar carta aleatoria jugador x
+            4'b1000: begin
+                case (cartas_seleccionadas_reg)
+                    2'b00: next_state = 4'b0110;
+                    2'b01: next_state = 4'b0111;
+						  default: next_state = 4'b1000;
+                endcase
             end
 
-            // Jugador 2 tiene dos cartas
-            5'b01011: next_state = (jugador_2_tiene_pareja) ? 5'b01001 : 5'b00101;
+            // No más parejas → ir a decidir ganador
+            4'b1001: next_state = 4'b1010;
 
-            // Mostrar carta aleatoria jugador 2
-            5'b01100: begin
-                if (cartas_seleccionadas == 2'b00)
-                    next_state = 5'b01010;
-                else if (cartas_seleccionadas == 2'b01)
-                    next_state = 5'b01011;
-            end
-
-            // No hay más parejas
-            5'b01101: begin
-                if (puntaje_j1 > puntaje_j2)
-                    next_state = 5'b01110;
-                else if (puntaje_j1 < puntaje_j2)
-                    next_state = 5'b01111;
-                else
-                    next_state = 5'b10000;
-            end
-
-            // Resultado final
-            5'b01110, 5'b01111, 5'b10000: next_state = 5'b10001;
-
-            // Estado standby
-            5'b10001: next_state = 5'b00000;
+            // Conclusión de la partida
+            4'b1010: next_state = 4'b0000;
 
             // Default de seguridad
-            default: next_state = 5'b00000;
+            default: next_state = 4'b0000;
         endcase
     end
 
 endmodule
-

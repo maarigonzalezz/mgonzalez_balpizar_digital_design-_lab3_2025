@@ -1,126 +1,96 @@
 `timescale 1ns/1ps
 
-module tb_FSM;
+module FSM_tb;
 
-    // Señales de prueba
-    logic clk;
-    logic rst;
-    logic m;
+    // Señales
+    logic m, rst, clk;
     logic [1:0] cartas_seleccionadas;
-    logic [7:0] estado;
-
-    // Señales internas para controlar parejas y puntajes
-    logic jugador_1_tiene_pareja;
-    logic jugador_2_tiene_pareja;
+    logic tiempo_terminado, inicio, se_eligio_carta;
+    logic cartas_mostradas, cartas_ocultas, cartas_revueltas;
+    logic jugador_tiene_pareja;
+    logic [1:0] ganador;
 
     // Instancia de la FSM
-    FSM dut (
-        .clk(clk),
-        .rst(rst),
+    FSM uut (
         .m(m),
+        .rst(rst),
+        .clk(clk),
         .cartas_seleccionadas(cartas_seleccionadas),
-        .estado(estado)
+        .tiempo_terminado(tiempo_terminado),
+        .inicio(inicio),
+        .se_eligio_carta(se_eligio_carta),
+        .cartas_mostradas(cartas_mostradas),
+        .cartas_ocultas(cartas_ocultas),
+        .cartas_revueltas(cartas_revueltas),
+        .ganador(ganador)
     );
 
-    // -------------------------
-    // Generación de reloj: 10ns de período
-    // -------------------------
+    // Señal interna para simular parejas
     initial begin
+        // Inicialización
         clk = 0;
-        forever #5 clk = ~clk;
+        rst = 1; inicio = 0; se_eligio_carta = 0; tiempo_terminado = 0;
+        cartas_mostradas = 0; cartas_ocultas = 0; cartas_revueltas = 0;
+        cartas_seleccionadas = 0; m = 0; jugador_tiene_pareja = 0;
+        #10;
+        rst = 0;
     end
 
-    // -------------------------
-    // Secuencia de prueba
-    // -------------------------
+    // Clock
+    always #5 clk = ~clk;
+
+    // Secuencia de estímulos
     initial begin
-        // Inicializar todas las señales
-        rst = 1;
-        m = 0;
-        cartas_seleccionadas = 2'b00;
-        jugador_1_tiene_pareja = 0;
-        jugador_2_tiene_pareja = 0;
+        // 0000 -> 0001
+        inicio = 1; #10; inicio = 0; #10;
 
-        // Reset inicial
-        #20;
-        rst = 0;
+        // 0001 -> 0010
+        cartas_mostradas = 1; #10; cartas_mostradas = 0; #10;
 
-        // -------------------------
-        // Avanzar estados iniciales 00000 -> 00100
-        // -------------------------
-        repeat (5) begin
-            m = 1;
-            #10;
-            m = 0;
-            #10;
-        end
+        // 0010 -> 0011
+        cartas_ocultas = 1; #10; cartas_ocultas = 0; #10;
 
-        // -------------------------
-        // Turno jugador 1: 0, 1 y 2 cartas seleccionadas
-        // -------------------------
-        cartas_seleccionadas = 2'b00;
+        // 0011 -> 0100
+        cartas_revueltas = 1; #10; cartas_revueltas = 0; #10;
+
+        // 0100 -> 0101
         #10;
 
-        cartas_seleccionadas = 2'b01;
+        // 0101 -> 0110 (selecciona carta)
+        se_eligio_carta = 1; #10; se_eligio_carta = 0; #10;
+
+        // 0110 -> 0111 (selecciona segunda carta)
+        se_eligio_carta = 1; #10; se_eligio_carta = 0; #10;
+
+        // 0111 -> 0101 o puntaje
+        jugador_tiene_pareja = 1;  // simula que encontró pareja
+        // Incrementamos manualmente los puntajes para llegar a 8
+        uut.puntaje_j1 = 4;
+        uut.puntaje_j2 = 4;
+        #10;
+        jugador_tiene_pareja = 0; // siguiente turno
+
+        // 0101 -> 1000 por tiempo terminado
+        tiempo_terminado = 1; #10; tiempo_terminado = 0; #10;
+
+        // 1000 -> 0110 (según cartas_seleccionadas_reg)
+        cartas_seleccionadas = 2'b00; #10;
+
+        // 0110 -> 0111 nuevamente
+        se_eligio_carta = 1; #10; se_eligio_carta = 0; #10;
+
+        // 0111 -> 1001 (fin de juego con puntajes sumando 8)
+        jugador_tiene_pareja = 1; 
+        #10;
+        jugador_tiene_pareja = 0;
+
+        // 1001 -> 1010
         #10;
 
-        cartas_seleccionadas = 2'b10;
-        #10;
-
-        // Simular jugador 1 tiene pareja
-        jugador_1_tiene_pareja = 1;
-        #10;
-        jugador_1_tiene_pareja = 0;
-        #10;
-
-        // -------------------------
-        // Turno jugador 2: 0, 1 y 2 cartas seleccionadas
-        // -------------------------
-        cartas_seleccionadas = 2'b00;
-        #10;
-
-        cartas_seleccionadas = 2'b01;
-        #10;
-
-        cartas_seleccionadas = 2'b10;
-        #10;
-
-        // Simular jugador 2 tiene pareja
-        jugador_2_tiene_pareja = 1;
-        #10;
-        jugador_2_tiene_pareja = 0;
-        #10;
-
-        // -------------------------
-        // Escenarios de fin de juego
-        // -------------------------
-        // Jugador 1 gana
-        dut.puntaje_j1 = 3'b101;  // 5 puntos
-        dut.puntaje_j2 = 3'b010;  // 2 puntos
-        dut.state = 5'b01101;
-        #10;
-
-        // Jugador 2 gana
-        dut.puntaje_j1 = 3'b001;
-        dut.puntaje_j2 = 3'b011;
-        dut.state = 5'b01101;
-        #10;
-
-        // Empate
-        dut.puntaje_j1 = 3'b100;
-        dut.puntaje_j2 = 3'b100;
-        dut.state = 5'b01101;
+        // 1010 -> 0000 (reinicio final)
         #10;
 
         $finish;
-    end
-
-    // -------------------------
-    // Monitoreo de señales
-    // -------------------------
-    initial begin
-        $monitor("Tiempo=%0t | Estado=%b | cartas=%b | jugador1=%b | jugador2=%b | m=%b", 
-                 $time, estado, cartas_seleccionadas, jugador_1_tiene_pareja, jugador_2_tiene_pareja, m);
     end
 
 endmodule
