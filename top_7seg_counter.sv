@@ -29,7 +29,7 @@ module top_7seg_counter (
         if (rst) begin
             counter_hex <= 4'hF;
         end else if (pulse_1s) begin
-            if (counter_hex == 0)
+            if (counter_hex == 4'h0)
                 counter_hex <= 4'hF;
             else
                 counter_hex <= counter_hex - 1;

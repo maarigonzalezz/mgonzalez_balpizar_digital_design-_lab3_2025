@@ -1,5 +1,5 @@
 Fitter report for Memoria
-Mon Oct 06 11:34:12 2025
+Mon Oct 06 11:58:50 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Oct 06 11:34:12 2025       ;
+; Fitter Status                   ; Successful - Mon Oct 06 11:58:50 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; Top_Level_Memory                            ;
@@ -154,20 +154,20 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.13        ;
+; Average used               ; 1.15        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.5%      ;
-;     Processor 3            ;   1.4%      ;
-;     Processor 4            ;   1.4%      ;
-;     Processor 5            ;   1.4%      ;
-;     Processor 6            ;   1.4%      ;
-;     Processor 7            ;   1.4%      ;
-;     Processor 8            ;   1.4%      ;
-;     Processor 9            ;   1.3%      ;
-;     Processor 10           ;   1.3%      ;
+;     Processor 2            ;   1.7%      ;
+;     Processor 3            ;   1.7%      ;
+;     Processor 4            ;   1.6%      ;
+;     Processor 5            ;   1.6%      ;
+;     Processor 6            ;   1.6%      ;
+;     Processor 7            ;   1.6%      ;
+;     Processor 8            ;   1.6%      ;
+;     Processor 9            ;   1.6%      ;
+;     Processor 10           ;   1.5%      ;
 +----------------------------+-------------+
 
 
@@ -2209,7 +2209,7 @@ Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "nxt" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:12
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:19
@@ -2222,19 +2222,19 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 1.25 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.22 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/output_files/Memoria.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 7148 megabytes
-    Info: Processing ended: Mon Oct 06 11:34:14 2025
-    Info: Elapsed time: 00:01:36
-    Info: Total CPU time (on all processors): 00:06:45
+    Info: Peak virtual memory: 7190 megabytes
+    Info: Processing ended: Mon Oct 06 11:58:51 2025
+    Info: Elapsed time: 00:01:14
+    Info: Total CPU time (on all processors): 00:06:49
 
 
 +----------------------------+
