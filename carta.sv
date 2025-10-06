@@ -6,6 +6,7 @@ module carta(
 	 output logic insymbol
 );
 
+
 logic inrect;
 logic plus, minus, cros, circle, hash, square, trin, invtri;
 logic [9:0] centerx, centery;
