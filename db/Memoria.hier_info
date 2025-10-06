@@ -1,14 +1,24 @@
-|vga
-clk => clk.IN2
-nxt => ~NO_FANOUT~
-rst => rst.IN1
-seg[0] << top_7seg_counter:comb_3.seg
-seg[1] << top_7seg_counter:comb_3.seg
-seg[2] << top_7seg_counter:comb_3.seg
-seg[3] << top_7seg_counter:comb_3.seg
-seg[4] << top_7seg_counter:comb_3.seg
-seg[5] << top_7seg_counter:comb_3.seg
-seg[6] << top_7seg_counter:comb_3.seg
+|Top_Level_Memory
+m => m.IN1
+rst => rst.IN2
+clk => clk.IN3
+cartas_sel[0] => cartas_sel[0].IN1
+cartas_sel[1] => cartas_sel[1].IN1
+tiempoT => tiempoT.IN1
+I => I.IN1
+carta_El => carta_El.IN1
+cartas_Mo => cartas_Mo.IN1
+cartas_Oc => cartas_Oc.IN1
+cartas_Re => cartas_Re.IN1
+ganador[0] << FSM:FSMM.ganador
+ganador[1] << FSM:FSMM.ganador
+seg[0] << top_7seg_counter:cont15s.seg
+seg[1] << top_7seg_counter:cont15s.seg
+seg[2] << top_7seg_counter:cont15s.seg
+seg[3] << top_7seg_counter:cont15s.seg
+seg[4] << top_7seg_counter:cont15s.seg
+seg[5] << top_7seg_counter:cont15s.seg
+seg[6] << top_7seg_counter:cont15s.seg
 vgaclk << vgaclk.DB_MAX_OUTPUT_PORT_TYPE
 hsync << vgaController:vgaCont.port1
 vsync << vgaController:vgaCont.port2
@@ -40,12 +50,12 @@ b[6] << videoGen:videoGen.port4
 b[7] << videoGen:videoGen.port4
 
 
-|vga|pll:vgapll
+|Top_Level_Memory|pll:vgapll
 inclk0 => toggle.CLK
 c0 <= toggle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|vgaController:vgaCont
+|Top_Level_Memory|vgaController:vgaCont
 vgaclk => y[0]~reg0.CLK
 vgaclk => y[1]~reg0.CLK
 vgaclk => y[2]~reg0.CLK
@@ -92,7 +102,7 @@ y[8] <= y[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 y[9] <= y[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen
+|Top_Level_Memory|videoGen:videoGen
 x[0] => carta:cartaA1.x[0]
 x[0] => carta:cartaA2.x[0]
 x[0] => carta:cartaB1.x[0]
@@ -439,7 +449,7 @@ b[6] <= <VCC>
 b[7] <= in_any_card.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -507,7 +517,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -591,7 +601,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -829,7 +839,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -951,7 +961,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -1073,7 +1083,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -1157,7 +1167,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -1503,7 +1513,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -1605,7 +1615,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -1882,7 +1892,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -2159,7 +2169,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -2227,7 +2237,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -2311,7 +2321,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -2549,7 +2559,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -2671,7 +2681,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -2793,7 +2803,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -2877,7 +2887,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -3223,7 +3233,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -3325,7 +3335,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -3602,7 +3612,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaA2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaA2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -3879,7 +3889,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -3947,7 +3957,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -4031,7 +4041,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -4269,7 +4279,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -4391,7 +4401,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -4513,7 +4523,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -4597,7 +4607,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -4943,7 +4953,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -5045,7 +5055,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -5322,7 +5332,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -5599,7 +5609,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -5667,7 +5677,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -5751,7 +5761,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -5989,7 +5999,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -6111,7 +6121,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -6233,7 +6243,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -6317,7 +6327,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -6663,7 +6673,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -6765,7 +6775,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -7042,7 +7052,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaB2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaB2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -7319,7 +7329,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -7387,7 +7397,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -7471,7 +7481,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -7709,7 +7719,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -7831,7 +7841,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -7953,7 +7963,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -8037,7 +8047,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -8383,7 +8393,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -8485,7 +8495,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -8762,7 +8772,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -9039,7 +9049,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -9107,7 +9117,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -9191,7 +9201,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -9429,7 +9439,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -9551,7 +9561,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -9673,7 +9683,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -9757,7 +9767,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -10103,7 +10113,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -10205,7 +10215,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -10482,7 +10492,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaC2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaC2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -10759,7 +10769,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -10827,7 +10837,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -10911,7 +10921,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -11149,7 +11159,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -11271,7 +11281,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -11393,7 +11403,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -11477,7 +11487,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -11823,7 +11833,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -11925,7 +11935,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -12202,7 +12212,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -12479,7 +12489,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -12547,7 +12557,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -12631,7 +12641,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -12869,7 +12879,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -12991,7 +13001,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -13113,7 +13123,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -13197,7 +13207,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -13543,7 +13553,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -13645,7 +13655,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -13922,7 +13932,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaD2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaD2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -14199,7 +14209,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -14267,7 +14277,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -14351,7 +14361,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -14589,7 +14599,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -14711,7 +14721,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -14833,7 +14843,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -14917,7 +14927,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -15263,7 +15273,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -15365,7 +15375,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -15642,7 +15652,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -15919,7 +15929,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -15987,7 +15997,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -16071,7 +16081,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -16309,7 +16319,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -16431,7 +16441,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -16553,7 +16563,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -16637,7 +16647,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -16983,7 +16993,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -17085,7 +17095,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -17362,7 +17372,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaE2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaE2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -17639,7 +17649,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -17707,7 +17717,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -17791,7 +17801,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -18029,7 +18039,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -18151,7 +18161,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -18273,7 +18283,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -18357,7 +18367,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -18703,7 +18713,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -18805,7 +18815,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -19082,7 +19092,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -19359,7 +19369,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -19427,7 +19437,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -19511,7 +19521,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -19749,7 +19759,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -19871,7 +19881,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -19993,7 +20003,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -20077,7 +20087,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -20423,7 +20433,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -20525,7 +20535,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -20802,7 +20812,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaF2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaF2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -21079,7 +21089,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -21147,7 +21157,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -21231,7 +21241,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -21469,7 +21479,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -21591,7 +21601,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -21713,7 +21723,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -21797,7 +21807,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -22143,7 +22153,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -22245,7 +22255,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -22522,7 +22532,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -22799,7 +22809,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -22867,7 +22877,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -22951,7 +22961,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -23189,7 +23199,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -23311,7 +23321,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -23433,7 +23443,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -23517,7 +23527,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -23863,7 +23873,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -23965,7 +23975,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -24242,7 +24252,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaG2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaG2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -24519,7 +24529,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -24587,7 +24597,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -24671,7 +24681,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -24909,7 +24919,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -25031,7 +25041,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -25153,7 +25163,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -25237,7 +25247,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -25583,7 +25593,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -25685,7 +25695,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -25962,7 +25972,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH1|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH1|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -26239,7 +26249,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2
 x[0] => x[0].IN9
 x[1] => x[1].IN9
 x[2] => x[2].IN9
@@ -26307,7 +26317,7 @@ incard <= rectgen:rect_inst.inrect
 insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|rectgen:rect_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|rectgen:rect_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -26391,7 +26401,7 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|plus_symbol:plus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|plus_symbol:plus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[0] => LessThan4.IN13
@@ -26629,7 +26639,7 @@ t[9] => Add2.IN2
 inplus <= inplus.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|minus_symbol:minus_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|minus_symbol:minus_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -26751,7 +26761,7 @@ t[9] => Add2.IN2
 inminus <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|cros_symbol:cros_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|cros_symbol:cros_inst
 x[0] => LessThan0.IN13
 x[0] => LessThan1.IN15
 x[1] => LessThan0.IN12
@@ -26873,7 +26883,7 @@ t[9] => Add0.IN2
 incros <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|square_symbol:square_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|square_symbol:square_inst
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -26957,7 +26967,7 @@ cy[9] => Add3.IN9
 insquare <= insquare.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|hash_symbol:hash_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|hash_symbol:hash_inst
 x[0] => LessThan2.IN14
 x[0] => LessThan3.IN17
 x[0] => LessThan6.IN14
@@ -27303,7 +27313,7 @@ t[9] => Add2.IN20
 inhash <= inhash.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|circle_symbol:circle_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|circle_symbol:circle_inst
 x[0] => Add2.IN20
 x[1] => Add2.IN19
 x[2] => Add2.IN18
@@ -27405,7 +27415,7 @@ t[9] => Add0.IN2
 incircle <= incircle.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|triangle_symbol:tri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|triangle_symbol:tri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -27682,7 +27692,7 @@ t[9] => Add19.IN9
 intrin <= intrin.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|carta:cartaH2|invtriangle_symbol:invtri_inst
+|Top_Level_Memory|videoGen:videoGen|carta:cartaH2|invtriangle_symbol:invtri_inst
 x[0] => Add4.IN64
 x[0] => Add12.IN64
 x[0] => Add22.IN64
@@ -27959,7 +27969,7 @@ t[9] => Add19.IN9
 ininvtri <= ininvtri.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|top_7seg_counter:comb_3
+|Top_Level_Memory|top_7seg_counter:cont15s
 clk => clk.IN1
 rst => rst.IN1
 seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
@@ -27975,7 +27985,7 @@ an[2] <= <VCC>
 an[3] <= <VCC>
 
 
-|vga|top_7seg_counter:comb_3|clk_counter_seg:u_clk_counter
+|Top_Level_Memory|top_7seg_counter:cont15s|clk_counter_seg:u_clk_counter
 clk => pulse_1s~reg0.CLK
 clk => cycle_counter[0].CLK
 clk => cycle_counter[1].CLK
@@ -28031,5 +28041,55 @@ rst => cycle_counter[23].ACLR
 rst => cycle_counter[24].ACLR
 rst => cycle_counter[25].ACLR
 pulse_1s <= pulse_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Level_Memory|FSM:FSMM
+m => ~NO_FANOUT~
+rst => ganador[0]~reg0.ACLR
+rst => ganador[1]~reg0.ACLR
+rst => jugador_en_turno.ACLR
+rst => jugador_tiene_pareja.ACLR
+rst => puntaje_j2[0].ACLR
+rst => puntaje_j2[1].ACLR
+rst => puntaje_j2[2].ACLR
+rst => puntaje_j2[3].ACLR
+rst => puntaje_j1[0].ACLR
+rst => puntaje_j1[1].ACLR
+rst => puntaje_j1[2].ACLR
+rst => puntaje_j1[3].ACLR
+rst => cartas_seleccionadas_reg~3.DATAIN
+rst => state~3.DATAIN
+clk => ganador[0]~reg0.CLK
+clk => ganador[1]~reg0.CLK
+clk => jugador_en_turno.CLK
+clk => jugador_tiene_pareja.CLK
+clk => puntaje_j2[0].CLK
+clk => puntaje_j2[1].CLK
+clk => puntaje_j2[2].CLK
+clk => puntaje_j2[3].CLK
+clk => puntaje_j1[0].CLK
+clk => puntaje_j1[1].CLK
+clk => puntaje_j1[2].CLK
+clk => puntaje_j1[3].CLK
+clk => cartas_seleccionadas_reg~1.DATAIN
+clk => state~1.DATAIN
+cartas_seleccionadas[0] => ~NO_FANOUT~
+cartas_seleccionadas[1] => ~NO_FANOUT~
+tiempo_terminado => next_state.DATAA
+tiempo_terminado => next_state.DATAA
+inicio => Selector6.IN3
+inicio => Selector5.IN2
+se_eligio_carta => next_state.OUTPUTSELECT
+se_eligio_carta => next_state.OUTPUTSELECT
+se_eligio_carta => Selector10.IN3
+se_eligio_carta => Selector11.IN2
+cartas_mostradas => Selector7.IN3
+cartas_mostradas => Selector6.IN1
+cartas_ocultas => Selector8.IN3
+cartas_ocultas => Selector7.IN1
+cartas_revueltas => next_state.0100.DATAB
+cartas_revueltas => Selector8.IN1
+ganador[0] <= ganador[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ganador[1] <= ganador[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

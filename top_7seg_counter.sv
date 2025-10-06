@@ -27,12 +27,12 @@ module top_7seg_counter (
     // -------------------------
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            counter_hex <= 0;
+            counter_hex <= 4'hF;
         end else if (pulse_1s) begin
-            if (counter_hex == 4'hF)
-                counter_hex <= 0;
+            if (counter_hex == 0)
+                counter_hex <= 4'hF;
             else
-                counter_hex <= counter_hex + 1;
+                counter_hex <= counter_hex - 1;
         end
     end
 

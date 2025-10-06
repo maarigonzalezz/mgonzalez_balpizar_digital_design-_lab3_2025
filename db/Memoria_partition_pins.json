@@ -4,6 +4,14 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "ganador[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ganador[1]",
+					"strict" : false
+				},
+				{
 					"name" : "seg[0]",
 					"strict" : false
 				},
@@ -125,6 +133,30 @@
 				},
 				{
 					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "carta_El",
+					"strict" : false
+				},
+				{
+					"name" : "tiempoT",
+					"strict" : false
+				},
+				{
+					"name" : "I",
+					"strict" : false
+				},
+				{
+					"name" : "cartas_Re",
+					"strict" : false
+				},
+				{
+					"name" : "cartas_Oc",
+					"strict" : false
+				},
+				{
+					"name" : "cartas_Mo",
 					"strict" : false
 				}
 			]
