@@ -136,11 +136,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "tiempoT",
+					"strict" : false
+				},
+				{
 					"name" : "carta_El",
 					"strict" : false
 				},
 				{
-					"name" : "tiempoT",
+					"name" : "cartas_Mo",
 					"strict" : false
 				},
 				{
@@ -148,15 +152,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "cartas_Re",
-					"strict" : false
-				},
-				{
 					"name" : "cartas_Oc",
 					"strict" : false
 				},
 				{
-					"name" : "cartas_Mo",
+					"name" : "cartas_Re",
 					"strict" : false
 				}
 			]

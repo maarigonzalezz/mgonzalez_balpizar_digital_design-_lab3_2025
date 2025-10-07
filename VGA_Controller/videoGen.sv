@@ -1,6 +1,7 @@
 //Generador de una figura en la pantalla, aplicacion de colores por pixel
 
-module videoGen(input logic [9:0] x, y, 
+module videoGen(input logic [9:0] x, y,
+					input logic [3:0] state,
 					output logic [7:0] r, g, b);
 
 logic pixel, cA1, cA2, cB1, cB2;
@@ -16,30 +17,23 @@ logic [10:0] leftS = 10'd76;
 logic [10:0] rightS = 10'd126;
 
 // las cartas en la pantalla se veran como una matriz 4x4, por lo cual usaremos variables
-// para alturas anchos y posiciones
-logic [9:0] topF1 = 10'd70;
-logic [9:0] bottomF1 = 10'd140;
+// Filas
+logic [9:0] topF1 = 10'd70;     logic [9:0] bottomF1 = 10'd140;
 
-logic [9:0] topF2 = 10'd160;
-logic [9:0] bottomF2 = 10'd230;
+logic [9:0] topF2 = 10'd160;    logic [9:0] bottomF2 = 10'd230;
 
-logic [9:0] topF3 = 10'd250;
-logic [9:0] bottomF3 = 10'd320;
+logic [9:0] topF3 = 10'd250;    logic [9:0] bottomF3 = 10'd320;
 
-logic [9:0] topF4 = 10'd340;
-logic [9:0] bottomF4 = 10'd410;
+logic [9:0] topF4 = 10'd340;    logic [9:0] bottomF4 = 10'd410;
 
-logic [9:0] leftC1 = 10'd160;
-logic [9:0] rightC1 = 10'd210;
+// Columnas 
+logic [9:0] leftC1 = 10'd160;   logic [9:0] rightC1 = 10'd210;
 
-logic [9:0] leftC2 = 10'd250;
-logic [9:0] rightC2 = 10'd300;
+logic [9:0] leftC2 = 10'd250;   logic [9:0] rightC2 = 10'd300;
 
-logic [9:0] leftC3 = 10'd340;
-logic [9:0] rightC3 = 10'd390;
+logic [9:0] leftC3 = 10'd340;   logic [9:0] rightC3 = 10'd390;
 
-logic [9:0] leftC4 = 10'd430;
-logic [9:0] rightC4 = 10'd480;
+logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
 
 
 // Cartas: coordenadas

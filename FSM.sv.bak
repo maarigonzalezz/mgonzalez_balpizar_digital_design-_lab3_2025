@@ -1,0 +1,166 @@
+module FSM(
+    input  logic        m, rst, clk,                // Entradas principales
+    input  logic [1:0]  cartas_seleccionadas,      // Cartas seleccionadas
+    input  logic        tiempo_terminado,           // Señal de fin de turno o tiempo
+    input  logic        inicio,                     // Señal para iniciar el juego
+    input  logic        se_eligio_carta,            // Indica si se eligió una carta
+    input  logic        cartas_mostradas,           // Señal: cartas mostradas
+    input  logic        cartas_ocultas,             // Señal: cartas ocultas
+    input  logic        cartas_revueltas,           // Señal: cartas revueltas
+    output logic [1:0]  ganador                     // 00=ninguno, 01=jug1, 10=jug2, 11=empate
+);
+
+    // -------------------------
+    // Registros internos de la FSM
+    // -------------------------
+    logic [3:0] state, next_state;                  // Estado actual y siguiente estado
+    logic [3:0] puntaje_j1;                        // Puntaje jugador 1
+    logic [3:0] puntaje_j2;                        // Puntaje jugador 2
+    logic jugador_tiene_pareja;                     // Indica si jugador actual encontró pareja
+    logic [1:0] cartas_seleccionadas_reg;           // Registro interno de cartas seleccionadas
+    logic jugador_en_turno;                         // 0=jugador1, 1=jugador2
+	 logic [4:0] carta_1;
+	 logic [4:0] carta_2;
+	 
+
+    // -------------------------
+    // Lógica secuencial (actualización de registros)
+    // -------------------------
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            // Reset: inicializa todos los registros
+            state <= 4'b0000;
+            puntaje_j1 <= 0;
+            puntaje_j2 <= 0;
+            jugador_tiene_pareja <= 0;
+            cartas_seleccionadas_reg <= 0;
+            jugador_en_turno <= 0;
+            ganador <= 2'b00;
+        end 
+        else begin
+            // Actualizar estado actual
+            state <= next_state;
+				
+            // Acciones de cada estado
+            case (state)
+                4'b0000: begin
+                    // Estado inicial
+                    ganador <= 2'b00;
+                end
+					 
+                4'b0101: begin
+                    // Turno jugador: iniciar selección de cartas
+                    cartas_seleccionadas_reg <= 2'b00;
+                end
+
+                4'b0110: begin
+                    // Jugador tiene una carta seleccionada
+                    cartas_seleccionadas_reg <= 2'b01;
+                end
+
+                4'b0111: begin
+                    // Jugador tiene 2 cartas seleccionadas
+                    cartas_seleccionadas_reg <= 2'b10;
+							if (carta_1 == carta_2) begin
+								jugador_tiene_pareja <= 1;
+							
+							end
+                    // Sumar puntaje si hay pareja
+                    if (jugador_tiene_pareja) begin
+                        if (jugador_en_turno == 0)
+                            puntaje_j1 <= puntaje_j1 + 1;
+                        else
+                            puntaje_j2 <= puntaje_j2 + 1;
+                    end
+                    else begin
+                        // Cambiar turno si no hay pareja
+                        jugador_en_turno <= ~jugador_en_turno;
+                    end
+                end
+                4'b1010: begin
+                    // Determinar ganador al final del juego
+                    if (puntaje_j1 > puntaje_j2)
+                        ganador <= 2'b01;
+                    else if (puntaje_j1 < puntaje_j2)
+                        ganador <= 2'b10;
+                    else
+                        ganador <= 2'b11; // Empate
+                end
+
+                default: ; // Ninguna acción por defecto
+            endcase
+        end
+    end
+
+    // -------------------------
+    // Lógica combinacional (cálculo de next_state)
+    // -------------------------
+    always_comb begin
+        // Por defecto, el siguiente estado se mantiene
+        next_state = state;
+
+        case (state)
+            // Estado inicial
+            4'b0000: next_state = (inicio) ? 4'b0001 : 4'b0000;
+
+            // Mostrar cartas
+            4'b0001: next_state = (cartas_mostradas) ? 4'b0010 : 4'b0001;
+
+            // Ocultar cartas
+            4'b0010: next_state = (cartas_ocultas) ? 4'b0011 : 4'b0010;
+
+            // Revolver cartas
+            4'b0011: next_state = (cartas_revueltas) ? 4'b0100 : 4'b0011;
+
+            // Iniciar juego
+            4'b0100: next_state = 4'b0101;
+
+            // Turno jugador
+            4'b0101: begin
+                if (se_eligio_carta)
+                    next_state = 4'b0110;
+                else if (tiempo_terminado)
+                    next_state = 4'b1000;
+                else
+                    next_state = 4'b0101;
+            end
+
+            // Jugador x tiene una carta
+            4'b0110: begin
+                if (se_eligio_carta)
+                    next_state = 4'b0111;
+                else if (tiempo_terminado)
+                    next_state = 4'b1000;
+                else
+                    next_state = 4'b0110;
+            end
+
+            // Jugador x tiene 2 cartas
+            4'b0111: begin
+                if (jugador_tiene_pareja && (puntaje_j1 + puntaje_j2 == 8))
+                    next_state = 4'b1001;
+                else
+                    next_state = 4'b0101;
+            end
+
+            // Mostrar carta aleatoria jugador x
+            4'b1000: begin
+                case (cartas_seleccionadas_reg)
+                    2'b00: next_state = 4'b0110;
+                    2'b01: next_state = 4'b0111;
+						  default: next_state = 4'b1000;
+                endcase
+            end
+
+            // No más parejas → ir a decidir ganador
+            4'b1001: next_state = 4'b1010;
+
+            // Conclusión de la partida
+            4'b1010: next_state = 4'b0000;
+
+            // Default de seguridad
+            default: next_state = 4'b0000;
+        endcase
+    end
+
+endmodule

@@ -7,13 +7,14 @@ module FSM(
     input  logic        cartas_mostradas,           // Señal: cartas mostradas
     input  logic        cartas_ocultas,             // Señal: cartas ocultas
     input  logic        cartas_revueltas,           // Señal: cartas revueltas
-    output logic [1:0]  ganador                     // 00=ninguno, 01=jug1, 10=jug2, 11=empate
+    output logic [1:0]  ganador,                     // 00=ninguno, 01=jug1, 10=jug2, 11=empate
+	 output logic [3:0]  state
 );
 
     // -------------------------
     // Registros internos de la FSM
     // -------------------------
-    logic [3:0] state, next_state;                  // Estado actual y siguiente estado
+    logic [3:0] next_state;                  // Estado actual y siguiente estado
     logic [3:0] puntaje_j1;                        // Puntaje jugador 1
     logic [3:0] puntaje_j2;                        // Puntaje jugador 2
     logic jugador_tiene_pareja;                     // Indica si jugador actual encontró pareja
@@ -116,7 +117,7 @@ module FSM(
             4'b0100: next_state = 4'b0101;
 
             // Turno jugador
-            4'b0101: begin
+            4'b0101: begin 
                 if (se_eligio_carta)
                     next_state = 4'b0110;
                 else if (tiempo_terminado)
