@@ -1,0 +1,20 @@
+module plus_symbol (
+    input  logic [9:0] x, y,    // coordenadas actuales del pixel
+    input  logic [9:0] cx, cy,  // centro del símbolo
+    input  logic [9:0] size,    // largo total del símbolo
+    input  logic [9:0] t,       // grosor de la línea
+    output logic inplus         // 1 si el pixel está en el "+"
+);
+    logic in_hbar, in_vbar;
+
+    // Barra horizontal (ancho = size, alto = t)
+    assign in_hbar = (x >= (cx - size/2)) && (x < (cx + size/2)) &&
+                     (y >= (cy - t/2))    && (y < (cy + t/2));
+
+    // Barra vertical (ancho = t, alto = size)
+    assign in_vbar = (x >= (cx - t/2))    && (x < (cx + t/2)) &&
+                     (y >= (cy - size/2)) && (y < (cy + size/2));
+
+    // Unión de ambas
+    assign inplus = in_hbar | in_vbar;
+endmodule

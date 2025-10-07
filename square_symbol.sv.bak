@@ -1,0 +1,17 @@
+module square_symbol(
+    input logic [9:0] x, y, 
+    input  logic [9:0] x, y,        // coordenadas actuales del pixel
+    input  logic [9:0] cx, cy,      // centro del símbolo
+    output logic insquare
+);
+
+	logic [9:0] left, right, top, bot;
+	
+	assign left = cx - 10'd12;
+	assign right = cx + 10'd12;
+	assign top = cy - 10'd12;
+	assign bot = cy + 10'd12;
+
+    // Lógica del rectángulo
+    assign insquare = (x >= left & x < right & y >= top & y < bot);
+endmodule
