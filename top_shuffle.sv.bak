@@ -1,0 +1,30 @@
+module top_shuffle (
+    input logic clk,
+    input logic rst,
+    input logic start,
+    input logic [4:0] in_cards [0:15],
+    output logic [4:0] out_cards [0:15],
+    output logic done
+);
+
+    logic [7:0] seed;
+
+    // Instancia del bit-shifter
+    bit_shifter bs(
+        .clk(clk),
+        .rst(rst),
+        .data(seed)
+    );
+
+    // Instancia del shuffle
+    shuffle sh(
+        .clk(clk),
+        .rst(rst),
+        .start(start),
+        .in_cards(in_cards),
+        .seed(seed),
+        .out_cards(out_cards),
+        .done(done)
+    );
+
+endmodule

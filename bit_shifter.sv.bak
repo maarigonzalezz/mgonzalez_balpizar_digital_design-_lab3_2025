@@ -1,0 +1,20 @@
+module bit_shifter (
+    input  logic clk,
+    input  logic rst,
+    output logic [7:0] data  // salida pseudoaleatoria
+);
+
+    logic [7:0] shift_reg;
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            shift_reg <= 8'hA5; // valor inicial
+        end else begin
+            // LFSR de 8 bits tipo Galois
+            shift_reg <= {shift_reg[6:0], shift_reg[7] ^ shift_reg[5] ^ shift_reg[4] ^ shift_reg[3]};
+        end
+    end
+
+    assign data = shift_reg;
+
+endmodule

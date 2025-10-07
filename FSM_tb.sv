@@ -3,16 +3,16 @@
 module FSM_tb;
 
     // Señales
-    logic m, rst, clk;
+    logic rst, clk;
     logic [1:0] cartas_seleccionadas;
     logic tiempo_terminado, inicio, se_eligio_carta;
     logic cartas_mostradas, cartas_ocultas, cartas_revueltas;
     logic jugador_tiene_pareja;
     logic [1:0] ganador;
+	 logic [3:0] estado;
 
     // Instancia de la FSM
     FSM uut (
-        .m(m),
         .rst(rst),
         .clk(clk),
         .cartas_seleccionadas(cartas_seleccionadas),
@@ -22,7 +22,8 @@ module FSM_tb;
         .cartas_mostradas(cartas_mostradas),
         .cartas_ocultas(cartas_ocultas),
         .cartas_revueltas(cartas_revueltas),
-        .ganador(ganador)
+        .ganador(ganador),
+		  .state(estado)
     );
 
     // Señal interna para simular parejas
@@ -31,7 +32,7 @@ module FSM_tb;
         clk = 0;
         rst = 1; inicio = 0; se_eligio_carta = 0; tiempo_terminado = 0;
         cartas_mostradas = 0; cartas_ocultas = 0; cartas_revueltas = 0;
-        cartas_seleccionadas = 0; m = 0; jugador_tiene_pareja = 0;
+        cartas_seleccionadas = 0; jugador_tiene_pareja = 0;
         #10;
         rst = 0;
     end

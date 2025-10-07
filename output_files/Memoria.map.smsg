@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at FSM.sv(34): always construct contains both blocking and non-blocking assignments File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 34
+Warning (10268): Verilog HDL information at Shuffle.sv(22): always construct contains both blocking and non-blocking assignments File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv Line: 22

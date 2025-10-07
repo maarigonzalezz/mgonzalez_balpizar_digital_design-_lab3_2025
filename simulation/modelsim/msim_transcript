@@ -10,33 +10,141 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:06:01 on Oct 04,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv 
-# -- Compiling module FSM
+# Start time: 00:20:53 on Oct 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv 
+# -- Compiling module Shuffle
 # 
 # Top level modules:
-# 	FSM
-# End time: 00:06:01 on Oct 04,2025, Elapsed time: 0:00:00
+# 	Shuffle
+# End time: 00:20:53 on Oct 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:06:01 on Oct 04,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv 
-# -- Compiling module FSM_tb
+# Start time: 00:20:53 on Oct 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv 
+# -- Compiling module bit_shifter
 # 
 # Top level modules:
-# 	FSM_tb
-# End time: 00:06:01 on Oct 04,2025, Elapsed time: 0:00:00
+# 	bit_shifter
+# End time: 00:20:53 on Oct 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:20:53 on Oct 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv 
+# -- Compiling module top_shuffle
+# 
+# Top level modules:
+# 	top_shuffle
+# End time: 00:20:53 on Oct 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FSM_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FSM_tb 
-# Start time: 00:06:03 on Oct 04,2025
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:20:53 on Oct 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv 
+# -- Compiling module top_shuffle_tb
+# 
+# Top level modules:
+# 	top_shuffle_tb
+# End time: 00:20:54 on Oct 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_shuffle_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_shuffle_tb 
+# Start time: 00:20:54 on Oct 07,2025
 # Loading sv_std.std
-# Loading work.FSM_tb
-# Loading work.FSM
-# End time: 00:06:05 on Oct 04,2025, Elapsed time: 0:00:02
+# Loading work.top_shuffle_tb
+# Loading work.top_shuffle
+# Loading work.bit_shifter
+# Loading work.Shuffle
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# === INICIO DE PRUEBA TOP SHUFFLE ===
+# 
+# --- Baraja inicial ---
+# Carta[0] = 00000
+# Carta[1] = 00000
+# Carta[2] = 00100
+# Carta[3] = 00100
+# Carta[4] = 01000
+# Carta[5] = 01000
+# Carta[6] = 01100
+# Carta[7] = 01100
+# Carta[8] = 10000
+# Carta[9] = 10000
+# Carta[10] = 10100
+# Carta[11] = 10100
+# Carta[12] = 11000
+# Carta[13] = 11000
+# Carta[14] = 11100
+# Carta[15] = 11100
+# 
+# --- Barajado 1 ---
+# Carta[0] = 01100
+# Carta[1] = 10000
+# Carta[2] = 11000
+# Carta[3] = 10000
+# Carta[4] = 11000
+# Carta[5] = 01000
+# Carta[6] = 00000
+# Carta[7] = 01000
+# Carta[8] = 10100
+# Carta[9] = 11100
+# Carta[10] = 00000
+# Carta[11] = 10100
+# Carta[12] = 00100
+# Carta[13] = 00100
+# Carta[14] = 01100
+# Carta[15] = 11100
+# 
+# --- Barajado 2 ---
+# Carta[0] = 10100
+# Carta[1] = 10100
+# Carta[2] = 00100
+# Carta[3] = 11000
+# Carta[4] = 01100
+# Carta[5] = 00000
+# Carta[6] = 00000
+# Carta[7] = 10000
+# Carta[8] = 11100
+# Carta[9] = 11100
+# Carta[10] = 01000
+# Carta[11] = 00100
+# Carta[12] = 10000
+# Carta[13] = 01000
+# Carta[14] = 11000
+# Carta[15] = 01100
+# 
+# --- Barajado 3 ---
+# Carta[0] = 00100
+# Carta[1] = 10100
+# Carta[2] = 11100
+# Carta[3] = 01100
+# Carta[4] = 10000
+# Carta[5] = 01100
+# Carta[6] = 00000
+# Carta[7] = 01000
+# Carta[8] = 00100
+# Carta[9] = 11000
+# Carta[10] = 11000
+# Carta[11] = 11100
+# Carta[12] = 10100
+# Carta[13] = 00000
+# Carta[14] = 10000
+# Carta[15] = 01000
+# 
+# === FIN DE SIMULACIÓN ===
+# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv(92)
+#    Time: 325 ps  Iteration: 2  Instance: /top_shuffle_tb
+# 1
+# Break in Module top_shuffle_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv line 92
+# End time: 00:21:04 on Oct 07,2025, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 0

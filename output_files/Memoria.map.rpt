@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Memoria
-Sat Oct 04 00:05:55 2025
+Tue Oct 07 00:20:45 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,10 +37,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Oct 04 00:05:55 2025       ;
+; Analysis & Elaboration Status ; Successful - Tue Oct 07 00:20:45 2025       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Memoria                                     ;
-; Top-level Entity Name         ; FSM                                         ;
+; Top-level Entity Name         ; top_shuffle                                 ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; FSM                ; Memoria            ;
+; Top-level entity name                                                           ; top_shuffle        ; Memoria            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 04 00:05:49 2025
+    Info: Processing started: Tue Oct 07 00:20:39 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -183,18 +183,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.
     Info (12023): Found entity 1: FSM_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file clk_counter_seg.sv
     Info (12023): Found entity 1: clk_counter_seg File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/clk_counter_seg.sv Line: 3
-Info (12127): Elaborating entity "FSM" for the top level hierarchy
-Warning (10858): Verilog HDL warning at FSM.sv(22): object carta_1 used but never assigned File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 22
-Warning (10858): Verilog HDL warning at FSM.sv(23): object carta_2 used but never assigned File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 23
-Warning (10230): Verilog HDL assignment warning at FSM.sv(71): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 71
-Warning (10230): Verilog HDL assignment warning at FSM.sv(73): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 73
-Info (10264): Verilog HDL Case Statement information at FSM.sv(45): all case item expressions in this case statement are onehot File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 45
-Info (10264): Verilog HDL Case Statement information at FSM.sv(148): all case item expressions in this case statement are onehot File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 148
-Warning (10030): Net "carta_1" at FSM.sv(22) has no driver or initial value, using a default initial value '0' File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 22
-Warning (10030): Net "carta_2" at FSM.sv(23) has no driver or initial value, using a default initial value '0' File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 23
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Sat Oct 04 00:05:55 2025
+Info (12021): Found 1 design units, including 1 entities, in source file shuffle.sv
+    Info (12023): Found entity 1: Shuffle File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bit_shifter.sv
+    Info (12023): Found entity 1: bit_shifter File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_shuffle.sv
+    Info (12023): Found entity 1: top_shuffle File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_shuffle_tb.sv
+    Info (12023): Found entity 1: top_shuffle_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): instance has no name File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vga.sv Line: 21
+Info (12127): Elaborating entity "top_shuffle" for the top level hierarchy
+Info (12128): Elaborating entity "bit_shifter" for hierarchy "bit_shifter:bs" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv Line: 18
+Info (12128): Elaborating entity "Shuffle" for hierarchy "Shuffle:sh" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv Line: 30
+Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(42): index expression is not wide enough to address all of the elements in the array File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv Line: 42
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Tue Oct 07 00:20:45 2025
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:12
 

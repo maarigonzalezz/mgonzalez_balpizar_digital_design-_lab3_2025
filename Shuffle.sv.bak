@@ -1,0 +1,78 @@
+/ =============================================================
+// Módulo principal de barajado de cartas
+// =============================================================
+module shuffle (
+    input  logic        clk,          // Señal de reloj
+    input  logic        rst,          // Reset asíncrono
+    input  logic        start,        // Inicia la generación y mezcla
+    input  logic [4:0]  in_cards [0:15],  // 16 cartas de 5 bits cada una
+    output logic [4:0]  out_cards [0:15], // 16 cartas mezcladas
+    output logic        done          // Señal de finalización
+);
+
+    // -------------------------------
+    // LFSR para generar la semilla
+    // -------------------------------
+    logic [7:0] seed;
+    logic [7:0] lfsr_next;
+    logic       gen_done;
+    integer     seed_count;
+
+    // Generador pseudoaleatorio simple (LFSR)
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            seed <= 8'hA5;       // Semilla inicial (puede cambiarse)
+            seed_count <= 0;
+            gen_done <= 0;
+        end else if (start && !gen_done) begin
+            // Desplazamiento lineal con feedback XOR
+            lfsr_next = {seed[6:0], seed[7] ^ seed[5] ^ seed[4] ^ seed[3]};
+            seed <= lfsr_next;
+            seed_count <= seed_count + 1;
+
+            // Cuando haya rotado suficiente, semilla lista
+            if (seed_count == 16) begin
+                gen_done <= 1;
+            end
+        end else if (!start) begin
+            gen_done <= 0;
+            seed_count <= 0;
+        end
+    end
+
+    // -------------------------------
+    // Barajado basado en la semilla
+    // -------------------------------
+    logic [7:0] rand_val;
+    logic [4:0] temp;
+    logic [4:0] cards [0:15];
+    integer i, j;
+
+    always_comb begin
+        // Copiar el arreglo de entrada
+        for (i = 0; i < 16; i++)
+            cards[i] = in_cards[i];
+
+        // Usar la semilla generada
+        rand_val = seed;
+
+        // Aplicar mezcla tipo Fisher–Yates
+        for (i = 0; i < 16; i++) begin
+            rand_val = {rand_val[6:0], rand_val[7] ^ rand_val[5] ^ rand_val[4] ^ rand_val[3]};
+            j = rand_val[3:0] % 16;  // Índice pseudoaleatorio (0–15)
+
+            // Intercambio de posiciones i y j
+            temp = cards[i];
+            cards[i] = cards[j];
+            cards[j] = temp;
+        end
+
+        // Asignar salida
+        for (i = 0; i < 16; i++)
+            out_cards[i] = cards[i];
+    end
+
+    // Señal "done" para indicar que ya se generó una nueva mezcla
+    assign done = gen_done;
+
+endmodule

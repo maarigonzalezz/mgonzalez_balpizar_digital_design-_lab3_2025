@@ -1,0 +1,90 @@
+`timescale 1ns/1ps
+
+module top_shuffle_tb;
+
+    // Señales
+    logic clk;
+    logic rst;
+    logic start;
+    logic [4:0] in_cards [0:15];
+    logic [4:0] out_cards [0:15];
+    logic done;
+
+    // Instancia del top_shuffle
+    top_shuffle uut (
+        .clk(clk),
+        .rst(rst),
+        .start(start),
+        .in_cards(in_cards),
+        .out_cards(out_cards),
+        .done(done)
+    );
+
+    // Reloj
+    initial clk = 0;
+    always #5 clk = ~clk; // periodo 10ns
+
+    // Inicialización de cartas
+    initial begin
+        integer i;
+        for (i = 0; i < 16; i++)
+            in_cards[i] = i; // cartas 0..15
+    end
+
+    // Proceso principal
+    initial begin
+        $display("=== INICIO DE PRUEBA TOP SHUFFLE ===");
+
+        // Reset inicial
+        rst = 1;
+        start = 0;
+        #20;
+        rst = 0;
+        #10;
+
+        // Caso 1: primer shuffle
+        $display("\n--- Barajado 1 ---");
+        start = 1;
+        #10;
+        start = 0;
+        #10;
+        print_cards(out_cards);
+
+        // Esperar más ciclos, cambia el estado del bit-shifter
+        #30;
+
+        // Caso 2: segundo shuffle
+        $display("\n--- Barajado 2 ---");
+        start = 1;
+        #10;
+        start = 0;
+        #10;
+        print_cards(out_cards);
+
+        // Esperar otros ciclos
+        #50;
+
+        // Caso 3: tercer shuffle
+        $display("\n--- Barajado 3 ---");
+        start = 1;
+        #10;
+        start = 0;
+        #10;
+        print_cards(out_cards);
+
+        $display("\n=== FIN DE SIMULACIÓN ===");
+        $finish;
+    end
+
+    // -----------------------------------------------------
+    // Tareas auxiliares
+    // -----------------------------------------------------
+    task print_cards(input logic [4:0] cards [0:15]);
+        integer k;
+        begin
+            for (k = 0; k < 16; k++)
+                $display("Carta[%0d] = %b", k, cards[k]);
+        end
+    endtask
+
+endmodule
