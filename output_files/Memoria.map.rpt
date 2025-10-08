@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Memoria
-Tue Oct 07 00:20:45 2025
+Tue Oct 07 23:19:38 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Oct 07 00:20:45 2025       ;
+; Analysis & Elaboration Status ; Successful - Tue Oct 07 23:19:38 2025       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Memoria                                     ;
 ; Top-level Entity Name         ; top_shuffle                                 ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 07 00:20:39 2025
+    Info: Processing started: Tue Oct 07 23:19:32 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -195,10 +195,10 @@ Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): insta
 Info (12127): Elaborating entity "top_shuffle" for the top level hierarchy
 Info (12128): Elaborating entity "bit_shifter" for hierarchy "bit_shifter:bs" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv Line: 18
 Info (12128): Elaborating entity "Shuffle" for hierarchy "Shuffle:sh" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv Line: 30
-Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(42): index expression is not wide enough to address all of the elements in the array File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv Line: 42
+Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(39): index expression is not wide enough to address all of the elements in the array File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv Line: 39
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Tue Oct 07 00:20:45 2025
+    Info: Processing ended: Tue Oct 07 23:19:38 2025
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:12
 

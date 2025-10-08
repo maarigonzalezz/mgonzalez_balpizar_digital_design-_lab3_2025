@@ -1,73 +1,76 @@
 module Shuffle (
-    input  logic        clk,              // Reloj principal para la lógica secuencial
-    input  logic        rst,              // Reset asíncrono para inicializar señales
-    input  logic        start,            // Señal para iniciar el shuffle
-    input  logic [7:0]  seed,            // Semilla pseudoaleatoria de 8 bits
-    output logic [79:0] out_cards_flat,  // Baraja final de 16 cartas * 5 bits
-    output logic        done              // Señal que indica que el shuffle terminó
+    input  logic        clk,
+    input  logic        rst,
+    input  logic        start,
+    input  logic [7:0]  seed,
+    output logic [4:0]  arr_cards [0:15],
+    output logic        done
 );
 
     // ------------------------------------------------------
     // Variables internas
     // ------------------------------------------------------
-    logic [2:0] pool_comb[0:15];  // Pool barajado temporal (combinacional)
-    logic [79:0] result_comb;      // Resultado del shuffle (combinacional)
-    logic running;                 // Indica si el shuffle está en progreso
+    logic [2:0] pool_comb[0:15]; 
+    logic running;
+    logic [7:0] rand_val;
 
     // ------------------------------------------------------
-    // Parte combinacional: realiza Fisher-Yates para mezclar símbolos
+    // Shuffle combinacional (solo genera pool)
     // ------------------------------------------------------
     always_comb begin
-        logic [2:0] symbols_pool[0:15]; // Pool local de símbolos para el shuffle
-        int i, j;                        // Índices de iteración
-        logic [2:0] tmp;                 // Variable temporal para swap
-        logic [7:0] rand_val;            // Valor pseudoaleatorio generado a partir de la semilla
+        logic [2:0] tmp;
+        integer i, j;
+        logic [2:0] symbols_pool[0:15];
 
-        // Inicializar pool con cada símbolo del 000 al 111, repetido dos veces
-        for (i=0; i<8; i=i+1) begin
-            symbols_pool[2*i]   = i[2:0];   // Primera aparición del símbolo i
-            symbols_pool[2*i+1] = i[2:0];   // Segunda aparición del símbolo i
+        // Inicializar pool
+        for (i = 0; i < 8; i++) begin
+            symbols_pool[2*i]   = i[2:0];
+            symbols_pool[2*i+1] = i[2:0];
         end
 
-        rand_val = seed; // Inicializar LFSR pseudoaleatorio con la semilla de entrada
+        rand_val = seed;
 
-        // Algoritmo Fisher-Yates: mezcla combinacional de 16 símbolos
-        for (i=15; i>0; i=i-1) begin
-            // Generar nuevo valor pseudoaleatorio mediante LFSR tipo Galois
-            rand_val = {rand_val[6:0], rand_val[7]^rand_val[5]^rand_val[4]^rand_val[3]};
-            j = rand_val % (i+1);           // Índice de intercambio dentro del rango
+        for (i = 15; i > 0; i = i - 1) begin
+            rand_val = {rand_val[6:0], rand_val[7] ^ rand_val[5] ^ rand_val[4] ^ rand_val[3]};
+            j = rand_val % (i+1);
 
-            // Intercambiar símbolos en la posición i y j
+            // Swap
             tmp = symbols_pool[i];
             symbols_pool[i] = symbols_pool[j];
             symbols_pool[j] = tmp;
         end
 
-        // Construir resultado final combinacional con los bits de estado siempre 00
-        for (i=0; i<16; i=i+1) begin
-            result_comb[i*5 +:5] = {symbols_pool[i], 2'b00};
-        end
+        // Asignación combinacional a pool_comb
+        for (i = 0; i < 16; i++)
+            pool_comb[i] = symbols_pool[i];
     end
 
     // ------------------------------------------------------
-    // Parte secuencial: captura resultado combinacional y controla 'done'
+    // Registro de salida y done
     // ------------------------------------------------------
     always_ff @(posedge clk or posedge rst) begin
+        integer k; // usar local
         if (rst) begin
-            out_cards_flat <= 0;  // Reiniciar salida
-            done           <= 0;  // Reiniciar indicador de finalización
-            running        <= 0;  // Shuffle no está en curso
+            running <= 0;
+            done    <= 0;
+            for (k = 0; k < 16; k++)
+                arr_cards[k] <= 0;
         end else begin
             if (start && !running) begin
-                running <= 1;     // Inicia el shuffle
-                done    <= 0;     // Marca que aún no terminó
+                running <= 1;
+                done    <= 0;
             end
+
             if (running) begin
-                out_cards_flat <= result_comb; // Captura la baraja combinacional
-                done           <= 1;           // Indica que el shuffle finalizó
-                running        <= 0;           // Reset de estado de ejecución
+                // Copiar combinacional a salida registrada
+                for (k = 0; k < 16; k++)
+                    arr_cards[k] <= {pool_comb[k], 2'b00};
+
+                done    <= 1;
+                running <= 0;
             end
         end
     end
 
 endmodule
+

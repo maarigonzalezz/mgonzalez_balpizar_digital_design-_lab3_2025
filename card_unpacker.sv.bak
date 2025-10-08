@@ -1,0 +1,15 @@
+module card_unpacker (
+    input  logic [79:0] out_cards_flat,     // 16 cartas * 5 bits = 80 bits
+    output logic [4:0]  arr_cards [0:15]    // Arreglo de 16 cartas de 5 bits
+);
+
+    integer i;
+
+    always_comb begin
+        for (i = 0; i < 16; i++) begin
+            // Extrae cada grupo de 5 bits
+            arr_cards[i] = out_cards_flat[i*5 +: 5];
+        end
+    end
+
+endmodule

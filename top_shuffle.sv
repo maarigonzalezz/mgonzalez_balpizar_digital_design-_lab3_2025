@@ -2,8 +2,8 @@ module top_shuffle (
     input  logic        clk,             // Reloj
     input  logic        rst,             // Reset
     input  logic        start,           // Inicia el shuffle
-    output logic [79:0] out_cards_flat,  // Cartas barajadas
-    output logic        done             // Indica que terminó el shuffle
+    output logic        done,            // Indica que terminó el shuffle
+    output logic [4:0]  arr_cards [0:15] // Arreglo de cartas barajadas
 );
 
     // ------------------------------------------------------------------------
@@ -25,8 +25,8 @@ module top_shuffle (
         .rst(rst),
         .start(start),
         .seed(seed),
-        .out_cards_flat(out_cards_flat),
+        .arr_cards(arr_cards), // salida directa en arreglo
         .done(done)
     );
-	 
+
 endmodule

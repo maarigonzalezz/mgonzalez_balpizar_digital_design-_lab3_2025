@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/simulation/modelsim
 vbit_shifter
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1759818053
+Z2 !s110 1759900784
 !i10b 1
 !s100 BNC7P32a5KQPXeBBoB9hX0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1759818053.000000
+Z6 !s108 1759900784.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv|
 !i113 1
@@ -39,17 +39,17 @@ vShuffle
 R1
 R2
 !i10b 1
-!s100 zF[CWG3JKa]@`70lIKPZE3
+!s100 inm5VLIocCg?^KfK>MaI72
 R3
-I>khgG3YQCJ5`8Zm^5lYjM3
+I=0_RGjdMAXo3@mmRBLGeY1
 R4
 S1
 R0
-w1759817982
+w1759900771
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv
 !i122 0
-L0 1 73
+L0 1 75
 R5
 r1
 !s85 0
@@ -64,15 +64,15 @@ R9
 n@shuffle
 vtop_shuffle
 R1
-R2
+Z10 !s110 1759900786
 !i10b 1
-!s100 5kT=;DYBkoI6la:Y`MdX`1
+!s100 bma8BiJa1Tc<PC9B_KN0?0
 R3
-ICG4D6SFee5Il<m9Bh[LP^2
+IWNlLXI?`FW:_ISf_DJBcT3
 R4
 S1
 R0
-w1759818039
+w1759900522
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv
 !i122 2
@@ -81,7 +81,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1759900786.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv|
 !i113 1
@@ -90,24 +90,24 @@ R8
 R9
 vtop_shuffle_tb
 R1
-!s110 1759818054
+R10
 !i10b 1
-!s100 FDFVHO]kn6e19[DV4<32E2
+!s100 ?;DY:R`7^33^S9Pfl[CH@1
 R3
-IKW3]YXdaDK4UnC4X85=`a2
+IfCDEDNk?k[k65M8lf1nbX1
 R4
 S1
 R0
-w1759818036
+w1759900519
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv
 !i122 3
-L0 1 106
+L0 1 86
 R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv|
 !i113 1
