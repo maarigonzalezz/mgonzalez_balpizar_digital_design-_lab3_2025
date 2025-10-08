@@ -1,18 +1,22 @@
 module carta(
     input logic [9:0] x, y, 
     input logic [9:0] left, right, top, bot, // cuadrado
-	 input  logic [2:0] symbol_sel,            // selector de símbolo
+	 input logic [4:0] formato,
     output logic incard,
 	 output logic insymbol
 );
 
 
 logic inrect;
-logic plus, minus, cros, circle, hash, square, trin, invtri;
+logic plus, minus, cros, circle, hash, square, trin, invtri, selSym;
 logic [9:0] centerx, centery;
+logic [2:0] symbol_sel;
+logic [1:0] estado_carta;
 	
 	assign centerx = left + 10'd25;
 	assign centery = top  + 10'd35; 
+	assign symbol_sel = formato[4:2];
+	assign estado_carta = formato[1:0];
 
     // Rectángulo de la carta
     rectgen rect_inst (
@@ -89,15 +93,37 @@ logic [9:0] centerx, centery;
 	 // Decoder 2→8 con un mux
     always_comb begin
         case (symbol_sel)
-            3'd0: insymbol = plus;
-            3'd1: insymbol = minus;
-            3'd2: insymbol = cros;
-            3'd3: insymbol = square;
-            3'd4: insymbol = hash;
-            3'd5: insymbol = circle;
-            3'd6: insymbol = trin;
-            3'd7: insymbol = invtri;
-            default: insymbol = 1'b0;
+            3'd0: selSym = plus;
+            3'd1: selSym = minus;
+            3'd2: selSym = cros;
+            3'd3: selSym = square;
+            3'd4: selSym = hash;
+            3'd5: selSym = circle;
+            3'd6: selSym = trin;
+            3'd7: selSym = invtri;
+            default: selSym = 1'b0;
+        endcase
+    end
+	 
+	 always_comb begin
+        case (estado_carta)
+            2'b00: begin
+                // no mostrar nada
+                insymbol = 1'b0;
+            end
+
+            2'b01: begin
+                insymbol = 1'b0;
+            end
+
+            2'b10: begin
+                // mostrar el símbolo seleccionado
+                insymbol = selSym;
+            end
+
+            default: begin
+                insymbol = 1'b0;
+            end
         endcase
     end
 	 

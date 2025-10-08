@@ -60,6 +60,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r[2]",
+					"strict" : false
+				},
+				{
 					"name" : "r[3]",
 					"strict" : false
 				},
@@ -73,6 +85,10 @@
 				},
 				{
 					"name" : "r[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r[7]",
 					"strict" : false
 				},
 				{
@@ -112,6 +128,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
 					"name" : "b[2]",
 					"strict" : false
 				},
@@ -121,6 +141,14 @@
 				},
 				{
 					"name" : "b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b[6]",
 					"strict" : false
 				},
 				{
@@ -136,27 +164,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "tiempoT",
-					"strict" : false
-				},
-				{
-					"name" : "carta_El",
-					"strict" : false
-				},
-				{
 					"name" : "cartas_Mo",
 					"strict" : false
 				},
 				{
 					"name" : "I",
-					"strict" : false
-				},
-				{
-					"name" : "cartas_Oc",
-					"strict" : false
-				},
-				{
-					"name" : "cartas_Re",
 					"strict" : false
 				}
 			]

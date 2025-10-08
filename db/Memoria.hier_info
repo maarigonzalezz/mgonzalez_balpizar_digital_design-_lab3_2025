@@ -2,14 +2,8 @@
 m => m.IN1
 rst => rst.IN2
 clk => clk.IN3
-cartas_sel[0] => cartas_sel[0].IN1
-cartas_sel[1] => cartas_sel[1].IN1
-tiempoT => tiempoT.IN1
 I => I.IN1
-carta_El => carta_El.IN1
 cartas_Mo => cartas_Mo.IN1
-cartas_Oc => cartas_Oc.IN1
-cartas_Re => cartas_Re.IN1
 ganador[0] <= ganador[0].DB_MAX_OUTPUT_PORT_TYPE
 ganador[1] <= ganador[1].DB_MAX_OUTPUT_PORT_TYPE
 seg[0] <= top_7seg_counter:cont15s.seg
@@ -24,30 +18,30 @@ hsync <= vgaController:vgaCont.port1
 vsync <= vgaController:vgaCont.port2
 sync_b <= vgaController:vgaCont.port3
 blank_b <= vgaController:vgaCont.port4
-r[0] <= Selector7.DB_MAX_OUTPUT_PORT_TYPE
-r[1] <= Selector6.DB_MAX_OUTPUT_PORT_TYPE
-r[2] <= Selector5.DB_MAX_OUTPUT_PORT_TYPE
-r[3] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
-r[4] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
-r[5] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
-r[6] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
-r[7] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
-g[0] <= Selector15.DB_MAX_OUTPUT_PORT_TYPE
-g[1] <= Selector14.DB_MAX_OUTPUT_PORT_TYPE
-g[2] <= Selector13.DB_MAX_OUTPUT_PORT_TYPE
-g[3] <= Selector12.DB_MAX_OUTPUT_PORT_TYPE
-g[4] <= Selector11.DB_MAX_OUTPUT_PORT_TYPE
-g[5] <= Selector10.DB_MAX_OUTPUT_PORT_TYPE
-g[6] <= Selector9.DB_MAX_OUTPUT_PORT_TYPE
-g[7] <= Selector8.DB_MAX_OUTPUT_PORT_TYPE
-b[0] <= Selector23.DB_MAX_OUTPUT_PORT_TYPE
-b[1] <= Selector22.DB_MAX_OUTPUT_PORT_TYPE
-b[2] <= Selector21.DB_MAX_OUTPUT_PORT_TYPE
-b[3] <= Selector20.DB_MAX_OUTPUT_PORT_TYPE
-b[4] <= Selector19.DB_MAX_OUTPUT_PORT_TYPE
-b[5] <= Selector18.DB_MAX_OUTPUT_PORT_TYPE
-b[6] <= Selector17.DB_MAX_OUTPUT_PORT_TYPE
-b[7] <= Selector16.DB_MAX_OUTPUT_PORT_TYPE
+r[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+r[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+r[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+r[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+r[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+r[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+r[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+r[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+g[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+g[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+g[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+g[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+g[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+b[0] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+b[7] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|pll:vgapll
@@ -714,6 +708,86 @@ state[0] => ~NO_FANOUT~
 state[1] => ~NO_FANOUT~
 state[2] => ~NO_FANOUT~
 state[3] => ~NO_FANOUT~
+arr_cartas[15][0] => carta:cartaH2.formato[0]
+arr_cartas[15][1] => carta:cartaH2.formato[1]
+arr_cartas[15][2] => carta:cartaH2.formato[2]
+arr_cartas[15][3] => carta:cartaH2.formato[3]
+arr_cartas[15][4] => carta:cartaH2.formato[4]
+arr_cartas[14][0] => carta:cartaH1.formato[0]
+arr_cartas[14][1] => carta:cartaH1.formato[1]
+arr_cartas[14][2] => carta:cartaH1.formato[2]
+arr_cartas[14][3] => carta:cartaH1.formato[3]
+arr_cartas[14][4] => carta:cartaH1.formato[4]
+arr_cartas[13][0] => carta:cartaG2.formato[0]
+arr_cartas[13][1] => carta:cartaG2.formato[1]
+arr_cartas[13][2] => carta:cartaG2.formato[2]
+arr_cartas[13][3] => carta:cartaG2.formato[3]
+arr_cartas[13][4] => carta:cartaG2.formato[4]
+arr_cartas[12][0] => carta:cartaG1.formato[0]
+arr_cartas[12][1] => carta:cartaG1.formato[1]
+arr_cartas[12][2] => carta:cartaG1.formato[2]
+arr_cartas[12][3] => carta:cartaG1.formato[3]
+arr_cartas[12][4] => carta:cartaG1.formato[4]
+arr_cartas[11][0] => carta:cartaF2.formato[0]
+arr_cartas[11][1] => carta:cartaF2.formato[1]
+arr_cartas[11][2] => carta:cartaF2.formato[2]
+arr_cartas[11][3] => carta:cartaF2.formato[3]
+arr_cartas[11][4] => carta:cartaF2.formato[4]
+arr_cartas[10][0] => carta:cartaF1.formato[0]
+arr_cartas[10][1] => carta:cartaF1.formato[1]
+arr_cartas[10][2] => carta:cartaF1.formato[2]
+arr_cartas[10][3] => carta:cartaF1.formato[3]
+arr_cartas[10][4] => carta:cartaF1.formato[4]
+arr_cartas[9][0] => carta:cartaE2.formato[0]
+arr_cartas[9][1] => carta:cartaE2.formato[1]
+arr_cartas[9][2] => carta:cartaE2.formato[2]
+arr_cartas[9][3] => carta:cartaE2.formato[3]
+arr_cartas[9][4] => carta:cartaE2.formato[4]
+arr_cartas[8][0] => carta:cartaE1.formato[0]
+arr_cartas[8][1] => carta:cartaE1.formato[1]
+arr_cartas[8][2] => carta:cartaE1.formato[2]
+arr_cartas[8][3] => carta:cartaE1.formato[3]
+arr_cartas[8][4] => carta:cartaE1.formato[4]
+arr_cartas[7][0] => carta:cartaD2.formato[0]
+arr_cartas[7][1] => carta:cartaD2.formato[1]
+arr_cartas[7][2] => carta:cartaD2.formato[2]
+arr_cartas[7][3] => carta:cartaD2.formato[3]
+arr_cartas[7][4] => carta:cartaD2.formato[4]
+arr_cartas[6][0] => carta:cartaD1.formato[0]
+arr_cartas[6][1] => carta:cartaD1.formato[1]
+arr_cartas[6][2] => carta:cartaD1.formato[2]
+arr_cartas[6][3] => carta:cartaD1.formato[3]
+arr_cartas[6][4] => carta:cartaD1.formato[4]
+arr_cartas[5][0] => carta:cartaC2.formato[0]
+arr_cartas[5][1] => carta:cartaC2.formato[1]
+arr_cartas[5][2] => carta:cartaC2.formato[2]
+arr_cartas[5][3] => carta:cartaC2.formato[3]
+arr_cartas[5][4] => carta:cartaC2.formato[4]
+arr_cartas[4][0] => carta:cartaC1.formato[0]
+arr_cartas[4][1] => carta:cartaC1.formato[1]
+arr_cartas[4][2] => carta:cartaC1.formato[2]
+arr_cartas[4][3] => carta:cartaC1.formato[3]
+arr_cartas[4][4] => carta:cartaC1.formato[4]
+arr_cartas[3][0] => carta:cartaB2.formato[0]
+arr_cartas[3][1] => carta:cartaB2.formato[1]
+arr_cartas[3][2] => carta:cartaB2.formato[2]
+arr_cartas[3][3] => carta:cartaB2.formato[3]
+arr_cartas[3][4] => carta:cartaB2.formato[4]
+arr_cartas[2][0] => carta:cartaB1.formato[0]
+arr_cartas[2][1] => carta:cartaB1.formato[1]
+arr_cartas[2][2] => carta:cartaB1.formato[2]
+arr_cartas[2][3] => carta:cartaB1.formato[3]
+arr_cartas[2][4] => carta:cartaB1.formato[4]
+arr_cartas[1][0] => carta:cartaA2.formato[0]
+arr_cartas[1][1] => carta:cartaA2.formato[1]
+arr_cartas[1][2] => carta:cartaA2.formato[2]
+arr_cartas[1][3] => carta:cartaA2.formato[3]
+arr_cartas[1][4] => carta:cartaA2.formato[4]
+arr_cartas[0][0] => carta:cartaA1.formato[0]
+arr_cartas[0][1] => carta:cartaA1.formato[1]
+arr_cartas[0][2] => carta:cartaA1.formato[2]
+arr_cartas[0][3] => carta:cartaA1.formato[3]
+arr_cartas[0][4] => carta:cartaA1.formato[4]
 r[0] <= <VCC>
 r[1] <= <VCC>
 r[2] <= <VCC>
@@ -801,11 +875,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaA1|rectgen:rect_inst
@@ -2521,11 +2597,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaA2|rectgen:rect_inst
@@ -4241,11 +4319,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaB1|rectgen:rect_inst
@@ -5961,11 +6041,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaB2|rectgen:rect_inst
@@ -7681,11 +7763,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaC1|rectgen:rect_inst
@@ -9401,11 +9485,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaC2|rectgen:rect_inst
@@ -11121,11 +11207,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaD1|rectgen:rect_inst
@@ -12841,11 +12929,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaD2|rectgen:rect_inst
@@ -14561,11 +14651,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaE1|rectgen:rect_inst
@@ -16281,11 +16373,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaE2|rectgen:rect_inst
@@ -18001,11 +18095,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaF1|rectgen:rect_inst
@@ -19721,11 +19817,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaF2|rectgen:rect_inst
@@ -21441,11 +21539,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaG1|rectgen:rect_inst
@@ -23161,11 +23261,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaG2|rectgen:rect_inst
@@ -24881,11 +24983,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaH1|rectgen:rect_inst
@@ -26601,11 +26705,13 @@ bot[6] => bot[6].IN1
 bot[7] => bot[7].IN1
 bot[8] => bot[8].IN1
 bot[9] => bot[9].IN1
-symbol_sel[0] => Mux0.IN2
-symbol_sel[1] => Mux0.IN1
-symbol_sel[2] => Mux0.IN0
+formato[0] => Decoder0.IN1
+formato[1] => Decoder0.IN0
+formato[2] => Mux0.IN10
+formato[3] => Mux0.IN9
+formato[4] => Mux0.IN8
 incard <= rectgen:rect_inst.inrect
-insymbol <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+insymbol <= insymbol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|videoGen:videoGen|carta:cartaH2|rectgen:rect_inst
@@ -29074,5 +29180,120 @@ rst => cycle_counter[23].ACLR
 rst => cycle_counter[24].ACLR
 rst => cycle_counter[25].ACLR
 pulse_1s <= pulse_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Level_Memory|modify_arr:crear_arr
+estado[0] => arrI[15][0].DATAIN
+estado[0] => arrI[0][0].DATAIN
+estado[0] => arrI[1][0].DATAIN
+estado[0] => arrI[2][0].DATAIN
+estado[0] => arrI[3][0].DATAIN
+estado[0] => arrI[4][0].DATAIN
+estado[0] => arrI[5][0].DATAIN
+estado[0] => arrI[6][0].DATAIN
+estado[0] => arrI[7][0].DATAIN
+estado[0] => arrI[8][0].DATAIN
+estado[0] => arrI[9][0].DATAIN
+estado[0] => arrI[10][0].DATAIN
+estado[0] => arrI[11][0].DATAIN
+estado[0] => arrI[12][0].DATAIN
+estado[0] => arrI[13][0].DATAIN
+estado[0] => arrI[14][0].DATAIN
+estado[1] => arrI[15][1].DATAIN
+estado[1] => arrI[0][1].DATAIN
+estado[1] => arrI[1][1].DATAIN
+estado[1] => arrI[2][1].DATAIN
+estado[1] => arrI[3][1].DATAIN
+estado[1] => arrI[4][1].DATAIN
+estado[1] => arrI[5][1].DATAIN
+estado[1] => arrI[6][1].DATAIN
+estado[1] => arrI[7][1].DATAIN
+estado[1] => arrI[8][1].DATAIN
+estado[1] => arrI[9][1].DATAIN
+estado[1] => arrI[10][1].DATAIN
+estado[1] => arrI[11][1].DATAIN
+estado[1] => arrI[12][1].DATAIN
+estado[1] => arrI[13][1].DATAIN
+estado[1] => arrI[14][1].DATAIN
+arrI[15][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[15][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[15][2] <= <VCC>
+arrI[15][3] <= <VCC>
+arrI[15][4] <= <VCC>
+arrI[14][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[14][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[14][2] <= <VCC>
+arrI[14][3] <= <VCC>
+arrI[14][4] <= <VCC>
+arrI[13][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[13][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[13][2] <= <GND>
+arrI[13][3] <= <VCC>
+arrI[13][4] <= <VCC>
+arrI[12][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[12][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[12][2] <= <GND>
+arrI[12][3] <= <VCC>
+arrI[12][4] <= <VCC>
+arrI[11][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[11][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[11][2] <= <VCC>
+arrI[11][3] <= <GND>
+arrI[11][4] <= <VCC>
+arrI[10][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[10][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[10][2] <= <VCC>
+arrI[10][3] <= <GND>
+arrI[10][4] <= <VCC>
+arrI[9][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[9][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[9][2] <= <GND>
+arrI[9][3] <= <GND>
+arrI[9][4] <= <VCC>
+arrI[8][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[8][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[8][2] <= <GND>
+arrI[8][3] <= <GND>
+arrI[8][4] <= <VCC>
+arrI[7][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[7][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[7][2] <= <VCC>
+arrI[7][3] <= <VCC>
+arrI[7][4] <= <GND>
+arrI[6][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[6][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[6][2] <= <VCC>
+arrI[6][3] <= <VCC>
+arrI[6][4] <= <GND>
+arrI[5][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[5][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[5][2] <= <GND>
+arrI[5][3] <= <VCC>
+arrI[5][4] <= <GND>
+arrI[4][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[4][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[4][2] <= <GND>
+arrI[4][3] <= <VCC>
+arrI[4][4] <= <GND>
+arrI[3][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[3][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[3][2] <= <VCC>
+arrI[3][3] <= <GND>
+arrI[3][4] <= <GND>
+arrI[2][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[2][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[2][2] <= <VCC>
+arrI[2][3] <= <GND>
+arrI[2][4] <= <GND>
+arrI[1][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[1][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[1][2] <= <GND>
+arrI[1][3] <= <GND>
+arrI[1][4] <= <GND>
+arrI[0][0] <= estado[0].DB_MAX_OUTPUT_PORT_TYPE
+arrI[0][1] <= estado[1].DB_MAX_OUTPUT_PORT_TYPE
+arrI[0][2] <= <GND>
+arrI[0][3] <= <GND>
+arrI[0][4] <= <GND>
 
 

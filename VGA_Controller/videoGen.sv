@@ -2,6 +2,7 @@
 
 module videoGen(input logic [9:0] x, y,
 					input logic [3:0] state,
+					input logic [4:0] arr_cartas [0:15],
 					output logic [7:0] r, g, b);
 
 logic pixel, cA1, cA2, cB1, cB2;
@@ -41,7 +42,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC1), .right(rightC1), 
         .top(topF1), .bot(bottomF1), 
-        .symbol_sel(3'd0), .incard(cA1), 
+        .formato(arr_cartas[0]), .incard(cA1), 
 		  .insymbol(simA1)
     );
 	 
@@ -49,7 +50,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC2), .right(rightC2), 
         .top(topF1), .bot(bottomF1), 
-        .symbol_sel(3'd0), .incard(cA2),
+        .formato(arr_cartas[1]), .incard(cA2),
 		  .insymbol(simA2)
     );
 	 
@@ -57,7 +58,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC3), .right(rightC3), 
         .top(topF1), .bot(bottomF1), 
-        .symbol_sel(3'd1), .incard(cB1), 
+        .formato(arr_cartas[2]), .incard(cB1), 
 		  .insymbol(simB1)
     );
 	 
@@ -65,7 +66,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC4), .right(rightC4), 
         .top(topF1), .bot(bottomF1), 
-        .symbol_sel(3'd1), .incard(cB2),
+        .formato(arr_cartas[3]), .incard(cB2),
 		  .insymbol(simB2)
     );
 	 
@@ -73,7 +74,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC1), .right(rightC1), 
         .top(topF2), .bot(bottomF2), 
-        .symbol_sel(3'd2), .incard(cC1), 
+        .formato(arr_cartas[4]), .incard(cC1), 
 		  .insymbol(simC1)
     );
 	 
@@ -81,7 +82,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC2), .right(rightC2), 
         .top(topF2), .bot(bottomF2), 
-        .symbol_sel(3'd2), .incard(cC2),
+        .formato(arr_cartas[5]), .incard(cC2),
 		  .insymbol(simC2)
     );
 	 
@@ -89,7 +90,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC3), .right(rightC3), 
         .top(topF2), .bot(bottomF2), 
-        .symbol_sel(3'd3), .incard(cD1), 
+        .formato(arr_cartas[6]), .incard(cD1), 
 		  .insymbol(simD1)
     );
 	 
@@ -97,7 +98,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC4), .right(rightC4), 
         .top(topF2), .bot(bottomF2), 
-        .symbol_sel(3'd3), .incard(cD2),
+        .formato(arr_cartas[7]), .incard(cD2),
 		  .insymbol(simD2)
     );
 	 
@@ -105,7 +106,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC1), .right(rightC1), 
         .top(topF3), .bot(bottomF3), 
-        .symbol_sel(3'd4), .incard(cE1), 
+        .formato(arr_cartas[8]), .incard(cE1), 
 		  .insymbol(simE1)
     );
 	 
@@ -113,7 +114,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC2), .right(rightC2), 
         .top(topF3), .bot(bottomF3), 
-        .symbol_sel(3'd4), .incard(cE2),
+        .formato(arr_cartas[9]), .incard(cE2),
 		  .insymbol(simE2)
     );
 	 
@@ -121,7 +122,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC3), .right(rightC3), 
         .top(topF3), .bot(bottomF3), 
-        .symbol_sel(3'd5), .incard(cF1), 
+        .formato(arr_cartas[10]), .incard(cF1), 
 		  .insymbol(simF1)
     );
 	 
@@ -129,7 +130,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC4), .right(rightC4), 
         .top(topF3), .bot(bottomF3), 
-        .symbol_sel(3'd5), .incard(cF2),
+        .formato(arr_cartas[11]), .incard(cF2),
 		  .insymbol(simF2)
     );
 	 
@@ -137,7 +138,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC1), .right(rightC1), 
         .top(topF4), .bot(bottomF4), 
-        .symbol_sel(3'd6), .incard(cG1), 
+        .formato(arr_cartas[12]), .incard(cG1), 
 		  .insymbol(simG1)
     );
 	 
@@ -145,7 +146,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC2), .right(rightC2), 
         .top(topF4), .bot(bottomF4), 
-        .symbol_sel(3'd6), .incard(cG2),
+        .formato(arr_cartas[13]), .incard(cG2),
 		  .insymbol(simG2)
     );
 	 
@@ -153,7 +154,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC3), .right(rightC3), 
         .top(topF4), .bot(bottomF4), 
-        .symbol_sel(3'd7), .incard(cH1), 
+        .formato(arr_cartas[14]), .incard(cH1), 
 		  .insymbol(simH1)
     );
 	 
@@ -161,7 +162,7 @@ logic [9:0] leftC4 = 10'd430;   logic [9:0] rightC4 = 10'd480;
         .x(x), .y(y), 
         .left(leftC4), .right(rightC4), 
         .top(topF4), .bot(bottomF4), 
-        .symbol_sel(3'd7), .incard(cH2),
+        .formato(arr_cartas[15]), .incard(cH2),
 		  .insymbol(simH2)
     );
 	 

@@ -1,7 +1,5 @@
 module Top_Level_Memory(input logic m, rst, clk,
-								input  logic [1:0]  cartas_sel,      // Cartas seleccionadas
-								input  logic tiempoT, I, carta_El, cartas_Mo,           
-								input  logic cartas_Oc, cartas_Re,
+								input logic I, cartas_Mo,
 								output logic [1:0]  ganador,
 								output logic [6:0] seg, // Segmentos del display (a-g) --> contador
 								output logic vgaclk, // 25.175 MHz VGA clock --> VGA
@@ -16,6 +14,9 @@ module Top_Level_Memory(input logic m, rst, clk,
 	logic [7:0] r_PantallaInicial, g_PantallaInicial, b_PantallaInicial; // Colores pantalla inicial
 	logic [7:0] r_w, g_w, b_w; // Pantalla default
 	logic [4:0] arr_cartas [0:15]; // 16 elementos, cada uno de 5 bits
+	logic tiempoT, carta_El, cartas_Oc, cartas_Re;
+	logic [1:0]  cartas_sel;    // Cartas seleccionadas
+	logic [1:0] estCartas;
 	
 	
 	// Modulo para obtener 25MHz
@@ -28,7 +29,7 @@ module Top_Level_Memory(input logic m, rst, clk,
 	start pantalla_inicio(.x(x), .y(y), .r(r_PantallaInicial), .g(g_PantallaInicial), .b(b_PantallaInicial));
 	
 	// Modulo que pinta las cartas mostradas en pantalla
-	videoGen videoGen(.x(x), .y(y), .state(state), .r(r_videoGen), .g(g_videoGen), .b(b_videoGen));
+	videoGen videoGen(.x(x), .y(y), .state(state), .arr_cartas(arr_cartas), .r(r_videoGen), .g(g_videoGen), .b(b_videoGen));
 	
 	// Modulo que muestra la pantalla de terminar juego
 	finish pantalla_final(.x(x), .y(y), .ganador(ganador), .r(r_OVER), .g(g_OVER), .b(b_OVER));
@@ -42,6 +43,8 @@ module Top_Level_Memory(input logic m, rst, clk,
 	//contador de 15 seg
 	top_7seg_counter cont15s(.clk(clk), .rst(rst), .seg(seg));
 	
+	modify_arr crear_arr(.estado(estCartas), .arrI(arr_cartas));
+	
 	
 	// Visualización de distintas pantallas
 	// Pantalla default
@@ -50,6 +53,7 @@ module Top_Level_Memory(input logic m, rst, clk,
     assign b_w = 8'h63;
 	 
 	 always_comb begin
+			estCartas = 00;
 			case (state)
 				4'b0000: begin // Pantalla START
                 r = r_PantallaInicial;
@@ -57,10 +61,24 @@ module Top_Level_Memory(input logic m, rst, clk,
                 b = b_PantallaInicial;
 				end
 				4'b0001: begin // Pantalla que muestra las cartas
+					 estCartas = 2'b10; // para que al siguiente estado se muestren todas las cartas
                 r = r_videoGen;
                 g = g_videoGen;
                 b = b_videoGen;
 				end
+				4'b0010: begin // Pantalla que oculta las cartas
+					 estCartas = 2'b00; // para que se muestren cartas en blanco
+                r = r_videoGen;
+                g = g_videoGen;
+                b = b_videoGen;
+				end
+				4'b0011: begin // Pantalla que revuelve las f cartas
+				// arr_cartas = a no se
+                r = r_OVER;
+                g = g_OVER;
+                b = b_OVER;
+				end
+				
 				default: begin
 					 r = r_w;
 					 g = g_w;
