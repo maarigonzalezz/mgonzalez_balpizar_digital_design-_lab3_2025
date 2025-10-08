@@ -26,7 +26,7 @@ module top_mostrar_carta_random_tb;
     // Reloj
     // -----------------------------------------------------
     initial clk = 0;
-    always #5 clk = ~clk; // periodo 10ns
+    always #6 clk = ~clk; // periodo 10ns
 
     // -----------------------------------------------------
     // Inicializar array con estado 11, excepto varias cartas en 00
@@ -39,9 +39,11 @@ module top_mostrar_carta_random_tb;
         // Poner varias cartas en 00
         arr_cards_in[2]  = 5'bxxxxx00;
         arr_cards_in[4]  = 5'bxxxxx00;
-        arr_cards_in[7]  = 5'bxxxxx00;
         arr_cards_in[10] = 5'bxxxxx00;
-        arr_cards_in[12] = 5'bxxxxx00;
+		  arr_cards_in[12] = 5'bxxxxx01;
+		  arr_cards_in[1] = 5'bxxxxx00;
+		  
+
     end
 
     // -----------------------------------------------------
@@ -51,14 +53,14 @@ module top_mostrar_carta_random_tb;
         $display("=== INICIO DE PRUEBA mostrar_carta_random ===");
 
         rst = 1; start = 0; #20;
-        rst = 0; #20;
+        rst = 0; #30;
 
         $display("\n--- Estado antes de mostrar_carta_random ---");
         print_cards(arr_cards_in);
 
         // Activar módulo
-        start = 1; #30;
-        start = 0;
+        start = 1; #40;
+        start = 0; #20;
 
         wait(done);
 

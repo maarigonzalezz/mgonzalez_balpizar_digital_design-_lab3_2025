@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at mostrar_carta_random.sv(29): always construct contains both blocking and non-blocking assignments File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv Line: 29
+Warning (10268): Verilog HDL information at mostrar_carta_random.sv(28): always construct contains both blocking and non-blocking assignments File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv Line: 28

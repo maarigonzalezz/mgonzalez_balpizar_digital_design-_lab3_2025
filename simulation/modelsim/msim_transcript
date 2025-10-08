@@ -12,40 +12,40 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:01:43 on Oct 08,2025
+# Start time: 02:08:29 on Oct 08,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv 
 # -- Compiling module bit_shifter
 # 
 # Top level modules:
 # 	bit_shifter
-# End time: 01:01:43 on Oct 08,2025, Elapsed time: 0:00:00
+# End time: 02:08:29 on Oct 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:01:43 on Oct 08,2025
+# Start time: 02:08:29 on Oct 08,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv 
 # -- Compiling module mostrar_carta_random
 # ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	mostrar_carta_random
-# End time: 01:01:43 on Oct 08,2025, Elapsed time: 0:00:00
+# End time: 02:08:29 on Oct 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:01:43 on Oct 08,2025
+# Start time: 02:08:30 on Oct 08,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv 
 # -- Compiling module top_mostrar_carta_random
 # ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	top_mostrar_carta_random
-# End time: 01:01:44 on Oct 08,2025, Elapsed time: 0:00:01
+# End time: 02:08:30 on Oct 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:01:44 on Oct 08,2025
+# Start time: 02:08:30 on Oct 08,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv 
 # -- Compiling module top_mostrar_carta_random_tb
 # ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
@@ -57,12 +57,12 @@
 # 
 # Top level modules:
 # 	top_mostrar_carta_random_tb
-# End time: 01:01:44 on Oct 08,2025, Elapsed time: 0:00:00
+# End time: 02:08:30 on Oct 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 6
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_mostrar_carta_random_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_mostrar_carta_random_tb 
-# Start time: 01:01:44 on Oct 08,2025
+# Start time: 02:08:30 on Oct 08,2025
 # Loading sv_std.std
 # Loading work.top_mostrar_carta_random_tb
 # Loading work.top_mostrar_carta_random
@@ -81,33 +81,13 @@
 # 
 # --- Baraja ---
 # Carta[0] = xxx11
-# Carta[1] = xxx11
+# Carta[1] = xxx00
 # Carta[2] = xxx00
 # Carta[3] = xxx11
 # Carta[4] = xxx00
 # Carta[5] = xxx11
 # Carta[6] = xxx11
-# Carta[7] = xxx00
-# Carta[8] = xxx11
-# Carta[9] = xxx11
-# Carta[10] = xxx00
-# Carta[11] = xxx11
-# Carta[12] = xxx00
-# Carta[13] = xxx11
-# Carta[14] = xxx11
-# Carta[15] = xxx11
-# 
-# --- Estado después de mostrar_carta_random ---
-# 
-# --- Baraja ---
-# Carta[0] = xxx11
-# Carta[1] = xxx11
-# Carta[2] = xxx00
-# Carta[3] = xxx11
-# Carta[4] = xxx00
-# Carta[5] = xxx11
-# Carta[6] = xxx11
-# Carta[7] = xxx01
+# Carta[7] = xxx11
 # Carta[8] = xxx11
 # Carta[9] = xxx11
 # Carta[10] = xxx00
@@ -117,10 +97,30 @@
 # Carta[14] = xxx11
 # Carta[15] = xxx11
 # 
+# --- Estado después de mostrar_carta_random ---
+# 
+# --- Baraja ---
+# Carta[0] = xxx11
+# Carta[1] = xxx00
+# Carta[2] = xxx00
+# Carta[3] = xxx11
+# Carta[4] = xxx00
+# Carta[5] = xxx11
+# Carta[6] = xxx11
+# Carta[7] = xxx11
+# Carta[8] = xxx11
+# Carta[9] = xxx11
+# Carta[10] = xxx01
+# Carta[11] = xxx11
+# Carta[12] = xxx01
+# Carta[13] = xxx11
+# Carta[14] = xxx11
+# Carta[15] = xxx11
+# 
 # === FIN DE SIMULACIÓN ===
-# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(69)
-#    Time: 75 ps  Iteration: 2  Instance: /top_mostrar_carta_random_tb
+# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(71)
+#    Time: 110 ps  Iteration: 0  Instance: /top_mostrar_carta_random_tb
 # 1
-# Break in Module top_mostrar_carta_random_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv line 69
-# End time: 01:01:53 on Oct 08,2025, Elapsed time: 0:00:09
+# Break in Module top_mostrar_carta_random_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv line 71
+# End time: 02:08:49 on Oct 08,2025, Elapsed time: 0:00:19
 # Errors: 0, Warnings: 0

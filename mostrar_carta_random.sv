@@ -1,96 +1,98 @@
 module mostrar_carta_random (
-    input  logic       clk,
-    input  logic       rst,
-    input  logic       start,
-    input  logic [7:0] seed,
-    input  logic [4:0] arr_cards_in [0:15],
-    output logic [4:0] arr_cards_out [0:15],
-    output logic       done
+    input  logic        clk,
+    input  logic        rst,
+    input  logic        start,
+    input  logic [7:0]  seed,
+    input  logic [4:0]  arr_cards_in [0:15],
+    output logic [4:0]  arr_cards_out [0:15],
+    output logic        done
 );
 
-    // ------------------------------------------------------
-    // Variables internas
-    // ------------------------------------------------------
-    logic [4:0] pool_comb[0:15]; 
-    logic running;
-    logic [7:0] rand_val;
-	 logic [1:0] max_to_change;
+    typedef enum logic [1:0] {
+        IDLE,
+        PROCESS,
+        FINISH
+    } state_t;
+
+    state_t state, next_state;
+
+    logic [4:0] arr_tmp [0:15];
+    logic [3:0] count_01;
+    logic [3:0] num_to_change;
+    logic [3:0] found_00;
+    logic [3:0] idx;
 
     // ------------------------------------------------------
-    // Lógica combinacional: decide qué cartas 00 → 10
-    // ------------------------------------------------------
-    always_comb begin
-        logic [4:0] temp[0:15];
-        integer count_01, changed, idx;
-        integer i, iter; // locales al bloque
-
-        // Copiar entrada
-        for (i = 0; i < 16; i++)
-            temp[i] = arr_cards_in[i];
-
-        // Contar cartas con estado 01
-        count_01 = 0;
-        for (i = 0; i < 16; i++)
-            if (temp[i][1:0] == 2'b01)
-                count_01 = count_01 + 1;
-
-        // Inicializar pseudoaleatorio
-        changed = 0;
-        rand_val = seed;
-
-			// Determinar cuántas cartas 00 debemos cambiar según el número de 01 presentes
-
-			if (count_01 == 0)
-				 max_to_change = 2;  // Si no hay cartas 01, cambiar 2 cartas 00
-			else if (count_01 == 1)
-				 max_to_change = 1;  // Si hay 1 carta 01, cambiar solo 1 carta 00
-			else
-				 max_to_change = 0;  // Si hay 2 o más cartas 01, no cambiar ninguna
-
-			// Selección pseudoaleatoria de cartas 00 a convertir en 01
-			changed = 0;
-			for (iter = 0; iter < 16 && changed < max_to_change; iter++) begin
-				 idx = rand_val % 16;  // índice pseudoaleatorio usando LFSR
-
-				 if (temp[idx][1:0] == 2'b00) begin
-					  temp[idx][1:0] = 2'b01;  // cambiar estado de la carta
-					  changed = changed + 1;
-				 end
-
-				 // Generar siguiente valor pseudoaleatorio usando LFSR
-				 rand_val = {rand_val[6:0], rand_val[7] ^ rand_val[5] ^ rand_val[4] ^ rand_val[3]};
-			end
-
-        // Asignar combinacional a pool
-        for (i = 0; i < 16; i++)
-            pool_comb[i] = temp[i];
-    end
-
-    // ------------------------------------------------------
-    // Registro de salida y done
+    // FSM secuencial
     // ------------------------------------------------------
     always_ff @(posedge clk or posedge rst) begin
-        integer i; // local al bloque
         if (rst) begin
-            running <= 0;
-            done    <= 0;
-            for (i = 0; i < 16; i++)
-                arr_cards_out[i] <= 0;
+            state <= IDLE;
+            done <= 0;
+            for(int i=0;i<16;i++) arr_cards_out[i] <= arr_cards_in[i];
         end else begin
-            if (start && !running) begin
-                running <= 1;
-                done    <= 0;
-            end
+            state <= next_state;
+            case(state)
+                IDLE: begin
+                    done <= 0;
+                    if(start) begin
+                        for(int i=0;i<16;i++) arr_tmp[i] <= arr_cards_in[i];
+                    end
+                end
 
-            if (running) begin
-                // Registrar salida combinacional
-                for (i = 0; i < 16; i++)
-                    arr_cards_out[i] <= pool_comb[i];
+                PROCESS: begin
+                    // contar cartas con estado 01
+                    count_01 = 0;
+                    for(int i=0; i<16; i++)
+                        if(arr_tmp[i][1:0] == 2'b01) count_01++;
 
-                done    <= 1;
-                running <= 0;
-            end
+                    // determinar cuántas cartas 00 cambiar
+                    if(count_01 == 0) num_to_change = 2;
+                    else if(count_01 == 1) num_to_change = 1;
+                    else num_to_change = 0;
+
+                    found_00 = 0;
+
+                    // -------------------------------
+                    // Recorrido hacia adelante desde seed
+                    // -------------------------------
+                    for(int i=0; i<16 && found_00 < num_to_change; i++) begin
+                        idx = (seed[3:0] + i) % 16;
+                        if(arr_tmp[idx][1:0] == 2'b00) begin
+                            arr_tmp[idx][1:0] = 2'b01;
+                            found_00++;
+                        end
+                    end
+
+                    // -------------------------------
+                    // Recorrido hacia atrás desde seed
+                    // -------------------------------
+                    for(int i=1; i<16 && found_00 < num_to_change; i++) begin
+                        idx = (seed[3:0] + 16 - i) % 16; // moverse hacia atrás circularmente
+                        if(arr_tmp[idx][1:0] == 2'b00) begin
+                            arr_tmp[idx][1:0] = 2'b01;
+                            found_00++;
+                        end
+                    end
+                end
+
+                FINISH: begin
+                    for(int i=0;i<16;i++) arr_cards_out[i] <= arr_tmp[i];
+                    done <= 1;
+                end
+            endcase
         end
     end
 
+    // ------------------------------------------------------
+    // Lógica de transición de estados
+    // ------------------------------------------------------
+    always_comb begin
+        next_state = state;
+        case(state)
+            IDLE:    if(start) next_state = PROCESS;
+            PROCESS: next_state = FINISH;
+            FINISH:  if(!start) next_state = IDLE;
+        endcase
+    end
 endmodule

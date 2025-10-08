@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/simulation/modelsim
 vbit_shifter
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1759906903
+Z2 !s110 1759910909
 !i10b 1
 !s100 BNC7P32a5KQPXeBBoB9hX0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1759906903.000000
+Z6 !s108 1759910909.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv|
 !i113 1
@@ -39,17 +39,17 @@ vmostrar_carta_random
 R1
 R2
 !i10b 1
-!s100 VhVZhl5NJ@VlYSbXKl37@3
+!s100 RG2ZMz]^Wh@HGbmo8QRfR0
 R3
-IS<o6Fkz^Z8EQCLb=F4Fb[1
+Ic8_hGHYz2]mc6_zk=V:Ye3
 R4
 S1
 R0
-w1759906889
+w1759910767
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv
 !i122 1
-L0 1 96
+L0 1 98
 R5
 r1
 !s85 0
@@ -63,7 +63,7 @@ R8
 R9
 vtop_mostrar_carta_random
 R1
-Z10 !s110 1759906904
+Z10 !s110 1759910910
 !i10b 1
 !s100 1cVOAc171zU8MDikg<T:50
 R3
@@ -80,7 +80,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1759910910.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv|
 !i113 1
@@ -91,22 +91,22 @@ vtop_mostrar_carta_random_tb
 R1
 R10
 !i10b 1
-!s100 kMO:XHUkad^>FaG@f1]>H0
+!s100 dYi[QTj_zIU<@17OE136M0
 R3
-ITRbc<iJeE]Ec82zO;_[LW1
+IScnhPF7;XOn9^d8Igl75j2
 R4
 S1
 R0
-w1759906617
+w1759910894
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv
 !i122 3
-L0 1 84
+L0 1 86
 R5
 r1
 !s85 0
 31
-!s108 1759906904.000000
+R11
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv|
 !i113 1
