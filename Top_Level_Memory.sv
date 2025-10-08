@@ -14,6 +14,7 @@ module Top_Level_Memory(input logic m, rst, clk,
 	logic [7:0] r_PantallaInicial, g_PantallaInicial, b_PantallaInicial; // Colores pantalla inicial
 	logic [7:0] r_w, g_w, b_w; // Pantalla default
 	logic [4:0] arr_cartas [0:15]; // 16 elementos, cada uno de 5 bits
+	logic [4:0] arr_cartas1 [0:15]; // 16 elementos, cada uno de 5 bits
 	logic tiempoT, carta_El, cartas_Oc, cartas_Re;
 	logic [1:0]  cartas_sel;    // Cartas seleccionadas
 	logic [1:0] estCartas;
@@ -43,7 +44,7 @@ module Top_Level_Memory(input logic m, rst, clk,
 	//contador de 15 seg
 	top_7seg_counter cont15s(.clk(clk), .rst(rst), .seg(seg));
 	
-	modify_arr crear_arr(.estado(estCartas), .arrI(arr_cartas));
+	modify_arr crear_arr(.estado(estCartas), .arrI(arr_cartas1));
 	
 	
 	// Visualización de distintas pantallas
@@ -54,6 +55,7 @@ module Top_Level_Memory(input logic m, rst, clk,
 	 
 	 always_comb begin
 			estCartas = 00;
+			arr_cartas = arr_cartas1;
 			case (state)
 				4'b0000: begin // Pantalla START
                 r = r_PantallaInicial;
@@ -74,6 +76,7 @@ module Top_Level_Memory(input logic m, rst, clk,
 				end
 				4'b0011: begin // Pantalla que revuelve las f cartas
 				// arr_cartas = a no se
+					 estCartas = 2'b11; //para asignar por fuera el cambio del array
                 r = r_OVER;
                 g = g_OVER;
                 b = b_OVER;
