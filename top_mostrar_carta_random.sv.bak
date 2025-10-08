@@ -1,0 +1,24 @@
+module top_mostrar_carta_random (
+    input  logic        clk,
+    input  logic        rst,
+    input  logic        start,
+    input  logic [7:0]  seed,
+    input  logic [4:0]  arr_cards_in [0:15],
+    output logic [4:0]  arr_cards_out [0:15],
+    output logic        done
+);
+
+    // ------------------------------------------------------------------------
+    // Instancia de mostrar_carta_random
+    // ------------------------------------------------------------------------
+    mostrar_carta_random mcr (top_mostrar_carta_random
+        .clk(clk),
+        .rst(rst),
+        .start(start),
+        .seed(seed),
+        .arr_cards_in(arr_cards_in),
+        .arr_cards_out(arr_cards_out),
+        .done(done)
+    );
+
+endmodule

@@ -10,56 +10,64 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:19:44 on Oct 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Shuffle.sv 
-# -- Compiling module Shuffle
-# 
-# Top level modules:
-# 	Shuffle
-# End time: 23:19:44 on Oct 07,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:19:44 on Oct 07,2025
+# Start time: 01:01:43 on Oct 08,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv 
 # -- Compiling module bit_shifter
 # 
 # Top level modules:
 # 	bit_shifter
-# End time: 23:19:44 on Oct 07,2025, Elapsed time: 0:00:00
+# End time: 01:01:43 on Oct 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:19:46 on Oct 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle.sv 
-# -- Compiling module top_shuffle
+# Start time: 01:01:43 on Oct 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv 
+# -- Compiling module mostrar_carta_random
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
-# 	top_shuffle
-# End time: 23:19:46 on Oct 07,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv}
+# 	mostrar_carta_random
+# End time: 01:01:43 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:19:46 on Oct 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv 
-# -- Compiling module top_shuffle_tb
+# Start time: 01:01:43 on Oct 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv 
+# -- Compiling module top_mostrar_carta_random
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
-# 	top_shuffle_tb
-# End time: 23:19:46 on Oct 07,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# 	top_mostrar_carta_random
+# End time: 01:01:44 on Oct 08,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_shuffle_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_shuffle_tb 
-# Start time: 23:19:46 on Oct 07,2025
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:01:44 on Oct 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv 
+# -- Compiling module top_mostrar_carta_random_tb
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(40): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(41): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(43): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(44): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_mostrar_carta_random_tb
+# End time: 01:01:44 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_mostrar_carta_random_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_mostrar_carta_random_tb 
+# Start time: 01:01:44 on Oct 08,2025
 # Loading sv_std.std
-# Loading work.top_shuffle_tb
-# Loading work.top_shuffle
+# Loading work.top_mostrar_carta_random_tb
+# Loading work.top_mostrar_carta_random
 # Loading work.bit_shifter
-# Loading work.Shuffle
+# Loading work.mostrar_carta_random
 # 
 # add wave *
 # view structure
@@ -67,72 +75,52 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# === INICIO DE PRUEBA TOP SHUFFLE ===
+# === INICIO DE PRUEBA mostrar_carta_random ===
 # 
-# --- Barajado 1 ---
-# 
-# --- Baraja ---
-# Carta[0] = 01100
-# Carta[1] = 10000
-# Carta[2] = 11000
-# Carta[3] = 10000
-# Carta[4] = 11000
-# Carta[5] = 01000
-# Carta[6] = 00000
-# Carta[7] = 01000
-# Carta[8] = 10100
-# Carta[9] = 11100
-# Carta[10] = 00000
-# Carta[11] = 10100
-# Carta[12] = 00100
-# Carta[13] = 00100
-# Carta[14] = 01100
-# Carta[15] = 11100
-# 
-# --- Barajado 2 ---
+# --- Estado antes de mostrar_carta_random ---
 # 
 # --- Baraja ---
-# Carta[0] = 10100
-# Carta[1] = 10100
-# Carta[2] = 00100
-# Carta[3] = 11000
-# Carta[4] = 01100
-# Carta[5] = 00000
-# Carta[6] = 00000
-# Carta[7] = 10000
-# Carta[8] = 11100
-# Carta[9] = 11100
-# Carta[10] = 01000
-# Carta[11] = 00100
-# Carta[12] = 10000
-# Carta[13] = 01000
-# Carta[14] = 11000
-# Carta[15] = 01100
+# Carta[0] = xxx11
+# Carta[1] = xxx11
+# Carta[2] = xxx00
+# Carta[3] = xxx11
+# Carta[4] = xxx00
+# Carta[5] = xxx11
+# Carta[6] = xxx11
+# Carta[7] = xxx00
+# Carta[8] = xxx11
+# Carta[9] = xxx11
+# Carta[10] = xxx00
+# Carta[11] = xxx11
+# Carta[12] = xxx00
+# Carta[13] = xxx11
+# Carta[14] = xxx11
+# Carta[15] = xxx11
 # 
-# --- Barajado 3 ---
+# --- Estado después de mostrar_carta_random ---
 # 
 # --- Baraja ---
-# Carta[0] = 00100
-# Carta[1] = 10100
-# Carta[2] = 11100
-# Carta[3] = 01100
-# Carta[4] = 10000
-# Carta[5] = 01100
-# Carta[6] = 00000
-# Carta[7] = 01000
-# Carta[8] = 00100
-# Carta[9] = 11000
-# Carta[10] = 11000
-# Carta[11] = 11100
-# Carta[12] = 10100
-# Carta[13] = 00000
-# Carta[14] = 10000
-# Carta[15] = 01000
+# Carta[0] = xxx11
+# Carta[1] = xxx11
+# Carta[2] = xxx00
+# Carta[3] = xxx11
+# Carta[4] = xxx00
+# Carta[5] = xxx11
+# Carta[6] = xxx11
+# Carta[7] = xxx01
+# Carta[8] = xxx11
+# Carta[9] = xxx11
+# Carta[10] = xxx00
+# Carta[11] = xxx11
+# Carta[12] = xxx01
+# Carta[13] = xxx11
+# Carta[14] = xxx11
+# Carta[15] = xxx11
 # 
 # === FIN DE SIMULACIÓN ===
-# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv(71)
-#    Time: 325 ps  Iteration: 2  Instance: /top_shuffle_tb
+# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(69)
+#    Time: 75 ps  Iteration: 2  Instance: /top_mostrar_carta_random_tb
 # 1
-# Break in Module top_shuffle_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_shuffle_tb.sv line 71
-# End time: 23:21:06 on Oct 07,2025, Elapsed time: 0:01:20
+# Break in Module top_mostrar_carta_random_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv line 69
+# End time: 01:01:53 on Oct 08,2025, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 0
