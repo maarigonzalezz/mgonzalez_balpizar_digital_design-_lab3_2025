@@ -164,11 +164,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "I",
+					"strict" : false
+				},
+				{
 					"name" : "cartas_Mo",
 					"strict" : false
 				},
 				{
-					"name" : "I",
+					"name" : "cartas_Oc",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Memoria
-Wed Oct 08 23:47:57 2025
+Thu Oct 09 01:47:06 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,75 +16,77 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Analysis & Synthesis DSP Block Usage Summary
   9. State Machine - |Top_Level_Memory|FSM:FSMM|cartas_seleccionadas_reg
  10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 15. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaA1|rectborder:border_inst
- 16. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaA2|rectborder:border_inst
- 17. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaB1|rectborder:border_inst
- 18. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaB2|rectborder:border_inst
- 19. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaC1|rectborder:border_inst
- 20. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaC2|rectborder:border_inst
- 21. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaD1|rectborder:border_inst
- 22. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaD2|rectborder:border_inst
- 23. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaE1|rectborder:border_inst
- 24. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaE2|rectborder:border_inst
- 25. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaF1|rectborder:border_inst
- 26. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaF2|rectborder:border_inst
- 27. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaG1|rectborder:border_inst
- 28. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaG2|rectborder:border_inst
- 29. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaH1|rectborder:border_inst
- 30. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaH2|rectborder:border_inst
- 31. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaA1|rectborder:border_inst
- 32. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaA2|rectborder:border_inst
- 33. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaB1|rectborder:border_inst
- 34. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaB2|rectborder:border_inst
- 35. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaC1|rectborder:border_inst
- 36. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaC2|rectborder:border_inst
- 37. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaD1|rectborder:border_inst
- 38. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaD2|rectborder:border_inst
- 39. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaE1|rectborder:border_inst
- 40. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaE2|rectborder:border_inst
- 41. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaF1|rectborder:border_inst
- 42. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaF2|rectborder:border_inst
- 43. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaG1|rectborder:border_inst
- 44. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaG2|rectborder:border_inst
- 45. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaH1|rectborder:border_inst
- 46. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaH2|rectborder:border_inst
- 47. Parameter Settings for User Entity Instance: top_7seg_counter:cont15s|clk_counter_seg:u_clk_counter
- 48. Parameter Settings for Inferred Entity Instance: start:pantalla_inicio|lpm_divide:Div0
- 49. Parameter Settings for Inferred Entity Instance: finish:pantalla_final|lpm_divide:Div0
- 50. Parameter Settings for Inferred Entity Instance: finish:pantalla_final|lpm_divide:Div1
- 51. Port Connectivity Checks: "top_7seg_counter:cont15s"
- 52. Port Connectivity Checks: "videoGen:videoGen"
- 53. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaH2"
- 54. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaH1"
- 55. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaG2"
- 56. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaG1"
- 57. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaF2"
- 58. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaF1"
- 59. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaE2"
- 60. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaE1"
- 61. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaD2"
- 62. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaD1"
- 63. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaC2"
- 64. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaC1"
- 65. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaB2"
- 66. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaB1"
- 67. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA2"
- 68. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|invtriangle_symbol:invtri_inst"
- 69. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|triangle_symbol:tri_inst"
- 70. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|circle_symbol:circle_inst"
- 71. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|hash_symbol:hash_inst"
- 72. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|cros_symbol:cros_inst"
- 73. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|minus_symbol:minus_inst"
- 74. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|plus_symbol:plus_inst"
- 75. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|rectborder:border_inst"
- 76. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1"
- 77. Post-Synthesis Netlist Statistics for Top Partition
- 78. Elapsed Time Per Partition
- 79. Analysis & Synthesis Messages
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: vgaController:vgaCont
+ 16. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaA1|rectborder:border_inst
+ 17. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaA2|rectborder:border_inst
+ 18. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaB1|rectborder:border_inst
+ 19. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaB2|rectborder:border_inst
+ 20. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaC1|rectborder:border_inst
+ 21. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaC2|rectborder:border_inst
+ 22. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaD1|rectborder:border_inst
+ 23. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaD2|rectborder:border_inst
+ 24. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaE1|rectborder:border_inst
+ 25. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaE2|rectborder:border_inst
+ 26. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaF1|rectborder:border_inst
+ 27. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaF2|rectborder:border_inst
+ 28. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaG1|rectborder:border_inst
+ 29. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaG2|rectborder:border_inst
+ 30. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaH1|rectborder:border_inst
+ 31. Parameter Settings for User Entity Instance: videoGen:videoGenI|carta:cartaH2|rectborder:border_inst
+ 32. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaA1|rectborder:border_inst
+ 33. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaA2|rectborder:border_inst
+ 34. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaB1|rectborder:border_inst
+ 35. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaB2|rectborder:border_inst
+ 36. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaC1|rectborder:border_inst
+ 37. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaC2|rectborder:border_inst
+ 38. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaD1|rectborder:border_inst
+ 39. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaD2|rectborder:border_inst
+ 40. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaE1|rectborder:border_inst
+ 41. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaE2|rectborder:border_inst
+ 42. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaF1|rectborder:border_inst
+ 43. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaF2|rectborder:border_inst
+ 44. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaG1|rectborder:border_inst
+ 45. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaG2|rectborder:border_inst
+ 46. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaH1|rectborder:border_inst
+ 47. Parameter Settings for User Entity Instance: videoGen:videoGen|carta:cartaH2|rectborder:border_inst
+ 48. Parameter Settings for User Entity Instance: top_7seg_counter:cont15s|clk_counter_seg:u_clk_counter
+ 49. Parameter Settings for Inferred Entity Instance: start:pantalla_inicio|lpm_divide:Div0
+ 50. Parameter Settings for Inferred Entity Instance: finish:pantalla_final|lpm_divide:Div0
+ 51. Parameter Settings for Inferred Entity Instance: finish:pantalla_final|lpm_divide:Div1
+ 52. Port Connectivity Checks: "card_controller:cambia_arr|mostrar_carta_random:mcr"
+ 53. Port Connectivity Checks: "card_controller:cambia_arr"
+ 54. Port Connectivity Checks: "top_7seg_counter:cont15s"
+ 55. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaH2"
+ 56. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaH1"
+ 57. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaG2"
+ 58. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaG1"
+ 59. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaF2"
+ 60. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaF1"
+ 61. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaE2"
+ 62. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaE1"
+ 63. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaD2"
+ 64. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaD1"
+ 65. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaC2"
+ 66. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaC1"
+ 67. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaB2"
+ 68. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaB1"
+ 69. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA2"
+ 70. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|invtriangle_symbol:invtri_inst"
+ 71. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|triangle_symbol:tri_inst"
+ 72. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|circle_symbol:circle_inst"
+ 73. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|hash_symbol:hash_inst"
+ 74. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|cros_symbol:cros_inst"
+ 75. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|minus_symbol:minus_inst"
+ 76. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|plus_symbol:plus_inst"
+ 77. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1|rectborder:border_inst"
+ 78. Port Connectivity Checks: "videoGen:videoGenI|carta:cartaA1"
+ 79. Post-Synthesis Netlist Statistics for Top Partition
+ 80. Elapsed Time Per Partition
+ 81. Analysis & Synthesis Messages
 
 
 
@@ -111,14 +113,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 08 23:47:56 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 09 01:47:05 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memoria                                     ;
 ; Top-level Entity Name           ; Top_Level_Memory                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 70                                          ;
-; Total pins                      ; 43                                          ;
+; Total pins                      ; 47                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 109                                         ;
@@ -233,8 +235,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processors 5-10        ;   0.0%      ;
+;     Processors 4-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -263,7 +264,12 @@ https://fpgasoftware.intel.com/eula.
 ; start.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/start.sv                        ;         ;
 ; finish.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/finish.sv                       ;         ;
 ; modify_arr.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/modify_arr.sv                   ;         ;
+; bit_shifter.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/bit_shifter.sv                  ;         ;
+; Shuffle.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Shuffle.sv                      ;         ;
+; mostrar_carta_random.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/mostrar_carta_random.sv         ;         ;
+; card_controller.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv              ;         ;
 ; rectborder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/rectborder.sv                   ;         ;
+; save_cards.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/save_cards.sv                   ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                           ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                          ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                      ;         ;
@@ -282,24 +288,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 2085                       ;
+; Estimate of Logic utilization (ALMs needed) ; 2086                       ;
 ;                                             ;                            ;
-; Combinational ALUT usage for logic          ; 4063                       ;
+; Combinational ALUT usage for logic          ; 4061                       ;
 ;     -- 7 input functions                    ; 11                         ;
-;     -- 6 input functions                    ; 95                         ;
-;     -- 5 input functions                    ; 260                        ;
-;     -- 4 input functions                    ; 525                        ;
-;     -- <=3 input functions                  ; 3172                       ;
+;     -- 6 input functions                    ; 100                        ;
+;     -- 5 input functions                    ; 272                        ;
+;     -- 4 input functions                    ; 498                        ;
+;     -- <=3 input functions                  ; 3180                       ;
 ;                                             ;                            ;
 ; Dedicated logic registers                   ; 70                         ;
 ;                                             ;                            ;
-; I/O pins                                    ; 43                         ;
+; I/O pins                                    ; 47                         ;
 ;                                             ;                            ;
 ; Total DSP Blocks                            ; 109                        ;
 ;                                             ;                            ;
 ; Maximum fan-out node                        ; vgaController:vgaCont|x[5] ;
-; Maximum fan-out                             ; 77                         ;
-; Total fan-out                               ; 14199                      ;
+; Maximum fan-out                             ; 79                         ;
+; Total fan-out                               ; 14194                      ;
 ; Average fan-out                             ; 3.28                       ;
 +---------------------------------------------+----------------------------+
 
@@ -309,9 +315,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Top_Level_Memory                         ; 4063 (40)           ; 70 (0)                    ; 0                 ; 109        ; 43   ; 0            ; |Top_Level_Memory                                                                                                                       ; Top_Level_Memory    ; work         ;
-;    |FSM:FSMM|                             ; 29 (29)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|FSM:FSMM                                                                                                              ; FSM                 ; work         ;
-;    |finish:pantalla_final|                ; 1608 (170)          ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final                                                                                                 ; finish              ; work         ;
+; |Top_Level_Memory                         ; 4061 (36)           ; 70 (0)                    ; 0                 ; 109        ; 47   ; 0            ; |Top_Level_Memory                                                                                                                       ; Top_Level_Memory    ; work         ;
+;    |FSM:FSMM|                             ; 34 (34)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|FSM:FSMM                                                                                                              ; FSM                 ; work         ;
+;    |finish:pantalla_final|                ; 1618 (180)          ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final                                                                                                 ; finish              ; work         ;
 ;       |lpm_divide:Div0|                   ; 719 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_0dm:auto_generated|  ; 719 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final|lpm_divide:Div0|lpm_divide_0dm:auto_generated                                                   ; lpm_divide_0dm      ; work         ;
 ;             |sign_div_unsign_6nh:divider| ; 719 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final|lpm_divide:Div0|lpm_divide_0dm:auto_generated|sign_div_unsign_6nh:divider                       ; sign_div_unsign_6nh ; work         ;
@@ -321,50 +327,50 @@ https://fpgasoftware.intel.com/eula.
 ;             |sign_div_unsign_6nh:divider| ; 719 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final|lpm_divide:Div1|lpm_divide_0dm:auto_generated|sign_div_unsign_6nh:divider                       ; sign_div_unsign_6nh ; work         ;
 ;                |alt_u_div_i2f:divider|    ; 719 (719)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|finish:pantalla_final|lpm_divide:Div1|lpm_divide_0dm:auto_generated|sign_div_unsign_6nh:divider|alt_u_div_i2f:divider ; alt_u_div_i2f       ; work         ;
 ;    |pll:vgapll|                           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|pll:vgapll                                                                                                            ; pll                 ; work         ;
-;    |start:pantalla_inicio|                ; 148 (38)            ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Top_Level_Memory|start:pantalla_inicio                                                                                                 ; start               ; work         ;
+;    |start:pantalla_inicio|                ; 151 (41)            ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Top_Level_Memory|start:pantalla_inicio                                                                                                 ; start               ; work         ;
 ;       |lpm_divide:Div0|                   ; 110 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|start:pantalla_inicio|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_tcm:auto_generated|  ; 110 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|start:pantalla_inicio|lpm_divide:Div0|lpm_divide_tcm:auto_generated                                                   ; lpm_divide_tcm      ; work         ;
 ;             |sign_div_unsign_3nh:divider| ; 110 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|start:pantalla_inicio|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_3nh:divider                       ; sign_div_unsign_3nh ; work         ;
 ;                |alt_u_div_c2f:divider|    ; 110 (110)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|start:pantalla_inicio|lpm_divide:Div0|lpm_divide_tcm:auto_generated|sign_div_unsign_3nh:divider|alt_u_div_c2f:divider ; alt_u_div_c2f       ; work         ;
 ;    |top_7seg_counter:cont15s|             ; 42 (11)             ; 31 (4)                    ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|top_7seg_counter:cont15s                                                                                              ; top_7seg_counter    ; work         ;
 ;       |clk_counter_seg:u_clk_counter|     ; 31 (31)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|top_7seg_counter:cont15s|clk_counter_seg:u_clk_counter                                                                ; clk_counter_seg     ; work         ;
-;    |vgaController:vgaCont|                ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|vgaController:vgaCont                                                                                                 ; vgaController       ; work         ;
-;    |videoGen:videoGenI|                   ; 2166 (27)           ; 0 (0)                     ; 0                 ; 104        ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI                                                                                                    ; videoGen            ; work         ;
-;       |carta:cartaA1|                     ; 15 (3)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1                                                                                      ; carta               ; work         ;
-;          |plus_symbol:plus_inst|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1|plus_symbol:plus_inst                                                                ; plus_symbol         ; work         ;
-;          |rectgen:rect_inst|              ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
-;       |carta:cartaA2|                     ; 7 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA2                                                                                      ; carta               ; work         ;
+;    |vgaController:vgaCont|                ; 28 (28)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|vgaController:vgaCont                                                                                                 ; vgaController       ; work         ;
+;    |videoGen:videoGenI|                   ; 2151 (22)           ; 0 (0)                     ; 0                 ; 104        ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI                                                                                                    ; videoGen            ; work         ;
+;       |carta:cartaA1|                     ; 12 (3)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1                                                                                      ; carta               ; work         ;
+;          |plus_symbol:plus_inst|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1|plus_symbol:plus_inst                                                                ; plus_symbol         ; work         ;
+;          |rectgen:rect_inst|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
+;       |carta:cartaA2|                     ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA2                                                                                      ; carta               ; work         ;
 ;          |plus_symbol:plus_inst|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA2|plus_symbol:plus_inst                                                                ; plus_symbol         ; work         ;
 ;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA2|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
 ;       |carta:cartaB1|                     ; 4 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB1                                                                                      ; carta               ; work         ;
 ;          |minus_symbol:minus_inst|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB1|minus_symbol:minus_inst                                                              ; minus_symbol        ; work         ;
 ;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB1|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
-;       |carta:cartaB2|                     ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB2                                                                                      ; carta               ; work         ;
+;       |carta:cartaB2|                     ; 6 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB2                                                                                      ; carta               ; work         ;
 ;          |minus_symbol:minus_inst|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB2|minus_symbol:minus_inst                                                              ; minus_symbol        ; work         ;
 ;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaB2|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
-;       |carta:cartaC1|                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaC1                                                                                      ; carta               ; work         ;
+;       |carta:cartaC1|                     ; 5 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaC1                                                                                      ; carta               ; work         ;
 ;          |cros_symbol:cros_inst|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaC1|cros_symbol:cros_inst                                                                ; cros_symbol         ; work         ;
-;          |rectgen:rect_inst|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaC1|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
+;          |rectgen:rect_inst|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaC1|rectgen:rect_inst                                                                    ; rectgen             ; work         ;
 ;       |carta:cartaC2|                     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaC2                                                                                      ; carta               ; work         ;
-;       |carta:cartaD1|                     ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD1                                                                                      ; carta               ; work         ;
-;          |square_symbol:square_inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD1|square_symbol:square_inst                                                            ; square_symbol       ; work         ;
-;       |carta:cartaD2|                     ; 7 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD2                                                                                      ; carta               ; work         ;
+;       |carta:cartaD1|                     ; 4 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD1                                                                                      ; carta               ; work         ;
+;          |square_symbol:square_inst|      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD1|square_symbol:square_inst                                                            ; square_symbol       ; work         ;
+;       |carta:cartaD2|                     ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD2                                                                                      ; carta               ; work         ;
 ;          |square_symbol:square_inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaD2|square_symbol:square_inst                                                            ; square_symbol       ; work         ;
-;       |carta:cartaE1|                     ; 11 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE1                                                                                      ; carta               ; work         ;
-;          |hash_symbol:hash_inst|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE1|hash_symbol:hash_inst                                                                ; hash_symbol         ; work         ;
-;       |carta:cartaE2|                     ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE2                                                                                      ; carta               ; work         ;
-;          |hash_symbol:hash_inst|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE2|hash_symbol:hash_inst                                                                ; hash_symbol         ; work         ;
+;       |carta:cartaE1|                     ; 6 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE1                                                                                      ; carta               ; work         ;
+;          |hash_symbol:hash_inst|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE1|hash_symbol:hash_inst                                                                ; hash_symbol         ; work         ;
+;       |carta:cartaE2|                     ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE2                                                                                      ; carta               ; work         ;
+;          |hash_symbol:hash_inst|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaE2|hash_symbol:hash_inst                                                                ; hash_symbol         ; work         ;
 ;       |carta:cartaF1|                     ; 65 (7)              ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF1                                                                                      ; carta               ; work         ;
 ;          |circle_symbol:circle_inst|      ; 58 (58)             ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF1|circle_symbol:circle_inst                                                            ; circle_symbol       ; work         ;
 ;       |carta:cartaF2|                     ; 54 (7)              ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF2                                                                                      ; carta               ; work         ;
 ;          |circle_symbol:circle_inst|      ; 47 (47)             ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF2|circle_symbol:circle_inst                                                            ; circle_symbol       ; work         ;
-;       |carta:cartaG1|                     ; 522 (11)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1                                                                                      ; carta               ; work         ;
+;       |carta:cartaG1|                     ; 521 (10)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1                                                                                      ; carta               ; work         ;
 ;          |triangle_symbol:tri_inst|       ; 511 (511)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst                                                             ; triangle_symbol     ; work         ;
-;       |carta:cartaG2|                     ; 478 (11)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2                                                                                      ; carta               ; work         ;
+;       |carta:cartaG2|                     ; 477 (10)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2                                                                                      ; carta               ; work         ;
 ;          |triangle_symbol:tri_inst|       ; 467 (467)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2|triangle_symbol:tri_inst                                                             ; triangle_symbol     ; work         ;
-;       |carta:cartaH1|                     ; 476 (10)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1                                                                                      ; carta               ; work         ;
-;          |invtriangle_symbol:invtri_inst| ; 466 (466)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1|invtriangle_symbol:invtri_inst                                                       ; invtriangle_symbol  ; work         ;
-;       |carta:cartaH2|                     ; 482 (11)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2                                                                                      ; carta               ; work         ;
+;       |carta:cartaH1|                     ; 475 (10)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1                                                                                      ; carta               ; work         ;
+;          |invtriangle_symbol:invtri_inst| ; 465 (465)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1|invtriangle_symbol:invtri_inst                                                       ; invtriangle_symbol  ; work         ;
+;       |carta:cartaH2|                     ; 481 (10)            ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2                                                                                      ; carta               ; work         ;
 ;          |invtriangle_symbol:invtri_inst| ; 471 (471)           ; 0 (0)                     ; 0                 ; 24         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2|invtriangle_symbol:invtri_inst                                                       ; invtriangle_symbol  ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -399,14 +405,314 @@ Encoding Type:  One-Hot
 +-----------------------------+-----------------------------+-----------------------------+-----------------------------+
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; FSM:FSMM|cartas_seleccionadas_reg.00  ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
-+---------------------------------------+--------------------+
++---------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                      ;
++-----------------------------------------------------------+---------------------------------------------+
+; Register name                                             ; Reason for Removal                          ;
++-----------------------------------------------------------+---------------------------------------------+
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][0]    ; Stuck at GND due to stuck port data_in      ;
+; card_controller:cambia_arr|Shuffle:sh|running             ; Stuck at GND due to stuck port data_in      ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][4]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][3]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][2]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][1]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][0]     ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][4]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][3]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][2]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][1]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][0]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][4]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][3]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][2]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][1]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][0]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][4]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][3]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][2]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][1]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][0]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][4]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][3]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][2]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][1]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][0]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][4]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][3]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][2]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][1]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][0]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][4]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][3]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][2]    ; Stuck at GND due to stuck port clock_enable ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][1]    ; Stuck at GND due to stuck port clock_enable ;
+; save_cards:guardar_arr|arr_out[15][0]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[0][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[0][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[0][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[0][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[0][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[1][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[1][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[1][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[1][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[1][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[2][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[2][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[2][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[2][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[2][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[3][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[3][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[3][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[3][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[3][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[4][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[4][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[4][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[4][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[4][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[5][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[5][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[5][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[5][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[5][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[6][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[6][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[6][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[6][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[6][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[7][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[7][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[7][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[7][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[7][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[8][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[8][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[8][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[8][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[8][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[9][4]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[9][3]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[9][2]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[9][1]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[9][0]                      ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[10][4]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[10][3]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[10][2]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[10][1]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[10][0]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[11][4]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[11][3]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[11][2]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[11][1]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[11][0]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[12][4]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[12][3]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[12][2]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[12][1]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[12][0]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[13][4]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[13][3]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[13][2]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[13][1]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[13][0]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[14][4]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[14][3]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[14][2]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[14][1]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[14][0]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[15][4]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[15][3]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[15][2]                     ; Stuck at GND due to stuck port data_in      ;
+; save_cards:guardar_arr|arr_out[15][1]                     ; Stuck at GND due to stuck port data_in      ;
+; card_controller:cambia_arr|bit_shifter:bs|shift_reg[0..7] ; Lost fanout                                 ;
+; card_controller:cambia_arr|Shuffle:sh|done                ; Stuck at GND due to stuck port data_in      ;
+; FSM:FSMM|cartas_seleccionadas_reg.00                      ; Lost fanout                                 ;
+; Total Number of Removed Registers = 171                   ;                                             ;
++-----------------------------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                        ;
++--------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Register name                                          ; Reason for Removal        ; Registers Removed due to This Register                                        ;
++--------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; card_controller:cambia_arr|Shuffle:sh|running          ; Stuck at GND              ; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][4],                        ;
+;                                                        ; due to stuck port data_in ; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[0][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[1][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[2][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[3][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[4][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[5][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[6][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[7][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[8][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][4],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][3],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][2],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][1],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[9][0],                        ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][1],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[10][0],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][1],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[11][0],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][1],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[12][0],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][1],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[13][0],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][1],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[14][0],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][1],                       ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[0][4], save_cards:guardar_arr|arr_out[0][3],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[0][2], save_cards:guardar_arr|arr_out[0][1],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[0][0], save_cards:guardar_arr|arr_out[1][4],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[1][3], save_cards:guardar_arr|arr_out[1][2],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[1][1], save_cards:guardar_arr|arr_out[1][0],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[2][4], save_cards:guardar_arr|arr_out[2][3],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[2][2], save_cards:guardar_arr|arr_out[2][1],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[2][0], save_cards:guardar_arr|arr_out[3][4],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[3][3], save_cards:guardar_arr|arr_out[3][2],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[3][1], save_cards:guardar_arr|arr_out[3][0],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[4][4], save_cards:guardar_arr|arr_out[4][3],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[4][2], save_cards:guardar_arr|arr_out[4][1],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[4][0], save_cards:guardar_arr|arr_out[5][4],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[5][3], save_cards:guardar_arr|arr_out[5][2],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[5][1], save_cards:guardar_arr|arr_out[5][0],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[6][4], save_cards:guardar_arr|arr_out[6][3],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[6][2], save_cards:guardar_arr|arr_out[6][1],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[6][0], save_cards:guardar_arr|arr_out[7][4],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[7][3], save_cards:guardar_arr|arr_out[7][2],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[7][1], save_cards:guardar_arr|arr_out[7][0],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[8][4], save_cards:guardar_arr|arr_out[8][3],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[8][2], save_cards:guardar_arr|arr_out[8][1],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[8][0], save_cards:guardar_arr|arr_out[9][4],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[9][3], save_cards:guardar_arr|arr_out[9][2],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[9][1], save_cards:guardar_arr|arr_out[9][0],   ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[10][4], save_cards:guardar_arr|arr_out[10][3], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[10][2], save_cards:guardar_arr|arr_out[10][1], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[10][0], save_cards:guardar_arr|arr_out[11][4], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[11][3], save_cards:guardar_arr|arr_out[11][2], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[11][1], save_cards:guardar_arr|arr_out[11][0], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[12][4], save_cards:guardar_arr|arr_out[12][3], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[12][2], save_cards:guardar_arr|arr_out[12][1], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[12][0], save_cards:guardar_arr|arr_out[13][4], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[13][3], save_cards:guardar_arr|arr_out[13][2], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[13][1], save_cards:guardar_arr|arr_out[13][0], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[14][4], save_cards:guardar_arr|arr_out[14][3], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[14][2], save_cards:guardar_arr|arr_out[14][1], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[14][0], save_cards:guardar_arr|arr_out[15][4], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[15][3], save_cards:guardar_arr|arr_out[15][2], ;
+;                                                        ;                           ; save_cards:guardar_arr|arr_out[15][1],                                        ;
+;                                                        ;                           ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[0],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|Shuffle:sh|done                                    ;
+; card_controller:cambia_arr|bit_shifter:bs|shift_reg[7] ; Lost Fanouts              ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[6],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[5],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[4],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[3],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[2],                       ;
+;                                                        ;                           ; card_controller:cambia_arr|bit_shifter:bs|shift_reg[1]                        ;
+; card_controller:cambia_arr|Shuffle:sh|arr_cards[15][0] ; Stuck at GND              ; save_cards:guardar_arr|arr_out[15][0]                                         ;
+;                                                        ; due to stuck port data_in ;                                                                               ;
++--------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -416,7 +722,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Total registers                              ; 70    ;
 ; Number of registers using Synchronous Clear  ; 47    ;
-; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 49    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 16    ;
@@ -442,8 +748,8 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Top_Level_Memory|Mux7     ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |Top_Level_Memory|Mux11    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Top_Level_Memory|Mux7     ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |Top_Level_Memory|Mux20    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -865,6 +1171,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "card_controller:cambia_arr|mostrar_carta_random:mcr"                                         ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; arr_cards_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; arr_cards_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "card_controller:cambia_arr"                                                                                  ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                  ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; startSh  ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; startMcr ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; doneMcr  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "top_7seg_counter:cont15s"                                                                                ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -872,15 +1199,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; an   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "videoGen:videoGen" ;
-+------------+-------+----------+---------------+
-; Port       ; Type  ; Severity ; Details       ;
-+------------+-------+----------+---------------+
-; arr_cartas ; Input ; Info     ; Stuck at GND  ;
-+------------+-------+----------+---------------+
 
 
 +--------------------------------------------------------------+
@@ -1522,13 +1840,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 70                          ;
 ;     CLR               ; 17                          ;
 ;     CLR SCLR          ; 26                          ;
-;     ENA CLR           ; 4                           ;
+;     ENA CLR           ; 5                           ;
 ;     ENA CLR SCLR      ; 1                           ;
-;     ENA CLR SLD       ; 1                           ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 4066                        ;
+; arriav_lcell_comb     ; 4064                        ;
 ;     arith             ; 1163                        ;
 ;         0 data inputs ; 174                         ;
 ;         1 data inputs ; 350                         ;
@@ -1537,23 +1854,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 252                         ;
 ;     extend            ; 11                          ;
 ;         7 data inputs ; 11                          ;
-;     normal            ; 1359                        ;
+;     normal            ; 1357                        ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 516                         ;
-;         3 data inputs ; 210                         ;
-;         4 data inputs ; 273                         ;
-;         5 data inputs ; 260                         ;
-;         6 data inputs ; 95                          ;
+;         2 data inputs ; 529                         ;
+;         3 data inputs ; 205                         ;
+;         4 data inputs ; 246                         ;
+;         5 data inputs ; 272                         ;
+;         6 data inputs ; 100                         ;
 ;     shared            ; 1533                        ;
 ;         0 data inputs ; 411                         ;
 ;         1 data inputs ; 18                          ;
 ;         2 data inputs ; 360                         ;
 ;         3 data inputs ; 744                         ;
 ; arriav_mac            ; 109                         ;
-; boundary_port         ; 43                          ;
+; boundary_port         ; 47                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 59.60                       ;
-; Average LUT depth     ; 18.80                       ;
+; Average LUT depth     ; 19.13                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1562,7 +1879,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1572,7 +1889,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 08 23:47:43 2025
+    Info: Processing started: Thu Oct 09 01:46:52 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memoria -c Memoria
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -1634,21 +1951,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file card_co
     Info (12023): Found entity 1: card_controller File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rectborder.sv
     Info (12023): Found entity 1: rectborder File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/rectborder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file save_cards.sv
+    Info (12023): Found entity 1: save_cards File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/save_cards.sv Line: 1
 Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): instance has no name File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 21
 Info (12127): Elaborating entity "Top_Level_Memory" for the top level hierarchy
-Warning (10858): Verilog HDL warning at Top_Level_Memory.sv(18): object arr_cartas used but never assigned File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 18
-Warning (10030): Net "arr_cartas" at Top_Level_Memory.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 18
-Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 28
-Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 31
+Warning (10030): Net "start_shuffle" at Top_Level_Memory.sv(28) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 28
+Warning (10030): Net "start_mcr" at Top_Level_Memory.sv(28) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 28
+Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 33
+Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 36
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(25): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 29
-Info (12128): Elaborating entity "start" for hierarchy "start:pantalla_inicio" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 34
+Info (12128): Elaborating entity "start" for hierarchy "start:pantalla_inicio" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 39
 Warning (10230): Verilog HDL assignment warning at start.sv(24): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/start.sv Line: 24
 Warning (10230): Verilog HDL assignment warning at start.sv(25): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/start.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at start.sv(26): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/start.sv Line: 26
 Warning (10230): Verilog HDL assignment warning at start.sv(27): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/start.sv Line: 27
 Warning (10230): Verilog HDL assignment warning at start.sv(28): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/start.sv Line: 28
-Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGenI" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 37
+Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGenI" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 42
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(19): object "topS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 19
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(20): object "botS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 20
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(21): object "leftS" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 21
@@ -1664,8 +1983,8 @@ Info (12128): Elaborating entity "hash_symbol" for hierarchy "videoGen:videoGenI
 Info (12128): Elaborating entity "circle_symbol" for hierarchy "videoGen:videoGenI|carta:cartaA1|circle_symbol:circle_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
 Info (12128): Elaborating entity "triangle_symbol" for hierarchy "videoGen:videoGenI|carta:cartaA1|triangle_symbol:tri_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 93
 Info (12128): Elaborating entity "invtriangle_symbol" for hierarchy "videoGen:videoGenI|carta:cartaA1|invtriangle_symbol:invtri_inst" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 101
-Info (12128): Elaborating entity "finish" for hierarchy "finish:pantalla_final" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 43
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:FSMM" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 51
+Info (12128): Elaborating entity "finish" for hierarchy "finish:pantalla_final" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 48
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:FSMM" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 56
 Warning (10858): Verilog HDL warning at FSM.sv(23): object carta_1 used but never assigned File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 23
 Warning (10858): Verilog HDL warning at FSM.sv(24): object carta_2 used but never assigned File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 24
 Warning (10230): Verilog HDL assignment warning at FSM.sv(72): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 72
@@ -1673,11 +1992,101 @@ Warning (10230): Verilog HDL assignment warning at FSM.sv(74): truncated value w
 Info (10264): Verilog HDL Case Statement information at FSM.sv(149): all case item expressions in this case statement are onehot File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 149
 Warning (10030): Net "carta_1" at FSM.sv(23) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 23
 Warning (10030): Net "carta_2" at FSM.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 24
-Info (12128): Elaborating entity "top_7seg_counter" for hierarchy "top_7seg_counter:cont15s" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 54
+Info (12128): Elaborating entity "top_7seg_counter" for hierarchy "top_7seg_counter:cont15s" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 59
 Warning (10230): Verilog HDL assignment warning at top_7seg_counter.sv(35): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/top_7seg_counter.sv Line: 35
 Info (12128): Elaborating entity "clk_counter_seg" for hierarchy "top_7seg_counter:cont15s|clk_counter_seg:u_clk_counter" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/top_7seg_counter.sv Line: 23
 Warning (10230): Verilog HDL assignment warning at clk_counter_seg.sv(26): truncated value with size 32 to match size of target (26) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/clk_counter_seg.sv Line: 26
-Info (12128): Elaborating entity "modify_arr" for hierarchy "modify_arr:crear_arr" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 59
+Info (12128): Elaborating entity "modify_arr" for hierarchy "modify_arr:crear_arr" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 64
+Info (12128): Elaborating entity "card_controller" for hierarchy "card_controller:cambia_arr" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 68
+Warning (10858): Verilog HDL warning at card_controller.sv(13): object arr_Sel used but never assigned File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 13
+Warning (10036): Verilog HDL or VHDL warning at card_controller.sv(14): object "arr_Mcr" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 14
+Warning (10036): Verilog HDL or VHDL warning at card_controller.sv(17): object "startShu" assigned a value but never read File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 17
+Warning (10030): Net "arr_Sel" at card_controller.sv(13) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 13
+Info (10041): Inferred latch for "arr_out[15][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[15][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[15][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[15][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[15][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[14][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[14][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[14][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[14][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[14][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[13][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[13][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[13][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[13][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[13][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[12][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[12][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[12][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[12][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[12][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[11][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[11][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[11][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[11][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[11][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[10][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[10][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[10][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[10][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[10][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[9][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[9][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[9][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[9][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[9][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[8][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[8][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[8][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[8][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[8][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[7][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[7][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[7][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[7][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[7][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[6][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[6][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[6][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[6][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[6][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[5][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[5][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[5][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[5][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[5][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[4][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[4][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[4][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[4][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[4][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[3][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[3][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[3][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[3][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[3][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[2][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[2][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[2][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[2][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[2][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[1][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[1][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[1][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[1][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[1][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[0][0]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[0][1]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[0][2]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[0][3]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (10041): Inferred latch for "arr_out[0][4]" at card_controller.sv(32) File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 32
+Info (12128): Elaborating entity "bit_shifter" for hierarchy "card_controller:cambia_arr|bit_shifter:bs" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 21
+Info (12128): Elaborating entity "Shuffle" for hierarchy "card_controller:cambia_arr|Shuffle:sh" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 24
+Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(39): index expression is not wide enough to address all of the elements in the array File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Shuffle.sv Line: 39
+Info (12128): Elaborating entity "mostrar_carta_random" for hierarchy "card_controller:cambia_arr|mostrar_carta_random:mcr" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 28
+Info (12128): Elaborating entity "save_cards" for hierarchy "save_cards:guardar_arr" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 71
 Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 101
 Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 101
 Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 93
@@ -2264,21 +2673,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_6nh File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/db/sign_div_unsign_6nh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
     Info (12023): Found entity 1: alt_u_div_i2f File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/db/alt_u_div_i2f.tdf Line: 23
-Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 10 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "m" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 1
-Info (21057): Implemented 4216 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+    Warning (15610): No output dependent on input pin "Izq" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 3
+    Warning (15610): No output dependent on input pin "Der" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 3
+    Warning (15610): No output dependent on input pin "Sel" File: C:/Users/gonza/Desktop/lab3 taller/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 3
+Info (21057): Implemented 4218 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 4064 logic cells
+    Info (21061): Implemented 4062 logic cells
     Info (21062): Implemented 109 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 584 warnings
-    Info: Peak virtual memory: 5025 megabytes
-    Info: Processing ended: Wed Oct 08 23:47:57 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 592 warnings
+    Info: Peak virtual memory: 4983 megabytes
+    Info: Processing ended: Thu Oct 09 01:47:06 2025
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:24
 

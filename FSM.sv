@@ -160,7 +160,7 @@ module FSM(
             4'b1010: next_state = 4'b0000;
 
             // Default de seguridad
-            default: next_state = 4'b0000;
+            default: next_state = 4'b1111;
         endcase
     end
 

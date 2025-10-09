@@ -1,5 +1,6 @@
 module Top_Level_Memory(input logic m, rst, clk,
-								input logic I, cartas_Mo,
+								input logic I, cartas_Mo, cartas_Oc,
+								input logic Izq, Der, Sel,  // Inputs donde el usuario selecciona una carta
 								output logic [1:0]  ganador,
 								output logic [6:0] seg, // Segmentos del display (a-g) --> contador
 								output logic vgaclk, // 25.175 MHz VGA clock --> VGA
@@ -7,20 +8,24 @@ module Top_Level_Memory(input logic m, rst, clk,
 								output logic sync_b, blank_b, // VGA
 								output logic [7:0] r, g, b);
 
+	// Variables para VGA
 	logic [9:0] x, y; 
-	logic [3:0] state;
 	logic [7:0] r_videoGen, g_videoGen, b_videoGen; // salidas de colores del juego
 	logic [7:0] r_videoGenI, g_videoGenI, b_videoGenI; // colores de mostrar cartas
 	logic [7:0] r_OVER, g_OVER, b_OVER; // Colores GAME_OVER
 	logic [7:0] r_PantallaInicial, g_PantallaInicial, b_PantallaInicial; // Colores pantalla inicial
 	logic [7:0] r_w, g_w, b_w; // Pantalla default
+	
+	// Variables para manejo de logica de juego
+	logic [3:0] state;
 	logic [4:0] arrI [0:15]; // 16 elementos, cada uno de 5 bits
 	logic [4:0] arr_cartas [0:15]; // Array donde se encuentra la logica del juego
-	logic tiempoT, carta_El, cartas_Oc, cartas_Re;
+	logic [4:0] arr_temp [0:15];
+	logic tiempoT, carta_El, cartas_Re;
 	logic [1:0]  cartas_sel;    // Cartas seleccionadas
 	logic [1:0] estCartas; // para los primeros 3 estados de la MEF
 	
-	logic start_shuffle, start_mcr;
+	logic start_shuffle, start_mcr, load;
 	
 	
 	// ======================================================= VGA =============================================================
@@ -58,6 +63,14 @@ module Top_Level_Memory(input logic m, rst, clk,
 	// crea el array inicial y lo modifica segun el estado
 	modify_arr crear_arr(.estado(estCartas), .arrI(arrI));
 	
+	// modulo que tambien maneja resultados de la FSM
+	card_controller cambia_arr(.clk(clk), .rst(rst), .state(state), .startSh(start_shuffle), .startMcr(start_mcr),
+										.arr_in(arr_cartas), .arr_out(arr_temp), .doneSh(cartas_Re), .load(load));
+										
+	// modulo que guarda el array en un registro
+	save_cards guardar_arr(.clk(clk), .rst(rst), .load(load), .arr_in(arr_temp), .arr_out(arr_cartas));
+	
+	
 	
 	// ===================================== Visualización de distintas pantallas =====================================
 	// Pantalla default
@@ -85,7 +98,7 @@ module Top_Level_Memory(input logic m, rst, clk,
                 g = g_videoGenI;
                 b = b_videoGenI;
 				end
-				4'b0011: begin // Pantalla de revollver cartas
+				4'b0011: begin // Pantalla de revolver cartas
                 r = r_OVER;
                 g = g_OVER;
                 b = b_OVER;
