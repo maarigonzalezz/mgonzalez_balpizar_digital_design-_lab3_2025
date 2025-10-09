@@ -1,5 +1,5 @@
 Timing Analyzer report for Memoria
-Wed Oct 08 00:11:16 2025
+Wed Oct 08 22:05:57 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -100,20 +100,20 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 2.96        ;
+; Average used               ; 2.91        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  22.7%      ;
-;     Processor 3            ;  22.5%      ;
-;     Processor 4            ;  22.4%      ;
-;     Processor 5            ;  21.4%      ;
-;     Processor 6            ;  21.4%      ;
-;     Processor 7            ;  21.4%      ;
-;     Processor 8            ;  21.4%      ;
-;     Processor 9            ;  21.3%      ;
-;     Processor 10           ;  21.3%      ;
+;     Processor 2            ;  22.2%      ;
+;     Processor 3            ;  22.0%      ;
+;     Processor 4            ;  21.7%      ;
+;     Processor 5            ;  20.9%      ;
+;     Processor 6            ;  20.9%      ;
+;     Processor 7            ;  20.9%      ;
+;     Processor 8            ;  20.9%      ;
+;     Processor 9            ;  20.7%      ;
+;     Processor 10           ;  20.7%      ;
 +----------------------------+-------------+
 
 
@@ -132,8 +132,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+-------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name        ; Note ;
 +------------+-----------------+-------------------+------+
-; 274.73 MHz ; 274.73 MHz      ; clk               ;      ;
-; 303.12 MHz ; 303.12 MHz      ; pll:vgapll|toggle ;      ;
+; 279.33 MHz ; 279.33 MHz      ; clk               ;      ;
+; 312.6 MHz  ; 312.6 MHz       ; pll:vgapll|toggle ;      ;
 +------------+-----------------+-------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -149,8 +149,8 @@ HTML report is unavailable in plain text report export.
 +-------------------+--------+---------------+
 ; Clock             ; Slack  ; End Point TNS ;
 +-------------------+--------+---------------+
-; clk               ; -3.308 ; -122.011      ;
-; pll:vgapll|toggle ; -2.299 ; -47.987       ;
+; clk               ; -3.090 ; -123.021      ;
+; pll:vgapll|toggle ; -2.199 ; -50.463       ;
 +-------------------+--------+---------------+
 
 
@@ -159,8 +159,8 @@ HTML report is unavailable in plain text report export.
 +-------------------+-------+---------------+
 ; Clock             ; Slack ; End Point TNS ;
 +-------------------+-------+---------------+
-; clk               ; 0.292 ; 0.000         ;
-; pll:vgapll|toggle ; 0.757 ; 0.000         ;
+; clk               ; 0.369 ; 0.000         ;
+; pll:vgapll|toggle ; 0.701 ; 0.000         ;
 +-------------------+-------+---------------+
 
 
@@ -181,8 +181,8 @@ No paths to report.
 +-------------------+--------+----------------------+
 ; Clock             ; Slack  ; End Point TNS        ;
 +-------------------+--------+----------------------+
-; clk               ; -0.451 ; -35.681              ;
-; pll:vgapll|toggle ; -0.394 ; -11.877              ;
+; clk               ; -0.478 ; -34.185              ;
+; pll:vgapll|toggle ; -0.394 ; -14.908              ;
 +-------------------+--------+----------------------+
 
 
@@ -197,8 +197,8 @@ No synchronizer chains to report.
 +------------+-----------------+-------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name        ; Note ;
 +------------+-----------------+-------------------+------+
-; 278.09 MHz ; 278.09 MHz      ; clk               ;      ;
-; 305.34 MHz ; 305.34 MHz      ; pll:vgapll|toggle ;      ;
+; 282.81 MHz ; 282.81 MHz      ; clk               ;      ;
+; 317.26 MHz ; 317.26 MHz      ; pll:vgapll|toggle ;      ;
 +------------+-----------------+-------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -208,8 +208,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------+--------+---------------+
 ; Clock             ; Slack  ; End Point TNS ;
 +-------------------+--------+---------------+
-; clk               ; -3.146 ; -119.625      ;
-; pll:vgapll|toggle ; -2.275 ; -48.285       ;
+; clk               ; -2.883 ; -121.601      ;
+; pll:vgapll|toggle ; -2.152 ; -50.410       ;
 +-------------------+--------+---------------+
 
 
@@ -218,8 +218,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------+-------+---------------+
 ; Clock             ; Slack ; End Point TNS ;
 +-------------------+-------+---------------+
-; clk               ; 0.273 ; 0.000         ;
-; pll:vgapll|toggle ; 0.749 ; 0.000         ;
+; clk               ; 0.353 ; 0.000         ;
+; pll:vgapll|toggle ; 0.696 ; 0.000         ;
 +-------------------+-------+---------------+
 
 
@@ -240,8 +240,8 @@ No paths to report.
 +-------------------+--------+---------------------+
 ; Clock             ; Slack  ; End Point TNS       ;
 +-------------------+--------+---------------------+
-; clk               ; -0.464 ; -38.370             ;
-; pll:vgapll|toggle ; -0.394 ; -11.849             ;
+; clk               ; -0.457 ; -36.781             ;
+; pll:vgapll|toggle ; -0.394 ; -14.958             ;
 +-------------------+--------+---------------------+
 
 
@@ -256,8 +256,8 @@ No synchronizer chains to report.
 +-------------------+--------+---------------+
 ; Clock             ; Slack  ; End Point TNS ;
 +-------------------+--------+---------------+
-; clk               ; -2.612 ; -47.472       ;
-; pll:vgapll|toggle ; -0.991 ; -19.730       ;
+; clk               ; -2.129 ; -47.642       ;
+; pll:vgapll|toggle ; -0.924 ; -20.480       ;
 +-------------------+--------+---------------+
 
 
@@ -266,8 +266,8 @@ No synchronizer chains to report.
 +-------------------+-------+---------------+
 ; Clock             ; Slack ; End Point TNS ;
 +-------------------+-------+---------------+
-; clk               ; 0.168 ; 0.000         ;
-; pll:vgapll|toggle ; 0.388 ; 0.000         ;
+; clk               ; 0.180 ; 0.000         ;
+; pll:vgapll|toggle ; 0.359 ; 0.000         ;
 +-------------------+-------+---------------+
 
 
@@ -288,8 +288,8 @@ No paths to report.
 +-------------------+--------+----------------------+
 ; Clock             ; Slack  ; End Point TNS        ;
 +-------------------+--------+----------------------+
-; clk               ; -0.455 ; -6.545               ;
-; pll:vgapll|toggle ; 0.102  ; 0.000                ;
+; clk               ; -0.440 ; -6.238               ;
+; pll:vgapll|toggle ; -0.029 ; -0.386               ;
 +-------------------+--------+----------------------+
 
 
@@ -304,8 +304,8 @@ No synchronizer chains to report.
 +-------------------+--------+---------------+
 ; Clock             ; Slack  ; End Point TNS ;
 +-------------------+--------+---------------+
-; clk               ; -2.188 ; -39.546       ;
-; pll:vgapll|toggle ; -0.879 ; -17.687       ;
+; clk               ; -1.737 ; -39.741       ;
+; pll:vgapll|toggle ; -0.820 ; -18.343       ;
 +-------------------+--------+---------------+
 
 
@@ -314,8 +314,8 @@ No synchronizer chains to report.
 +-------------------+-------+---------------+
 ; Clock             ; Slack ; End Point TNS ;
 +-------------------+-------+---------------+
-; clk               ; 0.152 ; 0.000         ;
-; pll:vgapll|toggle ; 0.350 ; 0.000         ;
+; clk               ; 0.172 ; 0.000         ;
+; pll:vgapll|toggle ; 0.324 ; 0.000         ;
 +-------------------+-------+---------------+
 
 
@@ -336,8 +336,8 @@ No paths to report.
 +-------------------+--------+---------------------+
 ; Clock             ; Slack  ; End Point TNS       ;
 +-------------------+--------+---------------------+
-; clk               ; -0.451 ; -6.454              ;
-; pll:vgapll|toggle ; 0.114  ; 0.000               ;
+; clk               ; -0.421 ; -6.077              ;
+; pll:vgapll|toggle ; -0.001 ; -0.008              ;
 +-------------------+--------+---------------------+
 
 
@@ -352,12 +352,12 @@ No synchronizer chains to report.
 +--------------------+----------+-------+----------+---------+---------------------+
 ; Clock              ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack   ; -3.308   ; 0.152 ; N/A      ; N/A     ; -0.464              ;
-;  clk               ; -3.308   ; 0.152 ; N/A      ; N/A     ; -0.464              ;
-;  pll:vgapll|toggle ; -2.299   ; 0.350 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS    ; -169.998 ; 0.0   ; 0.0      ; 0.0     ; -50.219             ;
-;  clk               ; -122.011 ; 0.000 ; N/A      ; N/A     ; -38.370             ;
-;  pll:vgapll|toggle ; -48.285  ; 0.000 ; N/A      ; N/A     ; -11.877             ;
+; Worst-case Slack   ; -3.090   ; 0.172 ; N/A      ; N/A     ; -0.478              ;
+;  clk               ; -3.090   ; 0.172 ; N/A      ; N/A     ; -0.478              ;
+;  pll:vgapll|toggle ; -2.199   ; 0.324 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS    ; -173.484 ; 0.0   ; 0.0      ; 0.0     ; -51.739             ;
+;  clk               ; -123.021 ; 0.000 ; N/A      ; N/A     ; -36.781             ;
+;  pll:vgapll|toggle ; -50.463  ; 0.000 ; N/A      ; N/A     ; -14.958             ;
 +--------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -425,8 +425,8 @@ No synchronizer chains to report.
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin        ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; seg[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; seg[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; seg[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
@@ -471,8 +471,8 @@ No synchronizer chains to report.
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin        ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; seg[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; seg[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; seg[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
@@ -517,8 +517,8 @@ No synchronizer chains to report.
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin        ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; seg[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; seg[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; seg[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
@@ -563,8 +563,8 @@ No synchronizer chains to report.
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin        ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
-; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; ganador[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; ganador[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; seg[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; seg[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; seg[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
@@ -609,9 +609,9 @@ No synchronizer chains to report.
 +-------------------+-------------------+----------+----------+----------+----------+
 ; From Clock        ; To Clock          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------+-------------------+----------+----------+----------+----------+
-; clk               ; clk               ; 1576     ; 0        ; 0        ; 0        ;
+; clk               ; clk               ; 1594     ; 0        ; 0        ; 0        ;
 ; pll:vgapll|toggle ; clk               ; 1        ; 1        ; 0        ; 0        ;
-; pll:vgapll|toggle ; pll:vgapll|toggle ; 361      ; 0        ; 0        ; 0        ;
+; pll:vgapll|toggle ; pll:vgapll|toggle ; 392      ; 0        ; 0        ; 0        ;
 +-------------------+-------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -621,9 +621,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------+-------------------+----------+----------+----------+----------+
 ; From Clock        ; To Clock          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------+-------------------+----------+----------+----------+----------+
-; clk               ; clk               ; 1576     ; 0        ; 0        ; 0        ;
+; clk               ; clk               ; 1594     ; 0        ; 0        ; 0        ;
 ; pll:vgapll|toggle ; clk               ; 1        ; 1        ; 0        ; 0        ;
-; pll:vgapll|toggle ; pll:vgapll|toggle ; 361      ; 0        ; 0        ; 0        ;
+; pll:vgapll|toggle ; pll:vgapll|toggle ; 392      ; 0        ; 0        ; 0        ;
 +-------------------+-------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -648,7 +648,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 70    ; 70   ;
+; Unconstrained Input Port Paths  ; 67    ; 67   ;
 ; Unconstrained Output Ports      ; 38    ; 38   ;
 ; Unconstrained Output Port Paths ; 643   ; 643  ;
 +---------------------------------+-------+------+
@@ -784,7 +784,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 08 00:11:08 2025
+    Info: Processing started: Wed Oct 08 22:05:47 2025
 Info: Command: quartus_sta Memoria -c Memoria
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -802,96 +802,96 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.308
+Info (332146): Worst-case setup slack is -3.090
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.308            -122.011 clk 
-    Info (332119):    -2.299             -47.987 pll:vgapll|toggle 
-Info (332146): Worst-case hold slack is 0.292
+    Info (332119):    -3.090            -123.021 clk 
+    Info (332119):    -2.199             -50.463 pll:vgapll|toggle 
+Info (332146): Worst-case hold slack is 0.369
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.292               0.000 clk 
-    Info (332119):     0.757               0.000 pll:vgapll|toggle 
+    Info (332119):     0.369               0.000 clk 
+    Info (332119):     0.701               0.000 pll:vgapll|toggle 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.451
+Info (332146): Worst-case minimum pulse width slack is -0.478
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.451             -35.681 clk 
-    Info (332119):    -0.394             -11.877 pll:vgapll|toggle 
+    Info (332119):    -0.478             -34.185 clk 
+    Info (332119):    -0.394             -14.908 pll:vgapll|toggle 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.146
+Info (332146): Worst-case setup slack is -2.883
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.146            -119.625 clk 
-    Info (332119):    -2.275             -48.285 pll:vgapll|toggle 
-Info (332146): Worst-case hold slack is 0.273
+    Info (332119):    -2.883            -121.601 clk 
+    Info (332119):    -2.152             -50.410 pll:vgapll|toggle 
+Info (332146): Worst-case hold slack is 0.353
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.273               0.000 clk 
-    Info (332119):     0.749               0.000 pll:vgapll|toggle 
+    Info (332119):     0.353               0.000 clk 
+    Info (332119):     0.696               0.000 pll:vgapll|toggle 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.464
+Info (332146): Worst-case minimum pulse width slack is -0.457
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.464             -38.370 clk 
-    Info (332119):    -0.394             -11.849 pll:vgapll|toggle 
+    Info (332119):    -0.457             -36.781 clk 
+    Info (332119):    -0.394             -14.958 pll:vgapll|toggle 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.612
+Info (332146): Worst-case setup slack is -2.129
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.612             -47.472 clk 
-    Info (332119):    -0.991             -19.730 pll:vgapll|toggle 
-Info (332146): Worst-case hold slack is 0.168
+    Info (332119):    -2.129             -47.642 clk 
+    Info (332119):    -0.924             -20.480 pll:vgapll|toggle 
+Info (332146): Worst-case hold slack is 0.180
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.168               0.000 clk 
-    Info (332119):     0.388               0.000 pll:vgapll|toggle 
+    Info (332119):     0.180               0.000 clk 
+    Info (332119):     0.359               0.000 pll:vgapll|toggle 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.455
+Info (332146): Worst-case minimum pulse width slack is -0.440
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.455              -6.545 clk 
-    Info (332119):     0.102               0.000 pll:vgapll|toggle 
+    Info (332119):    -0.440              -6.238 clk 
+    Info (332119):    -0.029              -0.386 pll:vgapll|toggle 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.188
+Info (332146): Worst-case setup slack is -1.737
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.188             -39.546 clk 
-    Info (332119):    -0.879             -17.687 pll:vgapll|toggle 
-Info (332146): Worst-case hold slack is 0.152
+    Info (332119):    -1.737             -39.741 clk 
+    Info (332119):    -0.820             -18.343 pll:vgapll|toggle 
+Info (332146): Worst-case hold slack is 0.172
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.152               0.000 clk 
-    Info (332119):     0.350               0.000 pll:vgapll|toggle 
+    Info (332119):     0.172               0.000 clk 
+    Info (332119):     0.324               0.000 pll:vgapll|toggle 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.451
+Info (332146): Worst-case minimum pulse width slack is -0.421
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.451              -6.454 clk 
-    Info (332119):     0.114               0.000 pll:vgapll|toggle 
+    Info (332119):    -0.421              -6.077 clk 
+    Info (332119):    -0.001              -0.008 pll:vgapll|toggle 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5296 megabytes
-    Info: Processing ended: Wed Oct 08 00:11:16 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 5299 megabytes
+    Info: Processing ended: Wed Oct 08 22:05:57 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 
