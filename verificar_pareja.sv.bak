@@ -1,0 +1,114 @@
+module verificar_pareja (
+    input  logic        clk,
+    input  logic        rst,
+    input  logic        start,
+    input  logic [4:0]  arr_cards_in [0:15],   // Array de entrada
+    output logic [4:0]  arr_cards_out [0:15],  // Array de salida corregido
+    output logic        done,                  // Señal de fin
+    output logic        hubo_pareja            // Señal de pareja encontrada
+);
+
+    // -----------------------------------------------------
+    // Estados de la FSM
+    // -----------------------------------------------------
+    typedef enum logic [1:0] {IDLE, SEARCH, UPDATE, DONE} state_t;
+    state_t state;
+
+    // -----------------------------------------------------
+    // Variables internas
+    // -----------------------------------------------------
+    integer i, j;
+    logic found_01_a, found_01_b;
+    logic [3:0] idx_a, idx_b;
+    logic [2:0] symbol_a, symbol_b;
+
+    // -----------------------------------------------------
+    // Lógica secuencial principal
+    // -----------------------------------------------------
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state        <= IDLE;
+            done         <= 0;
+            hubo_pareja  <= 0;
+            found_01_a   <= 0;
+            found_01_b   <= 0;
+            idx_a        <= 0;
+            idx_b        <= 0;
+            for (i = 0; i < 16; i++) arr_cards_out[i] <= 5'b00000;
+        end else begin
+            case (state)
+                // ------------------------------------------
+                // Espera de inicio
+                // ------------------------------------------
+                IDLE: begin
+                    done        <= 0;
+                    hubo_pareja <= 0;
+                    if (start) begin
+                        // Copiar cartas de entrada
+                        for (i = 0; i < 16; i++)
+                            arr_cards_out[i] <= arr_cards_in[i];
+                        found_01_a <= 0;
+                        found_01_b <= 0;
+                        state <= SEARCH;
+                    end
+                end
+
+                // ------------------------------------------
+                // Buscar las dos cartas con estado "01"
+                // ------------------------------------------
+                SEARCH: begin
+                    found_01_a = 0;
+                    found_01_b = 0;
+
+                    for (i = 0; i < 16; i++) begin
+                        if (arr_cards_in[i][1:0] == 2'b01) begin
+                            if (!found_01_a) begin
+                                idx_a      = i;
+                                found_01_a = 1;
+                            end else if (!found_01_b) begin
+                                idx_b      = i;
+                                found_01_b = 1;
+                            end
+                        end
+                    end
+
+                    state <= UPDATE;
+                end
+
+                // ------------------------------------------
+                // Evaluar si hay pareja y actualizar estados
+                // ------------------------------------------
+                UPDATE: begin
+                    if (found_01_a && found_01_b) begin
+                        symbol_a = arr_cards_in[idx_a][4:2];
+                        symbol_b = arr_cards_in[idx_b][4:2];
+
+                        if (symbol_a == symbol_b) begin
+                            // Son pareja
+                            arr_cards_out[idx_a][1:0] <= 2'b10;
+                            arr_cards_out[idx_b][1:0] <= 2'b10;
+                            hubo_pareja <= 1;
+                        end else begin
+                            // No son pareja
+                            arr_cards_out[idx_a][1:0] <= 2'b00;
+                            arr_cards_out[idx_b][1:0] <= 2'b00;
+                            hubo_pareja <= 0;
+                        end
+                    end else begin
+                        // No hay dos cartas seleccionadas
+                        hubo_pareja <= 0;
+                    end
+                    state <= DONE;
+                end
+
+                // ------------------------------------------
+                // Finalización
+                // ------------------------------------------
+                DONE: begin
+                    done  <= 1;
+                    state <= IDLE;
+                end
+            endcase
+        end
+    end
+endmodule

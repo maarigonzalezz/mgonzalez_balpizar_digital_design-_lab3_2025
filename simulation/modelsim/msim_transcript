@@ -10,64 +10,46 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:08:29 on Oct 08,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/bit_shifter.sv 
-# -- Compiling module bit_shifter
+# Start time: 02:22:32 on Oct 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja.sv 
+# -- Compiling module verificar_pareja
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
-# 	bit_shifter
-# End time: 02:08:29 on Oct 08,2025, Elapsed time: 0:00:00
+# 	verificar_pareja
+# End time: 02:22:32 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_verificar_pareja.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:22:32 on Oct 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_verificar_pareja.sv 
+# -- Compiling module top_verificar_pareja
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_verificar_pareja.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	top_verificar_pareja
+# End time: 02:22:32 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:22:32 on Oct 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja_tb.sv 
+# -- Compiling module verificar_pareja_tb
+# 
+# Top level modules:
+# 	verificar_pareja_tb
+# End time: 02:22:32 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:08:29 on Oct 08,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv 
-# -- Compiling module mostrar_carta_random
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
-# Top level modules:
-# 	mostrar_carta_random
-# End time: 02:08:29 on Oct 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:08:30 on Oct 08,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv 
-# -- Compiling module top_mostrar_carta_random
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	top_mostrar_carta_random
-# End time: 02:08:30 on Oct 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:08:30 on Oct 08,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv 
-# -- Compiling module top_mostrar_carta_random_tb
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(40): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(41): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(43): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(44): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	top_mostrar_carta_random_tb
-# End time: 02:08:30 on Oct 08,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 6
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_mostrar_carta_random_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_mostrar_carta_random_tb 
-# Start time: 02:08:30 on Oct 08,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  verificar_pareja_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" verificar_pareja_tb 
+# Start time: 02:22:32 on Oct 09,2025
 # Loading sv_std.std
-# Loading work.top_mostrar_carta_random_tb
-# Loading work.top_mostrar_carta_random
-# Loading work.bit_shifter
-# Loading work.mostrar_carta_random
+# Loading work.verificar_pareja_tb
+# Loading work.verificar_pareja
 # 
 # add wave *
 # view structure
@@ -75,52 +57,86 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# === INICIO DE PRUEBA mostrar_carta_random ===
 # 
-# --- Estado antes de mostrar_carta_random ---
+# === INICIO DE PRUEBA verificar_pareja ===
 # 
-# --- Baraja ---
-# Carta[0] = xxx11
-# Carta[1] = xxx00
-# Carta[2] = xxx00
-# Carta[3] = xxx11
-# Carta[4] = xxx00
-# Carta[5] = xxx11
-# Carta[6] = xxx11
-# Carta[7] = xxx11
-# Carta[8] = xxx11
-# Carta[9] = xxx11
-# Carta[10] = xxx00
-# Carta[11] = xxx11
-# Carta[12] = xxx01
-# Carta[13] = xxx11
-# Carta[14] = xxx11
-# Carta[15] = xxx11
 # 
-# --- Estado después de mostrar_carta_random ---
+# --- Antes del Caso 1 ---
+# Carta[0] = 10101
+# Carta[1] = 10101
+# Carta[2] = 00011
+# Carta[3] = 00011
+# Carta[4] = 00011
+# Carta[5] = 00011
+# Carta[6] = 00011
+# Carta[7] = 00011
+# Carta[8] = 00011
+# Carta[9] = 00011
+# Carta[10] = 00011
+# Carta[11] = 00011
+# Carta[12] = 00011
+# Carta[13] = 00011
+# Carta[14] = 00011
+# Carta[15] = 00011
+# --- Caso 1 terminado: hubo_pareja=1 ---
+# --- Después del Caso 1 ---
+# Carta[0] = 10110
+# Carta[1] = 10110
+# Carta[2] = 00011
+# Carta[3] = 00011
+# Carta[4] = 00011
+# Carta[5] = 00011
+# Carta[6] = 00011
+# Carta[7] = 00011
+# Carta[8] = 00011
+# Carta[9] = 00011
+# Carta[10] = 00011
+# Carta[11] = 00011
+# Carta[12] = 00011
+# Carta[13] = 00011
+# Carta[14] = 00011
+# Carta[15] = 00011
 # 
-# --- Baraja ---
-# Carta[0] = xxx11
-# Carta[1] = xxx00
-# Carta[2] = xxx00
-# Carta[3] = xxx11
-# Carta[4] = xxx00
-# Carta[5] = xxx11
-# Carta[6] = xxx11
-# Carta[7] = xxx11
-# Carta[8] = xxx11
-# Carta[9] = xxx11
-# Carta[10] = xxx01
-# Carta[11] = xxx11
-# Carta[12] = xxx01
-# Carta[13] = xxx11
-# Carta[14] = xxx11
-# Carta[15] = xxx11
+# --- Antes del Caso 2 ---
+# Carta[0] = 01101
+# Carta[1] = 10001
+# Carta[2] = 00011
+# Carta[3] = 00011
+# Carta[4] = 00011
+# Carta[5] = 00011
+# Carta[6] = 00011
+# Carta[7] = 00011
+# Carta[8] = 00011
+# Carta[9] = 00011
+# Carta[10] = 00011
+# Carta[11] = 00011
+# Carta[12] = 00011
+# Carta[13] = 00011
+# Carta[14] = 00011
+# Carta[15] = 00011
+# --- Caso 2 terminado: hubo_pareja=0 ---
+# --- Después del Caso 2 ---
+# Carta[0] = 01100
+# Carta[1] = 10000
+# Carta[2] = 00011
+# Carta[3] = 00011
+# Carta[4] = 00011
+# Carta[5] = 00011
+# Carta[6] = 00011
+# Carta[7] = 00011
+# Carta[8] = 00011
+# Carta[9] = 00011
+# Carta[10] = 00011
+# Carta[11] = 00011
+# Carta[12] = 00011
+# Carta[13] = 00011
+# Carta[14] = 00011
+# Carta[15] = 00011
 # 
 # === FIN DE SIMULACIÓN ===
-# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv(71)
-#    Time: 110 ps  Iteration: 0  Instance: /top_mostrar_carta_random_tb
+# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja_tb.sv(59)
+#    Time: 155 ns  Iteration: 0  Instance: /verificar_pareja_tb
 # 1
-# Break in Module top_mostrar_carta_random_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/top_mostrar_carta_random_tb.sv line 71
-# End time: 02:08:49 on Oct 08,2025, Elapsed time: 0:00:19
+# Break in Module verificar_pareja_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/verificar_pareja_tb.sv line 59
+# End time: 02:22:50 on Oct 09,2025, Elapsed time: 0:00:18
 # Errors: 0, Warnings: 0

@@ -1,0 +1,115 @@
+module verificar_pareja_tb;
+
+    // -----------------------------------------------------
+    // Señales
+    // -----------------------------------------------------
+    logic clk;
+    logic rst;
+    logic start;
+    logic done;
+    logic hubo_pareja;
+    logic [4:0] arr_cards_in [0:15];   // Array de entrada
+    logic [4:0] arr_cards_out [0:15];  // Array de salida corregido
+
+    // -----------------------------------------------------
+    // Instancia del módulo a probar
+    // -----------------------------------------------------
+    verificar_pareja uut (
+        .clk(clk),
+        .rst(rst),
+        .start(start),
+        .arr_cards_in(arr_cards_in),
+        .arr_cards_out(arr_cards_out),
+        .done(done),
+        .hubo_pareja(hubo_pareja)
+    );
+
+    // -----------------------------------------------------
+    // Reloj
+    // -----------------------------------------------------
+    initial clk = 0;
+    always #5 clk = ~clk; // periodo 10ns
+
+    // -----------------------------------------------------
+    // Proceso principal
+    // -----------------------------------------------------
+    initial begin
+        $display("=== INICIO DE PRUEBA verificar_pareja ===");
+
+        // Reset
+        rst = 1; start = 0; #20;
+        rst = 0; #20;
+
+        // =====================================================
+        // PRUEBA 1: Dos cartas con 01 y mismo símbolo
+        // =====================================================
+        inicializar_cartas();
+        arr_cards_in[3] = 5'b10101; // símbolo 101, estado 01
+        arr_cards_in[9] = 5'b10101; // símbolo 101, estado 01
+        $display("\n--- Caso 1: Dos cartas con 01 y mismo símbolo ---");
+        ejecutar_prueba();
+
+        // =====================================================
+        // PRUEBA 2: Dos cartas con 01 pero distinto símbolo
+        // =====================================================
+        inicializar_cartas();
+        arr_cards_in[2] = 5'b01101; // símbolo 011, estado 01
+        arr_cards_in[7] = 5'b11001; // símbolo 110, estado 01
+        $display("\n--- Caso 2: Dos cartas con 01 y distinto símbolo ---");
+        ejecutar_prueba();
+
+        // =====================================================
+        // PRUEBA 3: Solo una carta con 01
+        // =====================================================
+        inicializar_cartas();
+        arr_cards_in[4] = 5'b10101; // Solo una carta 01
+        $display("\n--- Caso 3: Solo una carta con 01 ---");
+        ejecutar_prueba();
+
+        $display("\n=== FIN DE SIMULACIÓN ===");
+        $finish;
+    end
+
+    // -----------------------------------------------------
+    // Tarea para ejecutar la simulación de un caso
+    // -----------------------------------------------------
+    task ejecutar_prueba();
+        begin
+            $display("\n--- Estado antes ---");
+            print_cards(arr_cards_in);
+
+            start = 1; #10;
+            start = 0;
+
+            wait(done);
+
+            $display("\n--- Estado después ---");
+            print_cards(arr_cards_out);
+            $display("hubo_pareja = %0b", hubo_pareja);
+        end
+    endtask
+
+    // -----------------------------------------------------
+    // Inicialización del mazo (por defecto en 11)
+    // -----------------------------------------------------
+    task inicializar_cartas();
+        integer i;
+        begin
+            for (i = 0; i < 16; i++)
+                arr_cards_in[i] = 5'b00011; // Estado inicial 11
+        end
+    endtask
+
+    // -----------------------------------------------------
+    // Tarea auxiliar para imprimir cartas (MSB → LSB)
+    // -----------------------------------------------------
+    task print_cards(input logic [4:0] cards [0:15]);
+        integer k;
+        begin
+            $display("\n--- Baraja ---");
+            for (k = 0; k < 16; k++)
+                $display("Carta[%0d] = %b", k, cards[k]);
+        end
+    endtask
+
+endmodule
