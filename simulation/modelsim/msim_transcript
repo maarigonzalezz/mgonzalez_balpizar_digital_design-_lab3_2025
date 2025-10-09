@@ -1,0 +1,121 @@
+# Reading pref.tcl
+# do Memory_game_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/lab3\ taller\ vga {C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:28:12 on Oct 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/lab3 taller vga" C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 13:28:13 on Oct 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/lab3\ taller\ vga {C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:28:13 on Oct 09,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/lab3 taller vga" C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv 
+# -- Compiling module FSM_tb
+# 
+# Top level modules:
+# 	FSM_tb
+# End time: 13:28:13 on Oct 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FSM_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FSM_tb 
+# Start time: 13:28:13 on Oct 09,2025
+# Loading sv_std.std
+# Loading work.FSM_tb
+# Loading work.FSM
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# === INICIANDO TESTBENCH ===
+# 
+# --- Test 1: Reset ---
+# Cambio de estado: 0000 en tiempo 0
+# Cambio en ganador: 00 en tiempo 0
+# OK: En tiempo 20, estado INICIO (0000)
+# OK: En tiempo 20, ganador NINGUNO (00)
+# 
+# --- Test 2: Secuencia inicial ---
+# Cambio de estado: 0001 en tiempo 25
+# OK: En tiempo 30, estado MUESTRO_CORTAS (0001)
+# Cambio de estado: 0010 en tiempo 35
+# OK: En tiempo 40, estado OCULTA_CORTAS (0010)
+# Cambio de estado: 0011 en tiempo 45
+# OK: En tiempo 50, estado REVUELVE_CORTAS (0011)
+# Cambio de estado: 0100 en tiempo 55
+# OK: En tiempo 60, estado INICIO_JUEGO (0100)
+# Cambio de estado: 0101 en tiempo 65
+# OK: En tiempo 70, estado TURNO_JUGADOR (0101)
+# 
+# --- Test 3: Selección de cartas sin pareja ---
+# Cambio de estado: 0110 en tiempo 75
+# OK: En tiempo 80, estado UNA_CARTA (0110)
+# Cambio de estado: 0111 en tiempo 85
+# OK: En tiempo 90, estado DOS_CARTAS (0111)
+# Cambio de estado: 0101 en tiempo 95
+# OK: En tiempo 100, estado TURNO_JUGADOR (0101)
+# 
+# --- Test 4: Selección de cartas con pareja ---
+# Cambio de estado: 0110 en tiempo 105
+# OK: En tiempo 110, estado UNA_CARTA (0110)
+# Cambio de estado: 0111 en tiempo 115
+# OK: En tiempo 120, estado DOS_CARTAS (0111)
+# Cambio de estado: 0101 en tiempo 125
+# OK: En tiempo 130, estado TURNO_JUGADOR (0101)
+# 
+# --- Test 5: Tiempo terminado ---
+# Cambio de estado: 1000 en tiempo 135
+# OK: En tiempo 140, estado MOSTRAR_RANDOM (1000)
+# Cambio de estado: 0101 en tiempo 145
+# OK: En tiempo 150, estado TURNO_JUGADOR (0101)
+# 
+# --- Test 6: Simular juego completo ---
+# Cambio de estado: 0110 en tiempo 155
+# Cambio de estado: 0111 en tiempo 165
+# Cambio de estado: 0101 en tiempo 175
+# Cambio de estado: 0110 en tiempo 185
+# Cambio de estado: 0111 en tiempo 195
+# Cambio de estado: 0101 en tiempo 205
+# Cambio de estado: 0110 en tiempo 215
+# Cambio de estado: 0111 en tiempo 225
+# Cambio de estado: 0101 en tiempo 235
+# Cambio de estado: 0110 en tiempo 245
+# Cambio de estado: 0111 en tiempo 255
+# Cambio de estado: 0101 en tiempo 265
+# Cambio de estado: 0110 en tiempo 275
+# Cambio de estado: 0111 en tiempo 285
+# Cambio de estado: 0101 en tiempo 295
+# Cambio de estado: 0110 en tiempo 305
+# Cambio de estado: 0111 en tiempo 315
+# Cambio de estado: 0101 en tiempo 325
+# Cambio de estado: 0110 en tiempo 335
+# Cambio de estado: 0111 en tiempo 345
+# Cambio de estado: 0101 en tiempo 355
+# Cambio de estado: 0110 en tiempo 365
+# Cambio de estado: 0111 en tiempo 375
+# Cambio de estado: 0101 en tiempo 385
+# ERROR: En tiempo 390, estado esperado NO_MAS_PAREJAS (1001), pero se obtuvo 0101
+# ** Note: $finish    : C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv(43)
+#    Time: 390 ps  Iteration: 0  Instance: /FSM_tb
+# 1
+# Break in Task check_state at C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv line 43
+# End time: 13:29:48 on Oct 09,2025, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 0

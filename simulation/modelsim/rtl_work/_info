@@ -1,0 +1,65 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gonza/Desktop/lab3 taller vga/simulation/modelsim
+vFSM
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1760038093
+!i10b 1
+!s100 ?H_hBANl@E7?k]6S0oEUm2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In54@gS9gYiZB]Wzbe>MnP3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1760037388
+8C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv
+FC:/Users/gonza/Desktop/lab3 taller vga/FSM.sv
+!i122 0
+L0 1 197
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1760038092.000000
+!s107 C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/lab3 taller vga|C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/lab3 taller vga}
+Z8 tCvgOpt 0
+n@f@s@m
+vFSM_tb
+R1
+R2
+!i10b 1
+!s100 Gk4EA`iENiP7znD8_Ko610
+R3
+IE4RPHCNEVSgz2[K9^jV^D3
+R4
+S1
+R0
+w1760037989
+8C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv
+FC:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv
+!i122 1
+L0 1 201
+R5
+r1
+!s85 0
+31
+!s108 1760038093.000000
+!s107 C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/lab3 taller vga|C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv|
+!i113 1
+R6
+R7
+R8
+n@f@s@m_tb

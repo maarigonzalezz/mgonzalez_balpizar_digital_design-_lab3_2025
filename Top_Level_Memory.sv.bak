@@ -1,0 +1,46 @@
+module Top_Level_Memory(
+    input logic rst, clk,
+    input logic I, 
+    input logic Izq, Der, Sel,
+    output logic [1:0] ganador,
+    output logic [6:0] seg,
+    output logic vgaclk,
+    output logic hsync, vsync,
+    output logic sync_b, blank_b,
+    output logic [7:0] r, g, b,
+);
+
+	// Variables para VGA
+	logic [9:0] x, y; 
+	logic [7:0] r_videoGen, g_videoGen, b_videoGen; // salidas de colores del juego
+	logic [7:0] r_videoGenI, g_videoGenI, b_videoGenI; // colores de mostrar cartas
+	logic [7:0] r_OVER, g_OVER, b_OVER; // Colores GAME_OVER
+	logic [7:0] r_PantallaInicial, g_PantallaInicial, b_PantallaInicial; // Colores pantalla inicial
+	logic [7:0] r_w, g_w, b_w; // Pantalla default
+	
+	// arrays
+	logic [4:0] arrI [0:15]; // 16 elementos, cada uno de 5 bits
+	
+	
+	// ======================================================= VGA =============================================================
+	// Modulo para obtener 25MHz
+	pll vgapll(.inclk0(clk), .c0(vgaclk));
+
+	// Generador de señales para el monitor
+	vgaController vgaCont(vgaclk, hsync, vsync, sync_b, blank_b, x, y);
+	
+	// Modulo que pinta la pantalla de inicio 
+	//start pantalla_inicio(.x(x), .y(y), .r(r_PantallaInicial), .g(g_PantallaInicial), .b(b_PantallaInicial));
+	
+	// Modulo que pinta las cartas mostradas en pantalla
+	videoGen videoGenI(.x(x), .y(y), .arr_cartas(arrI), .r(r_videoGenI), .g(g_videoGenI), .b(b_videoGenI));
+	
+	// crea el array inicial y lo modifica segun el estado
+	modify_arr crear_arr(.estado(10), .arrI(arrI));
+	
+	assign r = r_videoGenI;
+	assign g = g_videoGenI;
+	assign b = b_videoGenI;
+	
+	//contador
+	top_7seg_counter(.clk(clk), .rst(rst), .seg(seg));

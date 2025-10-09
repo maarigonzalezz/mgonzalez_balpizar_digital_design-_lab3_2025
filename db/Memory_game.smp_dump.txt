@@ -1,0 +1,14 @@
+
+State Machine - |Top_Level_Memory|FSM:memory_fsm|current_state
+Name current_state.CONCLUSION current_state.NO_MAS_PAREJAS current_state.MOSTRAR_RANDOM current_state.DOS_CARTAS current_state.UNA_CARTA current_state.TURNO_JUGADOR current_state.INICIO_JUEGO current_state.REVUELVE_CORTAS current_state.OCULTA_CORTAS current_state.MUESTRO_CORTAS current_state.INICIO 
+current_state.INICIO 0 0 0 0 0 0 0 0 0 0 0 
+current_state.MUESTRO_CORTAS 0 0 0 0 0 0 0 0 0 1 1 
+current_state.OCULTA_CORTAS 0 0 0 0 0 0 0 0 1 0 1 
+current_state.REVUELVE_CORTAS 0 0 0 0 0 0 0 1 0 0 1 
+current_state.INICIO_JUEGO 0 0 0 0 0 0 1 0 0 0 1 
+current_state.TURNO_JUGADOR 0 0 0 0 0 1 0 0 0 0 1 
+current_state.UNA_CARTA 0 0 0 0 1 0 0 0 0 0 1 
+current_state.DOS_CARTAS 0 0 0 1 0 0 0 0 0 0 1 
+current_state.MOSTRAR_RANDOM 0 0 1 0 0 0 0 0 0 0 1 
+current_state.NO_MAS_PAREJAS 0 1 0 0 0 0 0 0 0 0 1 
+current_state.CONCLUSION 1 0 0 0 0 0 0 0 0 0 1 
