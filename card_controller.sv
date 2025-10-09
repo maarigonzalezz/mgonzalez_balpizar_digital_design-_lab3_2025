@@ -3,8 +3,9 @@ module card_controller(
 		input  logic rst,
 		input  logic [3:0] state,
 		input logic startSh, startMcr,
+		input logic [4:0] arr_in [0:15],
 		output logic [4:0] arr_out [0:15], // 16 elementos, cada uno de 5 bits
-		output logic doneSh, doneMcr);
+		output logic doneSh, doneMcr, done);
 
 	
 	logic [7:0] seed; // semilla pseudoaleatoria

@@ -1,0 +1,33 @@
+module rectborder #(
+    parameter int BORDER_WIDTH = 1  // Grosor del borde (en píxeles)
+)(
+    input  logic [9:0] x, y,        // Coordenadas actuales del píxel VGA
+    input  logic [9:0] left, right, // Límites horizontales del rectángulo
+    input  logic [9:0] top, bot,    // Límites verticales del rectángulo
+    output logic inborder           // 1 si el píxel está en el borde
+);
+    always_comb begin
+        // Por defecto, no está en el borde
+        inborder = 1'b0;
+
+        // Borde superior
+        if ((y >= top) && (y < top + BORDER_WIDTH) &&
+            (x >= left) && (x <= right))
+            inborder = 1'b1;
+
+        // Borde inferior
+        else if ((y <= bot) && (y > bot - BORDER_WIDTH) &&
+                 (x >= left) && (x <= right))
+            inborder = 1'b1;
+
+        // Borde izquierdo
+        else if ((x >= left) && (x < left + BORDER_WIDTH) &&
+                 (y >= top) && (y <= bot))
+            inborder = 1'b1;
+
+        // Borde derecho
+        else if ((x <= right) && (x > right - BORDER_WIDTH) &&
+                 (y >= top) && (y <= bot))
+            inborder = 1'b1;
+    end
+endmodule

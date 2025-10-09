@@ -3,12 +3,13 @@ module carta(
     input logic [9:0] left, right, top, bot, // cuadrado
 	 input logic [4:0] formato,
     output logic incard,
-	 output logic insymbol
+	 output logic insymbol,
+	 output logic inborder
 );
 
 
 logic inrect;
-logic plus, minus, cros, circle, hash, square, trin, invtri, selSym;
+logic plus, minus, cros, circle, hash, square, trin, invtri, selSym, border;
 logic [9:0] centerx, centery;
 logic [2:0] symbol_sel;
 logic [1:0] estado_carta;
@@ -26,6 +27,16 @@ logic [1:0] estado_carta;
         .inrect(inrect)
     );
 	 
+	 // Borde externo
+	rectborder #(.BORDER_WIDTH(2)) border_inst (
+		 .x(x), .y(y),
+		 .left(left - 2),  
+		 .right(right + 2),
+		 .top(top - 2),
+		 .bot(bot + 2),
+		 .inborder(border)
+	);
+		 
 	 // Instancias de todos los símbolos
 	 plus_symbol plus_inst (
 		 .x(x), .y(y),
@@ -106,6 +117,7 @@ logic [1:0] estado_carta;
     end
 	 
 	 always_comb begin
+		  inborder = 1'b0;
         case (estado_carta)
             2'b00: begin
                 // no mostrar nada
@@ -113,7 +125,8 @@ logic [1:0] estado_carta;
             end
 
             2'b01: begin
-                insymbol = 1'b0;
+                insymbol = selSym;
+					 inborder = 1'b1;
             end
 
             2'b10: begin
