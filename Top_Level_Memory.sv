@@ -1,6 +1,6 @@
 module Top_Level_Memory(
     input logic rst, clk,
-    input logic I, CM, CO,
+    input logic I, CM, CO, CR,
     input logic Izq, Der, Sel,
     output logic [1:0] ganador,
     output logic [6:0] seg,
@@ -22,7 +22,7 @@ module Top_Level_Memory(
 	
 	// Variables para la MEF
 	logic [1:0]  cartas_sw;
-	logic inicio, tiempo_terminado, se_eligio_carta, load;
+	logic inicio, tiempo_terminado, se_eligio_carta, load, a;
 	logic cartas_mostradas, cartas_ocultas, cartas_revueltas, carta_randomizada;
 	logic [3:0]  state;
 	
@@ -62,13 +62,9 @@ module Top_Level_Memory(
 	assign inicio = I;
 	assign cartas_mostradas = CM;
 	assign cartas_ocultas = CO; 
-	
-	always_ff @(posedge clk or posedge rst) begin
-    if (rst)
-        s <= 4'd0;
-    else
-        s <= 4'd3;
-		end
+	//assign cartas_revueltas = CR;
+
+	assign s = state;
 	
 	FSM memory_fsm (
         .rst(rst),
