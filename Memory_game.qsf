@@ -56,6 +56,8 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AC22 -to ganador[1]
+set_location_assignment PIN_AB22 -to ganador[0]
 set_location_assignment PIN_AB30 -to rst
 set_location_assignment PIN_AK16 -to b[7]
 set_location_assignment PIN_AJ16 -to b[6]

@@ -89,7 +89,18 @@ module Top_Level_Memory(
 		  .puntajeJ2(puntajeJ2),
 		  .reset_timer(reset_timer)
     );
- 
+	 
+	 
+	logic done_sync;
+
+	posedge_detector pd_done(
+			 .clk(clk),
+			 .rst(rst),
+			 .sig_in(done),
+			 .pulse_out(done_sync)
+	);
+			 
+	 
 	
 	//============================================ 7 SEGMENTOS ==============================================
 
@@ -103,7 +114,8 @@ module Top_Level_Memory(
     BinTo7Seg display_decenas  (
 			.bin(puntajeJ2),  
 			.bin_to_7seg(segPJ2));
-	
+
+
 	// ============================================ LÓGICA DE PANTALLAS ===========================================
     // Pantalla default (morado)
     assign r_w = 8'h87;
