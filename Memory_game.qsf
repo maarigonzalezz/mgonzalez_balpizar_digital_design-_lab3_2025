@@ -114,6 +114,23 @@ set_location_assignment PIN_AE24 -to s[2]
 set_location_assignment PIN_AF25 -to s[1]
 set_location_assignment PIN_AG25 -to s[0]
 set_location_assignment PIN_AC28 -to CR
+set_location_assignment PIN_AC22 -to turno_de[1]
+set_location_assignment PIN_AB22 -to turno_de[0]
+set_location_assignment PIN_AH22 -to segPJ1[6]
+set_location_assignment PIN_AF23 -to segPJ1[5]
+set_location_assignment PIN_AG23 -to segPJ1[4]
+set_location_assignment PIN_AE23 -to segPJ1[3]
+set_location_assignment PIN_AE22 -to segPJ1[2]
+set_location_assignment PIN_AG22 -to segPJ1[1]
+set_location_assignment PIN_AD21 -to segPJ1[0]
+set_location_assignment PIN_W16 -to segPJ2[6]
+set_location_assignment PIN_AF18 -to segPJ2[5]
+set_location_assignment PIN_Y18 -to segPJ2[4]
+set_location_assignment PIN_Y17 -to segPJ2[3]
+set_location_assignment PIN_AA18 -to segPJ2[2]
+set_location_assignment PIN_AB17 -to segPJ2[1]
+set_location_assignment PIN_AA21 -to segPJ2[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/videoGen.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/vgaController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/vga.sv
@@ -135,6 +152,7 @@ set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/mostrar_carta_rand
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/modify_arr.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/bit_shifter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/save_cards.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/seleccionar_parejas.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/top_7seg_counter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/clkCounter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/clk_counter_seg.sv
@@ -144,20 +162,3 @@ set_global_assignment -name SYSTEMVERILOG_FILE FSM.sv
 set_global_assignment -name SYSTEMVERILOG_FILE FSM_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Top_Level_Memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE card_controller.sv
-set_location_assignment PIN_AC22 -to turno_de[1]
-set_location_assignment PIN_AB22 -to turno_de[0]
-set_location_assignment PIN_AH22 -to segPJ1[6]
-set_location_assignment PIN_AF23 -to segPJ1[5]
-set_location_assignment PIN_AG23 -to segPJ1[4]
-set_location_assignment PIN_AE23 -to segPJ1[3]
-set_location_assignment PIN_AE22 -to segPJ1[2]
-set_location_assignment PIN_AG22 -to segPJ1[1]
-set_location_assignment PIN_AD21 -to segPJ1[0]
-set_location_assignment PIN_W16 -to segPJ2[6]
-set_location_assignment PIN_AF18 -to segPJ2[5]
-set_location_assignment PIN_Y18 -to segPJ2[4]
-set_location_assignment PIN_Y17 -to segPJ2[3]
-set_location_assignment PIN_AA18 -to segPJ2[2]
-set_location_assignment PIN_AB17 -to segPJ2[1]
-set_location_assignment PIN_AA21 -to segPJ2[0]
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
