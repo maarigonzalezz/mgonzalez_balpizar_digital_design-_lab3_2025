@@ -30,7 +30,7 @@ module card_controller(
 	 logic startMR;
     logic doneMR;
     logic [4:0] arr_MR [0:15];
-	 
+
 	 logic startSP;
     logic doneSP1;
 	 logic doneSP2;
@@ -38,7 +38,7 @@ module card_controller(
 	 logic [4:0] arr_SP2 [0:15];
 	 logic rstSp;
 	 assign rstSp = ~rst;
-	 
+
 
     // -----------------------------------------------------------------
     // Instancias de módulos
@@ -77,7 +77,7 @@ module card_controller(
         .arr_cards_out(arr_MR),
         .done(doneMR)
     );
-	 
+
 	 seleccionar_parejas sp1(
 		  .clk(clk),
         .rst(rstSp),
@@ -89,7 +89,7 @@ module card_controller(
         .arr_out(arr_SP1),
 		  .load(doneSP1)
 	 );
-	 
+
 	 seleccionar_parejas sp2(
 		  .clk(clk),
         .rst(rstSp),
@@ -101,8 +101,8 @@ module card_controller(
         .arr_out(arr_SP2),
 		  .load(doneSP2)
 	 );
-	 
-	 
+
+
     // -----------------------------------------------------------------
     // FSM basada en estado externo
     // -----------------------------------------------------------------
@@ -174,7 +174,7 @@ module card_controller(
                         doneSp <= 1;
                     end
                 end
-					 
+
 					 UNA_CARTA: begin
 						  doneSp <= 0;
                     startSP <= 1;
@@ -185,8 +185,8 @@ module card_controller(
                         doneSp <= 1;
                     end
                 end
-					 
-					 
+
+
 					//Estado para verificar parejas
                 DOS_CARTAS: begin
                     startVP <= 1;
@@ -196,7 +196,7 @@ module card_controller(
                         doneVep <= 1;
                     end
                 end
-					 
+
 					 // -----------------------------------------------------------------
                 // Estado MOSTRAR_RANDOM
                 // -----------------------------------------------------------------
