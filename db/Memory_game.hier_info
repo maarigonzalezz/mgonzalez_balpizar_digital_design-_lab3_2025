@@ -1,5 +1,5 @@
 |Top_Level_Memory
-rst => rst.IN2
+rst => rst.IN1
 clk => clk.IN3
 I => inicio.IN1
 CM => cartas_mostradas.IN1
@@ -64148,6 +64148,7 @@ arr_out[0][4] <= arr_out[0][4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|FSM:memory_fsm
+rst => reset_timer~reg0.PRESET
 rst => ganador[0]~reg0.ACLR
 rst => ganador[1]~reg0.ACLR
 rst => pareja_encontrada.ACLR
@@ -64171,6 +64172,7 @@ rst => puntaje_j1[1].ACLR
 rst => puntaje_j1[2].ACLR
 rst => puntaje_j1[3].ACLR
 rst => current_state~3.DATAIN
+clk => reset_timer~reg0.CLK
 clk => ganador[0]~reg0.CLK
 clk => ganador[1]~reg0.CLK
 clk => pareja_encontrada.CLK
@@ -64196,14 +64198,18 @@ clk => puntaje_j1[3].CLK
 clk => current_state~1.DATAIN
 cartas_seleccionadas[0] => primera_carta.DATAB
 cartas_seleccionadas[0] => segunda_carta.DATAB
+cartas_seleccionadas[0] => Equal1.IN3
+cartas_seleccionadas[0] => Equal2.IN3
 cartas_seleccionadas[1] => primera_carta.DATAB
 cartas_seleccionadas[1] => segunda_carta.DATAB
+cartas_seleccionadas[1] => Equal1.IN2
+cartas_seleccionadas[1] => Equal2.IN2
 tiempo_terminado => next_state.DATAA
 tiempo_terminado => next_state.DATAA
 inicio => Selector23.IN3
 inicio => Selector22.IN3
 inicio => Selector22.IN1
-inicio => Selector29.IN2
+inicio => Selector30.IN2
 se_eligio_carta => primera_carta.OUTPUTSELECT
 se_eligio_carta => primera_carta.OUTPUTSELECT
 se_eligio_carta => primera_carta.OUTPUTSELECT
@@ -64226,8 +64232,8 @@ se_eligio_carta => puntaje_j2.OUTPUTSELECT
 se_eligio_carta => jugador_en_turno.OUTPUTSELECT
 se_eligio_carta => next_state.OUTPUTSELECT
 se_eligio_carta => next_state.OUTPUTSELECT
-se_eligio_carta => Selector27.IN3
-se_eligio_carta => next_state.DOS_CARTAS.DATAB
+se_eligio_carta => Selector27.IN4
+se_eligio_carta => Selector28.IN3
 cartas_mostradas => Selector24.IN3
 cartas_mostradas => Selector23.IN1
 cartas_ocultas => Selector25.IN3
@@ -64236,10 +64242,10 @@ cartas_revueltas => next_state.INICIO_JUEGO.DATAB
 cartas_revueltas => Selector25.IN1
 ganador[0] <= ganador[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ganador[1] <= ganador[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-state[0] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
-state[1] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
-state[2] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
-state[3] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
 turno_de[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 turno_de[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 puntajeJ1[0] <= puntaje_j1[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -64250,6 +64256,7 @@ puntajeJ2[0] <= puntaje_j2[0].DB_MAX_OUTPUT_PORT_TYPE
 puntajeJ2[1] <= puntaje_j2[1].DB_MAX_OUTPUT_PORT_TYPE
 puntajeJ2[2] <= puntaje_j2[2].DB_MAX_OUTPUT_PORT_TYPE
 puntajeJ2[3] <= puntaje_j2[3].DB_MAX_OUTPUT_PORT_TYPE
+reset_timer <= reset_timer~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|top_7seg_counter:comb_10
@@ -64266,6 +64273,7 @@ an[0] <= <GND>
 an[1] <= <VCC>
 an[2] <= <VCC>
 an[3] <= <VCC>
+tiempo_terminado <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|top_7seg_counter:comb_10|clk_counter_seg:u_clk_counter

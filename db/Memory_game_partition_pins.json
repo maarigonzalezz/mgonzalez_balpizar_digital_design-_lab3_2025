@@ -64,7 +64,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "s[3]",
+					"strict" : false
+				},
+				{
+					"name" : "r[0]",
+					"strict" : false
+				},
+				{
 					"name" : "r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r[2]",
 					"strict" : false
 				},
 				{
@@ -81,6 +93,10 @@
 				},
 				{
 					"name" : "r[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r[7]",
 					"strict" : false
 				},
 				{
@@ -120,6 +136,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
 					"name" : "b[2]",
 					"strict" : false
 				},
@@ -132,6 +152,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b[6]",
+					"strict" : false
+				},
+				{
 					"name" : "b[7]",
 					"strict" : false
 				},
@@ -140,15 +168,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
-					"strict" : false
-				},
-				{
 					"name" : "CM",
 					"strict" : false
 				},
 				{
 					"name" : "I",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
 					"strict" : false
 				},
 				{

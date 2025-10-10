@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Memory_game
-Fri Oct 10 00:00:35 2025
+Fri Oct 10 00:49:47 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -141,13 +141,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 10 00:00:34 2025       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 10 00:49:47 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Memory_game                                 ;
 ; Top-level Entity Name           ; Top_Level_Memory                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 65                                          ;
+; Total registers                 ; 68                                          ;
 ; Total pins                      ; 65                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -264,9 +264,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processors 7-10        ;   0.0%      ;
+;     Processors 5-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -347,16 +345,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 2283                       ;
+; Estimate of Logic utilization (ALMs needed) ; 2288                       ;
 ;                                             ;                            ;
-; Combinational ALUT usage for logic          ; 4474                       ;
+; Combinational ALUT usage for logic          ; 4479                       ;
 ;     -- 7 input functions                    ; 3                          ;
-;     -- 6 input functions                    ; 89                         ;
-;     -- 5 input functions                    ; 187                        ;
-;     -- 4 input functions                    ; 621                        ;
-;     -- <=3 input functions                  ; 3574                       ;
+;     -- 6 input functions                    ; 94                         ;
+;     -- 5 input functions                    ; 180                        ;
+;     -- 4 input functions                    ; 619                        ;
+;     -- <=3 input functions                  ; 3583                       ;
 ;                                             ;                            ;
-; Dedicated logic registers                   ; 65                         ;
+; Dedicated logic registers                   ; 68                         ;
 ;                                             ;                            ;
 ; I/O pins                                    ; 65                         ;
 ;                                             ;                            ;
@@ -364,8 +362,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                            ;
 ; Maximum fan-out node                        ; vgaController:vgaCont|x[1] ;
 ; Maximum fan-out                             ; 123                        ;
-; Total fan-out                               ; 14127                      ;
-; Average fan-out                             ; 2.99                       ;
+; Total fan-out                               ; 14158                      ;
+; Average fan-out                             ; 3.00                       ;
 +---------------------------------------------+----------------------------+
 
 
@@ -374,8 +372,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                   ; Entity Name         ; Library Name ;
 +------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Top_Level_Memory                                          ; 4474 (19)           ; 65 (0)                    ; 0                 ; 48         ; 65   ; 0            ; |Top_Level_Memory                                                                                                                                                                                                                     ; Top_Level_Memory    ; work         ;
-;    |FSM:memory_fsm|                                        ; 8 (8)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|FSM:memory_fsm                                                                                                                                                                                                      ; FSM                 ; work         ;
+; |Top_Level_Memory                                          ; 4479 (22)           ; 68 (0)                    ; 0                 ; 48         ; 65   ; 0            ; |Top_Level_Memory                                                                                                                                                                                                                     ; Top_Level_Memory    ; work         ;
+;    |FSM:memory_fsm|                                        ; 12 (12)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|FSM:memory_fsm                                                                                                                                                                                                      ; FSM                 ; work         ;
 ;    |card_controller:cartasM|                               ; 9 (7)               ; 6 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|card_controller:cartasM                                                                                                                                                                                             ; card_controller     ; work         ;
 ;       |Shuffle:sh|                                         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|card_controller:cartasM|Shuffle:sh                                                                                                                                                                                  ; Shuffle             ; work         ;
 ;    |pll:vgapll|                                            ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|pll:vgapll                                                                                                                                                                                                          ; pll                 ; work         ;
@@ -393,8 +391,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |top_7seg_counter:comb_10|                              ; 42 (11)             ; 31 (4)                    ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|top_7seg_counter:comb_10                                                                                                                                                                                            ; top_7seg_counter    ; work         ;
 ;       |clk_counter_seg:u_clk_counter|                      ; 31 (31)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|top_7seg_counter:comb_10|clk_counter_seg:u_clk_counter                                                                                                                                                              ; clk_counter_seg     ; work         ;
 ;    |vgaController:vgaCont|                                 ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|vgaController:vgaCont                                                                                                                                                                                               ; vgaController       ; work         ;
-;    |videoGen:videoGenI|                                    ; 4192 (16)           ; 0 (0)                     ; 0                 ; 48         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI                                                                                                                                                                                                  ; videoGen            ; work         ;
-;       |carta:cartaA1|                                      ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1                                                                                                                                                                                    ; carta               ; work         ;
+;    |videoGen:videoGenI|                                    ; 4190 (16)           ; 0 (0)                     ; 0                 ; 48         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI                                                                                                                                                                                                  ; videoGen            ; work         ;
+;       |carta:cartaA1|                                      ; 10 (2)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1                                                                                                                                                                                    ; carta               ; work         ;
 ;          |plus_symbol:plus_inst|                           ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA1|plus_symbol:plus_inst                                                                                                                                                              ; plus_symbol         ; work         ;
 ;       |carta:cartaA2|                                      ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA2                                                                                                                                                                                    ; carta               ; work         ;
 ;          |plus_symbol:plus_inst|                           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaA2|plus_symbol:plus_inst                                                                                                                                                              ; plus_symbol         ; work         ;
@@ -423,8 +421,8 @@ https://fpgasoftware.intel.com/eula.
 ;          |circle_symbol:circle_inst|                       ; 150 (35)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF2|circle_symbol:circle_inst                                                                                                                                                          ; circle_symbol       ; work         ;
 ;             |lpm_mult:Mult0_rtl_3|                         ; 115 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF2|circle_symbol:circle_inst|lpm_mult:Mult0_rtl_3                                                                                                                                     ; lpm_mult            ; work         ;
 ;                |mult_3e01:auto_generated|                  ; 115 (115)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaF2|circle_symbol:circle_inst|lpm_mult:Mult0_rtl_3|mult_3e01:auto_generated                                                                                                            ; mult_3e01           ; work         ;
-;       |carta:cartaG1|                                      ; 1203 (13)           ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1                                                                                                                                                                                    ; carta               ; work         ;
-;          |triangle_symbol:tri_inst|                        ; 1190 (463)          ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst                                                                                                                                                           ; triangle_symbol     ; work         ;
+;       |carta:cartaG1|                                      ; 1204 (13)           ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1                                                                                                                                                                                    ; carta               ; work         ;
+;          |triangle_symbol:tri_inst|                        ; 1191 (464)          ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst                                                                                                                                                           ; triangle_symbol     ; work         ;
 ;             |lpm_mult:Mult10_rtl_26|                       ; 114 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst|lpm_mult:Mult10_rtl_26                                                                                                                                    ; lpm_mult            ; work         ;
 ;                |multcore:mult_core|                        ; 114 (36)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst|lpm_mult:Mult10_rtl_26|multcore:mult_core                                                                                                                 ; multcore            ; work         ;
 ;                   |mpar_add:padder|                        ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst|lpm_mult:Mult10_rtl_26|multcore:mult_core|mpar_add:padder                                                                                                 ; mpar_add            ; work         ;
@@ -555,8 +553,8 @@ https://fpgasoftware.intel.com/eula.
 ;                         |mpar_add:sub_par_add|             ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst|lpm_mult:Mult9_rtl_11|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|mpar_add:sub_par_add                                                        ; mpar_add            ; work         ;
 ;                            |lpm_add_sub:adder[0]|          ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst|lpm_mult:Mult9_rtl_11|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|mpar_add:sub_par_add|lpm_add_sub:adder[0]                                   ; lpm_add_sub         ; work         ;
 ;                               |add_sub_99h:auto_generated| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG1|triangle_symbol:tri_inst|lpm_mult:Mult9_rtl_11|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_99h:auto_generated        ; add_sub_99h         ; work         ;
-;       |carta:cartaG2|                                      ; 764 (12)            ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2                                                                                                                                                                                    ; carta               ; work         ;
-;          |triangle_symbol:tri_inst|                        ; 752 (433)           ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2|triangle_symbol:tri_inst                                                                                                                                                           ; triangle_symbol     ; work         ;
+;       |carta:cartaG2|                                      ; 761 (10)            ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2                                                                                                                                                                                    ; carta               ; work         ;
+;          |triangle_symbol:tri_inst|                        ; 751 (432)           ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2|triangle_symbol:tri_inst                                                                                                                                                           ; triangle_symbol     ; work         ;
 ;             |lpm_mult:Mult10_rtl_21|                       ; 114 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2|triangle_symbol:tri_inst|lpm_mult:Mult10_rtl_21                                                                                                                                    ; lpm_mult            ; work         ;
 ;                |multcore:mult_core|                        ; 114 (36)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2|triangle_symbol:tri_inst|lpm_mult:Mult10_rtl_21|multcore:mult_core                                                                                                                 ; multcore            ; work         ;
 ;                   |mpar_add:padder|                        ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaG2|triangle_symbol:tri_inst|lpm_mult:Mult10_rtl_21|multcore:mult_core|mpar_add:padder                                                                                                 ; mpar_add            ; work         ;
@@ -689,8 +687,8 @@ https://fpgasoftware.intel.com/eula.
 ;                         |mpar_add:sub_par_add|             ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1|invtriangle_symbol:invtri_inst|lpm_mult:Mult8_rtl_16|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|mpar_add:sub_par_add                                                  ; mpar_add            ; work         ;
 ;                            |lpm_add_sub:adder[0]|          ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1|invtriangle_symbol:invtri_inst|lpm_mult:Mult8_rtl_16|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|mpar_add:sub_par_add|lpm_add_sub:adder[0]                             ; lpm_add_sub         ; work         ;
 ;                               |add_sub_b9h:auto_generated| ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH1|invtriangle_symbol:invtri_inst|lpm_mult:Mult8_rtl_16|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_b9h:auto_generated  ; add_sub_b9h         ; work         ;
-;       |carta:cartaH2|                                      ; 763 (13)            ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2                                                                                                                                                                                    ; carta               ; work         ;
-;          |invtriangle_symbol:invtri_inst|                  ; 750 (442)           ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2|invtriangle_symbol:invtri_inst                                                                                                                                                     ; invtriangle_symbol  ; work         ;
+;       |carta:cartaH2|                                      ; 762 (14)            ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2                                                                                                                                                                                    ; carta               ; work         ;
+;          |invtriangle_symbol:invtri_inst|                  ; 748 (440)           ; 0 (0)                     ; 0                 ; 12         ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2|invtriangle_symbol:invtri_inst                                                                                                                                                     ; invtriangle_symbol  ; work         ;
 ;             |lpm_mult:Mult10_rtl_12|                       ; 52 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2|invtriangle_symbol:invtri_inst|lpm_mult:Mult10_rtl_12                                                                                                                              ; lpm_mult            ; work         ;
 ;                |multcore:mult_core|                        ; 52 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2|invtriangle_symbol:invtri_inst|lpm_mult:Mult10_rtl_12|multcore:mult_core                                                                                                           ; multcore            ; work         ;
 ;                   |mpar_add:padder|                        ; 34 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_Level_Memory|videoGen:videoGenI|carta:cartaH2|invtriangle_symbol:invtri_inst|lpm_mult:Mult10_rtl_12|multcore:mult_core|mpar_add:padder                                                                                           ; mpar_add            ; work         ;
@@ -1043,80 +1041,80 @@ Encoding Type:  One-Hot
 ; card_controller:cartasM|bit_shifter:bs|shift_reg[0..7] ; Lost fanout                                       ;
 ; FSM:memory_fsm|jugador_en_turno                        ; Stuck at GND due to stuck port data_in            ;
 ; FSM:memory_fsm|pareja_encontrada                       ; Stuck at GND due to stuck port data_in            ;
+; FSM:memory_fsm|current_state.DOS_CARTAS                ; Lost fanout                                       ;
 ; FSM:memory_fsm|current_state~4                         ; Lost fanout                                       ;
 ; FSM:memory_fsm|current_state~5                         ; Lost fanout                                       ;
 ; FSM:memory_fsm|current_state~6                         ; Lost fanout                                       ;
 ; FSM:memory_fsm|current_state~7                         ; Lost fanout                                       ;
-; FSM:memory_fsm|current_state.DOS_CARTAS                ; Stuck at GND due to stuck port data_in            ;
-; FSM:memory_fsm|current_state.MOSTRAR_RANDOM            ; Stuck at GND due to stuck port data_in            ;
 ; FSM:memory_fsm|current_state.NO_MAS_PAREJAS            ; Stuck at GND due to stuck port data_in            ;
-; FSM:memory_fsm|current_state.UNA_CARTA                 ; Stuck at GND due to stuck port data_in            ;
 ; FSM:memory_fsm|current_state.CONCLUSION                ; Stuck at GND due to stuck port data_in            ;
-; Total Number of Removed Registers = 276                ;                                                   ;
+; Total Number of Removed Registers = 274                ;                                                   ;
 +--------------------------------------------------------+---------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                     ;
-+-----------------------------------------------------+--------------------+------------------------------------------------------+
-; Register name                                       ; Reason for Removal ; Registers Removed due to This Register               ;
-+-----------------------------------------------------+--------------------+------------------------------------------------------+
-; card_controller:cartasM|bit_shifter:bs|shift_reg[7] ; Lost Fanouts       ; card_controller:cartasM|bit_shifter:bs|shift_reg[6], ;
-;                                                     ;                    ; card_controller:cartasM|bit_shifter:bs|shift_reg[5], ;
-;                                                     ;                    ; card_controller:cartasM|bit_shifter:bs|shift_reg[4], ;
-;                                                     ;                    ; card_controller:cartasM|bit_shifter:bs|shift_reg[3], ;
-;                                                     ;                    ; card_controller:cartasM|bit_shifter:bs|shift_reg[2], ;
-;                                                     ;                    ; card_controller:cartasM|bit_shifter:bs|shift_reg[1], ;
-;                                                     ;                    ; card_controller:cartasM|bit_shifter:bs|shift_reg[0]  ;
-; save_cards:cartasG|arr_out[0][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[0][3]                ;
-; save_cards:cartasG|arr_out[0][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[0][2]                ;
-; save_cards:cartasG|arr_out[1][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[1][4]                ;
-; save_cards:cartasG|arr_out[1][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[1][3]                ;
-; save_cards:cartasG|arr_out[1][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[1][2]                ;
-; save_cards:cartasG|arr_out[2][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[2][4]                ;
-; save_cards:cartasG|arr_out[2][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[2][3]                ;
-; save_cards:cartasG|arr_out[2][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[2][2]                ;
-; save_cards:cartasG|arr_out[3][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[3][4]                ;
-; save_cards:cartasG|arr_out[3][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[3][3]                ;
-; save_cards:cartasG|arr_out[3][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[3][2]                ;
-; save_cards:cartasG|arr_out[4][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[4][4]                ;
-; save_cards:cartasG|arr_out[4][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[4][3]                ;
-; save_cards:cartasG|arr_out[4][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[4][2]                ;
-; save_cards:cartasG|arr_out[5][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[5][4]                ;
-; save_cards:cartasG|arr_out[5][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[5][3]                ;
-; save_cards:cartasG|arr_out[5][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[5][2]                ;
-; save_cards:cartasG|arr_out[6][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[6][4]                ;
-; save_cards:cartasG|arr_out[6][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[6][3]                ;
-; save_cards:cartasG|arr_out[6][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[6][2]                ;
-; save_cards:cartasG|arr_out[7][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[7][4]                ;
-; save_cards:cartasG|arr_out[7][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[7][3]                ;
-; save_cards:cartasG|arr_out[7][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[7][2]                ;
-; save_cards:cartasG|arr_out[8][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[8][4]                ;
-; save_cards:cartasG|arr_out[8][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[8][3]                ;
-; save_cards:cartasG|arr_out[8][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[8][2]                ;
-; save_cards:cartasG|arr_out[9][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[9][4]                ;
-; save_cards:cartasG|arr_out[9][3]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[9][3]                ;
-; save_cards:cartasG|arr_out[9][2]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[9][2]                ;
-; save_cards:cartasG|arr_out[10][4]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[10][4]               ;
-; save_cards:cartasG|arr_out[10][3]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[10][3]               ;
-; save_cards:cartasG|arr_out[10][2]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[10][2]               ;
-; save_cards:cartasG|arr_out[11][4]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[11][4]               ;
-; save_cards:cartasG|arr_out[11][3]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[11][3]               ;
-; save_cards:cartasG|arr_out[11][2]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[11][2]               ;
-; save_cards:cartasG|arr_out[0][4]                    ; Lost Fanouts       ; card_controller:cartasM|arr_out[0][4]                ;
-; save_cards:cartasG|arr_out[12][3]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[12][3]               ;
-; save_cards:cartasG|arr_out[12][2]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[12][2]               ;
-; save_cards:cartasG|arr_out[13][4]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[13][4]               ;
-; save_cards:cartasG|arr_out[13][3]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[13][3]               ;
-; save_cards:cartasG|arr_out[13][2]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[13][2]               ;
-; save_cards:cartasG|arr_out[12][4]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[12][4]               ;
-; save_cards:cartasG|arr_out[14][3]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[14][3]               ;
-; save_cards:cartasG|arr_out[14][2]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[14][2]               ;
-; save_cards:cartasG|arr_out[15][4]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[15][4]               ;
-; save_cards:cartasG|arr_out[15][3]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[15][3]               ;
-; save_cards:cartasG|arr_out[15][2]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[15][2]               ;
-; save_cards:cartasG|arr_out[14][4]                   ; Lost Fanouts       ; card_controller:cartasM|arr_out[14][4]               ;
-+-----------------------------------------------------+--------------------+------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                            ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------+
+; Register name                                       ; Reason for Removal        ; Registers Removed due to This Register               ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------+
+; card_controller:cartasM|bit_shifter:bs|shift_reg[7] ; Lost Fanouts              ; card_controller:cartasM|bit_shifter:bs|shift_reg[6], ;
+;                                                     ;                           ; card_controller:cartasM|bit_shifter:bs|shift_reg[5], ;
+;                                                     ;                           ; card_controller:cartasM|bit_shifter:bs|shift_reg[4], ;
+;                                                     ;                           ; card_controller:cartasM|bit_shifter:bs|shift_reg[3], ;
+;                                                     ;                           ; card_controller:cartasM|bit_shifter:bs|shift_reg[2], ;
+;                                                     ;                           ; card_controller:cartasM|bit_shifter:bs|shift_reg[1], ;
+;                                                     ;                           ; card_controller:cartasM|bit_shifter:bs|shift_reg[0]  ;
+; save_cards:cartasG|arr_out[0][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[0][3]                ;
+; save_cards:cartasG|arr_out[0][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[0][2]                ;
+; save_cards:cartasG|arr_out[1][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[1][4]                ;
+; save_cards:cartasG|arr_out[1][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[1][3]                ;
+; save_cards:cartasG|arr_out[1][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[1][2]                ;
+; save_cards:cartasG|arr_out[2][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[2][4]                ;
+; save_cards:cartasG|arr_out[2][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[2][3]                ;
+; save_cards:cartasG|arr_out[2][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[2][2]                ;
+; save_cards:cartasG|arr_out[3][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[3][4]                ;
+; save_cards:cartasG|arr_out[3][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[3][3]                ;
+; save_cards:cartasG|arr_out[3][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[3][2]                ;
+; save_cards:cartasG|arr_out[4][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[4][4]                ;
+; save_cards:cartasG|arr_out[4][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[4][3]                ;
+; save_cards:cartasG|arr_out[4][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[4][2]                ;
+; save_cards:cartasG|arr_out[5][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[5][4]                ;
+; save_cards:cartasG|arr_out[5][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[5][3]                ;
+; save_cards:cartasG|arr_out[5][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[5][2]                ;
+; save_cards:cartasG|arr_out[6][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[6][4]                ;
+; save_cards:cartasG|arr_out[6][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[6][3]                ;
+; save_cards:cartasG|arr_out[6][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[6][2]                ;
+; save_cards:cartasG|arr_out[7][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[7][4]                ;
+; save_cards:cartasG|arr_out[7][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[7][3]                ;
+; save_cards:cartasG|arr_out[7][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[7][2]                ;
+; save_cards:cartasG|arr_out[8][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[8][4]                ;
+; save_cards:cartasG|arr_out[8][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[8][3]                ;
+; save_cards:cartasG|arr_out[8][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[8][2]                ;
+; save_cards:cartasG|arr_out[9][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[9][4]                ;
+; save_cards:cartasG|arr_out[9][3]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[9][3]                ;
+; save_cards:cartasG|arr_out[9][2]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[9][2]                ;
+; save_cards:cartasG|arr_out[10][4]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[10][4]               ;
+; save_cards:cartasG|arr_out[10][3]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[10][3]               ;
+; save_cards:cartasG|arr_out[10][2]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[10][2]               ;
+; save_cards:cartasG|arr_out[11][4]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[11][4]               ;
+; save_cards:cartasG|arr_out[11][3]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[11][3]               ;
+; save_cards:cartasG|arr_out[11][2]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[11][2]               ;
+; save_cards:cartasG|arr_out[12][4]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[12][4]               ;
+; save_cards:cartasG|arr_out[12][3]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[12][3]               ;
+; save_cards:cartasG|arr_out[12][2]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[12][2]               ;
+; save_cards:cartasG|arr_out[13][4]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[13][4]               ;
+; save_cards:cartasG|arr_out[13][3]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[13][3]               ;
+; save_cards:cartasG|arr_out[13][2]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[13][2]               ;
+; save_cards:cartasG|arr_out[14][4]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[14][4]               ;
+; save_cards:cartasG|arr_out[14][3]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[14][3]               ;
+; save_cards:cartasG|arr_out[14][2]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[14][2]               ;
+; save_cards:cartasG|arr_out[15][4]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[15][4]               ;
+; save_cards:cartasG|arr_out[15][3]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[15][3]               ;
+; save_cards:cartasG|arr_out[15][2]                   ; Lost Fanouts              ; card_controller:cartasM|arr_out[15][2]               ;
+; save_cards:cartasG|arr_out[0][4]                    ; Lost Fanouts              ; card_controller:cartasM|arr_out[0][4]                ;
+; FSM:memory_fsm|current_state.NO_MAS_PAREJAS         ; Stuck at GND              ; FSM:memory_fsm|current_state.CONCLUSION              ;
+;                                                     ; due to stuck port data_in ;                                                      ;
++-----------------------------------------------------+---------------------------+------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1124,10 +1122,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 65    ;
+; Total registers                              ; 68    ;
 ; Number of registers using Synchronous Clear  ; 46    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 44    ;
+; Number of registers using Asynchronous Clear ; 47    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 13    ;
 ; Number of registers using Preset             ; 0     ;
@@ -1139,11 +1137,12 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; top_7seg_counter:comb_10|counter_hex[0] ; 11      ;
-; top_7seg_counter:comb_10|counter_hex[1] ; 10      ;
-; top_7seg_counter:comb_10|counter_hex[2] ; 9       ;
-; top_7seg_counter:comb_10|counter_hex[3] ; 8       ;
-; Total number of inverted registers = 4  ;         ;
+; top_7seg_counter:comb_10|counter_hex[0] ; 14      ;
+; top_7seg_counter:comb_10|counter_hex[1] ; 13      ;
+; top_7seg_counter:comb_10|counter_hex[2] ; 12      ;
+; top_7seg_counter:comb_10|counter_hex[3] ; 11      ;
+; FSM:memory_fsm|reset_timer              ; 32      ;
+; Total number of inverted registers = 5  ;         ;
 +-----------------------------------------+---------+
 
 
@@ -3489,14 +3488,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 65                          ;
-;     CLR               ; 15                          ;
+; arriav_ff             ; 68                          ;
+;     CLR               ; 18                          ;
 ;     CLR SCLR          ; 26                          ;
 ;     ENA CLR           ; 3                           ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 4478                        ;
+; arriav_lcell_comb     ; 4484                        ;
 ;     arith             ; 2047                        ;
 ;         0 data inputs ; 104                         ;
 ;         1 data inputs ; 776                         ;
@@ -3505,14 +3504,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 124                         ;
 ;     extend            ; 3                           ;
 ;         7 data inputs ; 3                           ;
-;     normal            ; 1034                        ;
+;     normal            ; 1040                        ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 137                         ;
-;         3 data inputs ; 118                         ;
-;         4 data inputs ; 497                         ;
-;         5 data inputs ; 187                         ;
-;         6 data inputs ; 89                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 136                         ;
+;         3 data inputs ; 128                         ;
+;         4 data inputs ; 495                         ;
+;         5 data inputs ; 180                         ;
+;         6 data inputs ; 94                          ;
 ;     shared            ; 1394                        ;
 ;         0 data inputs ; 284                         ;
 ;         1 data inputs ; 79                          ;
@@ -3522,7 +3521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 65                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 12.93                       ;
+; Average LUT depth     ; 13.06                       ;
 +-----------------------+-----------------------------+
 
 
@@ -3541,7 +3540,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 10 00:00:17 2025
+    Info: Processing started: Fri Oct 10 00:49:27 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memory_game -c Memory_game
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -3606,7 +3605,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file top_lev
 Info (12021): Found 1 design units, including 1 entities, in source file card_controller.sv
     Info (12023): Found entity 1: card_controller File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 1
 Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): instance has no name File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at Top_Level_Memory.sv(94): instance has no name File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 94
+Critical Warning (10846): Verilog HDL Instantiation warning at Top_Level_Memory.sv(96): instance has no name File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 96
 Info (12127): Elaborating entity "Top_Level_Memory" for the top level hierarchy
 Warning (10858): Verilog HDL warning at Top_Level_Memory.sv(20): object r_OVER used but never assigned File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 20
 Warning (10858): Verilog HDL warning at Top_Level_Memory.sv(20): object g_OVER used but never assigned File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 20
@@ -3614,17 +3613,17 @@ Warning (10858): Verilog HDL warning at Top_Level_Memory.sv(20): object b_OVER u
 Warning (10030): Net "r_OVER" at Top_Level_Memory.sv(20) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 20
 Warning (10030): Net "g_OVER" at Top_Level_Memory.sv(20) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 20
 Warning (10030): Net "b_OVER" at Top_Level_Memory.sv(20) has no driver or initial value, using a default initial value '0' File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 20
-Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 42
-Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 45
+Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 43
+Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 46
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(25): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at vgaController.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 29
-Info (12128): Elaborating entity "start" for hierarchy "start:pantalla_inicio" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 48
+Info (12128): Elaborating entity "start" for hierarchy "start:pantalla_inicio" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 49
 Warning (10230): Verilog HDL assignment warning at start.sv(24): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv Line: 24
 Warning (10230): Verilog HDL assignment warning at start.sv(25): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at start.sv(26): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv Line: 26
 Warning (10230): Verilog HDL assignment warning at start.sv(27): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv Line: 27
 Warning (10230): Verilog HDL assignment warning at start.sv(28): truncated value with size 32 to match size of target (11) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv Line: 28
-Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGenI" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 51
+Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGenI" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 52
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(18): object "topS" assigned a value but never read File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 18
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(19): object "botS" assigned a value but never read File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 19
 Warning (10036): Verilog HDL or VHDL warning at videoGen.sv(20): object "leftS" assigned a value but never read File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 20
@@ -3640,22 +3639,22 @@ Info (12128): Elaborating entity "hash_symbol" for hierarchy "videoGen:videoGenI
 Info (12128): Elaborating entity "circle_symbol" for hierarchy "videoGen:videoGenI|carta:cartaA1|circle_symbol:circle_inst" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 85
 Info (12128): Elaborating entity "triangle_symbol" for hierarchy "videoGen:videoGenI|carta:cartaA1|triangle_symbol:tri_inst" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 93
 Info (12128): Elaborating entity "invtriangle_symbol" for hierarchy "videoGen:videoGenI|carta:cartaA1|invtriangle_symbol:invtri_inst" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 101
-Info (12128): Elaborating entity "modify_arr" for hierarchy "modify_arr:crear_arr" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 59
-Info (12128): Elaborating entity "card_controller" for hierarchy "card_controller:cartasM" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 63
+Info (12128): Elaborating entity "modify_arr" for hierarchy "modify_arr:crear_arr" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 60
+Info (12128): Elaborating entity "card_controller" for hierarchy "card_controller:cartasM" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 64
 Warning (10034): Output port "doneMcr" at card_controller.sv(7) has no driver File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 7
 Info (12128): Elaborating entity "bit_shifter" for hierarchy "card_controller:cartasM|bit_shifter:bs" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 17
 Info (12128): Elaborating entity "Shuffle" for hierarchy "card_controller:cartasM|Shuffle:sh" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 18
 Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(39): index expression is not wide enough to address all of the elements in the array File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv Line: 39
-Info (12128): Elaborating entity "save_cards" for hierarchy "save_cards:cartasG" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 64
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:memory_fsm" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 89
-Warning (10230): Verilog HDL assignment warning at FSM.sv(95): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 95
-Warning (10230): Verilog HDL assignment warning at FSM.sv(97): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 97
-Info (10264): Verilog HDL Case Statement information at FSM.sv(62): all case item expressions in this case statement are onehot File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 62
-Info (12128): Elaborating entity "top_7seg_counter" for hierarchy "top_7seg_counter:comb_10" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 94
-Warning (10230): Verilog HDL assignment warning at top_7seg_counter.sv(35): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv Line: 35
-Info (12128): Elaborating entity "clk_counter_seg" for hierarchy "top_7seg_counter:comb_10|clk_counter_seg:u_clk_counter" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv Line: 23
+Info (12128): Elaborating entity "save_cards" for hierarchy "save_cards:cartasG" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 65
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:memory_fsm" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 91
+Warning (10230): Verilog HDL assignment warning at FSM.sv(101): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 101
+Warning (10230): Verilog HDL assignment warning at FSM.sv(103): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 103
+Info (10264): Verilog HDL Case Statement information at FSM.sv(64): all case item expressions in this case statement are onehot File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 64
+Info (12128): Elaborating entity "top_7seg_counter" for hierarchy "top_7seg_counter:comb_10" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 96
+Warning (10230): Verilog HDL assignment warning at top_7seg_counter.sv(36): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv Line: 36
+Info (12128): Elaborating entity "clk_counter_seg" for hierarchy "top_7seg_counter:comb_10|clk_counter_seg:u_clk_counter" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv Line: 24
 Warning (10230): Verilog HDL assignment warning at clk_counter_seg.sv(26): truncated value with size 32 to match size of target (26) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv Line: 26
-Info (12128): Elaborating entity "BinTo7Seg" for hierarchy "BinTo7Seg:display_unidades" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 98
+Info (12128): Elaborating entity "BinTo7Seg" for hierarchy "BinTo7Seg:display_unidades" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 101
 Warning (12020): Port "size" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 101
 Warning (12020): Port "t" on the entity instantiation of "invtri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 101
 Warning (12020): Port "size" on the entity instantiation of "tri_inst" is connected to a signal of width 32. The formal width of the signal in the module is 10.  The extra bits will be ignored. File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 93
@@ -4512,15 +4511,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "segPJ2[4]" is stuck at GND File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 8
     Warning (13410): Pin "segPJ2[5]" is stuck at GND File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 8
     Warning (13410): Pin "segPJ2[6]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 8
-    Warning (13410): Pin "s[3]" is stuck at GND File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 12
-    Warning (13410): Pin "r[0]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 13
-    Warning (13410): Pin "r[2]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 13
-    Warning (13410): Pin "r[7]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 13
-    Warning (13410): Pin "b[1]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 14
-    Warning (13410): Pin "b[5]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 14
-    Warning (13410): Pin "b[6]" is stuck at VCC File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 166 registers lost all their fanouts during netlist optimizations.
+Info (17049): 167 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/output_files/Memory_game.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -4529,16 +4521,16 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Izq" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 4
     Warning (15610): No output dependent on input pin "Der" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 4
     Warning (15610): No output dependent on input pin "Sel" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 4
-Info (21057): Implemented 4592 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4594 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 4479 logic cells
+    Info (21061): Implemented 4481 logic cells
     Info (21062): Implemented 48 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 616 warnings
-    Info: Peak virtual memory: 5099 megabytes
-    Info: Processing ended: Fri Oct 10 00:00:35 2025
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 609 warnings
+    Info: Peak virtual memory: 5107 megabytes
+    Info: Processing ended: Fri Oct 10 00:49:47 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+
