@@ -4,6 +4,14 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "turno_de[0]",
+					"strict" : false
+				},
+				{
+					"name" : "turno_de[1]",
+					"strict" : false
+				},
+				{
 					"name" : "seg[0]",
 					"strict" : false
 				},
@@ -164,7 +172,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "cargar",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
 					"strict" : false
 				},
 				{
@@ -176,11 +192,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "CO",
 					"strict" : false
 				},
 				{
-					"name" : "CO",
+					"name" : "Sel",
+					"strict" : false
+				},
+				{
+					"name" : "Izq",
+					"strict" : false
+				},
+				{
+					"name" : "Der",
 					"strict" : false
 				}
 			]

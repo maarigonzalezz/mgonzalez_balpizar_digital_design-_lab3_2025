@@ -7,6 +7,7 @@ module FSM(
     input  logic        cartas_mostradas,
     input  logic        cartas_ocultas,
     input  logic        cartas_revueltas,
+	 input  logic        hubo_pareja,
     output logic [1:0]  ganador,
     output logic [3:0]  state,
 	 output logic [1:0]  turno_de,
@@ -36,9 +37,6 @@ module FSM(
     logic [3:0] puntaje_j1;
     logic [3:0] puntaje_j2;
     logic jugador_en_turno; // 0 = jug1, 1 = jug2
-    logic [4:0] primera_carta;
-    logic [4:0] segunda_carta;
-    logic pareja_encontrada;
 	 
 	 assign turno_de = jugador_en_turno + 1'b1;
 	 assign puntajeJ1 = puntaje_j1;
@@ -52,9 +50,6 @@ module FSM(
             puntaje_j1 <= 0;
             puntaje_j2 <= 0;
             jugador_en_turno <= 0;
-            primera_carta <= 0;
-            segunda_carta <= 0;
-            pareja_encontrada <= 0;
             ganador <= 2'b00;
 				reset_timer <= 1'b1;
         end else begin
@@ -74,38 +69,22 @@ module FSM(
                     // Resetear variables de cartas al inicio del turno
 						  reset_timer <= 1'b1;
 						  reset_timer <= 1'b0;
-                    primera_carta <= 0;
-                    segunda_carta <= 0;
-                    pareja_encontrada <= 0;
 						  //cartas_seleccionadas <= 2'b00;
                 end
                 
-                UNA_CARTA: begin
-                    // Capturar primera carta cuando se selecciona
-                    if (se_eligio_carta) begin
-                        primera_carta <= {3'b0, cartas_seleccionadas};
-								//cartas_seleccionadas <= 2'b01;
-                    end
-                end
                 
                 DOS_CARTAS: begin
-                    // Capturar segunda carta y verificar pareja
-                    if (se_eligio_carta) begin
-                        segunda_carta <= {3'b0, cartas_seleccionadas};
-                        
-                        // Verificar si es pareja
-                        if (primera_carta == segunda_carta) begin
-                            pareja_encontrada <= 1;
-                            // Sumar puntaje al jugador en turno
-                            if (jugador_en_turno == 0)
-                                puntaje_j1 <= puntaje_j1 + 1;
-                            else
-                                puntaje_j2 <= puntaje_j2 + 1;
-                        end else begin
-                            // Cambiar turno si no hay pareja
+                       // Verificar si es pareja
+                       if (hubo_pareja) begin
+                           // Sumar puntaje al jugador en turno
+                           if (jugador_en_turno == 0)
+                               puntaje_j1 <= puntaje_j1 + 1;
+                           else
+                               puntaje_j2 <= puntaje_j2 + 1;
+                       end else begin
+                           // Cambiar turno si no hay pareja
                             jugador_en_turno <= ~jugador_en_turno;
-                        end
-                    end
+                       end
                 end
                 
                 CONCLUSION: begin
@@ -179,18 +158,14 @@ module FSM(
             end
             
             DOS_CARTAS: begin
-                if (pareja_encontrada && (puntaje_j1 + puntaje_j2 >= 8))
+                if (hubo_pareja && (puntaje_j1 + puntaje_j2 >= 8))
                     next_state = NO_MAS_PAREJAS;
                 else
                     next_state = TURNO_JUGADOR;
             end
             
             MOSTRAR_RANDOM: begin
-                case (cartas_seleccionadas)
-                    2'b00: next_state = UNA_CARTA;
-                    2'b01: next_state = DOS_CARTAS;
-						  default: next_state = MOSTRAR_RANDOM;
-                endcase
+					next_state = DOS_CARTAS;	  
             end
 				
             

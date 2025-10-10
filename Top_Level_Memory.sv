@@ -10,7 +10,8 @@ module Top_Level_Memory(
     output logic hsync, vsync,
     output logic sync_b, blank_b,
 	 output logic [3:0] s, 
-    output logic [7:0] r, g, b
+    output logic [7:0] r, g, b,
+	 output logic cargar
 );
 
 	// Variables para VGA
@@ -60,8 +61,11 @@ module Top_Level_Memory(
 	modify_arr crear_arr(.estado(estCartas), .arrI(arrI));
 	
 	// modulo que tiene el control del manejo de cartas
-	card_controller cartasM(.clk(clk), .rst(rst), .state(state), .arr_in(arr_cartas), .arr_out(arr_temp), 
-									.doneSh(cartas_revueltas), .doneMcr(carta_randomizada), .load(load));
+	card_controller cartasM(.clk(clk), .rst(rst), .Izq(Izq), .Der(Der), .Sel(Sel), 
+									.state(state), .arr_in(arr_cartas), .arr_out(arr_temp), .doneSh(cartas_revueltas), 
+									.doneSp(se_eligio_carta), .doneMcr(carta_randomizada), .cartas_seleccionadas(cartas_sw),
+									.load(load), .hubo_pareja(hubo_pareja));
+									
 	save_cards cartasG(.clk(clk), .rst(rst), .load(load), .arr_in(arr_temp), .arr_out(arr_cartas));
 	
 	// ===================================================== MEF ==================================================
@@ -69,8 +73,10 @@ module Top_Level_Memory(
 	assign cartas_mostradas = CM;
 	assign cartas_ocultas = CO; 
 	//assign cartas_revueltas = CR;
+	logic hubo_pareja;
 
 	assign s = state;
+	assign cargar = load;
 	
 	FSM memory_fsm (
         .rst(rst),
@@ -82,6 +88,7 @@ module Top_Level_Memory(
         .cartas_mostradas(cartas_mostradas),
         .cartas_ocultas(cartas_ocultas),
         .cartas_revueltas(cartas_revueltas),
+		  .hubo_pareja(hubo_pareja),
         .ganador(ganador),
         .state(state),
 		  .turno_de(turno_de),
@@ -99,7 +106,7 @@ module Top_Level_Memory(
 			 .sig_in(done),
 			 .pulse_out(done_sync)
 	);
-			 
+
 	 
 	
 	//============================================ 7 SEGMENTOS ==============================================

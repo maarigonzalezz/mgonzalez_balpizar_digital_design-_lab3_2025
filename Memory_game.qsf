@@ -56,8 +56,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_location_assignment PIN_AC22 -to ganador[1]
-set_location_assignment PIN_AB22 -to ganador[0]
 set_location_assignment PIN_AB30 -to rst
 set_location_assignment PIN_AK16 -to b[7]
 set_location_assignment PIN_AJ16 -to b[6]
@@ -97,11 +95,10 @@ set_location_assignment PIN_AG17 -to seg[2]
 set_location_assignment PIN_V18 -to seg[1]
 set_location_assignment PIN_W17 -to seg[0]
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH FSM_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_Top_Level_Memory_realistic -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME FSM_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id FSM_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME FSM_tb -section_id FSM_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE FSM_tb.sv -section_id FSM_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -132,7 +129,6 @@ set_location_assignment PIN_Y17 -to segPJ2[3]
 set_location_assignment PIN_AA18 -to segPJ2[2]
 set_location_assignment PIN_AB17 -to segPJ2[1]
 set_location_assignment PIN_AA21 -to segPJ2[0]
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/videoGen.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/vgaController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/vga.sv
@@ -155,12 +151,22 @@ set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/modify_arr.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/bit_shifter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/save_cards.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/seleccionar_parejas.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/verificar_pareja.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/top_7seg_counter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/clkCounter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/clk_counter_seg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Counters/posedge_detector.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Helpers/BinTo7Seg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Helpers/Button_debonce.sv
 set_global_assignment -name SYSTEMVERILOG_FILE carta.sv
 set_global_assignment -name SYSTEMVERILOG_FILE FSM.sv
 set_global_assignment -name SYSTEMVERILOG_FILE FSM_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Top_Level_Memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE card_controller.sv
+set_location_assignment PIN_AB23 -to cargar
+set_global_assignment -name EDA_TEST_BENCH_FILE FSM_tb.sv -section_id FSM_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_Top_Level_Memory_realistic -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_Top_Level_Memory_realistic
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_Top_Level_Memory_realistic -section_id tb_Top_Level_Memory_realistic
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_Top_Level_Memory_realistic.sv -section_id tb_Top_Level_Memory_realistic
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

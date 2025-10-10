@@ -12,3 +12,8 @@ current_state.DOS_CARTAS 0 0 0 1 0 0 0 0 0 0 1
 current_state.MOSTRAR_RANDOM 0 0 1 0 0 0 0 0 0 0 1 
 current_state.NO_MAS_PAREJAS 0 1 0 0 0 0 0 0 0 0 1 
 current_state.CONCLUSION 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Top_Level_Memory|card_controller:cartasM|verificar_pareja:vp|state
+Name state.CHECK 
+state.IDLE 0 
+state.CHECK 1 
