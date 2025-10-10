@@ -8,7 +8,10 @@ module FSM(
     input  logic        cartas_ocultas,
     input  logic        cartas_revueltas,
     output logic [1:0]  ganador,
-    output logic [3:0]  state
+    output logic [3:0]  state,
+	 output logic [1:0]  turno_de,
+	 output logic [3:0] puntajeJ1,
+    output logic [3:0] puntajeJ2
 );
 
     // Definición de estados
@@ -35,6 +38,11 @@ module FSM(
     logic [4:0] primera_carta;
     logic [4:0] segunda_carta;
     logic pareja_encontrada;
+	 
+	 assign turno_de = jugador_en_turno + 1'b1;
+	 assign puntajeJ1 = puntaje_j1;
+	 assign puntajeJ2 = puntaje_j2;
+	 
 
     // UN SOLO BLOQUE ALWAYS_FF PARA TODA LA LÓGICA SECUENCIAL
     always_ff @(posedge clk or posedge rst) begin

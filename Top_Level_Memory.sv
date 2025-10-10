@@ -2,8 +2,10 @@ module Top_Level_Memory(
     input logic rst, clk,
     input logic I, CM, CO, CR,
     input logic Izq, Der, Sel,
-    output logic [1:0] ganador,
+	 output logic [1:0] turno_de,
     output logic [6:0] seg,
+	 output logic [6:0] segPJ1,
+	 output logic [6:0] segPJ2,
     output logic vgaclk,
     output logic hsync, vsync,
     output logic sync_b, blank_b,
@@ -22,9 +24,12 @@ module Top_Level_Memory(
 	
 	// Variables para la MEF
 	logic [1:0]  cartas_sw;
-	logic inicio, tiempo_terminado, se_eligio_carta, load, a;
+	logic inicio, tiempo_terminado, se_eligio_carta, load;
 	logic cartas_mostradas, cartas_ocultas, cartas_revueltas, carta_randomizada;
 	logic [3:0]  state;
+	logic [3:0] puntajeJ1;
+   logic [3:0] puntajeJ2;
+	logic [1:0] ganador;
 	
 	// arrays
 	logic [4:0] arrI [0:15]; // 16 elementos, cada uno de 5 bits
@@ -77,12 +82,24 @@ module Top_Level_Memory(
         .cartas_ocultas(cartas_ocultas),
         .cartas_revueltas(cartas_revueltas),
         .ganador(ganador),
-        .state(state)
+        .state(state),
+		  .turno_de(turno_de),
+		  .puntajeJ1(puntajeJ1),
+		  .puntajeJ2(puntajeJ2)
     );
  
 	
-	//contador
+	//============================================ 7 SEGMENTOS ==============================================
+
 	top_7seg_counter(.clk(clk), .rst(rst), .seg(seg));
+	// Decodificadores de 7 segmentos
+    BinTo7Seg display_unidades (
+			.bin(puntajeJ1), 
+			.bin_to_7seg(segPJ1));
+			
+    BinTo7Seg display_decenas  (
+			.bin(puntajeJ2),  
+			.bin_to_7seg(segPJ2));
 	
 	// ============================================ LÓGICA DE PANTALLAS ===========================================
     // Pantalla default (morado)

@@ -8,48 +8,62 @@ CR => ~NO_FANOUT~
 Izq => ~NO_FANOUT~
 Der => ~NO_FANOUT~
 Sel => ~NO_FANOUT~
-ganador[0] <= FSM:memory_fsm.ganador
-ganador[1] <= FSM:memory_fsm.ganador
-seg[0] <= top_7seg_counter:comb_10.seg
-seg[1] <= top_7seg_counter:comb_10.seg
-seg[2] <= top_7seg_counter:comb_10.seg
-seg[3] <= top_7seg_counter:comb_10.seg
-seg[4] <= top_7seg_counter:comb_10.seg
-seg[5] <= top_7seg_counter:comb_10.seg
-seg[6] <= top_7seg_counter:comb_10.seg
-vgaclk <= vgaclk.DB_MAX_OUTPUT_PORT_TYPE
-hsync <= vgaController:vgaCont.port1
-vsync <= vgaController:vgaCont.port2
-sync_b <= vgaController:vgaCont.port3
-blank_b <= vgaController:vgaCont.port4
-s[0] <= FSM:memory_fsm.state
-s[1] <= FSM:memory_fsm.state
-s[2] <= FSM:memory_fsm.state
-s[3] <= FSM:memory_fsm.state
-r[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-r[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-r[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-r[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-r[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-r[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-r[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-r[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-g[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
-g[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
-g[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-g[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-g[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-g[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-g[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-g[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-b[0] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
-b[1] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
-b[2] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
-b[3] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
-b[4] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
-b[5] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
-b[6] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
-b[7] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+turno_de[0] << FSM:memory_fsm.turno_de
+turno_de[1] << FSM:memory_fsm.turno_de
+seg[0] << top_7seg_counter:comb_10.seg
+seg[1] << top_7seg_counter:comb_10.seg
+seg[2] << top_7seg_counter:comb_10.seg
+seg[3] << top_7seg_counter:comb_10.seg
+seg[4] << top_7seg_counter:comb_10.seg
+seg[5] << top_7seg_counter:comb_10.seg
+seg[6] << top_7seg_counter:comb_10.seg
+segPJ1[0] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ1[1] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ1[2] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ1[3] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ1[4] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ1[5] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ1[6] << BinTo7Seg:display_unidades.bin_to_7seg
+segPJ2[0] << BinTo7Seg:display_decenas.bin_to_7seg
+segPJ2[1] << BinTo7Seg:display_decenas.bin_to_7seg
+segPJ2[2] << BinTo7Seg:display_decenas.bin_to_7seg
+segPJ2[3] << BinTo7Seg:display_decenas.bin_to_7seg
+segPJ2[4] << BinTo7Seg:display_decenas.bin_to_7seg
+segPJ2[5] << BinTo7Seg:display_decenas.bin_to_7seg
+segPJ2[6] << BinTo7Seg:display_decenas.bin_to_7seg
+vgaclk << vgaclk.DB_MAX_OUTPUT_PORT_TYPE
+hsync << vgaController:vgaCont.port1
+vsync << vgaController:vgaCont.port2
+sync_b << vgaController:vgaCont.port3
+blank_b << vgaController:vgaCont.port4
+s[0] << FSM:memory_fsm.state
+s[1] << FSM:memory_fsm.state
+s[2] << FSM:memory_fsm.state
+s[3] << FSM:memory_fsm.state
+r[0] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
+r[1] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+r[2] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+r[3] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+r[4] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+r[5] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+r[6] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+r[7] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+g[0] << Mux15.DB_MAX_OUTPUT_PORT_TYPE
+g[1] << Mux14.DB_MAX_OUTPUT_PORT_TYPE
+g[2] << Mux13.DB_MAX_OUTPUT_PORT_TYPE
+g[3] << Mux12.DB_MAX_OUTPUT_PORT_TYPE
+g[4] << Mux11.DB_MAX_OUTPUT_PORT_TYPE
+g[5] << Mux10.DB_MAX_OUTPUT_PORT_TYPE
+g[6] << Mux9.DB_MAX_OUTPUT_PORT_TYPE
+g[7] << Mux8.DB_MAX_OUTPUT_PORT_TYPE
+b[0] << Mux23.DB_MAX_OUTPUT_PORT_TYPE
+b[1] << Mux22.DB_MAX_OUTPUT_PORT_TYPE
+b[2] << Mux21.DB_MAX_OUTPUT_PORT_TYPE
+b[3] << Mux20.DB_MAX_OUTPUT_PORT_TYPE
+b[4] << Mux19.DB_MAX_OUTPUT_PORT_TYPE
+b[5] << Mux18.DB_MAX_OUTPUT_PORT_TYPE
+b[6] << Mux17.DB_MAX_OUTPUT_PORT_TYPE
+b[7] << Mux16.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|pll:vgapll
@@ -64226,6 +64240,16 @@ state[0] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
 state[1] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
 state[2] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
 state[3] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+turno_de[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+turno_de[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ1[0] <= puntaje_j1[0].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ1[1] <= puntaje_j1[1].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ1[2] <= puntaje_j1[2].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ1[3] <= puntaje_j1[3].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ2[0] <= puntaje_j2[0].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ2[1] <= puntaje_j2[1].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ2[2] <= puntaje_j2[2].DB_MAX_OUTPUT_PORT_TYPE
+puntajeJ2[3] <= puntaje_j2[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Top_Level_Memory|top_7seg_counter:comb_10
@@ -64300,5 +64324,33 @@ rst => cycle_counter[23].ACLR
 rst => cycle_counter[24].ACLR
 rst => cycle_counter[25].ACLR
 pulse_1s <= pulse_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Level_Memory|BinTo7Seg:display_unidades
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+bin_to_7seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Level_Memory|BinTo7Seg:display_decenas
+bin[0] => Decoder0.IN3
+bin[1] => Decoder0.IN2
+bin[2] => Decoder0.IN1
+bin[3] => Decoder0.IN0
+bin_to_7seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+bin_to_7seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
