@@ -10,34 +10,277 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/lab3\ taller\ vga {C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:28:12 on Oct 09,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/lab3 taller vga" C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv 
+# Start time: 00:50:38 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv 
+# -- Compiling module videoGen
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv(4): (vlog-13314) Defaulting port 'arr_cartas' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	videoGen
+# End time: 00:50:38 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:38 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv 
+# -- Compiling module vgaController
+# 
+# Top level modules:
+# 	vgaController
+# End time: 00:50:38 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv 
+# -- Compiling module rectgen
+# 
+# Top level modules:
+# 	rectgen
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv 
+# -- Compiling module start
+# 
+# Top level modules:
+# 	start
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv 
+# -- Compiling module triangle_symbol
+# 
+# Top level modules:
+# 	triangle_symbol
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv 
+# -- Compiling module square_symbol
+# 
+# Top level modules:
+# 	square_symbol
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv 
+# -- Compiling module rectborder
+# 
+# Top level modules:
+# 	rectborder
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv 
+# -- Compiling module plus_symbol
+# 
+# Top level modules:
+# 	plus_symbol
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv 
+# -- Compiling module minus_symbol
+# 
+# Top level modules:
+# 	minus_symbol
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv 
+# -- Compiling module invtriangle_symbol
+# 
+# Top level modules:
+# 	invtriangle_symbol
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv 
+# -- Compiling module hash_symbol
+# 
+# Top level modules:
+# 	hash_symbol
+# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv 
+# -- Compiling module cros_symbol
+# 
+# Top level modules:
+# 	cros_symbol
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv 
+# -- Compiling module circle_symbol
+# 
+# Top level modules:
+# 	circle_symbol
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv 
+# -- Compiling module Shuffle
+# 
+# Top level modules:
+# 	Shuffle
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv 
+# -- Compiling module modify_arr
+# 
+# Top level modules:
+# 	modify_arr
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv 
+# -- Compiling module bit_shifter
+# 
+# Top level modules:
+# 	bit_shifter
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv 
+# -- Compiling module save_cards
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv(4): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	save_cards
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv 
+# -- Compiling module top_7seg_counter
+# 
+# Top level modules:
+# 	top_7seg_counter
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv 
+# -- Compiling module clk_counter_seg
+# 
+# Top level modules:
+# 	clk_counter_seg
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv 
+# -- Compiling module BinTo7Seg
+# 
+# Top level modules:
+# 	BinTo7Seg
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv 
+# -- Compiling module carta
+# 
+# Top level modules:
+# 	carta
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv 
 # -- Compiling module FSM
 # 
 # Top level modules:
 # 	FSM
-# End time: 13:28:13 on Oct 09,2025, Elapsed time: 0:00:01
+# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/lab3\ taller\ vga {C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:28:13 on Oct 09,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/lab3 taller vga" C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv 
-# -- Compiling module FSM_tb
+# Start time: 00:50:40 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv 
+# -- Compiling module Top_Level_Memory
 # 
 # Top level modules:
-# 	FSM_tb
-# End time: 13:28:13 on Oct 09,2025, Elapsed time: 0:00:00
+# 	Top_Level_Memory
+# End time: 00:50:41 on Oct 10,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:41 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv 
+# -- Compiling module card_controller
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(5): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	card_controller
+# End time: 00:50:41 on Oct 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:41 on Oct 10,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv 
+# -- Compiling module Shuffle_tb
+# 
+# Top level modules:
+# 	Shuffle_tb
+# End time: 00:50:41 on Oct 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FSM_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FSM_tb 
-# Start time: 13:28:13 on Oct 09,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Shuffle_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Shuffle_tb 
+# Start time: 00:50:41 on Oct 10,2025
 # Loading sv_std.std
-# Loading work.FSM_tb
-# Loading work.FSM
+# Loading work.Shuffle_tb
+# Loading work.Shuffle
 # 
 # add wave *
 # view structure
@@ -45,77 +288,13 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# === INICIANDO TESTBENCH ===
-# 
-# --- Test 1: Reset ---
-# Cambio de estado: 0000 en tiempo 0
-# Cambio en ganador: 00 en tiempo 0
-# OK: En tiempo 20, estado INICIO (0000)
-# OK: En tiempo 20, ganador NINGUNO (00)
-# 
-# --- Test 2: Secuencia inicial ---
-# Cambio de estado: 0001 en tiempo 25
-# OK: En tiempo 30, estado MUESTRO_CORTAS (0001)
-# Cambio de estado: 0010 en tiempo 35
-# OK: En tiempo 40, estado OCULTA_CORTAS (0010)
-# Cambio de estado: 0011 en tiempo 45
-# OK: En tiempo 50, estado REVUELVE_CORTAS (0011)
-# Cambio de estado: 0100 en tiempo 55
-# OK: En tiempo 60, estado INICIO_JUEGO (0100)
-# Cambio de estado: 0101 en tiempo 65
-# OK: En tiempo 70, estado TURNO_JUGADOR (0101)
-# 
-# --- Test 3: Selección de cartas sin pareja ---
-# Cambio de estado: 0110 en tiempo 75
-# OK: En tiempo 80, estado UNA_CARTA (0110)
-# Cambio de estado: 0111 en tiempo 85
-# OK: En tiempo 90, estado DOS_CARTAS (0111)
-# Cambio de estado: 0101 en tiempo 95
-# OK: En tiempo 100, estado TURNO_JUGADOR (0101)
-# 
-# --- Test 4: Selección de cartas con pareja ---
-# Cambio de estado: 0110 en tiempo 105
-# OK: En tiempo 110, estado UNA_CARTA (0110)
-# Cambio de estado: 0111 en tiempo 115
-# OK: En tiempo 120, estado DOS_CARTAS (0111)
-# Cambio de estado: 0101 en tiempo 125
-# OK: En tiempo 130, estado TURNO_JUGADOR (0101)
-# 
-# --- Test 5: Tiempo terminado ---
-# Cambio de estado: 1000 en tiempo 135
-# OK: En tiempo 140, estado MOSTRAR_RANDOM (1000)
-# Cambio de estado: 0101 en tiempo 145
-# OK: En tiempo 150, estado TURNO_JUGADOR (0101)
-# 
-# --- Test 6: Simular juego completo ---
-# Cambio de estado: 0110 en tiempo 155
-# Cambio de estado: 0111 en tiempo 165
-# Cambio de estado: 0101 en tiempo 175
-# Cambio de estado: 0110 en tiempo 185
-# Cambio de estado: 0111 en tiempo 195
-# Cambio de estado: 0101 en tiempo 205
-# Cambio de estado: 0110 en tiempo 215
-# Cambio de estado: 0111 en tiempo 225
-# Cambio de estado: 0101 en tiempo 235
-# Cambio de estado: 0110 en tiempo 245
-# Cambio de estado: 0111 en tiempo 255
-# Cambio de estado: 0101 en tiempo 265
-# Cambio de estado: 0110 en tiempo 275
-# Cambio de estado: 0111 en tiempo 285
-# Cambio de estado: 0101 en tiempo 295
-# Cambio de estado: 0110 en tiempo 305
-# Cambio de estado: 0111 en tiempo 315
-# Cambio de estado: 0101 en tiempo 325
-# Cambio de estado: 0110 en tiempo 335
-# Cambio de estado: 0111 en tiempo 345
-# Cambio de estado: 0101 en tiempo 355
-# Cambio de estado: 0110 en tiempo 365
-# Cambio de estado: 0111 en tiempo 375
-# Cambio de estado: 0101 en tiempo 385
-# ERROR: En tiempo 390, estado esperado NO_MAS_PAREJAS (1001), pero se obtuvo 0101
-# ** Note: $finish    : C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv(43)
-#    Time: 390 ps  Iteration: 0  Instance: /FSM_tb
+# Tiempo | done | done_reg
+#    0 |   0  |    0
+#   35 |   1  |    0
+#   45 |   1  |    1
+# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv(51)
+#    Time: 82 ps  Iteration: 0  Instance: /Shuffle_tb
 # 1
-# Break in Task check_state at C:/Users/gonza/Desktop/lab3 taller vga/FSM_tb.sv line 43
-# End time: 13:29:48 on Oct 09,2025, Elapsed time: 0:01:35
+# Break in Module Shuffle_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv line 51
+# End time: 00:53:36 on Oct 10,2025, Elapsed time: 0:02:55
 # Errors: 0, Warnings: 0
