@@ -135,6 +135,13 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Shuffle_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Shuffle_tb -section_id Shuffle_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Arr_Management_tb/Shuffle_tb.sv -section_id Shuffle_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE Modules_top_test/top_verificar_pareja.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules_top_test/top_shuffle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules_top_test/top_mostrar_carta_random.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/verificar_pareja_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/top_shuffle_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/top_mostrar_carta_random_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/FSM_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counters/posedge_detector.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/Shuffle_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/verificar_pareja.sv

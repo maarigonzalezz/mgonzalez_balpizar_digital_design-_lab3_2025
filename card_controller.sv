@@ -1,7 +1,7 @@
 module card_controller(
     input  logic clk,
     input  logic rst,
-    input  logic [3:0] state,
+    input  logic [3:0] state,           // Estado externo
     input  logic [4:0] arr_in [0:15],
     output logic [4:0] arr_out [0:15],
     output logic doneSh,
@@ -22,6 +22,10 @@ module card_controller(
     logic doneVP;
     logic huboPareja;
     logic [4:0] arr_VP [0:15];
+	 
+	 logic startMR;
+    logic doneMR;
+    logic [4:0] arr_MR [0:15];
 
     // -----------------------------------------------------------------
     // Instancias de módulos
@@ -32,7 +36,7 @@ module card_controller(
         .data(seed)
     );
 
-    Shuffle sh(
+    Shuffle sh (
         .clk(clk),
         .rst(rst),
         .start(startS),
@@ -41,83 +45,102 @@ module card_controller(
         .done(done_Shuffle)
     );
 
-    verificar_pareja vp(
+    verificar_pareja vp (
         .clk(clk),
         .rst(rst),
         .start(startVP),
-        .arr_cards_in(arr_out),  // entrada del shuffle o passthrough
+        .arr_cards_in(arr_out),    // entrada del shuffle o passthrough
         .arr_cards_out(arr_VP),
         .done(doneVP),
         .hubo_pareja(huboPareja)
     );
 
+	 mostrar_carta_random mr(
+        .clk(clk),
+        .rst(rst),
+        .start(startMR),
+        .seed(seed),
+        .arr_cards_in(arr_out),
+        .arr_cards_out(arr_MR),
+        .done(doneMR)
+    );
+	 
+	 
     // -----------------------------------------------------------------
-    // FSM top-level
+    // FSM basada en estado externo
     // -----------------------------------------------------------------
-    typedef enum logic [2:0] {
-        IDLE         = 3'b000,
-        SHUFFLE      = 3'b001,
-        VERIFY       = 3'b010,
-        PASS_THROUGH = 3'b011,
-        FINISHED     = 3'b100
-    } top_state_t;
-
-    top_state_t tstate;
+    typedef enum logic [3:0] {
+        INICIO          = 4'b0000,
+        MUESTRO_CORTAS  = 4'b0001,
+        OCULTA_CORTAS   = 4'b0010,
+        REVUELVE_CORTAS = 4'b0011,
+        INICIO_JUEGO    = 4'b0100,
+        TURNO_JUGADOR   = 4'b0101,
+        UNA_CARTA       = 4'b0110,
+        DOS_CARTAS      = 4'b0111,
+        MOSTRAR_RANDOM  = 4'b1000,
+        NO_MAS_PAREJAS  = 4'b1001,
+        CONCLUSION      = 4'b1010
+    } state_t;
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            tstate <= IDLE;
             startS <= 0;
             startVP <= 0;
             shuffle_active <= 0;
             doneSh <= 0;
             doneMcr <= 0;
             load <= 0;
-            // Inicializar arr_out
             for (int i=0; i<16; i++) arr_out[i] <= arr_in[i];
         end else begin
-            // Reset pulsos cada ciclo
+            // Reset de pulsos cada ciclo
             startS <= 0;
             startVP <= 0;
             doneSh <= 0;
             doneMcr <= 0;
             load <= 0;
 
-            case(tstate)
-                IDLE: begin
-                    if (state == 4'b0011) tstate <= SHUFFLE;
-                    else tstate <= PASS_THROUGH;
-                end
+            case(state)
+					//Estado para Shuffle
+                REVUELVE_CORTAS: begin
+                    if (!shuffle_active) begin
+                        startS <= 1;
+                        shuffle_active <= 1;
+                    end
 
-                SHUFFLE: begin
-                    startS <= 1;
-                    shuffle_active <= 1;
-
-                    if (done_Shuffle) begin
-                        for (int i = 0; i < 16; i++) arr_out[i] <= arr_Sh[i];
+                    if (done_Shuffle && shuffle_active) begin
+                        for (int i=0; i<16; i++) arr_out[i] <= arr_Sh[i];
                         doneSh <= 1;
                         load <= 1;
                         shuffle_active <= 0;
-                        tstate <= VERIFY;
                     end
                 end
-
-                VERIFY: begin
+					 
+					 
+					//Estado para verificar parejas
+                DOS_CARTAS: begin
                     startVP <= 1;
                     if (doneVP) begin
-                        for (int i = 0; i < 16; i++) arr_out[i] <= arr_VP[i];
+                        for (int i=0; i<16; i++) arr_out[i] <= arr_VP[i];
+								load <= 1;
                         doneMcr <= 1;
-                        tstate <= FINISHED;
+                    end
+                end
+					 
+					 // -----------------------------------------------------------------
+                // Estado MOSTRAR_RANDOM
+                // -----------------------------------------------------------------
+                MOSTRAR_RANDOM: begin
+                    startMR <= 1;
+                    if (doneMR) begin
+                        for (i = 0; i < 16; i++) arr_out[i] <= arr_MR[i];
+                        load <= 1;
                     end
                 end
 
-                PASS_THROUGH: begin
-                    for (int i = 0; i < 16; i++) arr_out[i] <= arr_in[i];
-                    tstate <= FINISHED;
-                end
-
-                FINISHED: begin
-                    if (state != 4'b0011) tstate <= IDLE;
+                default: begin
+                    // Pass-through para otros estados
+                    for (int i=0; i<16; i++) arr_out[i] <= arr_in[i];
                 end
             endcase
         end
