@@ -30,6 +30,7 @@ module Top_Level_Memory(
 	logic [3:0] puntajeJ1;
    logic [3:0] puntajeJ2;
 	logic [1:0] ganador;
+	logic reset_timer;
 	
 	// arrays
 	logic [4:0] arrI [0:15]; // 16 elementos, cada uno de 5 bits
@@ -85,7 +86,8 @@ module Top_Level_Memory(
         .state(state),
 		  .turno_de(turno_de),
 		  .puntajeJ1(puntajeJ1),
-		  .puntajeJ2(puntajeJ2)
+		  .puntajeJ2(puntajeJ2),
+		  .reset_timer(reset_timer)
     );
 	 
 	 
@@ -102,7 +104,8 @@ module Top_Level_Memory(
 	
 	//============================================ 7 SEGMENTOS ==============================================
 
-	top_7seg_counter(.clk(clk), .rst(rst), .seg(seg));
+	top_7seg_counter(.clk(clk), .rst(reset_timer), .seg(seg), .tiempo_terminado(tiempo_terminado));
+	
 	// Decodificadores de 7 segmentos
     BinTo7Seg display_unidades (
 			.bin(puntajeJ1), 

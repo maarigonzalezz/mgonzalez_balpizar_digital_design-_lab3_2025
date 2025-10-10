@@ -2,7 +2,8 @@ module top_7seg_counter (
     input  logic clk,       // Reloj principal (ej: 50 MHz en FPGA real)
     input  logic rst,       // Reset asíncrono
     output logic [6:0] seg, // Segmentos del display (a-g)
-    output logic [3:0] an   // Ánodos del display (solo 1 display activo)
+    output logic [3:0] an,   // Ánodos del display (solo 1 display activo)
+	 output logic tiempo_terminado
 );
 
     // -------------------------
@@ -35,6 +36,8 @@ module top_7seg_counter (
                 counter_hex <= counter_hex - 1;
         end
     end
+	 
+	 assign tiempo_terminado = (counter_hex == 0);
 
     // -------------------------
     // Decoder Hex -> 7 segmentos

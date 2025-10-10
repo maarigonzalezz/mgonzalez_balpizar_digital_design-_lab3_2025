@@ -11,7 +11,8 @@ module FSM(
     output logic [3:0]  state,
 	 output logic [1:0]  turno_de,
 	 output logic [3:0] puntajeJ1,
-    output logic [3:0] puntajeJ2
+    output logic [3:0] puntajeJ2,
+	 output logic       reset_timer
 );
 
     // Definición de estados
@@ -55,6 +56,7 @@ module FSM(
             segunda_carta <= 0;
             pareja_encontrada <= 0;
             ganador <= 2'b00;
+				reset_timer <= 1'b1;
         end else begin
             current_state <= next_state;
 
@@ -70,15 +72,19 @@ module FSM(
                 
                 TURNO_JUGADOR: begin
                     // Resetear variables de cartas al inicio del turno
+						  reset_timer <= 1'b1;
+						  reset_timer <= 1'b0;
                     primera_carta <= 0;
                     segunda_carta <= 0;
                     pareja_encontrada <= 0;
+						  //cartas_seleccionadas <= 2'b00;
                 end
                 
                 UNA_CARTA: begin
                     // Capturar primera carta cuando se selecciona
                     if (se_eligio_carta) begin
                         primera_carta <= {3'b0, cartas_seleccionadas};
+								//cartas_seleccionadas <= 2'b01;
                     end
                 end
                 
@@ -180,8 +186,13 @@ module FSM(
             end
             
             MOSTRAR_RANDOM: begin
-                next_state = TURNO_JUGADOR;
+                case (cartas_seleccionadas)
+                    2'b00: next_state = UNA_CARTA;
+                    2'b01: next_state = DOS_CARTAS;
+						  default: next_state = MOSTRAR_RANDOM;
+                endcase
             end
+				
             
             NO_MAS_PAREJAS: begin
                 next_state = CONCLUSION;
