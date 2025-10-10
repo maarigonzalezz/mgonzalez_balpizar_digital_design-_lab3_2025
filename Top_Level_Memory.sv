@@ -7,6 +7,7 @@ module Top_Level_Memory(
     output logic vgaclk,
     output logic hsync, vsync,
     output logic sync_b, blank_b,
+	 output logic [3:0] s, 
     output logic [7:0] r, g, b
 );
 
@@ -21,12 +22,14 @@ module Top_Level_Memory(
 	
 	// Variables para la MEF
 	logic [1:0]  cartas_sw;
-	logic inicio, tiempo_terminado, se_eligio_carta;
-	logic cartas_mostradas, cartas_ocultas, cartas_revueltas;
+	logic inicio, tiempo_terminado, se_eligio_carta, load;
+	logic cartas_mostradas, cartas_ocultas, cartas_revueltas, carta_randomizada;
 	logic [3:0]  state;
 	
 	// arrays
 	logic [4:0] arrI [0:15]; // 16 elementos, cada uno de 5 bits
+	logic [4:0] arr_cartas [0:15]; // Array donde se encuentra la logica del juego
+	logic [4:0] arr_temp [0:15];
 	
 	
 	// ======================================================= VGA =============================================================
@@ -42,15 +45,31 @@ module Top_Level_Memory(
 	// Modulo que pinta las cartas mostradas en pantalla
 	videoGen videoGenI(.x(x), .y(y), .arr_cartas(arrI), .r(r_videoGenI), .g(g_videoGenI), .b(b_videoGenI));
 	
+	// Modulo que pinta las cartas mostradas en pantalla ------> quede instanciando esto
+	videoGen videoGen(.x(x), .y(y), .arr_cartas(arr_cartas), .r(r_videoGen), .g(g_videoGen), .b(b_videoGen));
+	
 	
 	// ============================================ MANEJO DE ARRAY DE CARTAS =====================================
 	// crea el array inicial y lo modifica segun el estado
 	modify_arr crear_arr(.estado(estCartas), .arrI(arrI));
 	
+	// modulo que tiene el control del manejo de cartas
+	card_controller cartasM(.clk(clk), .rst(rst), .state(state), .arr_in(arr_cartas), .arr_out(arr_temp), 
+									.doneSh(cartas_revueltas), .doneMcr(carta_randomizada), .load(load));
+	save_cards cartasG(.clk(clk), .rst(rst), .load(load), .arr_in(arr_temp), .arr_out(arr_cartas));
+	
 	// ===================================================== MEF ==================================================
 	assign inicio = I;
 	assign cartas_mostradas = CM;
 	assign cartas_ocultas = CO; 
+	
+	always_ff @(posedge clk or posedge rst) begin
+    if (rst)
+        s <= 4'd0;
+    else
+        s <= 4'd3;
+		end
+	
 	FSM memory_fsm (
         .rst(rst),
         .clk(clk),
@@ -100,11 +119,21 @@ module Top_Level_Memory(
             end
             
             4'b0011: begin // Pantalla de revolver cartas
-                estCartas = 2'b01;  // Cartas seleccionadas durante revolución
+                estCartas = 2'b01;  // Cartas seleccionadas 
                 r = r_videoGenI;
                 g = g_videoGenI;
                 b = b_videoGenI;
             end  
+				4'b0100, 4'b0101, 4'b0110, 4'b0111, 4'b1000, 4'b1001: begin // Pantalla de juego
+                r = r_videoGen;
+                g = g_videoGen;
+                b = b_videoGen;
+				end
+				4'b1010: begin // Pantalla final
+                r = r_OVER;
+                g = g_OVER;
+                b = b_OVER;
+				end
 				default: begin
 					 r = r_w;
 					 g = g_w;

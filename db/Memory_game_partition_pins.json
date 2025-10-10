@@ -52,6 +52,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "s[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s[1]",
+					"strict" : false
+				},
+				{
 					"name" : "r[1]",
 					"strict" : false
 				},

@@ -1,1 +1,1 @@
-Info (10281): Verilog HDL Declaration information at FSM.sv(5): object "inicio" differs only in case from object "INICIO" in the same scope File: C:/Users/gonza/Desktop/lab3 taller vga/FSM.sv Line: 5
+Info (10281): Verilog HDL Declaration information at FSM.sv(5): object "inicio" differs only in case from object "INICIO" in the same scope File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 5
