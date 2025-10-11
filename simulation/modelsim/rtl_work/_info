@@ -8,687 +8,737 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/simulation/modelsim
+Z0 dC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/simulation/modelsim
 vBinTo7Seg
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1760079040
+Z2 !s110 1760173133
 !i10b 1
 !s100 Tl`gRcX6W:4MmPnPo76iL1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IK7CU[>@2PNj2CUzeJ3V7R2
+IKRT^ZTcCzbRUT<^dgz66i2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1760078017
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv
-!i122 20
-Z6 L0 1 20
-Z7 OV;L;2020.1;71
+w1760074824
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv
+!i122 25
+Z5 L0 1 20
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1760079040.000000
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv|
+Z7 !s108 1760173133.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv|
 !i113 1
-Z9 o-sv -work work
-!s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers
-Z10 tCvgOpt 0
+Z8 o-sv -work work
+!s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers}
+Z9 tCvgOpt 0
 n@bin@to7@seg
 vbit_shifter
 R1
-R2
+Z10 !s110 1760173131
 !i10b 1
 !s100 BNC7P32a5KQPXeBBoB9hX0
 R3
-I?`JQRRg<kXYYA;6hYVj[]1
+IZ?6Y;z_fcg17O5FC?LIQ[0
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv
-!i122 16
+w1759906525
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv
+!i122 19
 L0 1 28
-R7
+R6
 r1
 !s85 0
 31
+Z11 !s108 1760173131.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv|
+!i113 1
 R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv|
-!i113 1
+Z12 !s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management}
 R9
-Z11 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management
-R10
-vcard_controller
-R1
-Z12 !s110 1760079041
-!i10b 1
-!s100 8M8?S]M<kA`Q=^NHd@A`@2
-R3
-I>NJ@]5:>?0GY@^3:L25l=0
-R4
-S1
-R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv
-!i122 24
-L0 1 63
-R7
-r1
-!s85 0
-31
-Z13 !s108 1760079041.000000
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv|
-!i113 1
-R9
-Z14 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3
-R10
 vcarta
 R1
 R2
 !i10b 1
-!s100 UP^a<cXH7diS2^A@PTI[i1
+!s100 A1j?cM4e9AFkB22CgF;1H2
 R3
-IRS9d=>L7PFCdLB<IOOaK;0
+I996;jJEabNFW`430h^PIY3
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv
-!i122 21
-L0 1 149
-R7
+w1760096592
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv
+!i122 26
+L0 1 145
+R6
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv|
+R7
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv|
 !i113 1
+R8
+Z13 !s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025}
 R9
-R14
-R10
 vcircle_symbol
 R1
-R2
+Z14 !s110 1760173130
 !i10b 1
 !s100 m@bzh0TTQNoYzY=zVVCme3
 R3
-I=?RC1L]2L:2HeGY8:[3l11
+ITmC1WnJQSEfOR@6Y>DcCJ1
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv
-!i122 13
+Z15 w1759306953
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv
+!i122 15
 L0 1 38
-R7
+R6
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv|
+Z16 !s108 1760173130.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv|
 !i113 1
+R8
+Z17 !s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols}
 R9
-Z15 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols
-R10
 vclk_counter_seg
 R1
 R2
 !i10b 1
 !s100 Z>PEG3KQk_>kH84n:03@U0
 R3
-IR:Y[?4ZEAz_V7KGMWXZQ_0
+I5J=965h4><zV7>kKSMLB`3
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv
-!i122 19
+w1759307286
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv
+!i122 23
 L0 3 30
-R7
+R6
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv|
+R7
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv|
 !i113 1
+R8
+Z18 !s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters}
 R9
-Z16 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters
-R10
 vcros_symbol
 R1
-R2
+R14
 !i10b 1
 !s100 @1OP694:7JPG2@Q9Yg6ko2
 R3
-IlC4BHiIH[4mSHT8DmXfjm1
+ICcD_2<OTaS7FSa?OVO6X^1
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv
-!i122 12
+R15
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv
+!i122 14
 L0 1 30
-R7
+R6
 r1
 !s85 0
 31
-Z17 !s108 1760079039.000000
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv|
+R16
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
+vfinish
+R1
+Z19 !s110 1760173127
+!i10b 1
+!s100 6AgJXZnZjY9Ffbdg>cUIF3
+R3
+I4VZ6nJeJk`k=AcD74MI>53
+R4
+S1
+R0
+w1759797373
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv
+!i122 6
+L0 1 168
+R6
+r1
+!s85 0
+31
+Z20 !s108 1760173127.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv|
+!i113 1
+R8
+Z21 !s92 -sv -work work {+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller}
+R9
 vFSM
 R1
-R2
+!s110 1760173134
 !i10b 1
-!s100 dM?dB4<HPk:B==KEN_zAB1
+!s100 i4KQgYdXSjcWozacS5Jok3
 R3
-IZ9]TPO?mc:gSjS`ld9f6`0
+Ik1@MDdo]G2m0E<0KZW^7G2
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv
-!i122 22
-L0 1 205
-R7
+w1760094523
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv
+!i122 27
+L0 1 191
+R6
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv|
+!s108 1760173134.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv|
 !i113 1
+R8
+R13
 R9
-R14
-R10
 n@f@s@m
 vhash_symbol
 R1
-Z18 !s110 1760079039
+R14
 !i10b 1
 !s100 o1^g7NI6OA0XW00Sg^5M<0
 R3
-IV<4lcSSoSBbJDfY_PQ7Va0
+IOJKzYGkU__:KYK7oa_b633
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv
-!i122 11
+Z22 w1759306954
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv
+!i122 13
 L0 1 62
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv|
+R16
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
 vinvtriangle_symbol
 R1
-R18
+R14
 !i10b 1
 !s100 5M4EB3?3Z;ie=IH^Bhd>L0
 R3
-I]02dbc<_fI7YCcZO@z>@41
+IjLg;4n<KSCazc?YZfPlCW1
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv
-!i122 10
+R22
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv
+!i122 12
 L0 1 65
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv|
+R16
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
 vminus_symbol
 R1
-R18
+R14
 !i10b 1
 !s100 hF>JR>eFEP<LY=2cTi03R1
 R3
-IU;96bOj@]zdOk<iL]Oc<L0
+IMOJBkH@j:iTFOH26I[Fi11
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv
-!i122 9
+R22
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv
+!i122 11
 L0 1 31
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv|
+R16
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
 vmodify_arr
 R1
-R2
+R10
 !i10b 1
 !s100 H93RK6nIcXO7NPFHWLW0k3
 R3
-IE`V@:K]?8SSZHCH`fU?:h3
+Id^XP1N6cbdF=b45dMOYEW1
 R4
 S1
 R0
+w1759896781
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv
+!i122 18
 R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv
-!i122 15
 R6
-R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv|
-!i113 1
-R9
 R11
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv|
+!i113 1
+R8
+R12
+R9
+vmostrar_carta_random
+R1
 R10
+!i10b 1
+!s100 VhVZhl5NJ@VlYSbXKl37@3
+R3
+IFPP4`8]iK9D8zMdZlODnU2
+R4
+S1
+R0
+w1759907041
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv
+!i122 17
+L0 1 96
+R6
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv|
+!i113 1
+R8
+R12
+R9
 vpll
 R1
-R18
+R19
 !i10b 1
 !s100 >9fZUH_Fo_SFSCg9EM=433
 R3
-I]>0[Gh7Zz<5LkjKdIed:?3
+IOmOi<i3I>TaBR_0hnlIPf3
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv
-!i122 3
+w1758603250
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv
+!i122 4
 L0 1 21
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv|
+R20
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv|
 !i113 1
+R8
+R21
 R9
-Z19 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller
-R10
 vplus_symbol
 R1
-R18
+R14
 !i10b 1
 !s100 NT^_<HJ3DQUnV4<NS22ZG0
 R3
-I3dhdWZ849dlVI<9H79ZPV3
+IYI08[3EL6S;=U]dG=Aa380
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv
-!i122 8
+R22
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv
+!i122 10
 L0 1 39
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv|
+R16
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
+vposedge_detector
+R1
+R2
+!i10b 1
+!s100 ;]zNFSGjze6?_dn0^WUY33
+R3
+I<4UDLCIYCQIj1W1D3i<DP0
+R4
+S1
+R0
+Z23 w1760083457
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv
+!i122 24
+L0 1 22
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv|
+!i113 1
+R8
+R18
+R9
 vrectborder
 R1
-R18
+Z24 !s110 1760173129
 !i10b 1
 !s100 [AH5W^:<Ma9=D[0foaFE^2
 R3
-IegO@JkE9czY4TQL8Ybg3:0
+IV1Fe?]LWD_USVSGJ00fkD1
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv
-!i122 7
+w1759986782
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv
+!i122 9
 L0 1 32
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv|
+Z25 !s108 1760173129.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
 vrectgen
 R1
-R18
+R19
 !i10b 1
 !s100 5CT:HUMeTMcah83L=iJ8`3
 R3
-I[VAKe]:kiQCaNQB95Do9;3
+If<e]dTMVGQ>j7M:mjhWSS2
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv
-!i122 2
+R15
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv
+!i122 3
 L0 3 9
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv|
+R20
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv|
 !i113 1
+R8
+R21
 R9
-R19
-R10
 vsave_cards
 R1
-R2
+Z26 !s110 1760173132
 !i10b 1
-!s100 f3n?9n35nJ7aF5X53LaiU1
+!s100 lM6]MARhkGJgooBGfDMJL1
 R3
-I`Td<NmB8mK[i5I>N1V:PC1
+I:8Z0R]PMNc1P9E>lVVWDS1
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv
-!i122 17
-L0 1 13
-R7
+w1760155377
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv
+!i122 20
+L0 1 18
+R6
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv|
-!i113 1
-R9
 R11
-R10
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv|
+!i113 1
+R8
+R12
+R9
+vseleccionar_parejas
+R1
+R26
+!i10b 1
+!s100 M6zSR[gVXF94ZYnl1fQbW0
+R3
+IbFm`=z70dI`62zIZKQIfN3
+R4
+S1
+R0
+w1760169784
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv
+!i122 21
+L0 1 112
+R6
+r1
+!s85 0
+31
+Z27 !s108 1760173132.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv|
+!i113 1
+R8
+R12
+R9
 vShuffle
 R1
-R2
+R14
 !i10b 1
 !s100 inm5VLIocCg?^KfK>MaI72
 R3
-I2]iAH:HPb;10l<?;`fQPY1
+IJM[WG]a9fZkJWCj[VU[_h1
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv
-!i122 14
+w1759906613
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv
+!i122 16
 L0 1 75
-R7
+R6
 r1
 !s85 0
 31
+R16
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv|
+!i113 1
 R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv|
-!i113 1
-R9
-R11
-R10
-n@shuffle
-vShuffle_tb
-R1
 R12
-!i10b 1
-!s100 Y[DO4[;eW7D[MLjV3]IXF2
-R3
-IX?:kO:VG@h<g:oSXnfHEA2
-R4
-S1
-R0
-w1760079022
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv
-!i122 25
-L0 1 60
-R7
-r1
-!s85 0
-31
-R13
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv|
-!i113 1
 R9
-!s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb
-R10
-n@shuffle_tb
+n@shuffle
 vsquare_symbol
 R1
-R18
+R24
 !i10b 1
 !s100 F>?GZ`HU0Cf]d^gN>nM<>0
 R3
-I[nCjWQ9OmI_j2l8VdKZ<i0
+IWB@nh7hH`[JnA1dHBglUo3
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv
-!i122 6
+R22
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv
+!i122 8
 L0 1 16
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv|
+R25
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
 vstart
 R1
-R18
+R19
 !i10b 1
 !s100 53d7_QlnVg6QhGbO@:k4[0
 R3
-IQ1@k0HmZmFHf?6N@8:h970
+IikX;BlL;MSX@FPPIRF2040
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv
-!i122 4
+w1759796400
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv
+!i122 5
 L0 1 80
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv|
+R20
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv|
 !i113 1
+R8
+R21
 R9
-R19
-R10
 vtop_7seg_counter
 R1
-R2
+R26
 !i10b 1
-!s100 a`]:RB0Jo0SSRz=V1`z^S0
+!s100 ?aZHX3ahSk60fLI>SaS[?0
 R3
-IY7cfBf[:eoJ<`[9CAS1DJ1
+I4C]0XOJ<?;[hff`Ie61[X2
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv
-!i122 18
-L0 1 69
-R7
+w1760077666
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv
+!i122 22
+L0 1 72
+R6
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv|
+R27
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv|
 !i113 1
-R9
-R16
-R10
-vTop_Level_Memory
-R1
-R12
-!i10b 1
-!s100 48J><KnBI892QkgGjohP50
-R3
-IL_N0=X<VY^:T2PaSMddkT0
-R4
-S1
-R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv
-!i122 23
-L0 1 161
-R7
-r1
-!s85 0
-31
 R8
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv|
-!i113 1
+R18
 R9
-R14
-R10
-n@top_@level_@memory
 vtriangle_symbol
 R1
-R18
+R24
 !i10b 1
 !s100 mb7D<20@E:J2Jno8AkJ=j0
 R3
-I8]B01T4POX4JgdW41DId<2
+IDE=T8a7l262oU^nP<3lI@3
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv
-!i122 5
+R22
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv
+!i122 7
 L0 1 71
-R7
+R6
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv|
+R20
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv|
 !i113 1
+R8
+R17
 R9
-R15
-R10
+vverificar_pareja
+R1
+Z28 !s110 1760173126
+!i10b 1
+!s100 [UleMWN763A4CUc;EV?8_0
+R3
+IzUi?o@A4737FRag5jkk<N0
+R4
+S1
+R0
+R23
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv
+!i122 0
+L0 1 119
+R6
+r1
+!s85 0
+31
+Z29 !s108 1760173126.000000
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv|
+!i113 1
+R8
+R12
+R9
 vvgaController
 R1
-Z20 !s110 1760079038
+R19
 !i10b 1
 !s100 2h?4iN?[fJW184?nE6Qja2
 R3
-I6[O>fBlgG3]E@n>5l><hf0
+IHL]ILRzK8XC2:PKc8Z91d3
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv
-!i122 1
+w1758603085
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv
+!i122 2
 L0 3 46
-R7
+R6
 r1
 !s85 0
 31
-Z21 !s108 1760079038.000000
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv|
+R20
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv|
 !i113 1
+R8
+R21
 R9
-R19
-R10
 nvga@controller
 vvideoGen
 R1
-R20
+R28
 !i10b 1
 !s100 _mfdGdBOK@oj36:P]Q?cD2
 R3
-IiHcnML5oRMdM6NV8oXNO21
+IIPfi5`G37]P1:PRNgGg9k2
 R4
 S1
 R0
-R5
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv
-!i122 0
+w1760038660
+8C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv
+FC:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv
+!i122 1
 L0 3 211
-R7
+R6
 r1
 !s85 0
 31
-R21
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv|
+R29
+!s107 C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller|C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv|
 !i113 1
+R8
+R21
 R9
-R19
-R10
 nvideo@gen

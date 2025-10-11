@@ -10,291 +10,301 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:38 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv 
+# Start time: 02:58:46 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv 
+# -- Compiling module verificar_pareja
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	verificar_pareja
+# End time: 02:58:46 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:58:46 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv 
 # -- Compiling module videoGen
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv(4): (vlog-13314) Defaulting port 'arr_cartas' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv(4): (vlog-13314) Defaulting port 'arr_cartas' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	videoGen
-# End time: 00:50:38 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:46 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:38 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv 
+# Start time: 02:58:47 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv 
 # -- Compiling module vgaController
 # 
 # Top level modules:
 # 	vgaController
-# End time: 00:50:38 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv 
+# Start time: 02:58:47 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv 
 # -- Compiling module rectgen
 # 
 # Top level modules:
 # 	rectgen
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv 
+# Start time: 02:58:47 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv 
+# Start time: 02:58:47 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv 
 # -- Compiling module start
 # 
 # Top level modules:
 # 	start
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv 
+# Start time: 02:58:47 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv 
+# -- Compiling module finish
+# 
+# Top level modules:
+# 	finish
+# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:58:47 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv 
 # -- Compiling module triangle_symbol
 # 
 # Top level modules:
 # 	triangle_symbol
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:49 on Oct 11,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv 
+# Start time: 02:58:49 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv 
 # -- Compiling module square_symbol
 # 
 # Top level modules:
 # 	square_symbol
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:49 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv 
+# Start time: 02:58:49 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv 
 # -- Compiling module rectborder
 # 
 # Top level modules:
 # 	rectborder
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:49 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv 
 # -- Compiling module plus_symbol
 # 
 # Top level modules:
 # 	plus_symbol
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv 
 # -- Compiling module minus_symbol
 # 
 # Top level modules:
 # 	minus_symbol
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv 
 # -- Compiling module invtriangle_symbol
 # 
 # Top level modules:
 # 	invtriangle_symbol
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv 
 # -- Compiling module hash_symbol
 # 
 # Top level modules:
 # 	hash_symbol
-# End time: 00:50:39 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:39 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv 
 # -- Compiling module cros_symbol
 # 
 # Top level modules:
 # 	cros_symbol
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:01
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv 
 # -- Compiling module circle_symbol
 # 
 # Top level modules:
 # 	circle_symbol
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv 
+# Start time: 02:58:50 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv 
 # -- Compiling module Shuffle
 # 
 # Top level modules:
 # 	Shuffle
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv 
+# Start time: 02:58:51 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv 
+# -- Compiling module mostrar_carta_random
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	mostrar_carta_random
+# End time: 02:58:51 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:58:51 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv 
 # -- Compiling module modify_arr
 # 
 # Top level modules:
 # 	modify_arr
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:51 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv 
+# Start time: 02:58:51 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv 
 # -- Compiling module bit_shifter
 # 
 # Top level modules:
 # 	bit_shifter
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:51 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv 
+# Start time: 02:58:51 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv 
 # -- Compiling module save_cards
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv(4): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv(4): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	save_cards
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:52 on Oct 11,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv 
+# Start time: 02:58:52 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv 
+# -- Compiling module seleccionar_parejas
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv(8): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	seleccionar_parejas
+# End time: 02:58:52 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:58:52 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv 
 # -- Compiling module top_7seg_counter
 # 
 # Top level modules:
 # 	top_7seg_counter
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:52 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv 
+# Start time: 02:58:53 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv 
 # -- Compiling module clk_counter_seg
 # 
 # Top level modules:
 # 	clk_counter_seg
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv 
+# Start time: 02:58:53 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv 
+# -- Compiling module posedge_detector
+# 
+# Top level modules:
+# 	posedge_detector
+# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:58:53 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv 
 # -- Compiling module BinTo7Seg
 # 
 # Top level modules:
 # 	BinTo7Seg
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv 
+# Start time: 02:58:53 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv 
 # -- Compiling module carta
 # 
 # Top level modules:
 # 	carta
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv 
+# Start time: 02:58:54 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv 
 # -- Compiling module FSM
 # 
 # Top level modules:
 # 	FSM
-# End time: 00:50:40 on Oct 10,2025, Elapsed time: 0:00:00
+# End time: 02:58:54 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:40 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv 
+# Start time: 02:58:54 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv 
 # -- Compiling module Top_Level_Memory
-# 
-# Top level modules:
-# 	Top_Level_Memory
-# End time: 00:50:41 on Oct 10,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:41 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv 
-# -- Compiling module card_controller
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(5): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	card_controller
-# End time: 00:50:41 on Oct 10,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:50:41 on Oct 10,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv 
-# -- Compiling module Shuffle_tb
-# 
-# Top level modules:
-# 	Shuffle_tb
-# End time: 00:50:41 on Oct 10,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Shuffle_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Shuffle_tb 
-# Start time: 00:50:41 on Oct 10,2025
-# Loading sv_std.std
-# Loading work.Shuffle_tb
-# Loading work.Shuffle
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Tiempo | done | done_reg
-#    0 |   0  |    0
-#   35 |   1  |    0
-#   45 |   1  |    1
-# ** Note: $finish    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv(51)
-#    Time: 82 ps  Iteration: 0  Instance: /Shuffle_tb
-# 1
-# Break in Module Shuffle_tb at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv line 51
-# End time: 00:53:36 on Oct 10,2025, Elapsed time: 0:02:55
-# Errors: 0, Warnings: 0
+# ** Error (suppressible): C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv(78): (vlog-2388) 'hubo_pareja' already declared in this scope (Top_Level_Memory) at C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv(69).
+# End time: 02:58:54 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Memory_game_run_msim_rtl_verilog.do line 36
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/m..."

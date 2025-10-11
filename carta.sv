@@ -133,10 +133,6 @@ logic [1:0] estado_carta;
                 // mostrar el símbolo seleccionado
                 insymbol = selSym;
             end
-				2'b11: begin //estado que esta selecc
-                insymbol = 1'b0;
-					 inborder = 1'b1;
-            end
 
             default: begin
                 insymbol = 1'b0;

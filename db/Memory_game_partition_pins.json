@@ -40,6 +40,62 @@
 					"strict" : false
 				},
 				{
+					"name" : "segPJ1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segPJ2[6]",
+					"strict" : false
+				},
+				{
 					"name" : "vgaclk",
 					"strict" : false
 				},
