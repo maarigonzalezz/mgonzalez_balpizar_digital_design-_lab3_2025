@@ -32,10 +32,13 @@ module card_controller(
     logic [4:0] arr_MR [0:15];
 	 
 	 logic startSP;
+	 logic startSP2;
     logic doneSP1;
 	 logic doneSP2;
     logic [4:0] arr_SP1 [0:15];
+	 logic [4:0] arr_SP2 [0:15];
 	 logic sp_active;
+	 logic sp_active2;
 	 
 	 
 
@@ -89,6 +92,18 @@ module card_controller(
 		  .done(doneSP1)
 	 );
 	 
+	 seleccionar_parejas sp2(
+		  .clk(clk),
+        .rst(~rst),
+        .start(startSP2),
+		  .Izq(Izq),
+		  .Der(Der),
+		  .Sel(Sel),
+		  .arr_in(arr_in),
+        .arr_out(arr_SP2),
+		  .done(doneSP2)
+	 );
+	 
 	 
 	 
     // -----------------------------------------------------------------
@@ -113,6 +128,7 @@ module card_controller(
             startS <= 0;
             startVP <= 0;
 				startSP <= 0;
+				startSP2 <= 0;
             shuffle_active <= 0;
             doneSh <= 0;
             doneMcr <= 0;
@@ -120,6 +136,7 @@ module card_controller(
 				doneSp  <= 0; 
             load <= 0;
 				sp_active <= 0;
+				sp_active2 <= 0;
 				cartas_seleccionadas <= 0;
             for (int i=0; i<16; i++) arr_out[i] <= arr_in[i];
         end else begin
@@ -167,20 +184,20 @@ module card_controller(
 					end
 					 
 					 UNA_CARTA: begin
-						  if (!sp_active) begin
-							  startSP <= 1;   // pulso de inicio solo una vez
-							  sp_active <= 1; // evita repetirlo
+						  if (!sp_active2) begin
+							  startSP2 <= 1;   // pulso de inicio solo una vez
+							  sp_active2 <= 1; // evita repetirlo
 						 end else begin
-							  startSP <= 0;
+							  startSP2 <= 0;
 						 end
 						 cartas_seleccionadas <= 2'b01;
 
-						 if (doneSP1) begin
+						 if (doneSP2) begin
 							  for (int i=0; i<16; i++)
-									arr_out[i] <= arr_SP1[i];
+									arr_out[i] <= arr_SP2[i];
 							  load <= 1;
 							  doneSp <= 1;
-							  sp_active <= 0; // libera para el próximo turno
+							  sp_active2 <= 0; 
 						 end
 					end
 					 

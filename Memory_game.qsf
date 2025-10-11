@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY Top_Level_Memory
+set_global_assignment -name TOP_LEVEL_ENTITY card_controller
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:52:54  OCTOBER 09, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -130,16 +130,25 @@ set_location_assignment PIN_AA21 -to segPJ2[0]
 set_global_assignment -name EDA_TEST_BENCH_NAME Shuffle_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Shuffle_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Shuffle_tb -section_id Shuffle_tb
+
+set_location_assignment PIN_AB23 -to cargar
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_seleccionar_parejas -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_seleccionar_parejas
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_seleccionar_parejas -section_id tb_seleccionar_parejas
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE Modules_top_test/top_verificar_pareja.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules_top_test/top_shuffle.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules_top_test/top_mostrar_carta_random.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/tb_card_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/tb_seleccionar_parejas.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/verificar_pareja_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/top_shuffle_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/top_mostrar_carta_random_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/FSM_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management_tb/Shuffle_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Arr_Management/verificar_pareja.sv
-
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/videoGen.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/vgaController.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller/vga.sv
@@ -172,24 +181,12 @@ set_global_assignment -name SYSTEMVERILOG_FILE carta.sv
 set_global_assignment -name SYSTEMVERILOG_FILE FSM.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Top_Level_Memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE card_controller.sv
-set_location_assignment PIN_AB23 -to cargar
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_Top_Level_Memory_realistic -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_Top_Level_Memory_realistic
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_Top_Level_Memory_realistic -section_id tb_Top_Level_Memory_realistic
-set_global_assignment -name SYSTEMVERILOG_FILE tb_card_controller.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_card_controller -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_Top_Level_Memory_realistic.sv -section_id tb_Top_Level_Memory_realistic
+set_global_assignment -name EDA_TEST_BENCH_FILE Arr_Management_tb/tb_card_controller.sv -section_id tb_card_controller
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_card_controller
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_card_controller -section_id tb_card_controller
-set_global_assignment -name SYSTEMVERILOG_FILE tb_seleccionar_parejas.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_seleccionar_parejas -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_seleccionar_parejas
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_seleccionar_parejas -section_id tb_seleccionar_parejas
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_card_controller -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_FILE FSM_tb.sv -section_id FSM_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Arr_Management_tb/Shuffle_tb.sv -section_id Shuffle_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE tb_Top_Level_Memory_realistic.sv -section_id tb_Top_Level_Memory_realistic
-set_global_assignment -name EDA_TEST_BENCH_FILE tb_card_controller.sv -section_id tb_card_controller
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_seleccionar_parejas.sv -section_id tb_seleccionar_parejas
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -12,299 +12,225 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:46 on Oct 11,2025
+# Start time: 16:41:56 on Oct 11,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv 
 # -- Compiling module verificar_pareja
 # ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	verificar_pareja
-# End time: 02:58:46 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 16:41:56 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:46 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv 
-# -- Compiling module videoGen
-# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv(4): (vlog-13314) Defaulting port 'arr_cartas' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	videoGen
-# End time: 02:58:46 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:47 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv 
-# -- Compiling module vgaController
-# 
-# Top level modules:
-# 	vgaController
-# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:47 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv 
-# -- Compiling module rectgen
-# 
-# Top level modules:
-# 	rectgen
-# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:47 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv 
-# -- Compiling module pll
-# 
-# Top level modules:
-# 	pll
-# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:47 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv 
-# -- Compiling module start
-# 
-# Top level modules:
-# 	start
-# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:47 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv 
-# -- Compiling module finish
-# 
-# Top level modules:
-# 	finish
-# End time: 02:58:47 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:47 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv 
-# -- Compiling module triangle_symbol
-# 
-# Top level modules:
-# 	triangle_symbol
-# End time: 02:58:49 on Oct 11,2025, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:49 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv 
-# -- Compiling module square_symbol
-# 
-# Top level modules:
-# 	square_symbol
-# End time: 02:58:49 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:49 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv 
-# -- Compiling module rectborder
-# 
-# Top level modules:
-# 	rectborder
-# End time: 02:58:49 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv 
-# -- Compiling module plus_symbol
-# 
-# Top level modules:
-# 	plus_symbol
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv 
-# -- Compiling module minus_symbol
-# 
-# Top level modules:
-# 	minus_symbol
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv 
-# -- Compiling module invtriangle_symbol
-# 
-# Top level modules:
-# 	invtriangle_symbol
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv 
-# -- Compiling module hash_symbol
-# 
-# Top level modules:
-# 	hash_symbol
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv 
-# -- Compiling module cros_symbol
-# 
-# Top level modules:
-# 	cros_symbol
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv 
-# -- Compiling module circle_symbol
-# 
-# Top level modules:
-# 	circle_symbol
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:50 on Oct 11,2025
+# Start time: 16:41:56 on Oct 11,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv 
 # -- Compiling module Shuffle
 # 
 # Top level modules:
 # 	Shuffle
-# End time: 02:58:50 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 16:41:56 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:51 on Oct 11,2025
+# Start time: 16:41:56 on Oct 11,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv 
 # -- Compiling module mostrar_carta_random
 # ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	mostrar_carta_random
-# End time: 02:58:51 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:51 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv 
-# -- Compiling module modify_arr
-# 
-# Top level modules:
-# 	modify_arr
-# End time: 02:58:51 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:51 on Oct 11,2025
+# Start time: 16:41:57 on Oct 11,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv 
 # -- Compiling module bit_shifter
 # 
 # Top level modules:
 # 	bit_shifter
-# End time: 02:58:51 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:51 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv 
-# -- Compiling module save_cards
-# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv(4): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	save_cards
-# End time: 02:58:52 on Oct 11,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:52 on Oct 11,2025
+# Start time: 16:41:57 on Oct 11,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv 
 # -- Compiling module seleccionar_parejas
 # ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv(8): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	seleccionar_parejas
-# End time: 02:58:52 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:52 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv 
-# -- Compiling module top_7seg_counter
+# Start time: 16:41:57 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv 
+# -- Compiling module card_controller
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(6): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
-# 	top_7seg_counter
-# End time: 02:58:52 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv}
+# 	card_controller
+# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:53 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv 
-# -- Compiling module clk_counter_seg
+# Start time: 16:41:58 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv 
+# -- Compiling module tb_card_controller
 # 
 # Top level modules:
-# 	clk_counter_seg
-# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
+# 	tb_card_controller
+# End time: 16:41:58 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:53 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv 
-# -- Compiling module posedge_detector
 # 
-# Top level modules:
-# 	posedge_detector
-# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:53 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv 
-# -- Compiling module BinTo7Seg
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_card_controller
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_card_controller 
+# Start time: 16:41:58 on Oct 11,2025
+# Loading sv_std.std
+# Loading work.tb_card_controller
+# Loading work.card_controller
+# Loading work.bit_shifter
+# Loading work.Shuffle
+# Loading work.verificar_pareja
+# Loading work.mostrar_carta_random
+# Loading work.seleccionar_parejas
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sp1'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp1 File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 83
+# ** Warning: (vsim-3722) C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(83): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sp2'.  Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp2 File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 95
+# ** Warning: (vsim-3722) C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(95): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
 # 
-# Top level modules:
-# 	BinTo7Seg
-# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:53 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv 
-# -- Compiling module carta
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Contenido inicial de arr_in:
+# 00000 00000 00100 00100 01000 01000 01100 01100 10000 10000 10100 10100 11000 11000 11100 11100 
 # 
-# Top level modules:
-# 	carta
-# End time: 02:58:53 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:54 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv 
-# -- Compiling module FSM
+# ===== INICIO SIMULACIÓN card_controller =====
+# t=5000 | state=0000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=15000 | state=0000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
 # 
-# Top level modules:
-# 	FSM
-# End time: 02:58:54 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:58:54 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv 
-# -- Compiling module Top_Level_Memory
-# ** Error (suppressible): C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv(78): (vlog-2388) 'hubo_pareja' already declared in this scope (Top_Level_Memory) at C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv(69).
-# End time: 02:58:54 on Oct 11,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./Memory_game_run_msim_rtl_verilog.do line 36
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/m..."
+# [REVUELVE_CORTAS] Mezclando cartas...
+# t=25000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=35000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=45000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=55000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=65000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
+# t=75000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=85000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
+# t=95000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=105000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
+# t=115000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# 
+# --- arr_out tras REVUELVE_CORTAS ---
+# 10100 00100 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 
+# [TB] arr_in actualizado desde arr_out
+# 
+# 
+# [TURNO_JUGADOR] Jugador selecciona primera carta...
+# t=125000 | state=0101 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
+# t=135000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=145000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=155000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=165000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=175000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=185000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=195000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=205000 | state=0101 | doneSh=0 doneSp=1 doneMcr=0 doneVp=0 load=1 cartas_sel=00
+# t=215000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=225000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=235000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=245000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=255000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=265000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=275000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=285000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=295000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=305000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# 
+# --- arr_out tras TURNO_JUGADOR ---
+# 10100 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 
+# [TB] arr_in actualizado desde arr_out
+# 
+# 
+# [UNA_CARTA] Jugador selecciona segunda carta...
+# t=315000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=325000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=335000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=345000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=355000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=365000 | state=0110 | doneSh=0 doneSp=1 doneMcr=0 doneVp=0 load=1 cartas_sel=01
+# t=375000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=385000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=395000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=405000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=415000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=425000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=435000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=445000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=455000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=465000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# 
+# --- arr_out tras UNA_CARTA ---
+# 10101 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 
+# [TB] arr_in actualizado desde arr_out
+# 
+# 
+# [DOS_CARTAS] Verificando pareja...
+# t=475000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=485000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=495000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=505000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=515000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
+# t=525000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=535000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
+# t=545000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=555000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
+# t=565000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# 
+# --- arr_out tras DOS_CARTAS ---
+# 10101 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 
+# [TB] arr_in actualizado desde arr_out
+# 
+# 
+# [MOSTRAR_RANDOM] Mostrando carta aleatoria...
+# t=575000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
+# t=585000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=595000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=605000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=615000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
+# t=625000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=635000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
+# t=645000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=655000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
+# t=665000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# 
+# --- arr_out tras MOSTRAR_RANDOM ---
+# 10101 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 
+# [TB] arr_in actualizado desde arr_out
+# 
+# 
+# [CONCLUSION] Fin de la simulación.
+# t=675000 | state=1010 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
+# t=685000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=695000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=705000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=715000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# ===== FIN DE SIMULACIÓN =====
+# ** Note: $stop    : C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv(139)
+#    Time: 720 ns  Iteration: 0  Instance: /tb_card_controller
+# Break in Module tb_card_controller at C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv line 139
+# End time: 16:43:46 on Oct 11,2025, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 4
