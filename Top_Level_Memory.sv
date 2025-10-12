@@ -55,6 +55,8 @@ module Top_Level_Memory(
 	// Modulo que pinta las cartas mostradas en pantalla ------> quede instanciando esto
 	videoGen videoGen(.x(x), .y(y), .arr_cartas(arr_cartas), .r(r_videoGen), .g(g_videoGen), .b(b_videoGen));
 	
+	// Modulo que muestra la pantalla de terminar juego
+	finish pantalla_final(.x(x), .y(y), .ganador(ganador), .r(r_OVER), .g(g_OVER), .b(b_OVER));
 	
 	// ============================================ MANEJO DE ARRAY DE CARTAS =====================================
 	// crea el array inicial y lo modifica segun el estado

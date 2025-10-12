@@ -1,0 +1,122 @@
+`timescale 1ns/1ps
+
+module tb_seleccionar_parejas;
+
+  // ============================
+  // Señales de prueba
+  // ============================
+  logic clk;
+  logic rst;
+  logic start;
+  logic Izq, Der, Sel;
+  logic [4:0] arr_in [0:15];
+  logic [4:0] arr_out [0:15];
+  logic [1:0] cartas_seleccionadas;
+  logic done;
+
+  // ============================
+  // Instancia del DUT
+  // ============================
+  seleccionar_parejas uut (
+    .clk(clk),
+    .rst(rst),
+    .start(start),
+    .Izq(Izq),
+    .Der(Der),
+    .Sel(Sel),
+    .arr_in(arr_in),
+    .arr_out(arr_out),
+    .cartas_seleccionadas(cartas_seleccionadas),
+    .done(done)
+  );
+
+  // ============================
+  // Generador de reloj
+  // ============================
+  always #5 clk = ~clk; // 100 MHz
+
+  // ============================
+  // Tarea para imprimir el arreglo
+  // ============================
+  task print_arr_out;
+    $display("Contenido de arr_out:");
+    for (int i = 0; i < 16; i++) begin
+      $write("%b ", arr_out[i]);
+    end
+    $display("\n");
+  endtask
+
+  // ============================
+  // Bloque principal
+  // ============================
+  initial begin
+    clk = 0;
+    rst = 0;
+    start = 0;
+    Izq = 1;
+    Der = 1;
+    Sel = 1;
+
+    // Inicialización de arr_in
+    for (int i = 0; i < 16; i++) begin
+      arr_in[i] = {i[3:0], 1'b0}; // Bits altos = índice, bit 0 = estado (0 = libre)
+    end
+
+    $display("===== INICIO DE SIMULACIÓN seleccionar_parejas =====");
+
+    // Reset
+    #10 rst = 1;
+    #10 rst = 0;
+    #10 rst = 1;
+
+    // Activar módulo
+    start = 1;
+
+    // Mostrar arreglo inicial
+    $display("\n[Estado inicial]");
+    print_arr_out();
+
+    // =============================
+    // Movimiento hacia la derecha
+    // =============================
+    $display("\n[Movimiento DER]");
+    Der = 0; #10 Der = 1; #20;
+    Der = 0; #10 Der = 1; #20;
+    Der = 0; #10 Der = 1; #20;
+
+    // =============================
+    // Selección de carta
+    // =============================
+    $display("\n[Selección de carta]");
+    Sel = 0; #10 Sel = 1; #30;
+    print_arr_out();
+
+    // =============================
+    // Movimiento a la izquierda
+    // =============================
+    $display("\n[Movimiento IZQ]");
+    Izq = 0; #10 Izq = 1; #20;
+    Izq = 0; #10 Izq = 1; #20;
+
+    // =============================
+    // Intentar seleccionar otra carta
+    // =============================
+    $display("\n[Intento de segunda selección]");
+    Sel = 0; #10 Sel = 1; #30;
+    print_arr_out();
+
+    // =============================
+    // Finalizar simulación
+    // =============================
+    $display("\n===== FIN DE SIMULACIÓN =====");
+    #50 $stop;
+  end
+
+  // ============================
+  // Monitoreo en tiempo real
+  // ============================
+  always @(posedge clk) begin
+    $display("t=%0t | done=%b | cartas_sel=%b", $time, done, cartas_seleccionadas);
+  end
+
+endmodule

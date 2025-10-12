@@ -8,7 +8,7 @@ module card_controller(
     output logic doneSh, // listo shuffle
 	 output logic doneSp, //se selecciono carta
     output logic doneMcr, // listo mostrar carta random
-	 output logic doneVep, // listo verificar parejaa
+	 output logic doneVp, // listo verificar parejaa
 	 output logic [1:0]  cartas_seleccionadas,
     output logic load, // señal para guardar el output en el registro
 	 output logic hubo_pareja
@@ -30,15 +30,17 @@ module card_controller(
 	 logic startMR;
     logic doneMR;
     logic [4:0] arr_MR [0:15];
-
+	 
 	 logic startSP;
+	 logic startSP2;
     logic doneSP1;
 	 logic doneSP2;
     logic [4:0] arr_SP1 [0:15];
 	 logic [4:0] arr_SP2 [0:15];
-	 logic rstSp;
-	 assign rstSp = ~rst;
-
+	 logic sp_active;
+	 logic sp_active2;
+	 
+	 
 
     // -----------------------------------------------------------------
     // Instancias de módulos
@@ -65,7 +67,7 @@ module card_controller(
         .arr_cards_in(arr_in),    // entrada del shuffle o passthrough
         .arr_cards_out(arr_VP),
         .done(doneVP),
-        .hubo_pareja(hubo_Pareja)
+        .hubo_pareja(hubo_pareja)
     );
 
 	 mostrar_carta_random mr(
@@ -77,32 +79,33 @@ module card_controller(
         .arr_cards_out(arr_MR),
         .done(doneMR)
     );
-
+	 
 	 seleccionar_parejas sp1(
 		  .clk(clk),
-        .rst(rstSp),
+        .rst(~rst),
         .start(startSP),
 		  .Izq(Izq),
 		  .Der(Der),
 		  .Sel(Sel),
 		  .arr_in(arr_in),
         .arr_out(arr_SP1),
-		  .load(doneSP1)
+		  .done(doneSP1)
 	 );
-
+	 
 	 seleccionar_parejas sp2(
 		  .clk(clk),
-        .rst(rstSp),
-        .start(startSP),
+        .rst(~rst),
+        .start(startSP2),
 		  .Izq(Izq),
 		  .Der(Der),
 		  .Sel(Sel),
 		  .arr_in(arr_in),
         .arr_out(arr_SP2),
-		  .load(doneSP2)
+		  .done(doneSP2)
 	 );
-
-
+	 
+	 
+	 
     // -----------------------------------------------------------------
     // FSM basada en estado externo
     // -----------------------------------------------------------------
@@ -125,29 +128,26 @@ module card_controller(
             startS <= 0;
             startVP <= 0;
 				startSP <= 0;
+				startSP2 <= 0;
             shuffle_active <= 0;
             doneSh <= 0;
             doneMcr <= 0;
 				doneVp <= 0;
+				doneSp  <= 0; 
             load <= 0;
+				sp_active <= 0;
+				sp_active2 <= 0;
 				cartas_seleccionadas <= 0;
-				startMR <= 0;
-				doneSp <= 0;
-				doneSP1 <= 0;
-				doneSP2 <= 0;
-				doneVP <= 0;
-				doneMR <= 0;
             for (int i=0; i<16; i++) arr_out[i] <= arr_in[i];
         end else begin
             // Reset de pulsos cada ciclo
             startS <= 0;
             startVP <= 0;
-				startSP <= 0;
             doneSh <= 0;
             doneMcr <= 0;
-				doneVep <= 0;
+				doneVp <= 0;
+				doneSp  <= 0; 
             load <= 0;
-				doneSp <= 0;
 
             case(state)
 					//Estado para Shuffle
@@ -166,37 +166,52 @@ module card_controller(
                 end
 					 //Estado de turno y espera recibir una carta sel
                 TURNO_JUGADOR: begin
-                    startSP <= 1;
-						  cartas_seleccionadas <= 2'b00;
-                    if (doneSP1) begin
-                        for (int i=0; i<16; i++) arr_out[i] <= arr_SP1[i];
-								load <= 1;
-                        doneSp <= 1;
-                    end
-                end
+						 if (!sp_active) begin
+							  startSP <= 1;   // pulso de inicio solo una vez
+							  sp_active <= 1; // evita repetirlo
+						 end else begin
+							  startSP <= 0;
+						 end
+						 cartas_seleccionadas <= 2'b00;
 
+						 if (doneSP1) begin
+							  for (int i=0; i<16; i++)
+									arr_out[i] <= arr_SP1[i];
+							  load <= 1;
+							  doneSp <= 1;
+							  sp_active <= 0; // libera para el próximo turno
+						 end
+					end
+					 
 					 UNA_CARTA: begin
-						  doneSp <= 0;
-                    startSP <= 1;
-						  cartas_seleccionadas <= 2'b01;
-                    if (doneSP2) begin
-                        for (int i=0; i<16; i++) arr_out[i] <= arr_SP2[i];
-								load <= 1;
-                        doneSp <= 1;
-                    end
-                end
+						  if (!sp_active2) begin
+							  startSP2 <= 1;   // pulso de inicio solo una vez
+							  sp_active2 <= 1; // evita repetirlo
+						 end else begin
+							  startSP2 <= 0;
+						 end
+						 cartas_seleccionadas <= 2'b01;
 
-
+						 if (doneSP2) begin
+							  for (int i=0; i<16; i++)
+									arr_out[i] <= arr_SP2[i];
+							  load <= 1;
+							  doneSp <= 1;
+							  sp_active2 <= 0; 
+						 end
+					end
+					 
+					 
 					//Estado para verificar parejas
                 DOS_CARTAS: begin
                     startVP <= 1;
                     if (doneVP) begin
                         for (int i=0; i<16; i++) arr_out[i] <= arr_VP[i];
 								load <= 1;
-                        doneVep <= 1;
+                        doneVp <= 1;
                     end
                 end
-
+					 
 					 // -----------------------------------------------------------------
                 // Estado MOSTRAR_RANDOM
                 // -----------------------------------------------------------------
@@ -210,8 +225,7 @@ module card_controller(
                 end
 
                 default: begin
-                    // Pass-through para otros estados
-                    for (int i=0; i<16; i++) arr_out[i] <= arr_in[i];
+                    arr_out <= arr_out; // mantener resultado
                 end
             endcase
         end
