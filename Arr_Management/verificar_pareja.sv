@@ -64,50 +64,44 @@ module verificar_pareja (
                 // --------------------------------------------------
                 // Estado CHECK: contar cartas abiertas y verificar pareja
                 // --------------------------------------------------
-                CHECK: begin
-                    cont  <= 0;
-                    pos1  <= 0;
-                    pos2  <= 0;
+               CHECK: begin
+					 // Contador y posiciones
+					 cont = 0;
+					 pos1 = 0;
+					 pos2 = 0;
 
-                    // Buscar cartas abiertas (estado '01')
-                    for (i = 0; i < 16; i = i + 1) begin
-                        if (arr_cards_out[i][1:0] == 2'b01) begin
-                            if (cont == 0) pos1 <= i;
-                            else if (cont == 1) pos2 <= i;
-                            cont <= cont + 1;
-                        end
-                    end
+					 // Buscar cartas abiertas
+					 for (i = 0; i < 16; i = i + 1) begin
+						  if (arr_cards_out[i][1:0] == 2'b01) begin
+								if (cont == 0) pos1 = i;
+								else if (cont == 1) pos2 = i;
+								cont = cont + 1;
+						  end
+					 end
 
-                    // Inicializar arr_cards_out con entrada para mantener coherencia
-                    for (i = 0; i < 16; i = i + 1)
-                        arr_cards_out[i] <= arr_cards_in[i];
+					 if (cont == 2) begin
+						  sym1 = arr_cards_out[pos1][4:0];
+						  sym2 = arr_cards_out[pos2][4:0];
+						  if (sym1 == sym2) begin
+								arr_cards_out[pos1][1:0] <= 2'b10;
+								arr_cards_out[pos2][1:0] <= 2'b10;
+								hubo_pareja <= 1;
+						  end else begin
+								arr_cards_out[pos1][1:0] <= 2'b00;
+								arr_cards_out[pos2][1:0] <= 2'b00;
+								hubo_pareja <= 0;
+						  end
+						  done <= 1;
+					 end else if (cont == 0) begin
+						  done <= 1;
+					 end else begin
+						  // cerrar cualquier carta abierta extra
+						  for (i = 0; i < 16; i = i + 1)
+								if (arr_cards_out[i][1:0] == 2'b01)
+									 arr_cards_out[i][1:0] <= 2'b00;
+						  done <= 1;
+					 end
 
-                    // Casos según número de cartas abiertas
-                    if (cont == 0) begin
-                        // Ninguna carta abierta → fin
-                        done <= 1;
-                    end else if (cont == 2) begin
-                        // Dos cartas abiertas → comparar símbolos
-                        sym1 = arr_cards_in[pos1][4:0];
-                        sym2 = arr_cards_in[pos2][4:0];
-                        if (sym1 == sym2) begin
-                            // Pareja encontrada → marcar como cerrada definitiva '10'
-                            arr_cards_out[pos1][1:0] <= 2'b10;
-                            arr_cards_out[pos2][1:0] <= 2'b10;
-                            hubo_pareja <= 1;
-                        end else begin
-                            // Símbolos distintos → cerrar cartas
-                            arr_cards_out[pos1][1:0] <= 2'b00;
-                            arr_cards_out[pos2][1:0] <= 2'b00;
-                        end
-                        done <= 1;
-                    end else begin
-                        // Caso inválido (1 o más de 2 abiertas) → cerrar todas abiertas
-                        for (i = 0; i < 16; i = i + 1)
-                            if (arr_cards_out[i][1:0] == 2'b01)
-                                arr_cards_out[i][1:0] <= 2'b00;
-                        done <= 1;
-                    end
 
                     // Volver a IDLE
                     state <= IDLE;

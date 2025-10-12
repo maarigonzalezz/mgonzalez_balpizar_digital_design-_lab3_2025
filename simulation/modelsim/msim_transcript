@@ -10,85 +10,85 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:56 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv 
 # -- Compiling module verificar_pareja
-# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	verificar_pareja
-# End time: 16:41:56 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:56 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv 
 # -- Compiling module Shuffle
 # 
 # Top level modules:
 # 	Shuffle
-# End time: 16:41:56 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:56 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv 
 # -- Compiling module mostrar_carta_random
-# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	mostrar_carta_random
-# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:01
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:57 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv 
 # -- Compiling module bit_shifter
 # 
 # Top level modules:
 # 	bit_shifter
-# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:57 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv 
 # -- Compiling module seleccionar_parejas
-# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv(8): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv(8): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	seleccionar_parejas
-# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:57 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv 
 # -- Compiling module card_controller
-# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(6): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(6): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	card_controller
-# End time: 16:41:57 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
-# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv}
+# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:58 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv 
+# Start time: 21:24:28 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv 
 # -- Compiling module tb_card_controller
 # 
 # Top level modules:
 # 	tb_card_controller
-# End time: 16:41:58 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_card_controller
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_card_controller 
-# Start time: 16:41:58 on Oct 11,2025
+# Start time: 21:24:28 on Oct 11,2025
 # Loading sv_std.std
 # Loading work.tb_card_controller
 # Loading work.card_controller
@@ -98,11 +98,11 @@
 # Loading work.mostrar_carta_random
 # Loading work.seleccionar_parejas
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sp1'.  Expected 10, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp1 File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 83
-# ** Warning: (vsim-3722) C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(83): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp1 File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 83
+# ** Warning: (vsim-3722) C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(83): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sp2'.  Expected 10, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp2 File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 95
-# ** Warning: (vsim-3722) C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(95): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp2 File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 95
+# ** Warning: (vsim-3722) C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(95): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
 # 
 # add wave *
 # view structure
@@ -199,7 +199,7 @@
 # t=565000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
 # 
 # --- arr_out tras DOS_CARTAS ---
-# 10101 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 10100 00100 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
 # 
 # [TB] arr_in actualizado desde arr_out
 # 
@@ -217,7 +217,7 @@
 # t=665000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
 # 
 # --- arr_out tras MOSTRAR_RANDOM ---
-# 10101 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 10100 00100 10100 01100 10000 11100 11000 00001 00100 10000 00000 01001 01000 01100 11100 11000 
 # 
 # [TB] arr_in actualizado desde arr_out
 # 
@@ -229,8 +229,8 @@
 # t=705000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
 # t=715000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
 # ===== FIN DE SIMULACIÓN =====
-# ** Note: $stop    : C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv(139)
+# ** Note: $stop    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv(139)
 #    Time: 720 ns  Iteration: 0  Instance: /tb_card_controller
-# Break in Module tb_card_controller at C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv line 139
-# End time: 16:43:46 on Oct 11,2025, Elapsed time: 0:01:48
+# Break in Module tb_card_controller at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv line 139
+# End time: 21:24:58 on Oct 11,2025, Elapsed time: 0:00:30
 # Errors: 0, Warnings: 4
