@@ -7,6 +7,8 @@ module FSM(
     input  logic        cartas_mostradas,
     input  logic        cartas_ocultas,
     input  logic        cartas_revueltas,
+	 input  logic        cartas_verificadas,
+	 input  logic        carta_randomizada,
 	 input  logic        hubo_pareja,
     output logic [1:0]  ganador,
     output logic [3:0]  state,
@@ -37,6 +39,7 @@ module FSM(
     logic [3:0] puntaje_j1;
     logic [3:0] puntaje_j2;
     logic jugador_en_turno; // 0 = jug1, 1 = jug2
+	 logic esperando_pareja;
 	 
 	 assign turno_de = jugador_en_turno + 1'b1;
 	 assign puntajeJ1 = puntaje_j1;
@@ -52,6 +55,7 @@ module FSM(
             jugador_en_turno <= 0;
             ganador <= 2'b00;
 				reset_timer <= 1'b1;
+				esperando_pareja <= 0;
         end else begin
             current_state <= next_state;
 
@@ -74,18 +78,22 @@ module FSM(
                 
                 
                 DOS_CARTAS: begin
-                       // Verificar si es pareja
-                       if (hubo_pareja) begin
-                           // Sumar puntaje al jugador en turno
-                           if (jugador_en_turno == 0)
-                               puntaje_j1 <= puntaje_j1 + 1;
-                           else
-                               puntaje_j2 <= puntaje_j2 + 1;
-                       end else begin
-                           // Cambiar turno si no hay pareja
+                    if (!esperando_pareja)
+                        esperando_pareja <= 1;
+                    else if (esperando_pareja && cartas_verificadas) begin
+                        esperando_pareja <= 0;
+
+                        if (hubo_pareja) begin
+                            if (jugador_en_turno == 0)
+                                puntaje_j1 <= puntaje_j1 + 1;
+                            else
+                                puntaje_j2 <= puntaje_j2 + 1;
+                        end else begin
                             jugador_en_turno <= ~jugador_en_turno;
-                       end
+                        end
+                    end
                 end
+					 
                 
                 CONCLUSION: begin
                     // Determinar ganador
@@ -158,19 +166,23 @@ module FSM(
             end
             
             DOS_CARTAS: begin
-                if (hubo_pareja && (puntaje_j1 + puntaje_j2 >= 8))
+					 if (cartas_verificadas)
                     next_state = NO_MAS_PAREJAS;
-                else
-                    next_state = TURNO_JUGADOR;
-            end
+					 else
+						  next_state = DOS_CARTAS; // espera resultado
+				end
             
             MOSTRAR_RANDOM: begin
-					next_state = DOS_CARTAS;	  
+					if (carta_randomizada)
+                    next_state = DOS_CARTAS;	  
             end
 				
             
             NO_MAS_PAREJAS: begin
-                next_state = CONCLUSION;
+                    if (puntaje_j1 + puntaje_j2 >= 8)
+                        next_state = CONCLUSION;
+                    else
+                        next_state = TURNO_JUGADOR;
             end
             
             CONCLUSION: begin

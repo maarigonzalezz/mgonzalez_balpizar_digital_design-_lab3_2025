@@ -1,0 +1,189 @@
+// tb_fsm.sv
+`timescale 1ns/1ps
+
+module tb_fsm;
+
+  // Clock & reset
+  logic clk = 0;
+  logic rst = 0;
+
+  // DUT I/O
+  logic [1:0] cartas_seleccionadas;
+  logic       tiempo_terminado;
+  logic       inicio;
+  logic       se_eligio_carta;
+  logic       cartas_mostradas;
+  logic       cartas_ocultas;
+  logic       cartas_revueltas;
+  logic       cartas_verificadas;
+  logic       carta_randomizada;
+  logic       hubo_pareja;
+
+  logic [1:0] ganador;
+  logic [3:0] state;
+  logic [1:0] turno_de;
+  logic [3:0] puntajeJ1, puntajeJ2;
+  logic       reset_timer;
+
+  // Clock 100 MHz
+  always #5 clk = ~clk;
+
+  // DUT
+  FSM dut (
+    .rst(rst), .clk(clk),
+    .cartas_seleccionadas(cartas_seleccionadas),
+    .tiempo_terminado(tiempo_terminado),
+    .inicio(inicio),
+    .se_eligio_carta(se_eligio_carta),
+    .cartas_mostradas(cartas_mostradas),
+    .cartas_ocultas(cartas_ocultas),
+    .cartas_revueltas(cartas_revueltas),
+    .cartas_verificadas(cartas_verificadas),
+    .carta_randomizada(carta_randomizada),
+    .hubo_pareja(hubo_pareja),
+    .ganador(ganador),
+    .state(state),
+    .turno_de(turno_de),
+    .puntajeJ1(puntajeJ1),
+    .puntajeJ2(puntajeJ2),
+    .reset_timer(reset_timer)
+  );
+
+  // ---- Utils ----
+  task automatic pulse(input string name, output logic sig);
+    begin
+      sig = 1'b1;
+      @(posedge clk);
+      sig = 1'b0;
+      $display("[%0t] PULSE %s", $time, name);
+    end
+  endtask
+
+  task automatic wait_state(input [3:0] s);
+    begin
+      wait (state == s);
+      @(posedge clk);
+      $display("[%0t] -> STATE = 0x%0h", $time, s);
+    end
+  endtask
+
+  // State aliases (from your enum)
+  localparam INICIO          = 4'b0000;
+  localparam MUESTRO_CORTAS  = 4'b0001;
+  localparam OCULTA_CORTAS   = 4'b0010;
+  localparam REVUELVE_CORTAS = 4'b0011;
+  localparam INICIO_JUEGO    = 4'b0100;
+  localparam TURNO_JUGADOR   = 4'b0101;
+  localparam UNA_CARTA       = 4'b0110;
+  localparam DOS_CARTAS      = 4'b0111;
+  localparam MOSTRAR_RANDOM  = 4'b1000;
+  localparam NO_MAS_PAREJAS  = 4'b1001;
+  localparam CONCLUSION      = 4'b1010;
+
+  // ---- Scenario helpers ----
+  task automatic do_power_on_reset;
+    begin
+      rst = 1;
+      {cartas_seleccionadas, tiempo_terminado, inicio, se_eligio_carta,
+       cartas_mostradas, cartas_ocultas, cartas_revueltas, cartas_verificadas,
+       carta_randomizada, hubo_pareja} = '0;
+      repeat (4) @(posedge clk);
+      rst = 0;
+      $display("[%0t] RESET released", $time);
+      wait_state(INICIO);
+    end
+  endtask
+
+  task automatic start_game_to_turn;
+    begin
+      pulse("inicio", inicio);
+      wait_state(MUESTRO_CORTAS);
+
+      pulse("cartas_mostradas", cartas_mostradas);
+      wait_state(OCULTA_CORTAS);
+
+      pulse("cartas_ocultas", cartas_ocultas);
+      wait_state(REVUELVE_CORTAS);
+
+      pulse("cartas_revueltas", cartas_revueltas);
+      wait_state(INICIO_JUEGO);
+
+      // FSM pasa sola a TURNO_JUGADOR
+      wait_state(TURNO_JUGADOR);
+    end
+  endtask
+
+  // Hace un turno:
+  // - via_timeout = 1: se va por MOSTRAR_RANDOM
+  // - pareja = 1: suma punto al jugador en turno, si 0 cambia de jugador
+  task automatic make_turn(input bit pareja, input bit via_timeout);
+    begin
+      wait_state(TURNO_JUGADOR);
+
+      if (via_timeout) begin
+        pulse("tiempo_terminado", tiempo_terminado);
+        wait_state(MOSTRAR_RANDOM);
+        pulse("carta_randomizada", carta_randomizada);
+        wait_state(DOS_CARTAS);
+      end else begin
+        // Selección de cartas
+        cartas_seleccionadas = 2'd1;
+        pulse("se_eligio_carta(1)", se_eligio_carta);
+        wait_state(UNA_CARTA);
+
+        cartas_seleccionadas = 2'd2;
+        pulse("se_eligio_carta(2)", se_eligio_carta);
+        wait_state(DOS_CARTAS);
+      end
+
+      // Resultado de verificación
+      hubo_pareja = pareja;
+      pulse("cartas_verificadas", cartas_verificadas);
+      hubo_pareja = 1'b0;
+
+      // La FSM volverá a TURNO_JUGADOR o avanzará a fin según puntajes
+      @(posedge clk);
+      $display("[%0t] P1=%0d  P2=%0d  turno_de=%0d  ganador=%02b  reset_timer=%0b",
+               $time, puntajeJ1, puntajeJ2, turno_de, ganador, reset_timer);
+    end
+  endtask
+
+  // ---- Test sequence ----
+  initial begin
+    // Waves
+    $dumpfile("fsm_tb.vcd");
+    $dumpvars(0, tb_fsm);
+
+    do_power_on_reset();
+
+    // Arranque hasta el primer turno
+    start_game_to_turn();
+
+    // 1) Un turno con timeout -> random -> sin pareja (cambia jugador)
+    make_turn( /*pareja*/ 0, /*via_timeout*/ 1);
+
+    // 2) Ocho parejas seguidas para alcanzar NO_MAS_PAREJAS
+    repeat (8) begin
+      make_turn(/*pareja*/ 1, /*via_timeout*/ 0);
+    end
+
+    // Debe ir a NO_MAS_PAREJAS -> CONCLUSION
+    wait_state(NO_MAS_PAREJAS);
+    wait_state(CONCLUSION);
+
+    // Chequeo rápido de ganador (si todas las parejas fueron del mismo jugador)
+    if (puntajeJ1 > puntajeJ2) begin
+      assert(ganador == 2'b01) else $error("Ganador esperado J1, got %02b", ganador);
+    end else if (puntajeJ2 > puntajeJ1) begin
+      assert(ganador == 2'b10) else $error("Ganador esperado J2, got %02b", ganador);
+    end else begin
+      assert(ganador == 2'b11) else $error("Empate esperado, got %02b", ganador);
+    end
+
+    $display("\n[FIN] Estados cubiertos. P1=%0d  P2=%0d  GANADOR=%02b\n",
+             puntajeJ1, puntajeJ2, ganador);
+    #50;
+    $finish;
+  end
+
+endmodule
