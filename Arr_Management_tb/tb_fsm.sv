@@ -106,12 +106,20 @@ module tb_fsm;
 	 $display("\n-> DOS CARTAS");
     #20 cartas_verificadas = 1; hubo_pareja = 1; #10 cartas_verificadas = 0;
 	 $display("\n-> DEBERIA DE SEGUIR 0101 con jugador 1");
-   
+	 
+	 $display("\n-> TURNO JUGADOR 1: Encuentra una pareja");
+	 #100 tiempo_terminado = 1; #10 tiempo_terminado = 0;
+	 $display("\n-> TURNO JUGADOR 1: DEBERIA DE MOSTRAR DOS CARTAS RANDOM");
+	 #50 carta_randomizada = 1; #10 carta_randomizada = 0;
+    $display("\n-> DOS CARTAS");
+    #20 cartas_verificadas = 1; hubo_pareja = 1; #10 cartas_verificadas = 0;
+	 $display("\n-> DEBERIA DE SEGUIR CON EL FINAL DE LA PARTIDA con jugador 1");
 
 
     // Paso 7: Estado de conclusión
     $display("\n-> Llegando a CONCLUSION");
-    #100 inicio = 1; #10 inicio = 0;
+    #100 inicio = 1; #10 inicio = 0; 
+	 
 
     $display("\n===== FIN DE SIMULACIÓN =====");
     $stop;
