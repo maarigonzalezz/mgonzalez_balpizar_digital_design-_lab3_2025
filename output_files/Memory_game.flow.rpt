@@ -1,5 +1,5 @@
 Flow report for Memory_game
-Sat Oct 11 21:19:44 2025
+Sat Oct 11 21:46:12 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sat Oct 11 21:19:44 2025       ;
+; Flow Status                 ; Successful - Sat Oct 11 21:46:12 2025       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; Memory_game                                 ;
 ; Top-level Entity Name       ; card_controller                             ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/11/2025 21:19:38 ;
+; Start date & time ; 10/11/2025 21:46:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Memory_game         ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+-----------------------------------------+---------------+-----------------+-----------------------------------+
 ; Assignment Name                      ; Value                                   ; Default Value ; Entity Name     ; Section Id                        ;
 +--------------------------------------+-----------------------------------------+---------------+-----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 963350053486.176023917804036            ; --            ; --              ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 237785193706138.176024076511236         ; --            ; --              ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                      ; --            ; --              ; FSM_tb                            ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                      ; --            ; --              ; tb_card_controller                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                      ; --            ; --              ; Shuffle_tb                        ;
@@ -118,8 +118,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4877 MB             ; 00:00:13                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4865 MB             ; 00:00:18                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -128,7 +128,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-2FN45VG  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; MaariGonzalezz   ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Memory_game
-Sat Oct 11 21:19:44 2025
+Sat Oct 11 21:46:12 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Oct 11 21:19:44 2025       ;
+; Analysis & Elaboration Status ; Successful - Sat Oct 11 21:46:12 2025       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Memory_game                                 ;
 ; Top-level Entity Name         ; card_controller                             ;
@@ -60,8 +60,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -182,131 +182,131 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 11 21:19:37 2025
+    Info: Processing started: Sat Oct 11 21:46:05 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Memory_game -c Memory_game --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file modules_top_test/top_verificar_pareja.sv
-    Info (12023): Found entity 1: top_verificar_pareja File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Modules_top_test/top_verificar_pareja.sv Line: 2
+    Info (12023): Found entity 1: top_verificar_pareja File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Modules_top_test/top_verificar_pareja.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modules_top_test/top_shuffle.sv
-    Info (12023): Found entity 1: top_shuffle File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Modules_top_test/top_shuffle.sv Line: 1
+    Info (12023): Found entity 1: top_shuffle File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Modules_top_test/top_shuffle.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules_top_test/top_mostrar_carta_random.sv
-    Info (12023): Found entity 1: top_mostrar_carta_random File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Modules_top_test/top_mostrar_carta_random.sv Line: 1
+    Info (12023): Found entity 1: top_mostrar_carta_random File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Modules_top_test/top_mostrar_carta_random.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/tb_card_controller.sv
-    Info (12023): Found entity 1: tb_card_controller File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv Line: 3
+    Info (12023): Found entity 1: tb_card_controller File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/tb_seleccionar_parejas.sv
-    Info (12023): Found entity 1: tb_seleccionar_parejas File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_seleccionar_parejas.sv Line: 3
+    Info (12023): Found entity 1: tb_seleccionar_parejas File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_seleccionar_parejas.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/verificar_pareja_tb.sv
-    Info (12023): Found entity 1: verificar_pareja_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/verificar_pareja_tb.sv Line: 3
+    Info (12023): Found entity 1: verificar_pareja_tb File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/verificar_pareja_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/top_shuffle_tb.sv
-    Info (12023): Found entity 1: top_shuffle_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_shuffle_tb.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(37): truncated literal to match 5 bits File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 37
-Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(40): truncated literal to match 5 bits File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 40
-Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(41): truncated literal to match 5 bits File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 41
-Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(42): truncated literal to match 5 bits File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 42
-Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(43): truncated literal to match 5 bits File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 43
-Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(44): truncated literal to match 5 bits File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 44
+    Info (12023): Found entity 1: top_shuffle_tb File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_shuffle_tb.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(37): truncated literal to match 5 bits File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 37
+Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(40): truncated literal to match 5 bits File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 40
+Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(41): truncated literal to match 5 bits File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 41
+Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(42): truncated literal to match 5 bits File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 42
+Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(43): truncated literal to match 5 bits File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 43
+Warning (10229): Verilog HDL Expression warning at top_mostrar_carta_random_tb.sv(44): truncated literal to match 5 bits File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/top_mostrar_carta_random_tb.sv
-    Info (12023): Found entity 1: top_mostrar_carta_random_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 1
+    Info (12023): Found entity 1: top_mostrar_carta_random_tb File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/top_mostrar_carta_random_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/fsm_tb.sv
-    Info (12023): Found entity 1: FSM_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/FSM_tb.sv Line: 3
+    Info (12023): Found entity 1: FSM_tb File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/FSM_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management_tb/shuffle_tb.sv
-    Info (12023): Found entity 1: Shuffle_tb File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/Shuffle_tb.sv Line: 1
+    Info (12023): Found entity 1: Shuffle_tb File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/Shuffle_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/verificar_pareja.sv
-    Info (12023): Found entity 1: verificar_pareja File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv Line: 1
+    Info (12023): Found entity 1: verificar_pareja File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/videogen.sv
-    Info (12023): Found entity 1: videoGen File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv Line: 3
+    Info (12023): Found entity 1: videoGen File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/videoGen.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/vgacontroller.sv
-    Info (12023): Found entity 1: vgaController File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv Line: 3
+    Info (12023): Found entity 1: vgaController File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vgaController.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/vga.sv
-    Info (12023): Found entity 1: vga File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vga.sv Line: 1
+    Info (12023): Found entity 1: vga File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/rectgen.sv
-    Info (12023): Found entity 1: rectgen File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv Line: 3
+    Info (12023): Found entity 1: rectgen File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/rectgen.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/pll.sv
-    Info (12023): Found entity 1: pll File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv Line: 1
+    Info (12023): Found entity 1: pll File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/pll.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/start.sv
-    Info (12023): Found entity 1: start File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv Line: 1
+    Info (12023): Found entity 1: start File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/start.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/finish.sv
-    Info (12023): Found entity 1: finish File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/finish.sv Line: 1
+    Info (12023): Found entity 1: finish File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/finish.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/triangle_symbol.sv
-    Info (12023): Found entity 1: triangle_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv Line: 1
+    Info (12023): Found entity 1: triangle_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/triangle_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/square_symbol.sv
-    Info (12023): Found entity 1: square_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv Line: 1
+    Info (12023): Found entity 1: square_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/square_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/rectborder.sv
-    Info (12023): Found entity 1: rectborder File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv Line: 1
+    Info (12023): Found entity 1: rectborder File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/rectborder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/plus_symbol.sv
-    Info (12023): Found entity 1: plus_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv Line: 1
+    Info (12023): Found entity 1: plus_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/plus_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/minus_symbol.sv
-    Info (12023): Found entity 1: minus_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv Line: 1
+    Info (12023): Found entity 1: minus_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/minus_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/invtriangle_symbol.sv
-    Info (12023): Found entity 1: invtriangle_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv Line: 1
+    Info (12023): Found entity 1: invtriangle_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/invtriangle_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/hash_symbol.sv
-    Info (12023): Found entity 1: hash_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv Line: 1
+    Info (12023): Found entity 1: hash_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/hash_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/cros_symbol.sv
-    Info (12023): Found entity 1: cros_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv Line: 1
+    Info (12023): Found entity 1: cros_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/cros_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_symbols/circle_symbol.sv
-    Info (12023): Found entity 1: circle_symbol File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv Line: 1
+    Info (12023): Found entity 1: circle_symbol File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Card_Symbols/circle_symbol.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/shuffle.sv
-    Info (12023): Found entity 1: Shuffle File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv Line: 1
+    Info (12023): Found entity 1: Shuffle File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/mostrar_carta_random.sv
-    Info (12023): Found entity 1: mostrar_carta_random File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv Line: 1
+    Info (12023): Found entity 1: mostrar_carta_random File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/modify_arr.sv
-    Info (12023): Found entity 1: modify_arr File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv Line: 1
+    Info (12023): Found entity 1: modify_arr File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/modify_arr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/bit_shifter.sv
-    Info (12023): Found entity 1: bit_shifter File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv Line: 1
+    Info (12023): Found entity 1: bit_shifter File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/save_cards.sv
-    Info (12023): Found entity 1: save_cards File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv Line: 1
+    Info (12023): Found entity 1: save_cards File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/save_cards.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arr_management/seleccionar_parejas.sv
-    Info (12023): Found entity 1: seleccionar_parejas File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv Line: 1
+    Info (12023): Found entity 1: seleccionar_parejas File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counters/top_7seg_counter.sv
-    Info (12023): Found entity 1: top_7seg_counter File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv Line: 1
+    Info (12023): Found entity 1: top_7seg_counter File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/top_7seg_counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counters/clkcounter.sv
-    Info (12023): Found entity 1: clkCounter File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clkCounter.sv Line: 2
+    Info (12023): Found entity 1: clkCounter File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clkCounter.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file counters/clk_counter_seg.sv
-    Info (12023): Found entity 1: clk_counter_seg File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv Line: 3
+    Info (12023): Found entity 1: clk_counter_seg File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/clk_counter_seg.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file counters/posedge_detector.sv
-    Info (12023): Found entity 1: posedge_detector File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/posedge_detector.sv Line: 1
+    Info (12023): Found entity 1: posedge_detector File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Counters/posedge_detector.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file helpers/binto7seg.sv
-    Info (12023): Found entity 1: BinTo7Seg File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv Line: 1
+    Info (12023): Found entity 1: BinTo7Seg File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/BinTo7Seg.sv Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file helpers/button_debonce.sv
-    Info (12023): Found entity 1: Button_debounce File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/Button_debonce.sv Line: 6
-    Info (12023): Found entity 2: Slow_Clock_Enable File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/Button_debonce.sv Line: 27
-    Info (12023): Found entity 3: D_FF_with_Enable File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/Button_debonce.sv Line: 46
+    Info (12023): Found entity 1: Button_debounce File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/Button_debonce.sv Line: 6
+    Info (12023): Found entity 2: Slow_Clock_Enable File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/Button_debonce.sv Line: 27
+    Info (12023): Found entity 3: D_FF_with_Enable File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Helpers/Button_debonce.sv Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file carta.sv
-    Info (12023): Found entity 1: carta File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv Line: 1
+    Info (12023): Found entity 1: carta File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/carta.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top_level_memory.sv
-    Info (12023): Found entity 1: Top_Level_Memory File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv Line: 1
+    Info (12023): Found entity 1: Top_Level_Memory File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file card_controller.sv
-    Info (12023): Found entity 1: card_controller File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at Top_Level_Memory.sv(108): created implicit net for "done" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv Line: 108
-Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): instance has no name File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vga.sv Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at Top_Level_Memory.sv(116): instance has no name File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv Line: 116
+    Info (12023): Found entity 1: card_controller File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at Top_Level_Memory.sv(108): created implicit net for "done" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 108
+Critical Warning (10846): Verilog HDL Instantiation warning at vga.sv(21): instance has no name File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/VGA_Controller/vga.sv Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at Top_Level_Memory.sv(116): instance has no name File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Top_Level_Memory.sv Line: 116
 Info (12127): Elaborating entity "card_controller" for the top level hierarchy
-Info (12128): Elaborating entity "bit_shifter" for hierarchy "bit_shifter:bs" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 52
-Info (12128): Elaborating entity "Shuffle" for hierarchy "Shuffle:sh" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 61
-Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(39): index expression is not wide enough to address all of the elements in the array File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv Line: 39
-Info (12128): Elaborating entity "verificar_pareja" for hierarchy "verificar_pareja:vp" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 71
-Warning (10230): Verilog HDL assignment warning at verificar_pareja.sv(76): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv Line: 76
-Warning (10230): Verilog HDL assignment warning at verificar_pareja.sv(78): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv Line: 78
-Warning (10230): Verilog HDL assignment warning at verificar_pareja.sv(77): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv Line: 77
-Info (12128): Elaborating entity "mostrar_carta_random" for hierarchy "mostrar_carta_random:mr" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 81
-Info (12128): Elaborating entity "seleccionar_parejas" for hierarchy "seleccionar_parejas:sp1" File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 93
-Warning (10230): Verilog HDL assignment warning at seleccionar_parejas.sv(89): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv Line: 89
-Warning (10230): Verilog HDL assignment warning at seleccionar_parejas.sv(94): truncated value with size 32 to match size of target (4) File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv Line: 94
+Info (12128): Elaborating entity "bit_shifter" for hierarchy "bit_shifter:bs" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 52
+Info (12128): Elaborating entity "Shuffle" for hierarchy "Shuffle:sh" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 61
+Warning (10027): Verilog HDL or VHDL warning at the Shuffle.sv(39): index expression is not wide enough to address all of the elements in the array File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv Line: 39
+Info (12128): Elaborating entity "verificar_pareja" for hierarchy "verificar_pareja:vp" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 71
+Warning (10230): Verilog HDL assignment warning at verificar_pareja.sv(76): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv Line: 76
+Warning (10230): Verilog HDL assignment warning at verificar_pareja.sv(78): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv Line: 78
+Warning (10230): Verilog HDL assignment warning at verificar_pareja.sv(77): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv Line: 77
+Info (12128): Elaborating entity "mostrar_carta_random" for hierarchy "mostrar_carta_random:mr" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 81
+Info (12128): Elaborating entity "seleccionar_parejas" for hierarchy "seleccionar_parejas:sp1" File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 93
+Warning (10230): Verilog HDL assignment warning at seleccionar_parejas.sv(89): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv Line: 89
+Warning (10230): Verilog HDL assignment warning at seleccionar_parejas.sv(94): truncated value with size 32 to match size of target (4) File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv Line: 94
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/output_files/Memory_game.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/output_files/Memory_game.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Sat Oct 11 21:19:44 2025
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Sat Oct 11 21:46:12 2025
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/output_files/Memory_game.map.smsg.
+The suppressed messages can be found in C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/output_files/Memory_game.map.smsg.
 
 

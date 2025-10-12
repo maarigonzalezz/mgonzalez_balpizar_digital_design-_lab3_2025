@@ -10,85 +10,85 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv 
+# Start time: 21:46:19 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv 
 # -- Compiling module verificar_pareja
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/verificar_pareja.sv(5): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	verificar_pareja
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:19 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv 
+# Start time: 21:46:19 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/Shuffle.sv 
 # -- Compiling module Shuffle
 # 
 # Top level modules:
 # 	Shuffle
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:19 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv 
+# Start time: 21:46:19 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv 
 # -- Compiling module mostrar_carta_random
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/mostrar_carta_random.sv(6): (vlog-13314) Defaulting port 'arr_cards_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	mostrar_carta_random
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:20 on Oct 11,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv 
+# Start time: 21:46:20 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/bit_shifter.sv 
 # -- Compiling module bit_shifter
 # 
 # Top level modules:
 # 	bit_shifter
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:20 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv 
+# Start time: 21:46:20 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv 
 # -- Compiling module seleccionar_parejas
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv(8): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management/seleccionar_parejas.sv(8): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	seleccionar_parejas
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:20 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025 {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv 
+# Start time: 21:46:20 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv 
 # -- Compiling module card_controller
-# ** Warning: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(6): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(6): (vlog-13314) Defaulting port 'arr_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	card_controller
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:20 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
-# vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv}
+# vlog -sv -work work +incdir+C:/Users/gonza/Desktop/laboratorio\ 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb {C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:24:28 on Oct 11,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb" C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv 
+# Start time: 21:46:21 on Oct 11,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb" C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv 
 # -- Compiling module tb_card_controller
 # 
 # Top level modules:
 # 	tb_card_controller
-# End time: 21:24:28 on Oct 11,2025, Elapsed time: 0:00:00
+# End time: 21:46:21 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_card_controller
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_card_controller 
-# Start time: 21:24:28 on Oct 11,2025
+# Start time: 21:46:21 on Oct 11,2025
 # Loading sv_std.std
 # Loading work.tb_card_controller
 # Loading work.card_controller
@@ -98,11 +98,11 @@
 # Loading work.mostrar_carta_random
 # Loading work.seleccionar_parejas
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sp1'.  Expected 10, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp1 File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 83
-# ** Warning: (vsim-3722) C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(83): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp1 File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 83
+# ** Warning: (vsim-3722) C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(83): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'sp2'.  Expected 10, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp2 File: C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv Line: 95
-# ** Warning: (vsim-3722) C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv(95): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_card_controller/uut/sp2 File: C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv Line: 95
+# ** Warning: (vsim-3722) C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/card_controller.sv(95): [TFMPC] - Missing connection for port 'cartas_seleccionadas'.
 # 
 # add wave *
 # view structure
@@ -114,20 +114,20 @@
 # 00000 00000 00100 00100 01000 01000 01100 01100 10000 10000 10100 10100 11000 11000 11100 11100 
 # 
 # ===== INICIO SIMULACIÓN card_controller =====
-# t=5000 | state=0000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=15000 | state=0000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=5000 | state=0000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=15000 | state=0000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
 # 
 # [REVUELVE_CORTAS] Mezclando cartas...
-# t=25000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=35000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=45000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=55000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=65000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
-# t=75000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=85000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
-# t=95000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=105000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
-# t=115000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=25000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=35000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=45000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=55000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=65000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00 huboP=0
+# t=75000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=85000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00 huboP=0
+# t=95000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=105000 | state=0011 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00 huboP=0
+# t=115000 | state=0011 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
 # 
 # --- arr_out tras REVUELVE_CORTAS ---
 # 10100 00100 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
@@ -136,25 +136,25 @@
 # 
 # 
 # [TURNO_JUGADOR] Jugador selecciona primera carta...
-# t=125000 | state=0101 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00
-# t=135000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=145000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=155000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=165000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=175000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=185000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=195000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=205000 | state=0101 | doneSh=0 doneSp=1 doneMcr=0 doneVp=0 load=1 cartas_sel=00
-# t=215000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=225000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=235000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=245000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=255000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=265000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=275000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=285000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=295000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=305000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
+# t=125000 | state=0101 | doneSh=1 doneSp=0 doneMcr=0 doneVp=0 load=1 cartas_sel=00 huboP=0
+# t=135000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=145000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=155000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=165000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=175000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=185000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=195000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=205000 | state=0101 | doneSh=0 doneSp=1 doneMcr=0 doneVp=0 load=1 cartas_sel=00 huboP=0
+# t=215000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=225000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=235000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=245000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=255000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=265000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=275000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=285000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=295000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=305000 | state=0101 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
 # 
 # --- arr_out tras TURNO_JUGADOR ---
 # 10100 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
@@ -163,74 +163,74 @@
 # 
 # 
 # [UNA_CARTA] Jugador selecciona segunda carta...
-# t=315000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00
-# t=325000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=335000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=345000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=355000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=365000 | state=0110 | doneSh=0 doneSp=1 doneMcr=0 doneVp=0 load=1 cartas_sel=01
-# t=375000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=385000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=395000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=405000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=415000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=425000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=435000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=445000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=455000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=465000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=315000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=00 huboP=0
+# t=325000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=335000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=345000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=355000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=365000 | state=0110 | doneSh=0 doneSp=1 doneMcr=0 doneVp=0 load=1 cartas_sel=01 huboP=0
+# t=375000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=385000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=395000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=405000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=415000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=425000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=435000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=445000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=455000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=465000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
 # 
 # --- arr_out tras UNA_CARTA ---
 # 10101 00101 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
 # 
-# [TB] arr_in actualizado desde arr_out
+# t=475000 | state=0110 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# Contenido de arr_in antes de VP:
+# 00001 00001 00100 00100 01000 01000 01100 01100 10000 10000 10100 10100 11000 11000 11100 11100 
 # 
 # 
 # [DOS_CARTAS] Verificando pareja...
-# t=475000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=485000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=495000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=505000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=515000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
-# t=525000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=535000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
-# t=545000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=555000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
-# t=565000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=485000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=495000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=505000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=515000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=1
+# t=525000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01 huboP=0
+# t=535000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=1
+# t=545000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01 huboP=0
+# t=555000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=1
+# t=565000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01 huboP=0
+# t=575000 | state=0111 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=1
 # 
 # --- arr_out tras DOS_CARTAS ---
-# 10100 00100 10100 01100 10000 11100 11000 00000 00100 10000 00000 01000 01000 01100 11100 11000 
+# 00010 00010 00100 00100 01000 01000 01100 01100 10000 10000 10100 10100 11000 11000 11100 11100 
 # 
 # [TB] arr_in actualizado desde arr_out
 # 
 # 
 # [MOSTRAR_RANDOM] Mostrando carta aleatoria...
-# t=575000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01
-# t=585000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=595000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=605000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=615000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
-# t=625000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=635000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
-# t=645000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=655000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
-# t=665000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=585000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=1 load=1 cartas_sel=01 huboP=0
+# t=595000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=1
+# t=605000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=615000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=625000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01 huboP=0
+# t=635000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=645000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01 huboP=0
+# t=655000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=665000 | state=1000 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01 huboP=0
+# t=675000 | state=1000 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
 # 
 # --- arr_out tras MOSTRAR_RANDOM ---
-# 10100 00100 10100 01100 10000 11100 11000 00001 00100 10000 00000 01001 01000 01100 11100 11000 
+# 00010 00010 00100 00100 01000 01000 01100 01101 10000 10000 10100 10100 11000 11000 11100 11101 
 # 
 # [TB] arr_in actualizado desde arr_out
 # 
 # 
 # [CONCLUSION] Fin de la simulación.
-# t=675000 | state=1010 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01
-# t=685000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=695000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=705000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
-# t=715000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01
+# t=685000 | state=1010 | doneSh=0 doneSp=0 doneMcr=1 doneVp=0 load=1 cartas_sel=01 huboP=0
+# t=695000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=705000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=715000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
+# t=725000 | state=1010 | doneSh=0 doneSp=0 doneMcr=0 doneVp=0 load=0 cartas_sel=01 huboP=0
 # ===== FIN DE SIMULACIÓN =====
-# ** Note: $stop    : C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv(139)
-#    Time: 720 ns  Iteration: 0  Instance: /tb_card_controller
-# Break in Module tb_card_controller at C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv line 139
-# End time: 21:24:58 on Oct 11,2025, Elapsed time: 0:00:30
-# Errors: 0, Warnings: 4
+# ** Note: $stop    : C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv(159)
+#    Time: 730 ns  Iteration: 0  Instance: /tb_card_controller
+# Break in Module tb_card_controller at C:/Users/gonza/Desktop/laboratorio 3/mgonzalez_balpizar_digital_design-_lab3_2025/Arr_Management_tb/tb_card_controller.sv line 159

@@ -108,7 +108,27 @@ module tb_card_controller;
     Sel = 1; #10; Sel = 0; #20;
     #100;
     print_arr("arr_out tras UNA_CARTA", arr_out);
-    update_input_from_output();
+	 
+	 // Redefinir manualmente arr_in para probar una pareja válida
+	num = 0;
+	for (int i = 0; i <= 15; i += 2) begin
+	  arr_in[i][4:2]   = num[2:0];
+	  arr_in[i][1:0]   = 2'b00;
+	  arr_in[i+1][4:2] = num[2:0];
+	  arr_in[i+1][1:0] = 2'b00;
+	  num += 1;
+	end
+
+	// Fuerzo una pareja seleccionada en las cartas 0 y 1
+	arr_in[0][1:0] = 2'b01;
+	arr_in[1][1:0] = 2'b01;
+
+	#10; // esperar a que se propague
+		
+	$display("Contenido de arr_in antes de VP:");
+    for (int i = 0; i < 16; i++) $write("%b ", arr_in[i]); 
+    $display("\n");
+		
 
     // ==================================================
     // Estado DOS_CARTAS
@@ -141,8 +161,8 @@ module tb_card_controller;
 
   // Monitoreo
   always @(posedge clk) begin
-    $display("t=%0t | state=%b | doneSh=%b doneSp=%b doneMcr=%b doneVp=%b load=%b cartas_sel=%b",
-      $time, state, doneSh, doneSp, doneMcr, doneVp, load, cartas_seleccionadas);
+    $display("t=%0t | state=%b | doneSh=%b doneSp=%b doneMcr=%b doneVp=%b load=%b cartas_sel=%b huboP=%b",
+      $time, state, doneSh, doneSp, doneMcr, doneVp, load, cartas_seleccionadas, hubo_pareja);
   end
 
 endmodule
