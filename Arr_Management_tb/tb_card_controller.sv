@@ -109,6 +109,7 @@ module tb_card_controller;
     #100;
     print_arr("arr_out tras UNA_CARTA", arr_out);
     update_input_from_output();
+	 
 
     // ==================================================
     // Estado DOS_CARTAS

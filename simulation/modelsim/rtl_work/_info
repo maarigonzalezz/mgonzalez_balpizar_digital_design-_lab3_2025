@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/simulation/modelsim
 vbit_shifter
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1760239468
+Z2 !s110 1760239875
 !i10b 1
 !s100 BNC7P32a5KQPXeBBoB9hX0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1760239468.000000
+Z7 !s108 1760239875.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z9 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Ta
 Z10 tCvgOpt 0
 vcard_controller
 R1
-R2
+Z11 !s110 1760239876
 !i10b 1
 !s100 Do84cHQLIQ1ZA^h;Y:eiR0
 R3
@@ -45,7 +45,7 @@ IcjWG2c]ZdiGDS[Kih]zDo2
 R4
 S1
 R0
-Z11 w1760232601
+Z12 w1760232601
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv
 !i122 5
@@ -97,7 +97,7 @@ I6=QDko4H3oB0Q8UPK]>V71
 R4
 S1
 R0
-R11
+R12
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv
 !i122 4
@@ -142,24 +142,24 @@ R10
 n@shuffle
 vtb_card_controller
 R1
-R2
+R11
 !i10b 1
-!s100 MWD:D_FImVII_azKE[>PU3
+!s100 mlJ<88``:SNKmjY@9[J:?3
 R3
-IPPTEP^_dkI73hTgeYFm0@0
+IflT_7J?KjWA<gRaT8[F1n0
 R4
 S1
 R0
-R11
+w1760239859
 8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv
 FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv
 !i122 6
-L0 3 146
+L0 3 147
 R6
 r1
 !s85 0
 31
-R7
+!s108 1760239876.000000
 !s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_card_controller.sv|
 !i113 1
