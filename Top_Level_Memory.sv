@@ -26,7 +26,7 @@ module Top_Level_Memory(
 	// Variables para la MEF
 	logic [1:0]  cartas_sw;
 	logic inicio, tiempo_terminado, se_eligio_carta, load;
-	logic cartas_mostradas, cartas_ocultas, cartas_revueltas, carta_randomizada;
+	logic cartas_mostradas, cartas_ocultas, cartas_revueltas, carta_randomizada, cartas_verificadas;
 	logic [3:0]  state;
 	logic [3:0] puntajeJ1;
    logic [3:0] puntajeJ2;
@@ -66,7 +66,7 @@ module Top_Level_Memory(
 	card_controller cartasM(.clk(clk), .rst(rst), .Izq(Izq), .Der(Der), .Sel(Sel), 
 									.state(state), .arr_in(arr_cartas), .arr_out(arr_temp), .doneSh(cartas_revueltas), 
 									.doneSp(se_eligio_carta), .doneMcr(carta_randomizada), .cartas_seleccionadas(cartas_sw),
-									.load(load), .hubo_pareja(hubo_pareja));
+									.doneVp(cartas_verificadas), .load(load), .hubo_pareja(hubo_pareja));
 									
 	save_cards cartasG(.clk(clk), .rst(rst), .load(load), .arr_in(arr_temp), .arr_out(arr_cartas));
 	
@@ -75,7 +75,6 @@ module Top_Level_Memory(
 	assign cartas_mostradas = CM;
 	assign cartas_ocultas = CO; 
 	//assign cartas_revueltas = CR;
-	logic hubo_pareja;
 
 	assign s = state;
 	assign cargar = load;
@@ -90,7 +89,9 @@ module Top_Level_Memory(
         .cartas_mostradas(cartas_mostradas),
         .cartas_ocultas(cartas_ocultas),
         .cartas_revueltas(cartas_revueltas),
+		  .carta_randomizada(carta_randomizada),
 		  .hubo_pareja(hubo_pareja),
+		  .cartas_verificadas(cartas_verificadas),
         .ganador(ganador),
         .state(state),
 		  .turno_de(turno_de),
@@ -113,7 +114,7 @@ module Top_Level_Memory(
 	
 	//============================================ 7 SEGMENTOS ==============================================
 
-	top_7seg_counter(.clk(clk), .rst(reset_timer), .seg(seg), .tiempo_terminado(tiempo_terminado));
+	top_7seg_counter counter_7seg_1(.clk(clk), .rst(reset_timer), .seg(seg), .tiempo_terminado(tiempo_terminado));
 	
 	// Decodificadores de 7 segmentos
     BinTo7Seg display_unidades (
