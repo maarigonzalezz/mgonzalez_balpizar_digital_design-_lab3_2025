@@ -111,6 +111,37 @@ module tb_Top_Level_Memory;
     $display("-> Señal load: %b", DUT.load);
     print_arr("Array tras segunda selección (arr_cartas)", DUT.arr_cartas);
 
+	 
+	     // ===================================================
+    // 2️⃣ TURNO_JUGADOR → primera carta seleccionada
+    // ===================================================
+    $display("\n[TURNO_JUGADOR] Jugador 1 selecciona primera carta...");
+    Der = 1; #20; Der = 0; #20;
+	 Der = 1; #20; Der = 0; #20;
+	 Der = 1; #20; Der = 0; #20;
+	 Der = 1; #20; Der = 0; #20;
+    Sel = 1; #20; Sel = 0; #20;
+    #100;
+
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
+
+
+	 // ===================================================
+    // 3️⃣ UNA_CARTA → segunda carta seleccionada
+    // ===================================================
+    $display("\n[UNA_CARTA] Jugador 1 selecciona segunda carta...");
+    Der = 1; #20; Der = 0; #20;
+	 Der = 1; #20; Der = 0; #20;
+    Sel = 1; #20; Sel = 0; #20;
+    #200;
+
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array tras segunda selección (arr_cartas)", DUT.arr_cartas);
+	 
+	 
     // ===================================================
     // 4️⃣ DOS_CARTAS → verificar pareja
     // ===================================================
@@ -138,14 +169,20 @@ module tb_Top_Level_Memory;
     $stop;
   end
 
-  // ================================
-  // Monitoreo en tiempo real
-  // ================================
-  always @(posedge clk) begin
-    $display("t=%0t | state=%b | turno=%b | load=%b | pareja=%b | J1=%0d | J2=%0d",
-             $time, DUT.state, DUT.turno_de, DUT.load, DUT.hubo_pareja, DUT.puntajeJ1, DUT.puntajeJ2);
-  end
-  
+	// ================================
+	// Monitoreo en tiempo real
+	// ================================
+	always @(posedge clk) begin
+		 $display("t=%0t | state=%b | turno=%b | load=%b | pareja=%b | J1=%0d | J2=%0d| se_eligio_carta: %b",
+					 $time, DUT.state, DUT.turno_de, DUT.load, DUT.hubo_pareja, DUT.puntajeJ1, DUT.puntajeJ2, DUT.se_eligio_carta);
+
+		 // Imprime el arreglo de cartas
+		 $write("t=%0t | arr_cartas=", $time);
+		 for (int i = 0; i < 16; i = i + 1)
+			  $write("%05b ", DUT.arr_cartas[i]);
+		 $display("");
+	end
+	  
   initial begin
     #1000; // Esperar a que empiece la simulación principal
 

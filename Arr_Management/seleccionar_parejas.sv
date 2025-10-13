@@ -17,6 +17,7 @@ module seleccionar_parejas (
     logic [4:0]  temp_arr [0:15];
     logic [4:0]  pool_comb [0:15];
     logic        carta_seleccionada;
+    logic        doing; // bloquea pulsos de Sel hasta nueva ronda
 
     // Edge detectors
     logic izq_q, der_q, sel_q;
@@ -27,9 +28,7 @@ module seleccionar_parejas (
     // Seguimiento de flancos
     always_ff @(posedge clk or negedge rst) begin
         if (!rst) begin
-            izq_q <= 1'b0;
-            der_q <= 1'b0;
-            sel_q <= 1'b0;
+            izq_q <= 0; der_q <= 0; sel_q <= 0;
         end else begin
             izq_q <= Izq;
             der_q <= Der;
@@ -42,20 +41,14 @@ module seleccionar_parejas (
     // ======================================================
     always_comb begin
         integer i;
-        logic [4:0] temp[0:15];
-        for (i = 0; i < 16; i++)
-            temp[i] = temp_arr[i];
-
-        // No hace cambios hasta que se seleccione una carta
-        if (sel_p && !carta_seleccionada && temp[index][1:0] != 2'b01)
-            temp[index][1:0] = 2'b01;
-
-        for (i = 0; i < 16; i++)
-            pool_comb[i] = temp[i];
+        for (i = 0; i < 16; i = i + 1)
+            pool_comb[i] = temp_arr[i]; // copia actual del array
+        if (running && sel_p && !carta_seleccionada && temp_arr[index][1:0] != 2'b01)
+            pool_comb[index][1:0] = 2'b01; // marca carta seleccionada
     end
 
     // ======================================================
-    // BLOQUE SECUENCIAL: control tipo mostrar_carta_random
+    // BLOQUE SECUENCIAL: control de ronda y selección
     // ======================================================
     always_ff @(posedge clk or negedge rst) begin
         integer i;
@@ -64,7 +57,8 @@ module seleccionar_parejas (
             done               <= 0;
             carta_seleccionada <= 0;
             index              <= 0;
-            for (i = 0; i < 16; i++) begin
+            doing              <= 0;
+            for (i = 0; i < 16; i = i + 1) begin
                 temp_arr[i] <= 0;
                 arr_out[i]  <= 0;
             end
@@ -72,35 +66,30 @@ module seleccionar_parejas (
             done <= 0;
 
             // Iniciar ronda
-            if (start && !running) begin
+            if (start) begin
                 running            <= 1;
                 carta_seleccionada <= 0;
+                doing              <= 0;
                 index              <= 0;
-                for (i = 0; i < 16; i++)
+                for (i = 0; i < 16; i = i + 1) begin
                     temp_arr[i] <= arr_in[i];
+                    arr_out[i]  <= arr_in[i];
+                end
             end
 
             if (running) begin
-                // Movimiento
-                if (izq_p) begin
-                    if (index == 0)
-                        index <= 15;
-                    else
-                        index <= index - 1;
-                end else if (der_p) begin
-                    if (index == 15)
-                        index <= 0;
-                    else
-                        index <= index + 1;
-                end
+                // Movimiento del índice
+                if (izq_p) index <= (index == 0) ? 15 : index - 1;
+                else if (der_p) index <= (index == 15) ? 0 : index + 1;
 
-                // Selección
-                if (sel_p && !carta_seleccionada && temp_arr[index][1:0] != 2'b01) begin
-                    for (i = 0; i < 16; i++)
-                        arr_out[i] <= pool_comb[i]; // Actualiza salida solo aquí
-                    carta_seleccionada <= 1;
-                    done               <= 1;
-                    running            <= 0;       // Termina la ronda
+                // Selección de carta
+                if (sel_p && !doing && !carta_seleccionada && temp_arr[index][1:0] != 2'b01) begin
+                    temp_arr[index][1:0] <= 2'b01; // marca temp_arr
+                    arr_out[index][1:0]  <= 2'b01; // actualiza salida
+                    carta_seleccionada   <= 1;
+                    done                 <= 1;
+                    running              <= 0;       // termina la ronda
+                    doing                <= 1;       // bloquea hasta nueva ronda
                 end
             end
         end
