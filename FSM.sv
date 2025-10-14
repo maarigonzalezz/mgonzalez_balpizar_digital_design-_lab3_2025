@@ -90,6 +90,7 @@ module FSM(
 							  else
 									puntaje_j2 <= puntaje_j2 + 1;
 							  jugador_en_turno <= jugador_en_turno; // Cambiar turno automáticamente
+
 						 end else begin
 							  jugador_en_turno <= ~jugador_en_turno;
 						 end
