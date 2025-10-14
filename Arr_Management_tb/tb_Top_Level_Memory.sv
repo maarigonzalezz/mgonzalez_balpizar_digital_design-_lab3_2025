@@ -18,6 +18,7 @@ module tb_Top_Level_Memory;
   // Ignoradas (solo dummy)
   logic [7:0] r, g, b;
   logic vgaclk, hsync, vsync, sync_b, blank_b;
+  
 
   // ================================
   // DUT
@@ -156,6 +157,108 @@ module tb_Top_Level_Memory;
     $display("\n[POST VERIFICACIÓN] Turno y puntaje");
     $display("Turno de jugador: %b", DUT.turno_de);
     $display("Puntaje J1: %0d | Puntaje J2: %0d", DUT.puntajeJ1, DUT.puntajeJ2);
+	 
+	 
+	 
+	 // ===================================================
+    // Mostrar Carta Random
+    // ===================================================
+	 
+	 $display("\n No mas tiempo");
+    // ✅ Acceso directo a la señal interna del Top-Level
+    // Forzamos que el tiempo se termine
+    #200 
+	 force DUT.tiempo_terminado = 1;
+    #150 
+	force DUT.tiempo_terminado = 0;
+    #10  
+	 release DUT.tiempo_terminado;  // Liberar control para que el módulo la maneje de nuevo
+	 
+	 
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
+	 
+	 
+	 	 // ===================================================
+    // Mostrar Carta Random
+    // ===================================================
+	 
+	 $display("\n No mas tiempo");
+    // ✅ Acceso directo a la señal interna del Top-Level
+    // Forzamos que el tiempo se termine
+    #200 
+	 force DUT.tiempo_terminado = 1;
+    #150 
+	force DUT.tiempo_terminado = 0;
+    #10  
+	 release DUT.tiempo_terminado;  // Liberar control para que el módulo la maneje de nuevo
+	 
+	 
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
+	 
+	 
+	 	 // ===================================================
+    // Mostrar Carta Random
+    // ===================================================
+	 
+	 $display("\n No mas tiempo");
+    // ✅ Acceso directo a la señal interna del Top-Level
+    // Forzamos que el tiempo se termine
+    #200 
+	 force DUT.tiempo_terminado = 1;
+    #150 
+	force DUT.tiempo_terminado = 0;
+    #10  
+	 release DUT.tiempo_terminado;  // Liberar control para que el módulo la maneje de nuevo
+	 
+	 
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
+	 
+	 	 	 // ===================================================
+    // Mostrar Carta Random
+    // ===================================================
+	 
+	 $display("\n No mas tiempo");
+    // ✅ Acceso directo a la señal interna del Top-Level
+    // Forzamos que el tiempo se termine
+    #200 
+	 force DUT.tiempo_terminado = 1;
+    #150 
+	force DUT.tiempo_terminado = 0;
+    #10  
+	 release DUT.tiempo_terminado;  // Liberar control para que el módulo la maneje de nuevo
+	 
+	 
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
+	 
+	 
+	 	 	 // ===================================================
+    // Mostrar Carta Random
+    // ===================================================
+	 
+	 $display("\n No mas tiempo");
+    // ✅ Acceso directo a la señal interna del Top-Level
+    // Forzamos que el tiempo se termine
+    #200 
+	 force DUT.tiempo_terminado = 1;
+    #150 
+	force DUT.tiempo_terminado = 0;
+    #10  
+	 release DUT.tiempo_terminado;  // Liberar control para que el módulo la maneje de nuevo
+	 
+	 
+    $display("-> Señal se_eligio_carta: %b", DUT.se_eligio_carta);
+    $display("-> Señal load: %b", DUT.load);
+    print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
+	 
+	 
 
     // ===================================================
     // Mostrar estados siguientes

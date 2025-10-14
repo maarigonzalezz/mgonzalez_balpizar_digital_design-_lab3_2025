@@ -128,6 +128,18 @@ module tb_card_controller;
     #100;
     print_arr("arr_out tras MOSTRAR_RANDOM", arr_out);
     update_input_from_output();
+	 
+	 // ==================================================
+    // Estado MOSTRAR_RANDOM
+    // ==================================================
+    
+    $display("\n[MOSTRAR_RANDOM] Mostrando carta aleatoria...");
+    #100;
+    print_arr("arr_out tras MOSTRAR_RANDOM", arr_out);
+    update_input_from_output();
+	 
+	 
+	 
 
     // ==================================================
     // Estado CONCLUSION

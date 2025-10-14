@@ -83,22 +83,17 @@ module FSM(
 
                 
                 
-                DOS_CARTAS: begin
-                    if (!esperando_pareja)
-                        esperando_pareja <= 1;
-                    else if (esperando_pareja && cartas_verificadas) begin
-                        esperando_pareja <= 0;
-
-                        if (hubo_pareja) begin
-                            if (jugador_en_turno == 0)
-                                puntaje_j1 <= puntaje_j1 + 1;
-                            else
-                                puntaje_j2 <= puntaje_j2 + 1;
-                        end else begin
-                            jugador_en_turno <= ~jugador_en_turno;
-                        end
-                    end
-                end
+					DOS_CARTAS: begin
+						 if (hubo_pareja) begin
+							  if (jugador_en_turno == 0)
+									puntaje_j1 <= puntaje_j1 + 1;
+							  else
+									puntaje_j2 <= puntaje_j2 + 1;
+							  jugador_en_turno <= ~jugador_en_turno; // Cambiar turno automáticamente
+						 end else begin
+							  jugador_en_turno <= ~jugador_en_turno;
+						 end
+					end
 					 
                 
                 CONCLUSION: begin
