@@ -40,6 +40,8 @@ module tb_seleccionar_parejas;
   task press_der;   Der = 1; @(posedge clk); Der = 0; @(posedge clk);   endtask
   task press_izq;   Izq = 1; @(posedge clk); Izq = 0; @(posedge clk);   endtask
   task press_sel;   Sel = 1; @(posedge clk); Sel = 0; @(posedge clk);   endtask
+  
+  
 
   initial begin
     clk = 0; rst = 0;
@@ -86,6 +88,28 @@ module tb_seleccionar_parejas;
     // Ir a la izquierda una vez (de 0 -> 15)
     press_izq();
     press_sel();
+	 
+	 
+	 // -------- RONDA 3 (wrap) --------
+    $display("\n[START ronda 2]");
+    pulse_start();
+
+    // Ir a la izquierda una vez (de 0 -> 15)
+    press_der();
+    press_sel();
+	 
+	 	 // -------- RONDA 4 (wrap) --------
+    $display("\n[START ronda 2]");
+    pulse_start();
+
+    // Ir a la izquierda una vez (de 0 -> 15)
+    press_der();
+	 press_der();
+	 press_der();
+    press_sel();
+	 
+	 
+	 
 
     $display("\n==== FIN TB ====");
     repeat (5) @(posedge clk);
