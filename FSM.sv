@@ -89,7 +89,8 @@ module FSM(
 									puntaje_j1 <= puntaje_j1 + 1;
 							  else
 									puntaje_j2 <= puntaje_j2 + 1;
-							  jugador_en_turno <= ~jugador_en_turno; // Cambiar turno automáticamente
+							  jugador_en_turno <= jugador_en_turno; // Cambiar turno automáticamente
+
 						 end else begin
 							  jugador_en_turno <= ~jugador_en_turno;
 						 end
@@ -107,7 +108,7 @@ module FSM(
                 end
                 
                 default: begin
-                    reset_timer <= 1'b0;
+                    // reset_timer <= 1'b0;
                     reset_done <= 1'b0;
                 end
 

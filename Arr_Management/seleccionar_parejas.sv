@@ -43,7 +43,7 @@ module seleccionar_parejas (
         integer i;
         for (i = 0; i < 16; i = i + 1)
             pool_comb[i] = temp_arr[i]; // copia actual del array
-        if (running && sel_p && !carta_seleccionada && temp_arr[index][1:0] != 2'b01)
+        if (running && sel_p && !carta_seleccionada && temp_arr[index][1:0] != 2'b01 && temp_arr[index][1:0] != 2'b10)
             pool_comb[index][1:0] = 2'b01; // marca carta seleccionada
     end
 
@@ -83,7 +83,7 @@ module seleccionar_parejas (
                 else if (der_p) index <= (index == 15) ? 0 : index + 1;
 
                 // Selección de carta
-                if (sel_p && !doing && !carta_seleccionada && temp_arr[index][1:0] != 2'b01) begin
+                if (sel_p && !doing && !carta_seleccionada && temp_arr[index][1:0] != 2'b01 && temp_arr[index][1:0] != 2'b10) begin
                     temp_arr[index][1:0] <= 2'b01; // marca temp_arr
                     arr_out[index][1:0]  <= 2'b01; // actualiza salida
                     carta_seleccionada   <= 1;
