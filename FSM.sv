@@ -45,6 +45,8 @@ module FSM(
 	 assign puntajeJ1 = puntaje_j1;
 	 assign puntajeJ2 = puntaje_j2;
 	 
+	 logic reset_done;
+	 
 
     // UN SOLO BLOQUE ALWAYS_FF PARA TODA LA LÓGICA SECUENCIAL
     always_ff @(posedge clk or posedge rst) begin
@@ -55,6 +57,7 @@ module FSM(
             jugador_en_turno <= 0;
             ganador <= 2'b00;
 				reset_timer <= 1'b1;
+				reset_done <= 1'b0;  // Asegurarse de que no se ha completado el reset
 				esperando_pareja <= 0;
         end else begin
             current_state <= next_state;
@@ -70,11 +73,14 @@ module FSM(
                 end
                 
                 TURNO_JUGADOR: begin
-                    // Resetear variables de cartas al inicio del turno
-						  reset_timer <= 1'b1;
-						  reset_timer <= 1'b0;
-						  //cartas_seleccionadas <= 2'b00;
+                    if (!reset_done) begin
+                        reset_timer <= 1'b1;  // Reseteamos el temporizador al cambiar de turno
+                        reset_done <= 1'b1;
+                    end else begin
+                        reset_timer <= 1'b0;  // Permitimos que el temporizador cuente
+                    end
                 end
+
                 
                 
                 DOS_CARTAS: begin
@@ -105,7 +111,11 @@ module FSM(
                         ganador <= 2'b11;
                 end
                 
-                default: ; // No hacer nada en otros estados
+                default: begin
+                    reset_timer <= 1'b0;
+                    reset_done <= 1'b0;
+                end
+
             endcase
         end
     end
@@ -200,4 +210,4 @@ module FSM(
     // Salida de estado
     assign state = current_state;
 
-endmodule
+endmodule 

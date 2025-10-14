@@ -9,10 +9,14 @@ module save_cards(
 	
 	
     always_ff @(posedge clk or posedge rst) begin
-        if (rst)
-            for (int i = 0; i < 16; i++) arr_out[i] <= '0;
-        else if (load)
-            arr_out <= arr_in;
+        if (rst) begin
+            for (int i = 0; i < 16; i++)
+                arr_out[i] <= 5'b0;
+        end
+        else if (load) begin
+            for (int i = 0; i < 16; i++)
+                arr_out[i] <= arr_in[i];
+        end
     end
 	 
 endmodule 

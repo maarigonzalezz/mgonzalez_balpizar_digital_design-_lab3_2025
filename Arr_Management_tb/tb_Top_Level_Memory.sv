@@ -75,7 +75,7 @@ module tb_Top_Level_Memory;
     #20 rst = 0;
 
     // ===================================================
-    // 1️⃣ Estado INICIO → MUESTRO_CORTAS
+    // Estado INICIO → MUESTRO_CORTAS
     // ===================================================
     $display("\n[INICIO] Activando inicio del juego...");
     I = 1; #20; I = 0;
@@ -87,7 +87,7 @@ module tb_Top_Level_Memory;
     $display("FSM llegó a estado: %b (esperado: INICIO_JUEGO o TURNO_JUGADOR)", DUT.state);
 
     // ===================================================
-    // 2️⃣ TURNO_JUGADOR → primera carta seleccionada
+    // TURNO_JUGADOR → primera carta seleccionada
     // ===================================================
     $display("\n[TURNO_JUGADOR] Jugador 1 selecciona primera carta...");
     Der = 1; #20; Der = 0; #20;
@@ -100,7 +100,7 @@ module tb_Top_Level_Memory;
     print_arr("Array de cartas tras primera selección (arr_cartas)", DUT.arr_cartas);
 
     // ===================================================
-    // 3️⃣ UNA_CARTA → segunda carta seleccionada
+    // UNA_CARTA → segunda carta seleccionada
     // ===================================================
     $display("\n[UNA_CARTA] Jugador 1 selecciona segunda carta...");
     Izq = 1; #20; Izq = 0; #20;
@@ -113,7 +113,7 @@ module tb_Top_Level_Memory;
 
 	 
 	     // ===================================================
-    // 2️⃣ TURNO_JUGADOR → primera carta seleccionada
+    // TURNO_JUGADOR → primera carta seleccionada
     // ===================================================
     $display("\n[TURNO_JUGADOR] Jugador 1 selecciona primera carta...");
     Der = 1; #20; Der = 0; #20;
@@ -129,7 +129,7 @@ module tb_Top_Level_Memory;
 
 
 	 // ===================================================
-    // 3️⃣ UNA_CARTA → segunda carta seleccionada
+    // UNA_CARTA → segunda carta seleccionada
     // ===================================================
     $display("\n[UNA_CARTA] Jugador 1 selecciona segunda carta...");
     Der = 1; #20; Der = 0; #20;
@@ -151,14 +151,14 @@ module tb_Top_Level_Memory;
     $display("hubo_pareja = %b", DUT.hubo_pareja);
 
     // ===================================================
-    // 5️⃣ Cambios de turno y puntaje
+    // Cambios de turno y puntaje
     // ===================================================
     $display("\n[POST VERIFICACIÓN] Turno y puntaje");
     $display("Turno de jugador: %b", DUT.turno_de);
     $display("Puntaje J1: %0d | Puntaje J2: %0d", DUT.puntajeJ1, DUT.puntajeJ2);
 
     // ===================================================
-    // 6️⃣ Mostrar estados siguientes
+    // Mostrar estados siguientes
     // ===================================================
     $display("\n[ESTADOS SIGUIENTES]");
     #200;
@@ -190,7 +190,7 @@ module tb_Top_Level_Memory;
 
     // Espera al primer reseteo del contador
     @(posedge DUT.reset_timer);
-    $display("t=%0t | 🌀 FSM resetea el contador del turno", $time);
+    $display("t=%0t |  FSM resetea el contador del turno", $time);
 
     // Observa cómo cambian los segmentos durante el turno
     repeat (40) begin
@@ -200,7 +200,7 @@ module tb_Top_Level_Memory;
 
     // Espera a que el tiempo se termine (si ocurre)
     wait (DUT.tiempo_terminado === 1);
-    $display("t=%0t | ⏰ ¡Tiempo terminado! FSM debería pasar a MOSTRAR_RANDOM o cambiar turno.", $time);
+    $display("t=%0t |¡Tiempo terminado! FSM debería pasar a MOSTRAR_RANDOM o cambiar turno.", $time);
 
     #200;
     $display("===== FIN DEL MONITOREO DEL TEMPORIZADOR =====");
