@@ -69,4 +69,4 @@ module top_7seg_counter (
     // -------------------------
     assign an = 4'b1110; // Solo se usa un dígito (AN0 activo en bajo)
 
-endmodule
+endmodule 
