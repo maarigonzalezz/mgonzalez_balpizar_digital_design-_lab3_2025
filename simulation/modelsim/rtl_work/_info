@@ -9,55 +9,816 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/simulation/modelsim
-vseleccionar_parejas
+vBinTo7Seg
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1760431035
+Z2 !s110 1760431667
 !i10b 1
-!s100 lfG[<YKWaEe]POB=AYF?_0
+!s100 Tl`gRcX6W:4MmPnPo76iL1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IPFLMlh_1V2E3X[9MgAbIi3
+IK7CU[>@2PNj2CUzeJ3V7R2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1760337890
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv
-!i122 0
-L0 1 101
-Z5 OV;L;2020.1;71
+Z5 w1760232575
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv
+!i122 25
+Z6 L0 1 20
+Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1760431035.000000
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv|
+Z8 !s108 1760431667.000000
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv|
 !i113 1
-Z7 o-sv -work work
-!s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management
-Z8 tCvgOpt 0
-vtb_seleccionar_parejas
+Z9 o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers
+Z10 tCvgOpt 0
+n@bin@to7@seg
+vbit_shifter
 R1
-R2
+Z11 !s110 1760431666
 !i10b 1
-!s100 BLe[hEABjRIS52H8^TVUH1
+!s100 BNC7P32a5KQPXeBBoB9hX0
 R3
-InmC^<kDh_Jn[QIaGC`TXT1
+I?`JQRRg<kXYYA;6hYVj[]1
 R4
 S1
 R0
-w1760431020
-8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_seleccionar_parejas.sv
-FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_seleccionar_parejas.sv
-!i122 1
-L0 3 128
 R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv
+!i122 19
+L0 1 28
+R7
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_seleccionar_parejas.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_seleccionar_parejas.sv|
+Z12 !s108 1760431666.000000
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv|
 !i113 1
+R9
+Z13 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management
+R10
+vcard_controller
+R1
+R2
+!i10b 1
+!s100 Do84cHQLIQ1ZA^h;Y:eiR0
+R3
+IcjWG2c]ZdiGDS[Kih]zDo2
+R4
+S1
+R0
+Z14 w1760232601
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv
+!i122 29
+L0 1 234
 R7
-!s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb
+r1
+!s85 0
+31
 R8
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv|
+!i113 1
+R9
+Z15 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3
+R10
+vcarta
+R1
+R2
+!i10b 1
+!s100 A1j?cM4e9AFkB22CgF;1H2
+R3
+I5TMl=fIUE?hnn=0JIiFK72
+R4
+S1
+R0
+R14
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv
+!i122 26
+L0 1 145
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv|
+!i113 1
+R9
+R15
+R10
+vcircle_symbol
+R1
+Z16 !s110 1760431665
+!i10b 1
+!s100 m@bzh0TTQNoYzY=zVVCme3
+R3
+I=?RC1L]2L:2HeGY8:[3l11
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv
+!i122 15
+L0 1 38
+R7
+r1
+!s85 0
+31
+Z17 !s108 1760431665.000000
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv|
+!i113 1
+R9
+Z18 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols
+R10
+vclk_counter_seg
+R1
+R11
+!i10b 1
+!s100 Z>PEG3KQk_>kH84n:03@U0
+R3
+IR:Y[?4ZEAz_V7KGMWXZQ_0
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv
+!i122 23
+L0 3 30
+R7
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv|
+!i113 1
+R9
+Z19 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters
+R10
+vcros_symbol
+R1
+R16
+!i10b 1
+!s100 @1OP694:7JPG2@Q9Yg6ko2
+R3
+IlC4BHiIH[4mSHT8DmXfjm1
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv
+!i122 14
+L0 1 30
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vfinish
+R1
+Z20 !s110 1760431664
+!i10b 1
+!s100 6AgJXZnZjY9Ffbdg>cUIF3
+R3
+I:G?5=W`7Aem^BHGV^MJ5O3
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/finish.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/finish.sv
+!i122 6
+L0 1 168
+R7
+r1
+!s85 0
+31
+Z21 !s108 1760431664.000000
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/finish.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/finish.sv|
+!i113 1
+R9
+Z22 !s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller
+R10
+vFSM
+R1
+R2
+!i10b 1
+!s100 <PoBeFn[>n8<EOlff1RO@1
+R3
+IkjIn]9^;[mYUYebKbo8Fm0
+R4
+S1
+R0
+Z23 w1760431510
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv
+!i122 27
+L0 1 209
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv|
+!i113 1
+R9
+R15
+R10
+n@f@s@m
+vhash_symbol
+R1
+R16
+!i10b 1
+!s100 o1^g7NI6OA0XW00Sg^5M<0
+R3
+IV<4lcSSoSBbJDfY_PQ7Va0
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv
+!i122 13
+L0 1 62
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vinvtriangle_symbol
+R1
+R16
+!i10b 1
+!s100 5M4EB3?3Z;ie=IH^Bhd>L0
+R3
+I]02dbc<_fI7YCcZO@z>@41
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv
+!i122 12
+L0 1 65
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vminus_symbol
+R1
+R16
+!i10b 1
+!s100 hF>JR>eFEP<LY=2cTi03R1
+R3
+IU;96bOj@]zdOk<iL]Oc<L0
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv
+!i122 11
+L0 1 31
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vmodify_arr
+R1
+R11
+!i10b 1
+!s100 H93RK6nIcXO7NPFHWLW0k3
+R3
+IE`V@:K]?8SSZHCH`fU?:h3
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv
+!i122 18
+R6
+R7
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv|
+!i113 1
+R9
+R13
+R10
+vmostrar_carta_random
+R1
+R11
+!i10b 1
+!s100 VhVZhl5NJ@VlYSbXKl37@3
+R3
+IPHRM]5LgN3Gc1znmGiNId3
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv
+!i122 17
+L0 1 96
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv|
+!i113 1
+R9
+R13
+R10
+vpll
+R1
+R20
+!i10b 1
+!s100 >9fZUH_Fo_SFSCg9EM=433
+R3
+I]>0[Gh7Zz<5LkjKdIed:?3
+R4
+S1
+R0
+Z24 w1760078017
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv
+!i122 4
+L0 1 21
+R7
+r1
+!s85 0
+31
+Z25 !s108 1760431663.000000
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv|
+!i113 1
+R9
+R22
+R10
+vplus_symbol
+R1
+R16
+!i10b 1
+!s100 NT^_<HJ3DQUnV4<NS22ZG0
+R3
+I3dhdWZ849dlVI<9H79ZPV3
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv
+!i122 10
+L0 1 39
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vposedge_detector
+R1
+R11
+!i10b 1
+!s100 ;]zNFSGjze6?_dn0^WUY33
+R3
+Ia<^:kI<TNOZCnAMW<zzdk0
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/posedge_detector.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/posedge_detector.sv
+!i122 24
+Z26 L0 1 22
+R7
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/posedge_detector.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/posedge_detector.sv|
+!i113 1
+R9
+R19
+R10
+vrectborder
+R1
+R20
+!i10b 1
+!s100 [AH5W^:<Ma9=D[0foaFE^2
+R3
+IegO@JkE9czY4TQL8Ybg3:0
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv
+!i122 9
+L0 1 32
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv|
+!i113 1
+R9
+R18
+R10
+vrectgen
+R1
+Z27 !s110 1760431663
+!i10b 1
+!s100 5CT:HUMeTMcah83L=iJ8`3
+R3
+I[VAKe]:kiQCaNQB95Do9;3
+R4
+S1
+R0
+R24
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv
+!i122 3
+L0 3 9
+R7
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv|
+!i113 1
+R9
+R22
+R10
+vsave_cards
+R1
+R11
+!i10b 1
+!s100 K8Xe87BZB=gz1bU]d=S[J1
+R3
+IinAL6DTYP5OQ]YzWKBAlH1
+R4
+S1
+R0
+Z28 w1760420273
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv
+!i122 20
+R26
+R7
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv|
+!i113 1
+R9
+R13
+R10
+vseleccionar_parejas
+R1
+R11
+!i10b 1
+!s100 SM3k`CY5HJFSN?jCIk_Me2
+R3
+IT>dX5kIf_`R7?8RQWTk_B0
+R4
+S1
+R0
+R23
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv
+!i122 21
+L0 1 101
+R7
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv|
+!i113 1
+R9
+R13
+R10
+vShuffle
+R1
+R16
+!i10b 1
+!s100 inm5VLIocCg?^KfK>MaI72
+R3
+I2]iAH:HPb;10l<?;`fQPY1
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv
+!i122 16
+L0 1 75
+R7
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv|
+!i113 1
+R9
+R13
+R10
+n@shuffle
+vsquare_symbol
+R1
+R20
+!i10b 1
+!s100 F>?GZ`HU0Cf]d^gN>nM<>0
+R3
+I[nCjWQ9OmI_j2l8VdKZ<i0
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv
+!i122 8
+L0 1 16
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vstart
+R1
+R20
+!i10b 1
+!s100 53d7_QlnVg6QhGbO@:k4[0
+R3
+IQ1@k0HmZmFHf?6N@8:h970
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv
+!i122 5
+L0 1 80
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv|
+!i113 1
+R9
+R22
+R10
+vtb_Top_Level_Memory
+R1
+R2
+!i10b 1
+!s100 h0Ea5DmRM5E5_gPDI`PfI0
+R3
+IOX80KIjZL@`X3OaJ5[Rj:1
+R4
+S1
+R0
+w1760423948
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_Top_Level_Memory.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_Top_Level_Memory.sv
+!i122 30
+L0 3 311
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_Top_Level_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_Top_Level_Memory.sv|
+!i113 1
+R9
+!s92 -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb
+R10
+ntb_@top_@level_@memory
+vtop_7seg_counter
+R1
+R11
+!i10b 1
+!s100 ?aZHX3ahSk60fLI>SaS[?0
+R3
+I@BTN:E`I8TXaSO<03XQ8h2
+R4
+S1
+R0
+R28
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv
+!i122 22
+L0 1 72
+R7
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv|
+!i113 1
+R9
+R19
+R10
+vTop_Level_Memory
+R1
+R2
+!i10b 1
+!s100 Sk5F2bGf5j1P2V[SLBl>E3
+R3
+IFlNFdOzO@A64Y:<EgO:`c3
+R4
+S1
+R0
+R23
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv
+!i122 28
+L0 1 186
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv|
+!i113 1
+R9
+R15
+R10
+n@top_@level_@memory
+vtriangle_symbol
+R1
+R20
+!i10b 1
+!s100 mb7D<20@E:J2Jno8AkJ=j0
+R3
+I8]B01T4POX4JgdW41DId<2
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv
+!i122 7
+L0 1 71
+R7
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv|
+!i113 1
+R9
+R18
+R10
+vverificar_pareja
+R1
+R27
+!i10b 1
+!s100 adJS0SS:^:N>JP]4dBL@U1
+R3
+IhRf?[;GNeDAhbzcmVGD=i3
+R4
+S1
+R0
+w1760239305
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv
+!i122 0
+L0 1 113
+R7
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv|
+!i113 1
+R9
+R13
+R10
+vvgaController
+R1
+R27
+!i10b 1
+!s100 2h?4iN?[fJW184?nE6Qja2
+R3
+I6[O>fBlgG3]E@n>5l><hf0
+R4
+S1
+R0
+R24
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv
+!i122 2
+L0 3 46
+R7
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv|
+!i113 1
+R9
+R22
+R10
+nvga@controller
+vvideoGen
+R1
+R27
+!i10b 1
+!s100 _mfdGdBOK@oj36:P]Q?cD2
+R3
+IiHcnML5oRMdM6NV8oXNO21
+R4
+S1
+R0
+R5
+8C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv
+FC:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv
+!i122 1
+L0 3 211
+R7
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller|C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv|
+!i113 1
+R9
+R22
+R10
+nvideo@gen

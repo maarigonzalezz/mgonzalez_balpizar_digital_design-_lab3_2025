@@ -5,11 +5,40 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/verificar_pareja.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/videoGen.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/vgaController.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/rectgen.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/pll.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/start.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/VGA_Controller/finish.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/triangle_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/square_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/rectborder.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/plus_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/minus_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/invtriangle_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/hash_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/cros_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Card_Symbols/circle_symbol.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/Shuffle.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/mostrar_carta_random.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/modify_arr.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/bit_shifter.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/save_cards.sv}
 vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management/seleccionar_parejas.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/top_7seg_counter.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/clk_counter_seg.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Counters/posedge_detector.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Helpers/BinTo7Seg.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/carta.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/FSM.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Top_Level_Memory.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3 {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/card_controller.sv}
 
-vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_seleccionar_parejas.sv}
+vlog -sv -work work +incdir+C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb {C:/Users/space/Desktop/Brayan/Taller_Digitales/Taller_3/Arr_Management_tb/tb_Top_Level_Memory.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_seleccionar_parejas
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Top_Level_Memory
 
 add wave *
 view structure
